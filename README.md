@@ -1,6 +1,9 @@
 # MEGA
 MEGA is my attempt to collect and analyze as much of my personal information as possible for a year. All scripts i write to automate actions will be stored in this repo.
 
+
+[All programs a local university overs (Rug) - Dutch ](https://github.com/timostrating/MEGA/blob/master/Rug/rug_opleidingen.json)
+
 ## MEGA time
 I registered what I do every 30 minuts from the start to the end of the year.
 <p align="center">
