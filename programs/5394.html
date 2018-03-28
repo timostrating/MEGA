@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5394&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5394"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5394">Informatie over DD MSc IE&amp;B – Georg-August University, Göttingen (2-jarig)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>DD MSc IE&amp;B – Georg-August University, Göttingen (2-jarig)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td></td><td>studie in Göttingen</td><td>Engels</td><td>60</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>EBM092A05</td><td><a href="/ocasys/rechten/vak/show?module=73680">Competitiveness of Firms and Nations</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM086A05</td><td><a href="/ocasys/rechten/vak/show?module=73679">Foreign Dir. Investment &amp; Trade (MSc)</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM095A05</td><td><a href="/ocasys/rechten/vak/show?module=73332">Growth and Development Policies</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>EBM846B05</td><td><a href="/ocasys/rechten/vak/show?module=73163">Research Seminar for IE&amp;B</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM097A05</td><td><a href="/ocasys/rechten/vak/show?module=73717">Trade, Environment and Growth</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>EBM099B05</td><td><a href="/ocasys/rechten/vak/show?module=73700">International Risk Analysis and Research</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>EBM090A05</td><td><a href="/ocasys/rechten/vak/show?module=73681">International Strategic Alliances</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>EBM071A05</td><td><a href="/ocasys/rechten/vak/show?module=73682">Responsible Finance and Investing</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>EBM868A20</td><td><a href="/ocasys/rechten/vak/show?module=73164">Master's Thesis IE&amp;B</a></td><td>Engels</td><td>20</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>EBM093A05</td><td><a href="/ocasys/rechten/vak/show?module=73710">Country Studies</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM088A05</td><td><a href="/ocasys/rechten/vak/show?module=73705">International Business Strategy (MSc)</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Studenten kiezen 5 EC uit de keuzegroep (KG).</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73680"><b>Competitiveness of Firms and Nations</b></a></td><td align="right"><b>EBM092A05</b></td></tr><tr><td align="justify" colspan="3">This course is about the core themes in international economics and business. It focuses on the relationships and interactions between the development of firms, industries, regions and countries. Firms that operate across national borders face a number of unique challenges. These include the need to understand and analyze a range of contextually different but interdependent economic and business environments. An emerging form of arrangement is the global value chain in which firms’ activities are linked across borders, involving both advanced and emerging regions. The notion and implications of global value chains with respect to innovation, governance, development potential, and rent distributions are introduced and analyzed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=245">prof. dr. M.P. Timmer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2021">prof. dr. B. Los</a><a href="/ocasys/rug/vak/viewtutor?tutor=245">prof. dr. M.P. Timmer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">BSc Economics or equivalent; IMPORTANT NOTE: <b>an intermediate level of knowledge in International Economics and Business Strategy is needed</b></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariat GEM: e-mail gem.feb@rug.nl, phone +31(0)50 363 3458, room 5411.0536</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73710"><b>Country Studies</b></a></td><td align="right"><b>EBM093A05</b></td></tr><tr><td align="justify" colspan="3">What are the opportunities for growth and development in a country and what holds it back? What are the lessons for government policies and firms that are contemplating investment? In this hands-on course, you will focus in-depth on the causes and consequences of growth in a specific country. As part of a small team, you will analyze one particular institution such as the innovation system, trade openness or the financial sector. Your analysis will be based on academic literature that discusses what makes a successful institution and statistical data sources. The literature on your institution will be introduced in thematic groups with members from other country teams. The analysis of your theme forms one chapter of the final country report.<br/>The insights from the different analyses by the group members are synthesized into a summary chapter to provide useful information for policy makers or multinational firms about the prospects for economic growth and doing business in your country. Together with your team, you will present the findings and policy or business recommendations from your report to the lecturers and other course participants.<br/>Your final course grade is based on an individual grade for the chapter you contribute to the country report; a grade for the quality of the feedback you provide to fellow students; a group grade for the summary chapter that synthesizes the other chapters; and a grade for your contribution to a discussion panel.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1929">prof. dr. R.C. Inklaar</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1929">prof. dr. R.C. Inklaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=2021">prof. dr. B. Los</a><a href="/ocasys/rug/vak/viewtutor?tutor=12417">dr. A. Minasyan</a><a href="/ocasys/rug/vak/viewtutor?tutor=11608">dr. A.C. Steiner</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor's degree in Economics and Business Economics or comparable qualification. Builds on knowledge of macroeconomics and economic growth.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0536 <br/>Coordinator: r.c.inklaar@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73679"><b>Foreign Dir. Investment &amp; Trade (MSc)</b></a></td><td align="right"><b>EBM086A05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1977">dr. T. Kohl</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1977">dr. T. Kohl</a><a href="/ocasys/rug/vak/viewtutor?tutor=12417">dr. A. Minasyan</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Admittance to the MSc IE&amp;B.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The course will include one or more guest lectures if possible. <br/>Secretariat GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0538</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73332"><b>Growth and Development Policies</b></a></td><td align="right"><b>EBM095A05</b></td></tr><tr><td align="justify" colspan="3">Why are some countries poor and some countries rich? This course will introduce you to the debate about strategies for sustained growth and development in today's world. Global economic growth has been rapid since the 1950s, but uneven across countries and major challenges to growth have appeared in the last decade. What were successful growth strategies in the past? Which policies have contributed to this success? What are the new growth challenges ahead at the regional and global level and how can we cope with these? Based on the explanatory growth framework of Angus Maddison we delve into the possibilities of generating development. We discuss new global trends that provide both opportunities and challenges for growth and development, and end the course with an evaluation of possible policy options against this background. This will be done by in-depth study and discussion of major articles in this field.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=245">prof. dr. M.P. Timmer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2231">dr. G.J. de Vries</a><a href="/ocasys/rug/vak/viewtutor?tutor=245">prof. dr. M.P. Timmer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">BSc Economics, <b>important note:</b> intermediate-level knowledge of Economic Growth or Development Economics is needed.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariat GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0536 <br/>Coordinator: m.p.timmer@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73705"><b>International Business Strategy (MSc)</b></a></td><td align="right"><b>EBM088A05</b></td></tr><tr><td align="justify" colspan="3">The design and implementation of a successful international business strategy (IBS) is key for the sustainable performance of many companies. IBS enables companies to successfully differentiate themselves from their competitors. IBS is directly relevant for the performance of companies but also for other stakeholders including the employees, citizens and policy-makers. Among others, policy-makers aim to develop regions or countries. Enabling companies to develop and implement the best strategy benefits economic growth and general well-being. However, some companies are very successful in IBS whereas others fail. IBS is not a product that can be bought on a market – companies need to develop and learn IBS themselves. This course is dedicated to obtaining in-depth knowledge and (research) experience about the multifaceted nature of IBS.<br/>Virtually all students in the FEB programs continue a non-academic career in business or public management. Understanding the causes and consequences of successful IBS, therefore, is of the utmost importance for FEB students. Questions about IBS are relevant for almost all companies in which FEB students will work. The course is also relevant for students that have an ambition to work in the public sector such as a Ministry of Economic Affairs or a healthcare institute or international organizations such as the World Bank or the EU. These organizations also are confronted with IBS challenges next to and on top of being part of the context in which for-profit firms design and implement IBS. <br/>This advanced course in IBS moves far beyond what is learned in bachelor courses of strategy and management. We will study key elements of IBS such as management and leadership, organization structure, strategic alliances, global environments and public policy. For each of these themes, we will review leading theories, learn about best-practices and study a wide variety of research methods needed to come to grips with the causes and consequences of successful IBS.<br/>Students that enter the course accept the conditions of the program and the advanced level of the IBS subjects. Students need to prepare a great number of journal articles each week in order to constructively contribute to tutorial discussions and presentations. Additionally, the course requires students to almost independently write a research proposal (following instructions) and a written exam with essay questions. Not meeting any of the standards of the course will have implications for the grade.<br/>The course requires students to develop, use and appreciate (advanced) interdisciplinary theoretical models and (advanced) multi-method perspectives in combination with best-practice managerial cases that characterize modern IBS. The course is less feasible for students that, for example, favor uni-dimensional (economic) models and theories that present quantitative methods only.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10509"> P.J. Marques Morgado</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9821">dr. H.J. Drogendijk</a><a href="/ocasys/rug/vak/viewtutor?tutor=10509"> P.J. Marques Morgado</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met vraagstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Admittance to the MSc IB&amp;M, IE&amp;B or IFM</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariat GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0536</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73700"><b>International Risk Analysis and Research</b></a></td><td align="right"><b>EBM099B05</b></td></tr><tr><td align="justify" colspan="3">The course deals with several risks that multinational companies are confronted with their operational or financial activities. In particular, the course focuses on international risks arising from several firm-level and country level factors, such as changes in exchange rates and prices of commodities, macroeconomic developments, governance and political instability. Students will read several background articles to understand the theoretical arguments and methodology, and make presentations. Students  are also expected to analyse the impact of international risk components on activities of multinationals, focusing specifically on their consequences for corporate risk-taking or the value. Students are required to work in teams in order to write a team research paper. The discussion on their analyses will take place in tutorials.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1869">dr. H. Gonenc</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1869">dr. H. Gonenc</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Admittance to the MSc IFM. Students are expected to have basic knowledge for econometrics and methods for secondary data analyses.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Ellie Jelsema, phone: + 31(0)50 363 3685, e-mail: e.t.jelsema@rug.nl, room 5411.0836.<br/>This course is also open for a max of 8 exchange students.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73681"><b>International Strategic Alliances</b></a></td><td align="right"><b>EBM090A05</b></td></tr><tr><td align="justify" colspan="3">The course deals with managing strategic alliances-- a key factor for successful internationalization. These alliances can occur on the horizontal level (e.g. with rivals) or vertical level (e.g. with suppliers) and can result in complex organizational forms such as international joint ventures and global value chains. The course specifically deals with the challenges and pitfalls of managing international alliances. The various managerial challenges will be analyzed by using interorganizational theories such as transaction cost economy, resource-based-view, and the relational view. Furthermore, contemporary research findings will be discussed and applied in case studies.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5409">dr. M.M. Wilhelm</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11111"> M. Astarlioglu</a><a href="/ocasys/rug/vak/viewtutor?tutor=5409">dr. M.M. Wilhelm</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students should have basic knowledge on main organizational theories (i.e. resource-based view, transaction cost theory) and be familiar with working with cases</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator: m.m.wilhelm@rug.nl, +31 (0)50 363 9375 Secretariat: gem.feb@rug.nl, +31 (0)50 363 3458, 5411.0536</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=73164"><b>Master's Thesis IE&amp;B</b></a></td><td align="right"><b>EBM868A20</b></td></tr><tr><td align="justify" colspan="3">The Master’s thesis is the final element of the MSc IE&amp;B master program. It should be a reflection of the student’s acquired analytical skills in one or more of the knowledge areas of International Economics and Business. The master thesis is a research project which is carried out on an individual basis. The MSc thesis covers the full research cycle, which implies that students develops their own problem setting, specify the research questions and hypotheses from a broader literature, develop their own methodology and organize their own data collection. MSc students are required to participate in the Research Seminar IE&amp;B.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1929">prof. dr. R.C. Inklaar</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">afstudeeropdracht</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Approved MSc programme and 20 EC of first semester courses of the MSc IE&amp;B.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Students must register for the Master's thesis via Progress. <br/>Secretary: gem.feb@rug.nl, tel. 363 3458; 5411.0538.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73163"><b>Research Seminar for IE&amp;B</b></a></td><td align="right"><b>EBM846B05</b></td></tr><tr><td align="justify" colspan="3">The course content is a refresher in quantitative and econometric methods.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11608">dr. A.C. Steiner</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11968">dr. P.A. IJtsma</a><a href="/ocasys/rug/vak/viewtutor?tutor=11608">dr. A.C. Steiner</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcolleges, computer practica, hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met vraagstukken, take-home test</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students should have econometric/statistical knowledge at the level of <i>Principles of Econometrics</i> by R.C. Hill, W.E. Griffiths and G.C. Lim, 3rd Edition.<br/>Admittance to the MSc IE&amp;B programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: email: gem.feb@rug.nl, tel.: +31(0)50 363 3458, room: 5411.0538 <br/>Coordinator: Andreas Steiner, email: a.c.steiner@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=73682"><b>Responsible Finance and Investing</b></a></td><td align="right"><b>EBM071A05</b></td></tr><tr><td align="justify" colspan="3">This course focuses on the role of non-financial attributes in production, especially the interaction between financial and social/environmental performance of firms, in particular financial institutions, and the impact of this interaction on finance and investment decisions at the level of these firms and with respect to the investment portfolio. As to financing, it especially is appropriate pricing that will be discussed; as to investing, we investigate the impact of screening on performance. We highlight the costs and benefits of managing non-financial attributes and go into their pricing and into the consequences of inappropriate pricing. Student will be required to work on projects in which they try to come to grips with responsibility in financing and investing.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2136">prof. dr. L.J.R. Scholtens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2136">prof. dr. L.J.R. Scholtens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students will have a BSc degree in Economics and/or Business, a background in Finance and a keen interest in both Environmental and Social issues and in Banking, Finance and Investing.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Ellie Jelsema, phone: +31 (0)50 3633685, e-mail: e.t.jelsema@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=73717"><b>Trade, Environment and Growth</b></a></td><td align="right"><b>EBM097A05</b></td></tr><tr><td align="justify" colspan="3">This course (for which some basic knowledge of matrix algebra is indispensable) applies input-output analysis to issues on trade, on environment, and on growth. For the production of commodities and services, industries depend on other industries for their intermediate products. More and more, such linkages between industries cross borders. Input-output analysis is a tool that takes such interdependencies in the production structure into full account. It has been applied to a wide variety of topics, ranging from agricultural and development economics to disciplines dealing with energy and environmental issues. The course will focus on three such topics. Typical questions are the following. How much high-skilled labor in the US is involved in satisfying the demand for cars by households in Australia, reflecting trade in production factors? What is the greenhouse gas footprint of China, or how large are the Chinese "exports" of greenhouse gas emissions? What percentage of the growth in German GDP between 1995 and 2009 was due to the increased household consumption in the rest of the EU? To analyze these questions, the World Input-Output Database will be used.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2021">prof. dr. B. Los</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1808">prof. dr. H.W.A. Dietzenbacher</a><a href="/ocasys/rug/vak/viewtutor?tutor=2021">prof. dr. B. Los</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, practica, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">individueel tentamen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students with a BSc degree in Economics &amp; Business Economics, Econometrics and Operations Research (or a comparable degree). Some basic knowledge of matrix algebra is indispensable for this course. An indication for a sufficient background is Chapters 15 and 16 in Essential Mathematics for Economic Analysis (4th edition) by Sydstaeter, Hammond and Strom, which is taught in the second year course Matrix Analysis and Optimization.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator: b.los@rug.nl, +31 (0)50 363 7317, 5411 0547 Secretary: gem.feb@rug.nl, +31 (0)50 363 3458, 5411 0536</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4988&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4988"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4988">Informatie over Religie, Ritueel en Mythologie</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Religie, Ritueel en Mythologie</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>THB3BSE10</td><td><a href="/ocasys/rechten/vak/show?module=75578">bachelorscriptie (incl scriptieseminar)</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THB3GBAME5</td><td><a href="/ocasys/rechten/vak/show?module=75537">Antieke mythologieën</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>THB3GBRP</td><td><a href="/ocasys/rechten/vak/show?module=75546">Ritual Practices</a></td><td>Engels</td><td>7.5</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>THB2-RMPC</td><td><a href="/ocasys/rechten/vak/show?module=75481">Religie, Media en Populaire Cultuur</a></td><td>Engels</td><td>7.5</td><td>6</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75537"><b>Antieke mythologieën</b></a></td><td align="right"><b>THB3GBAME5</b></td></tr><tr><td align="justify" colspan="3">De mythologieën van de oudheid, zowel afkomstig van de Griekse, Romeinse en de Egyptische religies als ook uit de joodse en christelijke tradities, spelen een belangrijke rol in de moderne religiegeschiedenis van het westen. Deze module focust op de receptie van antieke mythologieën in het kader van religieuze, filosofische en culturele stromingen in de 19e en 20ste eeuw. Behandeld worden onder meer: Griekse mythologie in de literatuur, filosofie en kunst van de 20ste eeuw (Psychoanalyse: Freud, Jung; Structuralisme, enz.) en de Gnosis in het intellectuele discours van de 20ste eeuw (kunst en literatuur: J.L. Borges, G. Meyrink, P. Wegener, Th. Mann, F. Pessoa; analytische psychologie: C.G. Jung; existentialistische filosofie: M. Heidegger en H. Jonas; Albert Camus).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1294">dr. dr. F.L. Roig Lanzillotta</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroepen</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), verslag, werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: Hoorcolleges / werkgroep (8 x 2 uur): 16 uur; voorbereiding colleges: (8 x 2 uur): 16 uur;voorbereiding presentatie:10 uur;literatuurverslag:8 uur; werkstuk 28 uur; zelfstudie: 62 uur.</li><li>Voor het begin van het college zal een lijst met de te lezen artikelen bekendgemaakt worden.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75578"><b>bachelorscriptie (incl scriptieseminar)</b></a></td><td align="right"><b>THB3BSE10</b></td></tr><tr><td align="justify" colspan="3">Deze module biedt studenten de mogelijkheid om intensief te werken aan specifieke aspecten van het ontwerp, onderzoek en schrijfproces van hun bachelorscriptie. De werkcolleges worden gegeven in de vorm van een workshop, met een korte inleidende lezing en presentatie van de docent over het onderwerp dat die dag wordt behandeld, gevolgd door groepswerk en intervisie, in combinatie met mogelijkheden voor individueel overleg en discussies met de docent. De werkcolleges zijn grotendeels studentgestuurd en hebben tot doel om die onderwerpen te behandelen die het meest dringend zijn voor de studenten in het stadium van het schrijfproces.<br/>Studenten worden voor deze module beoordeeld op hun bachelorscriptie. Daarnaast voeren ze kleine opdrachten en intervisie-activiteiten uit als onderdeel van het proces dat leidt tot de voltooiing van de scriptie. Er zal enig onderwijs zijn, maar de module bestaat voor een groot deel uit samenwerking met andere studenten en mogelijkheden voor discussie en overleg met medestudenten en de docent.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11330">dr. D. van den Auweele</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">X</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75481"><b>Religie, Media en Populaire Cultuur</b></a></td><td align="right"><b>THB2-RMPC</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8247">dr. S. Travagnin</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8247">dr. S. Travagnin</a><a href="/ocasys/rug/vak/viewtutor?tutor=4282">dr. M. van Dijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Assignments including presentations in class (30%)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7.5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs - en Examenregeling. De student dient tenminste 80 % van de colleges aanwezig te zijn.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75546"><b>Ritual Practices</b></a></td><td align="right"><b>THB3GBRP</b></td></tr><tr><td align="justify" colspan="3">The course deals with the different ways anthropologists, sociologists and psychologists have looked at and tried to understand rituals. We will thoroughly discuss different approaches to the study of ritual, think about how to assess such theoretical contributions and how to analyze ethnographic descriptions of rituals. Anthropologists have focused on the myriad practices that are designed in particular social contexts and investigated the following questions, among others: How are the social relationships that have been interrupted by conflict, violence and death reconstituted? What are the elements a social person consists of (body, soul, name, memory) and what are their fates during and after rituals? How are relationships of power and gender transformed or legitimated in rituals? What do rituals tell us about crucial values of a society, its economy or political and social structure? Psychologists have been mainly concerned with the meaning and relevance of loss and death for the individuals concerned. In this course we shall examine ritual practices and their effects on the level of the individual asking some of the following questions: What kinds of rituals do people engage with? Why do they engage with these rituals? How does engaging with these rituals affect the person? How can we change the person with the use of rituals? And how are these individual psychological processes theoretically linked to social relationships and cultural behaviour, for example coping and public mourning ceremonies? Some western and African ideas and cases will be discussed, and also the concept of transitional space linked to rituals, and elements of cognitive religious coping theories.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10669">dr. J. Tarusarira</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), paper, presentation(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7.5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Student workload: Sessions 21h,readings 70h,various assignments 120h.</li><li>Literature will be announced later.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

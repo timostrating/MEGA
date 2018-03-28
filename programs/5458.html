@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5458&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5458"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5458">Informatie over Ma Oudheidstudies</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Oudheidstudies</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Griekse en Latijnse taal en cultuur)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LQX030M10</td><td><a href="/ocasys/rechten/vak/show?module=78053">Pliny and Dio Chrysostom on Kingship</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Interdisciplinair onderzoekscollege</td><td>Engels en Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LGX049M10</td><td><a href="/ocasys/rechten/vak/show?module=74403">OZC: Athens and Rome</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LPM005M10</td><td><a href="/ocasys/rechten/vak/show?module=74041">The Rise of Cities and States</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LQX021M05</td><td><a href="/ocasys/rechten/vak/show?module=74081">Griekse epigrafie</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LQX022M05</td><td><a href="/ocasys/rechten/vak/show?module=74082">Griekse epigrafie: Essay</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LPX006M10</td><td><a href="/ocasys/rechten/vak/show?module=74630">The Archaeology of  Death</a></td><td>Engels</td><td>10</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>LQX029M05</td><td><a href="/ocasys/rechten/vak/show?module=78052">Landscape and Memory</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LQX031M10</td><td><a href="/ocasys/rechten/vak/show?module=78054">Thematisch college</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LQX997M20</td><td><a href="/ocasys/rechten/vak/show?module=74281">Ma-scriptie Oudheidstudies</a></td><td>Nederlands</td><td>20</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LQX028M10</td><td><a href="/ocasys/rechten/vak/show?module=74498">Masterstage Oudheidstudies</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">1. Het onderdeel Griekse epigrafie (LQX021M05) kan worden gecombineerd met een essay Griekse epigrafie (LQX022M05). <br/>2. Studenten GLTC volgen in totaal:<br/>- 25 EC GLTC onderdelen<br/>- 20 EC Master-scriptie Oudheidstudies<br/>- 15 EC keuzeonderdelen, waarvan één interdisciplinair onderzoekscollege.<br/>3. In plaats van een interdisciplinaire module mag ook worden gekozen uit het landelijke aanbod van Klassieke Talen in het Masterlanguage programma (http://masterlanguage.nl).<br/>4. Studenten die in semester twee willen starten, kunnen in overleg met de studieadviseur een programma samenstellen.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Oude geschiedenis)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LGX049M10</td><td><a href="/ocasys/rechten/vak/show?module=74403">OZC: Athens and Rome</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>LPM005M10</td><td><a href="/ocasys/rechten/vak/show?module=74041">The Rise of Cities and States</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>LQX021M05</td><td><a href="/ocasys/rechten/vak/show?module=74081">Griekse epigrafie</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>LQX022M05</td><td><a href="/ocasys/rechten/vak/show?module=74082">Griekse epigrafie: Essay</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>LQX030M10</td><td><a href="/ocasys/rechten/vak/show?module=78053">Pliny and Dio Chrysostom on Kingship</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LPX006M10</td><td><a href="/ocasys/rechten/vak/show?module=74630">The Archaeology of  Death</a></td><td>Engels</td><td>10</td><td>4</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>LQX029M05</td><td><a href="/ocasys/rechten/vak/show?module=78052">Landscape and Memory</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>LGX058M10</td><td><a href="/ocasys/rechten/vak/show?module=78097">Res. Sem.: Roman Empire in the Third Cen</a></td><td>Engels en Nederlands</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LQX997M20</td><td><a href="/ocasys/rechten/vak/show?module=74281">Ma-scriptie Oudheidstudies</a></td><td>Nederlands</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LQX028M10</td><td><a href="/ocasys/rechten/vak/show?module=74498">Masterstage Oudheidstudies</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">1. Studenten kunnen kiezen uit bijv. modules uit de Master ‘Geschiedenis Vandaag/History Today’ (History Online, Onderzoekscollege of Historisch Methodenvak), buitenfacultaire modules Antieke Wijsbegeerte of Rechtsgeschiedenis of het landelijke aanbod van Klassieke Talen in het Masterlanguage programma (http://masterlanguage.nl). Dit moet altijd gebeuren in overleg met de studieadviseur.<br/>2. Studenten Oude geschiedenis volgen in totaal:<br/>- 25 EC Oude geschiedenis onderdelen<br/>- 20 EC Master-scriptie Oudheidstudies<br/>- 15 EC keuzeonderdelen<br/>3. Studenten die in semester twee willen starten, kunnen in overleg met de studieadviseur een programma samenstellen.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74081"><b>Griekse epigrafie</b></a></td><td align="right"><b>LQX021M05</b></td></tr><tr><td align="justify" colspan="3">Deze cursus biedt een introductie op de Griekse epigrafie en is gericht op het verwerven van  epigrafische onderzoeksvaardigheden ten bate van je scriptie onderzoek. De cursus bestaat uit verschillende onderdelen<br/>Een intensieve blokcursus Griekse Epigrafie op Locatie in Athene (6-14 januari 2015)  5 ECTS zie: http://www.nia.gr/nl/onderwijs/huidig-cursusaanbod. De cursus  kan tot 10 ECTS  worden uitgebreid  met het vak Griekse epigrafie essay (5 ECTS), zie LQX022M05. <br/>Deze cursus kan ook voor 10 ECTS gevolgd worden in het kader van het Masterlanguage programma Klassieke Talen: http://masterlanguage.nl/griekse-epigrafie/.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Er is een beperkt aantal plaatsen: <br/>Je moet je voor de cursus in Athene apart opgeven via de website van het NIA: WWW.NIA.GR.<br/>Je moet je voor het programma Masterlangaue apart opgeven via http://masterlanguage.nl/griekse-epigrafie/.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74082"><b>Griekse epigrafie: Essay</b></a></td><td align="right"><b>LQX022M05</b></td></tr><tr><td align="justify" colspan="3">Deze praktische cursus biedt een introductie op de Griekse epigrafie, dmv zelfstudie en een individuele opdracht. De cursus is opgezet als een aanvulling  van de cursus Griekse epigrafie  in context (LQX022M05, zie aldaar)  maar kan ook individueel worden gevolgd. De student stelt in overleg met de docent een zelfstudiepakket op. De cursus wordt afgesloten door een essay en een verslag.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor, kennis van het Grieks</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Toegankelijk voor studenten GLTC, CMRS Art History and Archaeoloy (tutorial) , Geschiedenis (Privatissimum), KMA , Godgeleerdheid/Godsdienstwetenschappen. Dit college kan apart gevolgd worden of als uitbreiding van Griekse epigrafie: Introductie LQX021M05</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78052"><b>Landscape and Memory</b></a></td><td align="right"><b>LQX029M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10712">dr. B.L. Reitz-Joosse</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10712">dr. B.L. Reitz-Joosse</a><a href="/ocasys/rug/vak/viewtutor?tutor=284">dr. C.G. Williamson</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74281"><b>Ma-scriptie Oudheidstudies</b></a></td><td align="right"><b>LQX997M20</b></td></tr><tr><td align="justify" colspan="3">De afstudeerscriptie vormt de afsluiting van de opleiding en is in die zin een proeve van bekwaamheid. De scriptie heeft betrekking op het gebied van de afstudeerrichting GLTC (Grieks, Latijn) of de afstudeerrichting Oude Geschiedenis, of een combinatie daarvan.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=62">dr. J.W. Drijvers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=62">dr. J.W. Drijvers</a><a href="/ocasys/rug/vak/viewtutor?tutor=215">dr. R.F. Regtuit</a><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74498"><b>Masterstage Oudheidstudies</b></a></td><td align="right"><b>LQX028M10</b></td></tr><tr><td align="justify" colspan="3">De stage biedt studenten de mogelijkheid praktijkervaring op te doen in een buitenuniversitaire omgeving en zich te oriënteren op de arbeidsmarkt. De stage wordt gelopen bij een instelling, organisatie of bedrijf in binnen- of buitenland. De werkzaamheden tijdens de stage dienen aan te sluiten op de Masterspecialisatie traject dat de student volgt. De student wordt geacht, op basis van inhoudelijke specialisatie, interesse en vaardigheden, in beginsel zelf te zoeken en te solliciteren naar een stageplaats.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor GLTC, Geschiedenis of andere toelating tot de master Oudheidstudies</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Student dient zich aangemeld te hebben bij het stagebureau Letteren, dan pas kan een afspraak gemaakt worden met een stagecoördinator.<br/>Er kan alleen met de stage worden begonnen na akkoordverklaring van de begeleidend docent of Examencommissie.<br/><br/>Uitvoerige algemene informatie over de masterstage is te vinden via:<br/><br/>    de Student Portal - Career(nuttige links, stagevacatures, evenementen) - Master's Placement met vermelding van procedures, stagecoördinator(en) en formulieren voor inschrijving, stageplan, evaluatie, beurzen.<br/>    www.rug.nl/let/mobilityoffice<br/>    www.rug.nl/let/careerstrategy<br/><br/>De balie van het Mobility Office is dagelijks geopend tussen 13.00-16.00 uur en bevindt zich op dezelfde plek als de balie van BSZ.<br/>Informatie over spreekuren is beschikbaar via de Student Portal-Career-Master's Placement.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74403"><b>OZC: Athens and Rome</b></a></td><td align="right"><b>LGX049M10</b></td></tr><tr><td align="justify" colspan="3">When Rome established its dominance over the Greek world it did not only acquire a huge new territory, but also a long and complex past. On one hand there was the glorious classical past, admired both by Romans and Greeks, but with democratic associations that had become politically inconvenient. On the other, there were painful memories and cultural traumas of Rome’s conquest, and of the (civil) wars of the first century BCE, which had hit Greece particularly badly. In this course we shall explore how these diverse views of the Greek past got entangled and were used to anchor political and cultural innovations. We shall focus on Roman Athens, which is an ideal historical laboratory to explore the impact of empire on the Greek world, but we shall also cover developments in other cities.  An intensive block course at the Netherlands Institute at Athens with site visits, lectures, and research in the libraries in Athens is part of the course.* This course will use a combination of documentary, literary and archeological sources and is of interest to MA students of history, classics, religious studies and archaeology, and others with an interest in memory studies and imperialism in the Greek and Roman world.<ul><li>The Excursion to Greece will take place in week of 23 October 2017. The students must make their own travel arrangements to and from Athens. Accommodation and travel in Greece will be handled by the NIA. A course fee of est. 150-175 Euro will be payable to the NIA upon arrival. / Students who cannot  take part in the excursion may take an alternative assignment.</li></ul>for more information, mail Prof. van Nijf at:  o.m.van.nijf@rug.nl</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor Geschiedenis of toelating tot de master Geschiedenis Vandaag, Oudheidstudies of een Research Master</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Zie voor meer informatie het schema in de studiegids. Studenten Geschiedenis: Inschrijving verloopt uitsluitend via Student Portal (instructies volgen via de e-mail). Niet-geschiedenisstudenten moeten zich in kalenderweken 25 en 26 (eerste semester) of kalenderweken 1 en 2 (tweede semester) melden via opleiding.geschiedenis@rug.nl, onder vermelding van studentnummer, naam, titel van het vak en de vakcode.Inschrijving verloopt uitsluitend via Nestor  (instructies volgen via de e-mail)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78053"><b>Pliny and Dio Chrysostom on Kingship</b></a></td><td align="right"><b>LQX030M10</b></td></tr><tr><td align="justify" colspan="3">In deze module leren studenten kritisch een commentaar op een antieke Griekse en Latijnse tekst te gebruiken en oefenen zij zich in het zelf schrijven van zo'n commentaar. Dit jaar zullen de te becommentariërende passages gekozen worden uit de redes over het koningschap van Dio Chrystostomus en de Panegyricus van Plinius.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10275">dr. J.J.H. Klooster</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10275">dr. J.J.H. Klooster</a><a href="/ocasys/rug/vak/viewtutor?tutor=309">prof. dr. R.R. Nauta</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78097"><b>Res. Sem.: Roman Empire in the Third Cen</b></a></td><td align="right"><b>LGX058M10</b></td></tr><tr><td align="justify" colspan="3">De derde eeuw wordt nog steeds beschouwd als een eeuw van crisis in het Romeinse Rijk economisch, politiek/bestuurlijk, militair en cultureel terrein. Het rijk werd bovendien geteisterd door problemen aan de Rijn-Donau grens met zg. barbaren en aan de oostgrens met het Perzische rijk onder leiding van de nieuwe dynastie van de Sassaniden. Vooral de periode tussen 235 en 284 wordt gezien als een bestuurlijk en economisch dieptepunt gekenmerkt door invasies, burgeroorlogen, afscheidingsbewegingen en economische crisis. Aan het einde van de derde eeuw herstelde het rijk zich dankzij ingrijpende hervormingen door keizer Diocletianus.<br/>In dit college staat de vraag centraal waarom de derde eeuw door historici wordt gezien als een periode van crisis en waarom, en of we daadwerkelijk mogen spreken van een rijksbrede crisis. O.a. de volgende onderwerpen zullen aan de orde komen:<br/>-	Grensproblemen<br/>-	Keizerlijk bestuur<br/>-	Relatie Romeinse-Perzische Rijk<br/>-	Economie<br/>-	Religie<br/>-	Positie van de stad Rome<br/>-	<br/>-	Herstel onder Diocletianus</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=62">dr. J.W. Drijvers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=62">dr. J.W. Drijvers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en), essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor Geschiedenis of andere toelating tot de master Geschiedenis Vandaag, Oudheidstudies of een Research Master</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Zie voor meer informatie het schema in de studiegids. Studenten Geschiedenis: Inschrijving verloopt uitsluitend via Student Portal (instructies volgen via de e-mail). Niet-geschiedenisstudenten moeten zich in kalenderweken 25 en 26 (eerste semester) of van 20 november 2017 tot en met 26 januari 2018 en 2 (tweede semester) melden via history@rug.nl, onder vermelding van studentnummer, naam, titel van het vak en de vakcode</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=74630"><b>The Archaeology of  Death</b></a></td><td align="right"><b>LPX006M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=443">prof. dr. S. Voutsaki</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=443">prof. dr. S. Voutsaki</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">BA Archeologie, BA Geschiedenis, BA GLTC</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht / Er wordt onderscheid gemaakt tussen MA- en REMA- niveau</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=74041"><b>The Rise of Cities and States</b></a></td><td align="right"><b>LPM005M10</b></td></tr><tr><td align="justify" colspan="3">In de Mediterrane archeologie kan de opkomst van steden en stadstaten als een belangrijk en actueel onderwerp van studie worden beschouwd. In de archeologie van centraal Italië waaronder de stad Rome,betreft dit de periode in het eerste millennium voor Chr. De docenten, specialisten op het gebied van de urbanisatie van Centraal Italië, zullen een aantal colleges verzorgen. Vergelijkbare ontwikkelingen en processen doen zich voor in andere perioden en culturen, zoals het oude Egypte, Mesopotamië en China. Het is de bedoeling dat de student zich tijdens deze module verdiept in de overeenkomsten en verschillen tussen de opkomst van steden en stadsstaten in centraal Italië en elders op de wereld. Uitgangspunt hierbij is het handboek van Bruce Trigger "Understanding Early Civilizations" waarin hij verschillende vroege beschavingen heeft bestudeerd. Hij heeft zijn onderzoek ingedeeld in een aantal thema's, zoals de rol van clans, vooroudercultussen, handelsnetwerken, monumentaliteit, iconografie, economie en godsdienst. Studenten kiezen zelf een van deze thema's om de stads- en staatsvorming te bestuderen.  Dergelijk onderzoek resulteert in de analyse van een specifiek thema vanuit een vergelijkend  en etnoarcheologisch perspectief. Tegelijk zullen de voordelen en valkuilen van deze methode worden bediscussieerd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=196">dr. A.J. Nijboer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=196">dr. A.J. Nijboer</a><a href="/ocasys/rug/vak/viewtutor?tutor=165">dr. E. van 't Lindenhout</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor Archeologie, GLTC, CMRS, Geschiedenis of Kunstgeschiedenis.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=78054"><b>Thematisch college</b></a></td><td align="right"><b>LQX031M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10275">dr. J.J.H. Klooster</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10275">dr. J.J.H. Klooster</a><a href="/ocasys/rug/vak/viewtutor?tutor=309">prof. dr. R.R. Nauta</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

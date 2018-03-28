@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5996&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5996"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5996">Informatie over HTSM Master</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>HTSM Master</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCHTMC0105</td><td><a href="/ocasys/rechten/vak/show?module=77410">Masterclasses</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCHTPD0102</td><td><a href="/ocasys/rechten/vak/show?module=77406">Personal Development</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCHTPP0103</td><td><a href="/ocasys/rechten/vak/show?module=77412">Product Proposal</a></td><td>Engels</td><td>3</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCHTSS0105</td><td><a href="/ocasys/rechten/vak/show?module=77391">Summer School</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>HCHTMW0105</td><td><a href="/ocasys/rechten/vak/show?module=77411">Master Work</a></td><td>Engels</td><td>5</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77411"><b>Master Work</b></a></td><td align="right"><b>HCHTMW0105</b></td></tr><tr><td align="justify" colspan="3">The masterwork is the final project where you have to demonstrate that you can put the knowledge and skills you have learned in the HTSM honours master track into practice by designing and implementing your own project. This involves independently (or in small teams) designing and carrying out your complete project incorporating specific knowledge about High Tech Systems and Materials. All the stages of implementing this project, from formulating objectives to writing a plan of approach to pursuing and presenting the final result, have to be completed by the student.<br/>The content of the project can be geared to your plans for the future. Do you want to start your own business when you graduate? Do you want to organize conferences, or would you prefer to work on a research project? All these are possible subjects for a Master Work.<br/>The scientific coordinator will assess whether the proposed project is a suitable tool for testing if the student can successfully apply the acquired knowledge and skills in the field of leadership and if this project meets the requirements.<br/>The topic and design of the Masterwork must reflect the student’s ability to achieve the learning outcomes of the Masterwork.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2641">prof. dr. K.U. Loos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Individuele beoordeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the HTSM MA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">On Nestor you can find more detailed information on the Masterwork under 'Protocols'.<br/>If you plan to spend time studying abroad, you can work on the Master Work during that period, but you must make sure that this is scheduled in the correct semester of your Master’s Honours Programme.<br/><br/>The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Master’s Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77410"><b>Masterclasses</b></a></td><td align="right"><b>HCHTMC0105</b></td></tr><tr><td align="justify" colspan="3">The masterclasses will develop and complement your knowledge and understanding of various aspects of the HTSM sector, such as your own field, other disciplines, product development, innovation and engineering. These masterclasses enable you and your team to acquire the necessary skills for preparing and conducting your team’s product development assignment.<br/>Masterclasses on Demand will be offered depending on the preference of the participating students.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2641">prof. dr. K.U. Loos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Discussiebijeenkomsten, Bijeenkomst(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the HTSM MA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Master’s Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77406"><b>Personal Development</b></a></td><td align="right"><b>HCHTPD0102</b></td></tr><tr><td align="justify" colspan="3">The HTSM Master programme offers personal development modules aimed at teaching their students a wide variety of skills, which are useful both for the completion of the HTSM-track as well as outside of the programme. These modules help you grow and develop your ability to plan &amp; create actions towards specific goals. <br/>To name a few examples, the programme features a class on brainstorming and workshops on giving and receiving feedback, in which you can learn to give feedback to your peers in a way that is both pleasant and effective.<br/>Personal development modules on demand will be offered depending on the preference of the participating students.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2641">prof. dr. K.U. Loos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Discussiebijeenkomsten</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the HTSM MA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Master’s Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77412"><b>Product Proposal</b></a></td><td align="right"><b>HCHTPP0103</b></td></tr><tr><td align="justify" colspan="3">Students are required to write a Product Proposal in which they pitch an improvement to an existing product. These proposals are written in interdisciplinary groups. The Product Proposal has to cover 1) the technological options for improvement (i.e. show that it is possible, and what the effects will be), 2) the commercial demand for this improvement (i.e. show that people would buy this, so a company has a reason to invest in it), and 3) a financial plan for the development of the improvement including a thorough business model. <br/>Secondly, each group has to write a Plan of Approach which should demonstrate how they want to improve the product (i.e. time table, which resources and facilities are required, etc.).<br/>Students have to present their Product Proposal and Plan of Approach to a panel of relevant experts. This presentation will be judged on the way in which it clearly conveys the main points of the proposal, the way in which the students convince the panel of experts to implement their ideas, as well as the way in which they handle questions from the panel of experts regarding their proposal.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2641">prof. dr. K.U. Loos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Individuele beoordeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the HTSM MA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Master’s Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77391"><b>Summer School</b></a></td><td align="right"><b>HCHTSS0105</b></td></tr><tr><td align="justify" colspan="3">Your team will manufacture, test and finalize the proposed and approved solution during a Summer School on site at the labs of the respective industrial host. To this end the necessary facilities will be placed at your disposal. At the end of the summer school, students have to present the results of their product improvement to a panel of experts.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2641">prof. dr. K.U. Loos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Individuele beoordeling, Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the HTSM MA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Master’s Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

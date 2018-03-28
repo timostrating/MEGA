@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4543&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4543"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4543">Informatie over  GMW Excellentietraject psychologie</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b> GMW Excellentietraject psychologie</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>PSBE2-HO3</td><td><a href="/ocasys/rechten/vak/show?module=75051">Honours thematic meetings</a></td><td>Engels en Nederlands</td><td>4</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PSBE2-HO6</td><td><a href="/ocasys/rechten/vak/show?module=75065">Honours research internship I</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>PSBE2-HO9</td><td><a href="/ocasys/rechten/vak/show?module=74975">Honours Research practicum</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PSBE3-HO7</td><td><a href="/ocasys/rechten/vak/show?module=75120">Honours Research Internship II</a></td><td>Engels en Nederlands</td><td>7</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>PSB3E-BTHO</td><td><a href="/ocasys/rechten/vak/show?module=74923">Bachelor Honours These</a></td><td>Engels en Nederlands</td><td>15</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>PSBE2-HO1</td><td><a href="/ocasys/rechten/vak/show?module=75045">Honours research seminar</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>PSBE3-HO2</td><td><a href="/ocasys/rechten/vak/show?module=75046">Honours theoretical seminar</a></td><td>Engels</td><td>2</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74923"><b>Bachelor Honours These</b></a></td><td align="right"><b>PSB3E-BTHO</b></td></tr><tr><td align="justify" colspan="3">Uitvoeren van de Bachelor Honours These zal 420 uren vergen. De Bachelorthese start twee keer per jaar, aan het begin van het eerste en tweede semester, en neemt twee hele blokken in beslag (i.e., het hele semester). Andere tijdsplanningen zijn bespreekbaar in overleg met de coordinator. Gedurende deze periode zijn er normaal gesproken wekelijkse bijeenkomsten met de supervisor. De inhoudelijke activiteiten omvatten het ontwikkelen van een probleemdefinitie, de keuze van een onderzoeksmethode, het schrijven van een onderzoeksvoorstel en dit presenteren in het werkveld (meestal aan stafleden van de onderzoeksgroep), het uitvoeren van het onderzoek, het analyseren van de data, en het bespreken van de resultaten en hun implicaties. De werkwijze zal deels afhangen van de aard van het onderzoek dat de basis van de these vormt. Studenten mogen zelf een groep vormen en geschikte begeleiding binnen Psychologie te zoeken. Ook mogen ze ervoor kiezen het project individueel te doen. Ook kan via de Nestor omgeving een (beperkte) keuze van onderzoeksonderwerpen worden aangeboden. In overleg met de coördinator staat het studenten vrij om ook elders (andere universiteit, instelling, bedrijf etc.) een bachelor these onderzoek uit te voeren. De Bachelorthese mondt uit in een individueel verslag van het onderzoek, dat geschreven is volgens binnen de psychologie internationaal erkende richtlijnen. De these maakt onderdeel uit van het methodologische deel van het curriculum en elke (als voldoende becijferde) Bachelorthese voldoet aan de toegangseisen van de RuG psychologiemasters, onafhankelijk van het onderzoeksonderwerp.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a><a href="/ocasys/rug/vak/viewtutor?tutor=11509"> J. Libert, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">deelname, practicum, presentatie, scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Statistiek II en/of Statistiek III, Testtheorie en Testgebruik, Onderzoeksmethode: Theorie en Praktijk, Onderzoeksmethode: Practicum (PSBA2-6, PSBA2-7 / PSBA2-12, PSBA2-8 en PSBA2-9)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het wordt sterk aangeraden om jezelf te informeren over de Bachelorthese door de “Bachelor Thesis Manual” te lezen. Deze is beschikbaar in de algemene Nestor bachelor omgeving, in de sectie voor het derde jaar. <br/>(niet toegankelijk voor externe studenten)<br/>Contact cursuscoördinator: honours_track_psychology@rug.nl<br/>Aanbevolen literatuur:<br/>- Beins &amp; Beins (2012). Effective writing in psychology: Papers, posters, and presentations (2nd ed.). Boston: Wiley-Blackwell. <br/>- Publication manual of the American psychological association (6th ed.).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75065"><b>Honours research internship I</b></a></td><td align="right"><b>PSBE2-HO6</b></td></tr><tr><td align="justify" colspan="3">De onderzoeksstage is gekoppeld aan het tweedejaars onderzoekspracticum. Direct bij aanvang van het tweede jaar wordt een groep van 4 studenten gekoppeld aan één van de onderzoekers van het Heijmans Instituut voor Psychologisch onderzoek. Zo leren de studenten in een meester-gezel verhouding alle facetten van de onderzoekspraktijk kennen. Naast het uitvoeren van praktische werkzaamheden, draaien ze mee in de onderzoeksgroep, bijvoorbeeld door het deelnemen aan alle relevante bijeenkomsten. Studenten lopen gedurende het hele tweede jaar met “hun” onderzoeker mee en krijgen bovendien de gelegenheid een symposium of congres over een relevant thema bij te wonen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">deelname</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Excellentie traject Psychologie of verdiepende gedeelte Honours College</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">(niet toegankelijk voor externe studenten)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75120"><b>Honours Research Internship II</b></a></td><td align="right"><b>PSBE3-HO7</b></td></tr><tr><td align="justify" colspan="3">Dit practicum bestaat uit twee delen. Ten eerste ontwikkelen de studenten hun onderzoekvaardigheden verder in een gebied van de psychologie naar keuze. Zij zoeken daarvoor zelf een supervisor met wie zij 140 uur meelopen. Naast binnen de RUG mag de stageplaats ook bij een andere universiteit binnen of buiten Nederland worden gezocht, maar zij moet worden goedgekeurd door de coördinator van het Excellentie programma. <br/>Het tweede gedeelte van het practicum (56 uur, in periodes IIa en IIb) bestaat uit het begeleiden van een groep in het tweedejaars Psychologie onderzoekspracticum. De studenten worden intensief getraind in het geven van practicum onderwijs. Zij doen de begeleiding in tweetallen en geven elkaar regelmatig feedback.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1074">dr. A. Sarampalis</a><a href="/ocasys/rug/vak/viewtutor?tutor=798">  various instructors</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Excellentie traject Psychologie of verdiepende gedeelte Honours College</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het eerste deel (140 uur onder supervisie onderzoek doen) kan gedurende het hele jaar plaatsvinden. Het tweede deel (begeleiden onderzoekspracticum) vindt plaats in het tweede semester (periodes 2a en 2b) (niet toegankelijk voor externe studenten)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74975"><b>Honours Research practicum</b></a></td><td align="right"><b>PSBE2-HO9</b></td></tr><tr><td align="justify" colspan="3">Studenten participeren in de lopende onderzoekslijn van een staflid verbonden aan Heijmans instituut voor Psychologisch onderzoek. De volgende vaardigheden komen aan bod:<br/>- zoeken en kritisch lezen en evalueren van literatuur,<br/>- formuleren van relevante onderzoeksvragen en hypotheses,<br/>- ontwerpen van een onderzoeksproject,<br/>- data verzamelen,<br/>- data analyseren (beschrijvende statistiek, en selecteren en uitvoeren van analyses die passen bij het onderzoeksontwerp), en<br/>- individueel presenteren van de resultaten, zowel schriftelijk als mondeling.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Excellentie traject Psychologie of verdiepende gedeelte Honours College</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Door de combinatie met Research Internship I, moeten de studenten rekening houden met een tijdsinvestering van ongeveer 10 uur per week in hun onderzoeksproject.<br/>(Not accessible to external students).<br/><br/>This course replace PSBE2-09 for students in the excellence program.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75045"><b>Honours research seminar</b></a></td><td align="right"><b>PSBE2-HO1</b></td></tr><tr><td align="justify" colspan="3">In groepsbijeenkomsten en aan de hand van opdrachten komt het proces van het communiceren van empirische onderzoeksresultaten aan bod. Studenten maken kennis met verschillende manieren waarbij het aanschouwelijk maken een belangrijke rol speelt. Bovendien breiden studenten hun vaardigheden m.b.t. mondeling presenteren uit. Verder leren ze hoe ze zich op een carrière in het onderzoek kunnen voorbereiden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1073">dr. M. aan het Rot</a><a href="/ocasys/rug/vak/viewtutor?tutor=7055">dr. B.D. Ostafin</a><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Excellentie traject Psychologie of verdiepende gedeelte Honours College</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De eerste week van dit seminar vindt plaats in de herkansingsweek van blok 2a die in blok 2b gepland is. De tweede week is gepland in de vrije week tussen de tentamenperiode en hertentamenperiode van blok 2b (niet toegankelijk voor externe studenten)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75051"><b>Honours thematic meetings</b></a></td><td align="right"><b>PSBE2-HO3</b></td></tr><tr><td align="justify" colspan="3">Studenten in het honoursprogramma komen gedurende het jaar regelmatig bijeen. Rode draad is het kritisch reflecteren op verschillende thema’s in de Psychologie. Dat neemt uiteenlopende vormen aan waarbij controverses niet worden geschuwd. Voorbeelden zijn deelname aan discussiebijeenkomsten, presenteren over een deelonderwerp en gezamenlijk kijken naar een film die relevant is voor het vakgebied.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=911">prof. dr. D. Draaisma</a><a href="/ocasys/rug/vak/viewtutor?tutor=7055">dr. B.D. Ostafin</a><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">werkstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Excellentie traject Psychologie of verdiepende gedeelte Honours College</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">(niet toegankelijk voor externe studenten)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75046"><b>Honours theoretical seminar</b></a></td><td align="right"><b>PSBE3-HO2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11447"> J.T. Burman, PhD.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9067">  Guest Lecturer(s)</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">computeropdrachten, presentatie, verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5294&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5294"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5294">Informatie over Ma Midden-Oostenstudies</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Midden-Oostenstudies</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LXX028M10</td><td><a href="/ocasys/rechten/vak/show?module=74642">Ozc: Midden-Oosten Regiostudies</a></td><td>Engels</td><td>10</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LXX029M10</td><td><a href="/ocasys/rechten/vak/show?module=74645">Conflicten in het Midden-Oosten</a></td><td>Nederlands</td><td>10</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LXX030M10</td><td><a href="/ocasys/rechten/vak/show?module=74000">Internat. organisaties Midden-Oosten</a></td><td>Nederlands</td><td>10</td><td>4</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LXX998M20</td><td><a href="/ocasys/rechten/vak/show?module=74279">Masterscriptie Midden-Oostenstudies</a></td><td>Nederlands</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LXX024M10</td><td><a href="/ocasys/rechten/vak/show?module=74734">Tutorial Master Midden-Oostenstudies</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>LXX111M10</td><td><a href="/ocasys/rechten/vak/show?module=74072">Masterstage Midden-Oostenstudies</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Stage / Tutorial na overleg met de opleiding.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74645"><b>Conflicten in het Midden-Oosten</b></a></td><td align="right"><b>LXX029M10</b></td></tr><tr><td align="justify" colspan="3">In deze module staan conflicten in het hedendaagse Midden-Oosten centraal. Na een algemene, theoretische inleiding worden verschillende actuele casussen bestudeerd, zoals het conflict in Syrië en Irak en de rol van jihadisme (al-Qaeda, de Islamitische Staat) in het Midden-Oosten. Door deze casestudies te koppelen aan bredere thema’s en theorieën, bijvoorbeeld m.b.t. identiteitsvorming, autoriteit, religie, etniciteit en geweld, wordt een algemeen kader gecreëerd voor de bestudering van conflicten in het Midden-Oosten. De verkregen inzichten worden door de studenten toegepast op een casus naar keuze bij het schrijven van een paper.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5528">dr. P.G.T. Nanninga</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5528">dr. P.G.T. Nanninga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie, schriftelijk tentamen, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80 % Aanwezigheidsplicht bij werkcolleges.<br/>Studenten worden geacht actief te participeren in alle werkcolleges en alle opdrachten buiten de colleges tijdig en correct uit te voeren.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74000"><b>Internat. organisaties Midden-Oosten</b></a></td><td align="right"><b>LXX030M10</b></td></tr><tr><td align="justify" colspan="3">Deze module is bedoeld informatie te bieden over de rol van wereldspelers zoals politieke organisaties (de Verenigde Naties, de Arabische Liga) en grote mogendheden (Verenigde Staten, Rusland, China) in de moderne conflicten van het Midden-Oosten <br/><br/>a. Wat de V.N. betreft ligt de nadruk op de geschiedenis van de besluitvorming en –bekrachtiging binnen deze organisatie als Volkenbond vanaf de Mandaatperiode tot heden met aandacht voor veiligheidspolitiek, diversiteit van regeringsvormen en aard van burgerlijke samenlevingen in het Midden-Oosten;<br/>b. Wat de grote mogendheden betreft ligt de nadruk op de regeringspolitiek van landen zoals de Verenigde Staten, Rusland en China ten aanzien van het Midden-Oosten in recent verleden en moderne actualiteiten.   <br/>c. De periode na de Tweede Wereldoorlog is vooral interessant vanwege de voorstellen voor een nieuwe koers in conflictbemiddeling met nadruk op ‘de handhaving van vrede en internationale veiligheid’. Daartoe werden er meer dan 600 resoluties aangenomen die op de een of andere manier het Arabisch-Israëlisch conflict tot hoofdthema hadden. Een aantal resoluties zullen in het kader van deze module worden onderworpen aan een historische en politieke analyse;<br/>d. Aan de hand van casusstelling zoals vredesoperaties en –missies in het Midden-Oosten wordt de betrokkenheid van wereldspelers geadstrueerd;<br/>e. Een bezoek aan het Internationale Strafhof in Den Haag dan wel aan het Vredespaleis zal in deze module worden opgenomen; <br/>f. De Arabische Liga in haar ontwikkeling en functionering sinds het Alexandrië protocol van 1944 speelt een opmerkelijke rol in de conflicten van het Midden-Oosten – aan de hand van opeenvolgende versies van het Charter en interne besluitvorming wordt onderzocht op welke wijze de Arabische Liga vrede en conflict beoordeelt. Tevens wordt aandacht besteed aan de handelwijze en opstelling van de opeenvolgende secretarissen-generaal van de Liga zoals de zittende secr.-gen. ‘Amr Moussa.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijk tentamen, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80 % Aanwezigheidsplicht bij werkcolleges.<br/>Studenten worden geacht actief te participeren in alle werkcolleges en alle opdrachten buiten de colleges tijdig en correct uit te voeren. Van studenten wordt verwacht dat zij aan de geplande excursie(s) deelnemen. Tevens wordt van studenten verwacht dat zij aan de binnen de module geplande organisatie en uitvoering van de studiedag deelnemen.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74279"><b>Masterscriptie Midden-Oostenstudies</b></a></td><td align="right"><b>LXX998M20</b></td></tr><tr><td align="justify" colspan="3">Zie bovenstaande</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74072"><b>Masterstage Midden-Oostenstudies</b></a></td><td align="right"><b>LXX111M10</b></td></tr><tr><td align="justify" colspan="3">Zie bovenstaande</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5528">dr. P.G.T. Nanninga</a><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, referaat/spreekbeurt, stageverslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Docent(en):stagebegeleider i.s.m. Stagebureau<br/><br/>Uitvoerige algemene informatie over de masterstage is te vinden via:<br/>•	de Student Portal - Career(nuttige links, stagevacatures, evenementen) - Master's Placement met vermelding van procedures, stagecoördinator(en) en formulieren voor inschrijving, stageplan, evaluatie, beurzen.<br/>•	www.rug.nl/let/mobilityoffice<br/>•	www.rug.nl/let/careerstrategy<br/>De balie van het Mobility Office is dagelijks geopend tussen 13.00-16.00 uur en bevindt zich op dezelfde plek als de balie van BSZ. <br/>Informatie over spreekuren is beschikbaar via de Student Portal-Career-Master's Placement.<br/><br/>Nuttige literatuur: Esther Haag: Stagelopen in stappen, Handboek voor stages in het hoger onderwijs. 2010. Den Haag: Boom/Lemma. ISBN 978-90-5931-616-4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74642"><b>Ozc: Midden-Oosten Regiostudies</b></a></td><td align="right"><b>LXX028M10</b></td></tr><tr><td align="justify" colspan="3">Blok 1<br/>Beoefening van tekstanalyse voor diverse inzichten in onderzoeksaanpak en -methode op grond van primaire bronteksten en wetenschappelijke verhandelingen. Mondelinge presentatie en schriftelijke weergave over benadering en inhoud van de behandelde teksten.<br/><br/>Blok 2<br/>In het tweede blok zullen we werken aan een aantal case studies en theorieen om te oefenen van het werken met ‘ground-level’ gebeurtenissen in het Midden-Oosten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=485">dr. R. Nikolsky</a><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, wekelijkse opdrachten, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80 % Aanwezigheidsplicht bij werkcolleges.<br/>Studenten worden geacht actief te participeren in alle werkcolleges en alle opdrachten buiten de colleges tijdig en correct uit te voeren.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74734"><b>Tutorial Master Midden-Oostenstudies</b></a></td><td align="right"><b>LXX024M10</b></td></tr><tr><td align="justify" colspan="3">De tutorial is er op gericht ervaring op te doen in het uitvoeren van onderzoekstaken. De werkzaamheden kunnen bestaan uit het verrichten van literatuuronderzoek en/of het verzamelen en interpreteren van data. Het gekozen thema kan aansluiten bij het onderzoek van de wetenschappelijke staf, maar mag ook aansluiten bij het onderwerp van de Masterscriptie (maar: overlap is niet toegestaan). Ter afsluiting van de tutorial schrijft de student een onderzoekspaper.<br/>Een tutorial is verplicht wanneer de student geen stage uitvoert.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5528">dr. P.G.T. Nanninga</a><a href="/ocasys/rug/vak/viewtutor?tutor=485">dr. R. Nikolsky</a><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum, veldwerk, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">portfolio, presentatie, verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

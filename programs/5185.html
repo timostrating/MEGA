@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5185&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5185"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5185">Informatie over Ba TH-vlt (incl. Grieks, met PTHU-traject) Oude Stijl</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba TH-vlt (incl. Grieks, met PTHU-traject) Oude Stijl</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>THB2NT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75601">Nieuwe Testament en vroeg christendom 2</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THQTEE5</td><td><a href="/ocasys/rechten/vak/show?module=75613">Theologie als Existentie</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>THQTETE5</td><td><a href="/ocasys/rechten/vak/show?module=75616">Theologische Ethiek</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>THB2JODE5</td><td><a href="/ocasys/rechten/vak/show?module=75571">Jodendom</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>THQD2E5</td><td><a href="/ocasys/rechten/vak/show?module=75612">Dogmatiek 2</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>THB2IOESE5</td><td><a href="/ocasys/rechten/vak/show?module=75513">Islamic Origins</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>THB3TABF10</td><td><a href="/ocasys/rechten/vak/show?module=75526">Bijbelse figuren en thema's in het OT</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THQPT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75614">Praktische Theologie 2</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>THB3ENT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75622">Exegese NT 2</a></td><td>Engels en Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THB3EOT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75600">Exegese Oude Testament 2</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>THQBWE5</td><td><a href="/ocasys/rechten/vak/show?module=75586">Themamodule Bijbelwetenschap</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>THB123-CW</td><td><a href="/ocasys/rechten/vak/show?module=75518">Een christelijke wereldbeschouwing</a></td><td>Nederlands</td><td>2.5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75526"><b>Bijbelse figuren en thema's in het OT</b></a></td><td align="right"><b>THB3TABF10</b></td></tr><tr><td align="justify" colspan="3">In de module Bijbelse figuren concentreren we ons op de receptiegeschiedenis van de Bijbel in de oudheid, te weten in het vroege Jodendom, het vroege Christendom en de vroege Islam. De studie van de wijze waarop de Bijbelse verhalen en concepten in wisselende historische en sociaal-culturele omstandigheden in de oudheid gerecipieerd worden, en de reflectie daarop, spelen hierbij een grote rol. <br/>In de inleidende colleges zal worden stilgestaan bij een aantal fundamentele vragen met betrekking tot de receptiegeschiedenis. Wat is de Bijbel? Hoe heeft het canonisatieproces zich ontwikkeld? Waar ligt de overgang van het einde van het productieproces van Bijbelse teksten naar het begin van de receptie? Welke meerduidigheden zijn aanwezig in de tekstuele vorm van de Bijbel?<br/>Daarna zal worden ingegaan op het fenomeen van de receptie en interpretatie van teksten en tradities in de Bijbel zelf, in de vroeg Joodse literatuur van de Tweede Tempelperiode, in het Nieuwe Testament, de vroeg-christelijke literatuur, waaronder de gnostiek. Ook met betrekking tot de Islam zullen we bestuderen hoe gezaghebbende teksten worden gerecipieerd in de afzonderlijke tradities. De reeks colleges wordt afgesloten met een algemene hermeneutische reflectie op receptie van gezaghebbende teksten in de oudheid.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10573">prof. dr. S.N. Mason</a><a href="/ocasys/rug/vak/viewtutor?tutor=1294">dr. dr. F.L. Roig Lanzillotta</a><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=11787"> J.M. Zurawski, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">begeleid onderzoek, hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">referaat, verslag, werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Belasting student:<ul><li>Hoor- en werkcolleges: 26 uur (13 x 2 uur). </li><li>Voorbereiding hoor- en werkcolleges: 96 uur (12x8 uur voorbereiding in cs. 2-13).</li><li>Presentatie en bespreking 1e versie scriptie: 30 uur.</li><li>Schrijven van de bachelor scriptie: 128 uur.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75612"><b>Dogmatiek 2</b></a></td><td align="right"><b>THQD2E5</b></td></tr><tr><td align="justify" colspan="3">Als uitwerking van de stof van de cursus Dogmatiek 1 komt in deze cursus de vraag naar de ordening van de stof van de christelijke leer ter sprake. In de cursus staan om de verschillende ordeningsmodellen centraal: achtereenvolgens van theologen uit de kerk van oudheid (Origenes; Augustinus); middeleeuwen (Damascenus, Lombardus, Aquino) de reformatie (Melanchthon, Calvijn, de moderne tijd (Schleiermacher ) en de twintigste eeuw (Barth, Marquardt). Door middel van bestudering van hun teksten wordt inzicht verkregen in hun paradigmatische betekenis. <br/><br/>Van studenten wordt verwacht dat zij de voor de colleges opgegeven literatuur voorbereiden. Colleges zijn bestemd voor een toelichting en voor het gezamenlijke lezen van grondteksten.<br/><br/>De docent gaf in 2003 op grond van archiefonderzoek de nagelaten studie van F.H. Breukelman uit: De structuur van de Heilige Leer in de theologie van Calvijn, die in het kader stond van een breder onderzoek naar ‘de geschiedenis van de sacra doctrina in de geschiedenis van de kerk’. Het daarvoor aanwezige archiefmateriaal, aangevuld met resultaat van eigen onderzoek, verwerkte de docent in het leerboek Grondvormen van theologische systematiek uit 2009. Het tiende hoofdstuk vormde het uitgangspunt voor het zesde hoofdstuk van de studie Karl Barth and Post-Reformation Orthodoxy, Ashgate UK 2015.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10663">dr. R.H. Reeling Brouwer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">hoor/werkcollege: 4x8 = 32 uur college + (7 pagina's per uur =) 58 uur bestudering handboek bij eerste lezing + 12 uur opdrachten voor college voorbereiden + 36 uur tentamenvoorbereiding + 2 uur tentamen, samen 140 uur)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75518"><b>Een christelijke wereldbeschouwing</b></a></td><td align="right"><b>THB123-CW</b></td></tr><tr><td align="justify" colspan="3">Na een historische inleiding en kennismaking met het concept ‘worldview’ of ‘wereldbeschouwing’ aan de hand van teksten van de theologen James Orr (1844-1913) en Herman Bavinck (1854-1921) behandelt de cursus enkele thema’s uit de christelijke traditie en de verwerking daarvan in de gereformeerde theologie. De thema's worden geduid vanuit de historische context met het oog op de relevantie voor een christelijk perspectief op de natuur, de geschiedenis en de mens. De tekst van de geloofsbelijdenis van Nicea-Constantinopel fungeert als ‘aangever’ van de thema’s. De betreffende citaten staan hieronder achter de beoogde thema’s vermeld. <br/>1.	Godsbeeld – ‘Wij geloven in één God.’<br/>2.	De natuur als schepping – ‘De almachtige Vader, Maker van hemel en aarde, van alle zichtbare en onzichtbare dingen.’<br/>3.	De geschiedenis van schepping tot voleinding – ‘En in één Heer Jezus Christus <i>…</i> zijn rijk zal geen einde hebben.’<br/>4.	De noodzaak en realiteit van de verlossing – ‘Die om ons mensen en om ons behoud is neergedaald uit de hemelen.’5.	Het woord als openbaring – ‘En in de Heilige Geest <i>…</i> die gesproken heeft door de profeten.’<br/>6.	De kerk als geloofsgemeenschap – ‘in één, heilige, katholieke en apostolische kerk.’<br/>7.	De mens in eschatologisch perspectief – ‘Wij verwachten de opstanding der doden en het leven in de wereld die komt.’</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10665">prof. dr. H. van den Belt</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">eindtoets, paper, actieve deelname</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2.5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Geen, open college voor alle studenten en andere belangstellenden.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Deze extra-curriculaire cursus introduceert het concept van een christelijke wereldbeschouwing vanuit enkele vroeg twintigste-eeuwse modellen, reflecteert kritisch op dit concept vanuit de huidige (post)moderne context en reikt vanuit de algemeen christelijke en protestants-gereformeerde tradities bouwstenen aan om in de eenentwintigste eeuw de natuur, de geschiedenis en de mens te beschouwen vanuit een christelijk perspectief. Ter voorbereiding van de colleges lezen de deelnemers teksten die tijdens het college worden besproken. De cursus is open toegankelijk voor toehoorders, maar wordt  door degenen die een certificaat wensen afgerond met een schriftelijke toets en een paper. NB dit is een extra-curriculair, open college dat vanuit de leerstoel 'gereformeerde godgeleerdheid' wordt gepresenteerd.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75622"><b>Exegese NT 2</b></a></td><td align="right"><b>THB3ENT2E5</b></td></tr><tr><td align="justify" colspan="3">In dit onderdeel worden de verschillende antropologische<br/>patronen, die gangbaar waren in de eerste eeuwen na Christus, besproken en geanalyseerd. Een overzicht van de oorsprong, transformatie en toe-eigening van de verschillende mensvisies in verschillende culturele contexten uit de Oudheid biedt de nodige coördinaten achtergrond om vroegchristelijk antropologie beter te begrijpen.<br/>werkcolleges over vroegchristelijke mensvisies met bijzondere aandacht voor Paulus’ antropologie in Romeinen 6-8.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Grieks 1,2,3 + Exegese NT (vroeger Hellenistisch Grieks).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">5 EC (= 140 uur): 7 colleges van 2 uur x 2 quadrimesters (28 uur); voorbereiding colleges en presentaties (56 uur); werkstuk, incl. presentatie en literatuurstudie (56 uur).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75600"><b>Exegese Oude Testament 2</b></a></td><td align="right"><b>THB3EOT2E5</b></td></tr><tr><td align="justify" colspan="3">In de vorm van een gecombineerd hoor-/werkcollege oefenen we ons met behulp van exegetische opdrachten en secundaire literatuur in de primaire handgrepen van het exegetisch onderzoek van het Oude Testament, toegespitst op korte, voornamelijk poëtische en profetische teksten. In het werkstuk wordt geoefend om schriftelijk verslag te doen van de uitleg van één poëtische tekst. <br/>Door middel van zelfstudie (E. Zenger, <i>Einleitung in das Alte Testament</i>) wordt inzicht verworven op het gebied van de compositie en het ontstaan van de oudtestamentische geschriften.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, werkstuk, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Hebreeuws (propedeuse/B1),<br/>exegese OT 1 (basisdoctoraal/B2)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoor-en werkcolleges: 7 x 3 = 21 uur; opdrachten en zelfstudie: 59 uur; practica (werkstuk): 60 uur.</li><li>Deze module maakt deel uit van de verdiepende minor 'Tekst, traditie en interpretatie.'</li><li>Literatuur wordt nader bekend gemaakt.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75513"><b>Islamic Origins</b></a></td><td align="right"><b>THB2IOESE5</b></td></tr><tr><td align="justify" colspan="3">Drawing on a wide range of material (texts, art, archaeology), this course unit presents a variety of perspectives on the emergence of Islam and an Arabophone Islamic empire. Particular attention is devoted to Muslim and non-Muslim, classical and contemporary, approaches to the Qur'an (and to a lesser extent the canonized Hadith). Time is devoted to the study of the content of these texts, as well as classical tafsir (in translation). Consideration is also given to the analysis of emergent Islam as a break from, or continuation of, trends in Late Antiquity, including intertextuality between the Qur’an/Hadith and the biblical tradition.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper/presentation and/or written examination</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Students must have previously followed an introductory course to Islam (THMIN-A5 / THB1ISE5 Study of Islam or THB3GCIS10 History of Islam in the Middle East or LXA008P10 Introduction to Arab-Islamic Culture or any equivalent course elsewhere).</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Student workload: lectures 7x 3 hours = 21 hours; studying and reading literature in preparation for the lectures and assignments 84  hours, written assessment 10 hours,  bibliography, including preparation 25 hours</li><li>Compulsory attendance in accordance with the Teaching &amp; Examination Regulations applies to this module.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75571"><b>Jodendom</b></a></td><td align="right"><b>THB2JODE5</b></td></tr><tr><td align="justify" colspan="3">Met behulp van colleges, verplichte literatuur (zelfstudie)wordt een overzicht verkregen van de geschiedenis van het Jodendom, en een inleiding verkregen van de literatuur van de verschillende periodes (Vroeg Joodse literatuur in de Hellenistisch-Romeinse periode; rabbijnse literatuur; Joodse literatuur na de Talmud). Daarnaast wordt men ingeleid in enkele belangrijke theorieën van het Jodendom en krijgt men enig inzicht in het functioneren van het Jodendom in de praktijk.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">referaat, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoorcolleges: 21 uur; referaat: 7 uur; verwachte zelfstudie: 112 uur.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75601"><b>Nieuwe Testament en vroeg christendom 2</b></a></td><td align="right"><b>THB2NT2E5</b></td></tr><tr><td align="justify" colspan="3">Hoor- en werkcolleges. Centraal staan geschriften van Paulus, en de overige Nieuw Testamentische brieven. De colleges bieden a) meest recente vragen en ontwikkelingen in het onderzoek naar Paulus b) de overgangen naar de deutero-Paulijnen en andere interpretaties van Paulus c) de latere boeken van het Nieuwe Testament (met uitzondering van de Evangeliën) in hun historische context.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">deeltoets(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>5 EC = 5 x 28 uur = 140 uur</li></ul>Belasting student: colleges: 7 weken x 2 uur x 2 quadrimesters = 28 uur; voorbereiding: 28 uur; overige zelfstudie, incl. tentamenvoorbereiding: 84 uur.<br/>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs- en Examenregeling.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75614"><b>Praktische Theologie 2</b></a></td><td align="right"><b>THQPT2E5</b></td></tr><tr><td align="justify" colspan="3">Deze cursus biedt een verdieping van de eerstejaarsinleiding in de praktische theologie (praktische theologie 1). De praktische theologie onderzoekt geloofspraktijken. Het gaat om individuele, devotionele praktijken, maar ook om kerkelijke praktijken en om christelijke praktijken in het publieke domein. Het gaat in de cursus om de <i>interpretatie</i> van geloofspraktijken vanuit een expliciet praktisch-theologisch hermeneutisch perspectief. Voor het hermeneutisch perspectief van de praktische theologie zijn op empirische methoden gefundeerde observaties van belang. Om ‘data’ te kunnen duiden en begrijpen en eventueel te kunnen verklaren zijn inzichten, theorieën uit andere disciplines (bijvoorbeeld sociale wetenschappen) van belang, maar er is ook aandacht voor specifiek theologische interpretaties. <br/>OPBOUW CURSUS:<br/>1. De cursus begint met de praktische theologische cirkel (of cyclus) van beschrijving – interpretatie – evaluatie – strategie centraal. Hoewel de nadruk in de cursus op het aspect van interpretatie valt zal, de hele cirkel behandeld worden. <br/>2. Vervolgens wordt gekeken naar actuele praktisch theologische verkenningen in het publieke domein van de provincie Groningen rondom kerk &amp; aardbeving. Wat vinden wij terug van de praktisch theologische cirkel in deze activiteiten? Hoe verhouden deze activiteiten tot wat kerk is? Welke relatie tussen kerk en de publieke domein wordt daarin waargenomen? Welke (praktisch-theologische) interpretaties worden aangedragen?<br/>3. In de derde fase van de cursus voeren studenten zelf een onderzoeksopdracht uit waarin zij mensen die betrokken zijn bij de aardbevingsproblematiek (met name maar niet exclusief vanuit de kerken) interviewen. De interviews worden in de colleges voorbereid, inclusief een kleine instructie voor het interviewen. De gehouden interviews worden vervolgens met behulp van de praktisch theologische cirkel geanalyseerd. Van de studenten wordt een eigen evaluatie van de interviews verwacht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7676">dr. M.N. Walton</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12633"> P.E.M. Meijers</a><a href="/ocasys/rug/vak/viewtutor?tutor=7676">dr. M.N. Walton</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Praktische Theologie 1</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Uren per week: 2x2-3 uur per week (gedurende 12 weken</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75586"><b>Themamodule Bijbelwetenschap</b></a></td><td align="right"><b>THQBWE5</b></td></tr><tr><td align="justify" colspan="3">Offers behoren tot het hedendaagse leven - ook in de westerse samenleving. We “offeren” mensen op het altaar van bijvoorbeeld de economie of  het verkeer. Het begrip offer is ambigu: aan de ene kant kan het een leven-schenkende gave betekenen en aan de andere kant kan het tot een sacralisering van geweld leiden. <br/>Dit interdisciplinaire college is opgezet als een debat waarin verschillende  interpretaties van offer aan de orde komen: in de religiegeschiedenis, de filosofie, en vooral in de joods-christelijke traditie. Allereerst onderzoeken we de bijbels-theologische verbanden. Wat wil het zeggen dat het begrip van offer in de Hebreeuwse Bijbel zo sterk verschilt van ons begrip van offer dat in de buurt van opoffering komt? Waarom wordt het lijden en sterven van Jezus als een offer beschouwd, en hoe staat dat in verband met het offer-begrip uit het Oude Testament? Welke gedachte zit er achter? Was het een voorbestemd offer? Of was het toch eerder opoffering?<br/>Daarnaast verkennen we het hedendaagse denken over offer, verzoening en opoffering, aan de hand van de christelijke cultuurfilosofie van René Girard en het joodse denken van Emmanuel Levinas. Hoe zetten deze denkers het bijbels-theologische perspectief op offer en verzoening onder spanning? We beginnen dit interdisciplinaire college met de discussie over Kierkegaards "Vrees en beven". In de loop van deze module zoeken we vanuit de wisselwerking van systematische theologie en de Bijbelwetenschap naar criteria voor een bijbels-theologisch verantwoord spreken over offer en verzoening.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12138">dr. R.D.N. van Riessen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9567"> M. Heemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=12138">dr. R.D.N. van Riessen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Welke gedeelten van de genoemde literatuur verplicht zijn en welke aanvullende literatuur daar nog aan toegevoegd wordt, zal tijdens het eerste college bekend worden gemaakt.</li><li>Belasting student: colleges: 28 uur (4 uur per week en 56 voorbereiding (lezen stof enuitvoeren opdrachten). De overige 56 uur is voor het voorbereiden van de presentatie (12) en het maken van het werkstuk (44)</li><li>Aanwezigheid en een goede voorbereiding zijn essentieel voor het welslagen van het college. Ook formeel geldt een aaanwezigheidsplicht (80%). Voor de meeste colleges wordt voorbereiding verwacht. Insturen van 80% van de college-opdrachten per onderdeel gedurende de module-weken is vereist om aan de toetsing te kunnen meedoen.Goede kwaliteit van de antwoorden levert een bonuspunt op voor het tentamen. Toetsing:Tentamen 50% en korte paper (50%)</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75613"><b>Theologie als Existentie</b></a></td><td align="right"><b>THQTEE5</b></td></tr><tr><td align="justify" colspan="3">Na een overzichtscollege over protestantse theologie in de twintigste eeuw is  in de volgende bijeenkomsten steeds de verhouding van theologie en levensloop aan de orde bij één theoloog. We zullen zien dat het gesprek met tijdgenoten telkens ingekleurd wordt door nieuwe accenten: in de jaren dertig de economische crisis en de dreiging van het nationaal-socialisme, in de oorlog de demonie van het nazi-geweld, vanaf de jaren zestig de dreiging van de atoomoorlog, de uitdaging van de God-is-dood-theologie, de nieuwe opleving van religie en de ecologische crisis en aan het eind van de 20e eeuw de politieke strijd tegen apartheid en de ervaringen van migratie en onderdrukking van vrouwen. Er wordt (vanaf de tweede bijeenkomst) gewerkt met een reader met kernteksten die op college met behulp van standaardvragen worden geanalyseerd. Onderweg worden de voornaamste inzichten mbt de verbinding theologie-biografie geïnventariseerd om als uitgangspunt te dienen voor te houden interviews met een aantal theologen/predikanten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10662">dr. L.A. Werkman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">opdracht(en), werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, opdracht(en), participatie, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Dogmatiek 1</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">college: 4 uur per week (gedurende 12 weken)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=75616"><b>Theologische Ethiek</b></a></td><td align="right"><b>THQTETE5</b></td></tr><tr><td align="justify" colspan="3">In de geschiedenis van de ethiek – het systematisch reflecteren op de moraal met het oog op ‘het goede leven’ – is veelal sprake van een synthese tussen posities uit de antieke tijd (Plato, Aristoteles) met die uit het Oude en Nieuwe Testament en het vroege Christendom. Ook de moderne ethiek kan niet worden begrepen wanneer daarbij niet ook de bijdrage van de theologie wordt bekeken. Interessant bij een historische rondgang door de ethiek is het inzicht dat de problemen waar mensen mee te maken hadden, door de tijden heen naast verschillen wel degelijk grote overeenkomsten vertonen. De voornaamste vraag die zich door alle tijden voordoet is hoe het streven naar een betere wereld zich verhoudt tot het inzicht dat de realiteit er één is van ‘dweilen met de kraan open’. Deze cursus bevat drie onderdelen: (1) Een korte algemene inleiding in de ethiek, met daarbij zowel aandacht voor formele kenmerken van ethische uitspraken, de noodzaak van ethische reflectie ook in de kerk, en de mogelijkheden die een theologische invalshoek aan de ethiek geeft; (2) Een historische rondgang door de ethiek van Nieuwe Testament tot aan heden. Daarbij zullen we vooral kijken naar Augustinus, Thomas, Luther, Calvijn, Barth en O’Donovan; (3) Een systematische inleiding over verschillende modellen om de relatie tussen theologie en ethiek vorm te geven: is theologie slechts ‘ballast’ en is ethiek vooral of uitsluitend een praktisch-wijsgerige discipline, voegt de theologie wezenlijke elementen aan de ethiek toe of is theologie zelfs de enige bron voor de ethiek? In dit alles is er steeds door het gebruik van voorbeelden aandacht voor de manier waarop ideeën uit de ethiekgeschiedenis ook nu nog een belangrijke rol spelen in ons denken over goed en kwaad.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12457">dr. R. Compaijen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

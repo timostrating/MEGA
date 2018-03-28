@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=21&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D21"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=21">Informatie over Ba Dutch Studies</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba Dutch Studies</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>LBU038B10</td><td><a href="/ocasys/rechten/vak/show?module=78422">Academic English for Int. Students</a></td><td>Engels</td><td>10</td><td>4</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>keuze</td><td>LBU018B05</td><td><a href="/ocasys/rechten/vak/show?module=74838">Dutch Studies Lecture Series, semester I</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LBU031B05</td><td><a href="/ocasys/rechten/vak/show?module=78376">Making Modern Science in Netherlands</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LBU032B05</td><td><a href="/ocasys/rechten/vak/show?module=74509">Nederlandse Cultuur en Maatschappij</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LBU039B05</td><td><a href="/ocasys/rechten/vak/show?module=74532">Dutch Society 1000-2016</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LBU041B05</td><td><a href="/ocasys/rechten/vak/show?module=74534">International Humanitarian Action</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LBU042B05</td><td><a href="/ocasys/rechten/vak/show?module=74794">Health Communication</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LBU044B05</td><td><a href="/ocasys/rechten/vak/show?module=78333">Literature and Culture 1800-2000</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>keuze</td><td>LBU022B05</td><td><a href="/ocasys/rechten/vak/show?module=74803">Dutch Studies Lecture Series, sem II</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LBU023B05</td><td><a href="/ocasys/rechten/vak/show?module=74804">Dutch Contemp.Hist.:Internat Perspective</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LBU035B05</td><td><a href="/ocasys/rechten/vak/show?module=74372">Dutch Identity in Historical Perspective</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LBU037B05</td><td><a href="/ocasys/rechten/vak/show?module=74529">Dutch Folktales</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuze</td><td>LBU045B05</td><td><a href="/ocasys/rechten/vak/show?module=78346">Global Dutch Art</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II b</td><td>keuze</td><td>LBU001B05</td><td><a href="/ocasys/rechten/vak/show?module=74154">The Lang. Situation in the Low Countries</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LBU046B05</td><td><a href="/ocasys/rechten/vak/show?module=78423">Understanding the Dutch</a></td><td>Engels</td><td>5</td><td>2</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78422"><b>Academic English for Int. Students</b></a></td><td align="right"><b>LBU038B10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9647"> A.C. Vaatstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12069"> D.A. Harms</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijk tentamen, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74804"><b>Dutch Contemp.Hist.:Internat Perspective</b></a></td><td align="right"><b>LBU023B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=469">dr. S. van der Poel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=469">dr. S. van der Poel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Als er voldoende plaats is staat het vak open als bijvak voor Nederlandse studenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74529"><b>Dutch Folktales</b></a></td><td align="right"><b>LBU037B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11290">prof. dr. T. Meder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11290">prof. dr. T. Meder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, excursie, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, multiple choice</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74372"><b>Dutch Identity in Historical Perspective</b></a></td><td align="right"><b>LBU035B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=449">dr. E.H. Runia</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=449">dr. E.H. Runia</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74532"><b>Dutch Society 1000-2016</b></a></td><td align="right"><b>LBU039B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=132">dr. W.M. Jongman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=132">dr. W.M. Jongman</a><a href="/ocasys/rug/vak/viewtutor?tutor=204">dr. R.F.J. Paping</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74803"><b>Dutch Studies Lecture Series, sem II</b></a></td><td align="right"><b>LBU022B05</b></td></tr><tr><td align="justify" colspan="3">The lecture series on Dutch Culture and Society is a course aiming not only at foreign students, but also at visiting faculty members or employees of international business companies. In fact, every non-Dutch visitor to Groningen interested in any aspect of Dutch society will find something of his or her interest in this series. It is possible to extend the course by taking a written exam to the value of 5 ECTS credits.<br/>Every Wednesday evening, a lecture will be given on a broad range of topics: for instance Dutch film, painting, politics, law, art, archaeology with a focus on the regional past, music, mass media, photography. It is possible to attend both the series in the 1st and 2nd semester independently, because the contents of the lectures will be different.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11455">drs. I.D. Sennema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor internationale studenten</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Start in week 2 (14 February)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=74838"><b>Dutch Studies Lecture Series, semester I</b></a></td><td align="right"><b>LBU018B05</b></td></tr><tr><td align="justify" colspan="3">The lecture series on Dutch Culture and Society is primarily meant for international and exchange students of the University of Groningen, but others are also welcome. <br/><br/>Each lecture focuses on a particular aspect of Dutch history, politics, culture and arts.  <br/>Topics include The Netherlands in World War II; Performing Arts in the Netherlands; Dutch Gender and Media; the Dutch and humanitarianism; the Dutch church landscape; Dutch political culture; 16th and 17th-century paintings; the Dutch language; the archaeology of the Dutch prehistory. <br/>An excursion to a nearby museum will take place around mid November.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11455">drs. I.D. Sennema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, hoorcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing, essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available to international students. For enrollment, contact dutch.studies@rug.nl, or go to www.rug.nl/let/dutchstudies</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">It is possible to attend the lecture series in both thefirst and second semester independently, because the contents of the lectures will be different.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78346"><b>Global Dutch Art</b></a></td><td align="right"><b>LBU045B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10987">dr. N.S. Baadj</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10987">dr. N.S. Baadj</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">werkstuk(ken), presentatie, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=74794"><b>Health Communication</b></a></td><td align="right"><b>LBU042B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6572">prof. dr. C.J.M. Jansen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=995">dr. A.F. de Winter</a><a href="/ocasys/rug/vak/viewtutor?tutor=716"> M. Jager</a><a href="/ocasys/rug/vak/viewtutor?tutor=6572">prof. dr. C.J.M. Jansen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=74534"><b>International Humanitarian Action</b></a></td><td align="right"><b>LBU041B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=78333"><b>Literature and Culture 1800-2000</b></a></td><td align="right"><b>LBU044B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8597">dr. J.E. Weijermars</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8597">dr. J.E. Weijermars</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">onderzoekswerkstuk, presentatie, tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=78376"><b>Making Modern Science in Netherlands</b></a></td><td align="right"><b>LBU031B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7494">dr. H.G. Knoeff</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7494">dr. H.G. Knoeff</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=74509"><b>Nederlandse Cultuur en Maatschappij</b></a></td><td align="right"><b>LBU032B05</b></td></tr><tr><td align="justify" colspan="3">Dit vak is specifiek gericht op studenten die in het buitenland Nederlands studeren (BA of MA) en een semester of een jaar in Groningen doorbrengen als uitwisselingsstudent. <br/>Het vak kan worden afgerond met een tentamen en levert dan 5 ECTS op. Het tentamen is niet verplicht. Het doel van het vak is het overbrengen van kennis over verschillende aspecten van de Nederlandse cultuur in brede zin. Hierbij wordt een verband gelegd tussen lokaal (de noordelijke regio), nationaal (Nederland) en internationaal (Europa, de wereld). Onderwerpen die behandeld worden zijn de Nederlandse Gouden Eeuw; Nederlandse archeologie; gezondheidscommunicatie in Nederland; sociaal-economische geschiedenis; poëzie; de positie van de Nederlandse vrouw; Nederlandse popmuziek; het Nederlandse landschap;laaggeletterdheid.<br/><br/>Rond half november wordt er een excursie georganiseerd naar een museum in of dichtbij Groningen</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11455">drs. I.D. Sennema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, hoorcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">multiple choice, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen voor uitwisselingsstudenten die het Nederlands voldoende beheersen.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=74154"><b>The Lang. Situation in the Low Countries</b></a></td><td align="right"><b>LBU001B05</b></td></tr><tr><td align="justify" colspan="3">Het college geeft in hoofdlijnen de ontwikkelingsgang van het Nederlands en de huidige positie ervan en gaat nader in op de verschillen en overeenkomsten tussen het Engels, Duits, Fries en Nederlands, waarbij de fonetiek, de morfologie en de syntaxis aan bod komen.  Daarnaast is er aandacht voor de verhouding tussen het Nederlands in Nederland en in Vlaanderen, de positie van het Fries, en de relatie van het Nederlands met het Afrikaans. Het college wordt verder verdiept met enkele bijzondere onderwerpen (zoals verkleinwoordsvorming en aanspreekvormen).<br/><br/>Excursie naar de Fryske Akademie in Leeuwarden. <br/>Kosten: treinkaartje.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6353">dr. M.E. Kluck</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6353">dr. M.E. Kluck</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Internationale studenten die door de thuisuniversiteit en de Rijksuniversiteit Groningen zijn toegelaten tot een uitwisselingsprogramma. <br/>- Het vak staat open als bijvak voor Nederlandse studenten.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% verplichte aanwezigheid</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="15"></a>15</b></td><td><a href="/ocasys/rechten/vak/show?module=78423"><b>Understanding the Dutch</b></a></td><td align="right"><b>LBU046B05</b></td></tr><tr><td align="justify" colspan="3">This course is concerned with various interrelated aspects of Dutch history, culture, and communication. For ages on end, the Netherlands have been a multiform society, with different cultural, ethnic, and religious groups. Moreover, as a sea-faring trading nation, the Netherlands have of old been in contact with other nations and peoples, hence strongly internationally-oriented. These factors, among other things, are behind what can be construed as "typically Dutch."<br/><br/>The text book to be used in the course makes an attempt at characterizing and explaining Dutch culture, both "high" and " low", (the historical background of) the country's presently prevailing "climate of opinion," as well as "the making of" the Netherlands in general.<br/><br/>The seminars, along with the additional papers that will be studied, deal with topics like the origin and perpetuation of stereotypes in and about the Netherlands; its political system and current societal dilemmas; its styles of social interaction; its cultural heritage and art history.<br/><br/>Part of this course is an excursion to Fortress Bourtange and/or Museum 'Battle of / Slag bij Heiligerlee'. Costs for participating students: train and bus tickets; entry tickets.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=268">dr. W. Vuijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=268">dr. W. Vuijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Internationale studenten die door de thuisuniversiteit en de Rijksuniversiteit Groningen zijn toegelaten tot een uitwisselingsprogramma. <br/>- Het vak staat open als bijvak voor Nederlandse studenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

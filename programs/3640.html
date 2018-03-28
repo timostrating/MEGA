@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3640&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3640"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3640">Informatie over Minor Maatschappelijke orde en sociaal welzijn</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Maatschappelijke orde en sociaal welzijn</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>SOBA101A</td><td><a href="/ocasys/rechten/vak/show?module=75150">inleiding in de sociologie</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>SOBA107A</td><td><a href="/ocasys/rechten/vak/show?module=75170">primaire orde</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>SOBA904</td><td><a href="/ocasys/rechten/vak/show?module=75017">Social and institutional change</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>SOBA104B</td><td><a href="/ocasys/rechten/vak/show?module=75166">Klassieke Sociologische Teksten</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>SOBA201</td><td><a href="/ocasys/rechten/vak/show?module=75176">Sociale welvaart</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>SOBA204A</td><td><a href="/ocasys/rechten/vak/show?module=75177">Organisation and Society</a></td><td>Engels</td><td>5</td><td>4</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75150"><b>inleiding in de sociologie</b></a></td><td align="right"><b>SOBA101A</b></td></tr><tr><td align="justify" colspan="3">De cursus is een introductie in het vakgebied van de sociologie en tot de studierichting Sociologie van de RUG in het bijzonder. Aan de hand van maatschappelijke problemen krijgen studenten inzicht in de werkwijze van sociologen. Daarbij staat een “macro-micro-macro” benadering centraal, waarin het onderzoeken van vraagstukken op maatschappelijk niveau wordt gerelateerd aan theorieën over individueel gedrag. Hierin wordt aandacht besteed aan de rol van verschillende  sociale ordes (markt, overheid, primaire relaties en organisaties) en de relatie met onderzoeksprogramma’s behorende bij de opleiding. De stof wordt gepresenteerd in hoorcolleges, in combinatie met bewerking van opdrachten ter plekke.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=845">prof. dr. A. Flache</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=845">prof. dr. A. Flache</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay) DIGITAL, schriftelijk tentamen (meerkeuze) DIGITAAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75166"><b>Klassieke Sociologische Teksten</b></a></td><td align="right"><b>SOBA104B</b></td></tr><tr><td align="justify" colspan="3">In de cursus worden klassieke teksten uit de sociologie gelezen. Deze teksten worden gelezen aan de hand van opdrachten, die vervolgens in een werkcollege worden besproken. In de cursus worden teksten besproken van de grondleggers (Marx, Weber, Durkheim) en uit een aantal belangrijke stromingen uit de sociologie (functionalisme, symbolisch interactionisme, historische sociologie). Voor de opdrachten leest de student behalve de klassieke tekst ook teksten over de achtergrond van de auteur of stroming, en reflecteert hij over de waarde van deze teksten in de analyse van actuele maatschappelijke problemen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=979">dr. R.J.J. Wielers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=979">dr. R.J.J. Wielers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75177"><b>Organisation and Society</b></a></td><td align="right"><b>SOBA204A</b></td></tr><tr><td align="justify" colspan="3">Since the beginning of the 20th century, the number of organizations has grown exponentially. This holds for all types of organizations, ranging from for-profit enterprises, non-profit associations, public agencies, to non-governmental entities. These corporate actors meanwhile are key agents in any modern society. For example, the top 200 corporations control more than a quarter of the world´s economic activity. Of the 100 largest ´economies´ in the world, more than 50 are multinational firms. Wal-Mart´s corporate revenues exceed the GDP of Sweden or Austria, and those of General Motors equal the GDP of Turkey. Individuals continuously have to deal with organizations: citizens interact with state authorities, consumers with enterprises, employees with employers. Organizations not only affect all areas of social, political, and economic life, but also have a huge impact on the desires, beliefs, and opportunities of individuals, including their health and their social relations. Consequently, any analysis of modern societies – the origin and solution of its social problems ranging from the obesity epidemic to failed states, as well as its successes in creating welfare through innovation – will remain incomplete unless it considers the role that corporate actors play. The main objective of the course Organization and Society is to provide a more detailed insight into the role that corporate actors play in society. Theories of control will form the analytical tool to achieve this objective. The course is structured into five parts. <br/><br/>The first part introduces the major building blocks of different theories of control. What kind of individual and societal level assumptions do these theories make? What exactly do they mean by “control”, and why is control so important for the analysis of organization and society? What are the characteristics of different types of control, and what explains the large variety of forms of control? When and why can control attempts be effective, and how can control failures be explained? The conceptual framework developed in part one will guide analysis in the subsequent parts of the course.<br/><br/>The second part of the course turns to the question how organizations attempt to control their internal environment, its members and processes. What kind of organizational governance structures need to be distinguished, how and why did they change through time? Under which conditions and why do organizations change their control practices? How do these practices affect cooperation and labor relations inside the organization, as well as the personal lives of employees and their households? When will these practices lead to vicious circles of bureaucracy, and what does it take to transform them into virtuous cycles of sustainable cooperation?<br/><br/>Part three of the course shifts the attention to how organizations attempt to control their external societal environment, and the effects these attempts have on society. Corporate actors are resourceful players who actively influence their environment in order to secure benefits or plain survival. These attempts extend far into all societal and policy domains, including politics in order to control legislation or the media in order to control information flows, beliefs and reputations. How do these attempts look like, what explains their success or failure, and what are its (unintended) consequences for organizations and society?<br/><br/>In part four of the course, the focus shifts to the question how societies attempt to control organizations. With corporate actors being legal entities, they can be held accountable for their actions. Many CEO’s of for-profit firms are subject to monitoring and control by a board and the company’s shareholders and eventually other stakeholder associations, like unions, consumer, human rights, or environmental organizations. What makes these attempts successful, and when are they likely to fail? How do corporate actors adapt to them?<br/><br/>The final part of the course is devoted to the Futures of Organization and Society. Many observers claim that the technological (e.g. robotization), economic (e.g. glocalization), and social (e.g. aging) developments of the past decades will have major repercussions on the viability of organizations as we know them, resulting in a fundamental transformation of organizational forms and their relation to society. How do these “new” organizational forms look like? What are the implications for how the organization of the future controls its members, and its environment? How will these innovations impact on society? And conversely, will current arrangements to control organizations become less effective? The course concludes with a reflection on whether current theories of control are able to capture these recent developments.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=980">prof. dr. R.P.M. Wittek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=980">prof. dr. R.P.M. Wittek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze) DIGITAAL, werkstuk (individueel), werkstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75170"><b>primaire orde</b></a></td><td align="right"><b>SOBA107A</b></td></tr><tr><td align="justify" colspan="3">De Primaire Sociale Orde is, naast de markt, de andere vorm van ‘spontane sociale orde’. Tot de PSO worden informele sociale interacties gerekend. De vanzelfsprekendheid van deze activiteiten maakt dat de Primaire Sociale Orde een bijna vergeten vanzelfsprekendheid vormt. Nadere analyse leert echter dat schijn bedriegt, en de PSO meer problematisch is dan doet vermoeden. In het vak Primaire Sociale Orde, wordt deze sociale orde nader beschreven, afgebakend en uitgediept. Vanuit verschillende perspectieven wordt de Primaire Sociale Orde belicht.<br/>-vanuit andere sociale ordes: relaties, sturingsmechanisme en wisselwerking <br/>-vanuit historisch perspectief: ontwikkeling van PSO<br/>-vanuit opbrengsten: betekenis van PSO<br/>-vanuit falen: maatschappelijke problemen en de keerzijde van PSO<br/>-vanuit toekomst perspectief: ontwikkelingen en nieuwe arrangementen</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=870">dr. J.K. Dijkstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=870">dr. J.K. Dijkstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75017"><b>Social and institutional change</b></a></td><td align="right"><b>SOBA904</b></td></tr><tr><td align="justify" colspan="3">As a result of globalization and the success of the Internet; companies, organizations, and societies face new challenges of coordination, and cooperation. The complexity of these challenges is illustrated by the difficult negotiations for an international treaty to limit climate change. On the other hand, the success of Internet services such as wikipedia, and couchsurving proofs that coordination, and cooperation can be established even between strangers and on a global scale.<br/>This course focuses on the effects of social institutions, i.e. norms (e.g. cultural conventions) and formal rules (e.g. law), on problems of coordination and cooperation in social groups, organizations, and societies. We will pay attention to how social institutions emerge, how they change, and how they affect the behavior of individuals and collectives. We will explore the conditions under which institutions have desired or undesired effects. Special attention will be paid to the role of the state in a market economy, and the effect of cultural norms on economic development. <br/>To this end, we will discuss classical (Weber, Durkheim, Smith) and contemporary theories (e.g. political economy, game theory, and complexity science) that have been used to explain social institutions. Students will be introduced to methods of analyzing social institutions and will be introduced to alternative approaches to changing the behavior of individuals. In particular, we will debate the design of incentive programs, institutional design (reputation systems, peer-punishment systems, signaling institutions, meritocracy), and nudging.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay) DIGITAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75176"><b>Sociale welvaart</b></a></td><td align="right"><b>SOBA201</b></td></tr><tr><td align="justify" colspan="3">In dit vak wordt het welvaartsbegrip vanuit twee perspectieven belicht: het economische en het sociologische. De vragen die hierbij centraal staan zijn wat volgens beide perspectieven de randvoorwaarden zijn die de welvaartsproductie bepalen en via welke sociale mechanismen deze randvoorwaarden invloed hebben op de sociale welvaart. Bij het economische perspectief komt de traditionele welvaartseconomische benadering aan bod, alsmede door economen geformuleerde kritiek op de gevolgen van economische ontwikkeling voor de sociale en natuurlijke omgeving. Bij het sociologische perspectief gaat het om het ontwikkelen van een zelfstandig sociologisch welvaartsbegrip aan de hand van onderzoek naar individueel geluk, sociaal kapitaal en sociale netwerken en interpersoonlijk vertrouwen. Studenten werken mee aan de ontwikkeling van dit welvaartsbegrip door middel van het schrijven van een essay.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1015">dr. J. Dijkstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1015">dr. J. Dijkstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijk tentamen (essay), schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4830&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4830"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4830">Informatie over Educatieve Minor Letteren</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Educatieve Minor Letteren</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>ULOB0105AL</td><td><a href="/ocasys/rechten/vak/show?module=77334">Basiscursus Minor Lerarenopleiding</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>ULOB0210NE</td><td><a href="/ocasys/rechten/vak/show?module=77333">Minorstage 1 Leraar Nederlands</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>ULOB0310NE</td><td><a href="/ocasys/rechten/vak/show?module=77336">Minorstage 2 Leraar Nederlands</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>ULOB0405NE</td><td><a href="/ocasys/rechten/vak/show?module=77335">Vakdidactiek Nederlands: onderbouw</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77334"><b>Basiscursus Minor Lerarenopleiding</b></a></td><td align="right"><b>ULOB0105AL</b></td></tr><tr><td align="justify" colspan="3">Tijdens hoor- en werkcolleges wordt de student ingeleid in een aantal theoretische uitgangspunten die ten grondslag liggen aan effectief pedagogisch-didactisch handelen in de beroepspraktijk. De student wordt daarbij uitgedaagd de theorie te vertalen naar de lessituatie. Dit vak is daarmee ondersteunend bij de oriënterende en voorbereidende stage in de educatieve minor (Educatieve Minor: stage 1)</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2968">dr. M.G. Witterholt</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges, Opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelaatbaar tot de educatieve minor<br/><br/>Algemene voorwaarden voor toelating tot de Educatieve Minor:<br/><br/>•je staat ingeschreven voor een bacheloropleidingen (zie tabel op de website: http://www.rug.nl/lerarenopleiding/onderwijs/EducatieveMinor/EducatieveMinorVoorWie<br/>•je hebt van deze opleiding op 15 september (naar verwachting) ten minste 90 EC behaald* <br/>•je hebt van deze opleiding op 15 september (naar verwachting) je propedeuse behaald <br/>*Doe je een opleiding bij de Faculteit der Letteren, dan is 80 EC vakinhoud voldoende.<br/><br/>Als je vragen hebt over de toelatingsprocedure tot de Educatieve Minor van je keuze, neem dan contact op met je studieadviseur.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77333"><b>Minorstage 1 Leraar Nederlands</b></a></td><td align="right"><b>ULOB0210NE</b></td></tr><tr><td align="justify" colspan="3">De student maakt kennis met het onderwijs en het beroep door drie dagen per week stage te lopen op een school voor voortgezet onderwijs. Tijdens de stage observeert de student lessen, interviewt leerlingen en docenten, bereidt zelf lessen voor en staat (aanvankelijk onder begeleiding) voor de klas. Daarnaast neemt de student deel aan intervisie met medestudenten op de school. De stageactiviteiten worden op het instituut ondersteund met praktische trainingen, werkcolleges en opdrachten. De resultaten van alle activiteiten slaat de student op in een elektronisch bekwaamheidsdossier. Op grond van dit dossier vindt voor half november een beoordelingsgesprek plaats. Dit gesprek mondt uit in een advies voor de vervolgfase.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2622">ir. J.E. van der Laan</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10">drs. C.H.W. Bakker</a><a href="/ocasys/rug/vak/viewtutor?tutor=286">dr. T.C.H. Witte</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Intervisie, Opdrachten, Stage, Werkcollege, Workshops, Zelfstudie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelaatbaar volgens verwantschapstabel (zie http://www.rug.nl/lerarenopleiding/onderwijs/educatieveminor/index).<br/>Propedeuse behaald.<br/>Minimaal 90 ects vakinhoud binnen de bachelor behaald. In geval van Letteren minimaal 80 ects.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De Educatieve Minor is opgenomen in het opleidingsaanbod van vier faculteiten. De faculteit die de minor aanbiedt, is verantwoordelijk voor de toelating. De verwantschapstabel die de faculteit daarbij hanteert staat op http://www.rug.nl/lerarenopleiding/onderwijs/educatieveminor/index.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77336"><b>Minorstage 2 Leraar Nederlands</b></a></td><td align="right"><b>ULOB0310NE</b></td></tr><tr><td align="justify" colspan="3">Tijdens de beroepskwalificerende stage  wordt de student op de school in staat gesteld te werken aan de doelstelling zoals hierboven omschreven. Dit betekent onder meer dat de student in staat wordt gesteld om een substantiële hoeveelheid lessen zelfstandig voor te bereiden en te verzorgen. Daarnaast krijgt de student de gelegenheid om mee te draaien in de schoolorganisatie.<br/>Stage 2 wordt ondersteund door intervisieactiviteiten op de school. Vanuit het instituut wordt de stage ondersteund met werkcolleges en opdrachten.<br/><br/>De student die slaagt voor alle vier de examenonderdelen van de educatieve minor en die daarnaast de bachelorstudie met goed gevolg afrondt, verwerft daarmee een lesbevoegdheid voor de onderbouw van het HAVO/VWO en voor het VMBO-tl</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10">drs. C.H.W. Bakker</a><a href="/ocasys/rug/vak/viewtutor?tutor=286">dr. T.C.H. Witte</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Intervisie, Opdrachten, Stage</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toegelaten tot de Educatieve Minor</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77335"><b>Vakdidactiek Nederlands: onderbouw</b></a></td><td align="right"><b>ULOB0405NE</b></td></tr><tr><td align="justify" colspan="3">Tijdens werkcolleges wordt in kleine groepen onder leiding van de vakdidacticus voor het bewuste schoolvak aandacht besteed aan lesplannning, -uitvoering en -evaluatie. Er wordt stilgestaan bij uiteenlopende lesmethoden, moeilijkheden die leerlingen kunnen ondervinden bij het leren van het vak, doorlopende leerlijnen, het plannen van een lessenreeks, etc.<br/>De colleges stellen de student in staat om de eigen onderwijspraktijk (Educatieve Minor: stage 2) vorm te geven en te analyseren op grond van kennis over het vak en de vakdidactiek.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2622">ir. J.E. van der Laan</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10">drs. C.H.W. Bakker</a><a href="/ocasys/rug/vak/viewtutor?tutor=286">dr. T.C.H. Witte</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Opdrachten, Werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toegelaten tot de tweede fase van de  Educatieve Minor.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor de colleges geldt een aanwezigheidsplicht van minimaal 80%. Indien hieraan niet wordt voldaan volgt een aanvullende opdracht.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

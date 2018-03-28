@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6159&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6159"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6159">Informatie over MSc Sustainable Entrepreneurship</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>MSc Sustainable Entrepreneurship</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>CFM001A05</td><td><a href="/ocasys/rechten/vak/show?module=84144">Foundations of Sustainable Entrepreneurship</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>CFM002A05</td><td><a href="/ocasys/rechten/vak/show?module=84145">Leadership</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>CFM003A05</td><td><a href="/ocasys/rechten/vak/show?module=84146">Strategy</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>CFM004A05</td><td><a href="/ocasys/rechten/vak/show?module=84147">Organization</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>CFM005A05</td><td><a href="/ocasys/rechten/vak/show?module=84148">Alliances</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>CFM006A05</td><td><a href="/ocasys/rechten/vak/show?module=84149">Context</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>CFM007A05</td><td><a href="/ocasys/rechten/vak/show?module=84150">Policy</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>CFM008A05</td><td><a href="/ocasys/rechten/vak/show?module=84151">Performance</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>CFM009A05</td><td><a href="/ocasys/rechten/vak/show?module=84152">Research Methods</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester II b</td><td>keuze</td><td>CFM010A15</td><td><a href="/ocasys/rechten/vak/show?module=84153">Quantitative Project</a></td><td>Engels</td><td>15</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>CFM011A15</td><td><a href="/ocasys/rechten/vak/show?module=84154">Qualitative Project</a></td><td>Engels</td><td>15</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=84148"><b>Alliances</b></a></td><td align="right"><b>CFM005A05</b></td></tr><tr><td align="justify" colspan="3">The second important step in implementing the design of a sustainable enterprise concerns collaboration of the focal organization with its external partners and stakeholders. Sustainable enterprises are, to a significant extent, open systems for which high-trust connections to partners within and outside the value chains are of the utmost importance. The academic component of this course offers an in-depth overview of the theories of successful alliance management, including partner selection, alliance management and alliance termination. The leadership lab of this course reviews personality traits relevant to sustainable collaboration. Students will write an essay exam and deliver and present a collaboration leadership portf</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=84149"><b>Context</b></a></td><td align="right"><b>CFM006A05</b></td></tr><tr><td align="justify" colspan="3">The third important step in implementing the design of a sustainable enterprise concerns the positioning of the sustainable enterprise in its external context. Sustainable entrepreneurship is essentially about context. Sustainable entrepreneurs introduce new business models, concepts and products in order to successfully resolve ecological or social challenges they observe in the environment. The academic component of this course offers an in-depth overview of positioning theories and reviews how sustainable enterprises use their particular products, services and price systems to differentiate themselves from mainstream for-profit firms. The entrepreneurship lab of this course enables students to design and undertake a case study relevant to sustainability. Students will write an essay exam and deliver and present their case study findings in the case study academy.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=84144"><b>Foundations of Sustainable Entrepreneurship</b></a></td><td align="right"><b>CFM001A05</b></td></tr><tr><td align="justify" colspan="3">The opening course of the curriculum will provide academic, leadership and entrepreneurship challenges related to sustainable entrepreneurship. This course offers an in-depth overview of the field of sustainable entrepreneurship. It provides academic knowledge related to research, valorisation and leadership competences associated with all elements of the sustainable business model. The academic component of this course reviews definitions, antecedents and consequences of sustainable entrepreneurship. The research lab in this course reviews the first stages of an entire empirical cycle of research, from defining research questions to a literature review and a theoretical model. Students will write an essay exam and deliver and present a research proposal relevant to sustainable entrepreneurship.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=84145"><b>Leadership</b></a></td><td align="right"><b>CFM002A05</b></td></tr><tr><td align="justify" colspan="3">Leadership is the first point of departure in designing sustainable entrepreneurship. This course offers an in-depth overview of leadership theories and their effects on the performance of enterprises. In the academic component, students will learn that social, human and personal capital is important for the success of sustainable leadership. The leadership lab in this course is dedicated to identifying and reviewing key habits of effective leadership, in general, and sustainable leadership, in particular. Students will write an essay exam and deliver and present their sustainable leadership portfolio</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=84147"><b>Organization</b></a></td><td align="right"><b>CFM004A05</b></td></tr><tr><td align="justify" colspan="3">The first important step in implementing the design of a sustainable enterprise concerns the organization of the enterprise. Sustainable strategies and sustainable organization need to be aligned to make the sustainable enterprise successful. The academic component of this course offers an in-depth overview of organization theories and reviews the particular elements of structure and culture of sustainable enterprises. The strategic choice of sustainability cannot do without a sustainable organization format. The research lab in this course reviews the second stage of an entire empirical cycle of research, from data collection, measurement, analyses to results. Students will write an essay exam and deliver and present an empirical research project relevant to sustainable entrepreneurship</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=84151"><b>Performance</b></a></td><td align="right"><b>CFM008A05</b></td></tr><tr><td align="justify" colspan="3">The final element of the overall sustainable business model is sustainable performance. The academic component of this course offers an in-depth overview of performance theories and reviews how sustainable enterprises can attain sustainable performance given their unique features. The theoretical foundations for long-term sustainable performance highlight the rare and difficult to imitate character of sustainable enterprise. The leadership lab concentrates on sustainable innovation performance. Sustainable enterprises design new products for new markets using new business models. Students will design their portfolio of people, planet, profit and purpose performance innovations. Students will write an exam and develop and present their performance leadership portfolio</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=84150"><b>Policy</b></a></td><td align="right"><b>CFM007A05</b></td></tr><tr><td align="justify" colspan="3">The successful management and high performance of sustainable organizations cannot do without influence on policy instruments. The research lab of this course offers students the opportunity to review national and European best-practice governance and how sustainable enterprises are actively engaged in policy instrument design. Students will write an essay exam and develop and present a policy report paper</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=84154"><b>Qualitative Project</b></a></td><td align="right"><b>CFM011A15</b></td></tr><tr><td align="justify" colspan="3">Sustainable Entrepreneurship Project (Master Thesis). The final 15 EC course requires students to integrate the many elements addressed in the curriculum. In the final project, students will conduct independent academic research following their own design, focusing on solving a problem relevant to a corporate sustainability challenge. Students have the opportunity to collect empirical information to answer their research question. Students will either work on a quantitative ‘database’ project or a qualitative ‘case study’ project. In choosing one of these projects, students have the opportunity to engage in a quantitative or a qualitative entrepreneurship project. This decision is made in the research methods course in Block 3. Depending on their individual entrepreneurship ambitions and leadership profiles, students will work with regional, national or international sustainable organizations. The sustainable entrepreneurship project concentrates on the stages of the cycle of research, based on the theoretical stages developed in the previous course. Students will develop and present their sustainable entrepreneurship report to their supervisors and to peers and stakeholders in the Circular Minds Conference</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=84153"><b>Quantitative Project</b></a></td><td align="right"><b>CFM010A15</b></td></tr><tr><td align="justify" colspan="3">Sustainable Entrepreneurship Project (Master Thesis). The final 15 EC course requires students to integrate the many elements addressed in the curriculum. In the final project, students will conduct independent academic research following their own design, focusing on solving a problem relevant to a corporate sustainability challenge. Students have the opportunity to collect empirical information to answer their research question. Students will either work on a quantitative ‘database’ project or a qualitative ‘case study’ project. In choosing one of these projects, students have the opportunity to engage in a quantitative or a qualitative entrepreneurship project. This decision is made in the research methods course in Block 3. Depending on their individual entrepreneurship ambitions and leadership profiles, students will work with regional, national or international sustainable organizations. The sustainable entrepreneurship project concentrates on the stages of the cycle of research, based on the theoretical stages developed in the previous course. Students will develop and present their sustainable entrepreneurship report to their supervisors and to peers and stakeholders in the Circular Minds Conference</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=84152"><b>Research Methods</b></a></td><td align="right"><b>CFM009A05</b></td></tr><tr><td align="justify" colspan="3">In this course, students prepare their sustainable entrepreneurship project and research to be executed in the next block. The academic component of this course focuses on research design, research philosophy and research ethics. Students benefit from previous courses in which they were extensively trained in all steps of the empirical cycle of research. The entrepreneurship lab enables students to design their individual leadership project in line with the overall aim of the programme. Students will select either a quantitative or qualitative research setting, depending upon their preferences. Subsequently, students will formulate their research questions, research aims, theory and models, and prepare data collection, data analysis and research findings. Students will also formulate their leadership and entrepreneurship development goals. The entrepreneurship lab thus offers students the opportunity to prepare their final project in detail, including research and the application of their personal leadership and entrepreneurship profile. Students write an essay exam and develop and present their sustainable entrepreneurship project design</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=84146"><b>Strategy</b></a></td><td align="right"><b>CFM003A05</b></td></tr><tr><td align="justify" colspan="3">The strategic choice of sustainability is the second important element in the design of sustainable entrepreneurship. The academic component of this course offers an in-depth overview of strategy theories and differentiates mainstream strategies from sustainable strategies. Sustainable strategies determine many elements of an enterprise, including its products, services, prices and market positioning. The entrepreneurship lab enables students to develop a new business model for a circular and sustainable organization using a canvas business model method. Students will write an essay exam and deliver and present their sustainable business model in a circular pitch academy.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Campus Fryslân</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

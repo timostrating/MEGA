@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=363&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D363"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=363">Informatie over Ma Notarieel Recht</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Notarieel Recht</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>RGMPR02906</td><td><a href="/ocasys/rechten/vak/show?module=75743">Seminaar Notariële C.S.</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>RGMFI00406</td><td><a href="/ocasys/rechten/vak/show?module=75710">Belastingrecht 2</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>b. en c.</td><td>RGDOS04</td><td><a href="/ocasys/rechten/vak/show?module=75789">Keuzeruimte Master</a></td><td>Nederlands</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>a. (OV)1-4</td><td>RGMHA00606</td><td><a href="/ocasys/rechten/vak/show?module=75715">Ondernemingsrecht 1 (NV- en BV Recht)</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>a. (OV)1-4</td><td>RGMPR01306</td><td><a href="/ocasys/rechten/vak/show?module=75752">Verbintenissenrecht C.S.</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>a. (OV)1-4</td><td>RGMPR02306</td><td><a href="/ocasys/rechten/vak/show?module=75826">Agrarisch Recht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGMPR00306</td><td><a href="/ocasys/rechten/vak/show?module=75745">Goederenrecht C.S.</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>RGMPR00506</td><td><a href="/ocasys/rechten/vak/show?module=75746">Internationaal Privaatrecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>d. verplicht</td><td>RG00061018</td><td><a href="/ocasys/rechten/vak/show?module=75726">Scriptie</a></td><td>Nederlands</td><td>18</td><td></td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>RGMFI01006</td><td><a href="/ocasys/rechten/vak/show?module=75659">Successiewet voor Notariëlen</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>a. (OV)1-4</td><td>RGMPR02506</td><td><a href="/ocasys/rechten/vak/show?module=75655">Estate Planning</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>De bovenstaande indeling is afgestemd op studenten die in september met de masteropleiding beginnen.</li><li>Studenten die in februari instromen kunnen met behulp van onlinecolleges het vak Internationaal Privaatrecht in blok 3 afleggen en het hertentamen van dit vak aan het einde van blok 3 doen. </li><li>Het ongebonden keuzevak kan in ieder blok worden afgelegd. </li><li>Ook kan in blok 3 en 4 de Seminaar Notariele C.S. worden afgelegd</li><li>Studenten die in februari beginnen mogen hun scriptie in blok 1 en 2 schrijven.</li></ul><ul><li>1-9-16: seminaar Notariele Capita Selecta 2 wordt seminaar Notariele Capita Selecta</li><li>1-9-15: nieuw: invoering blokindeling. Zie Kennisbank Rechten.</li><li>1-9-14: het vak Belastingrecht 2 is verschoven van semester 1 naar semester 1b. Het vaktype is veranderd van M5-&gt;M4.</li><li>a. optioneel verplicht (OV) 1 vak te kiezen uit 4;</li><li>b. omvang keuzeruimte: zie OER van de opleiding voor juiste omvang en eisen (M4- of M5-vakken, Stage of een Recht in Praktijk onderdeel). De master moet minimaal 60 ec omvatten;</li><li>c. de keuzeruimte is in dit schema geroosterd in het 1e semester maar kan ook worden afgelegd/ingevuld in het 2e semester,</li><li>d. de scriptie is in dit schema geroosterd in het 2e semester maar kan ook worden afgelegd/ingevuld in het 1e semester. </li></ul>----------------------------------------------------<ul><li>1-9-12: herziening oer (invoering harde knip en wijziging ec's)zie Overgangsregelingen via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>;</li></ul> <ul><li>1-9-07 en 1-9-06: herziening exameneisen/oer/indeling onderdelen, zie Overgangsregelingen via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a></li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75826"><b>Agrarisch Recht</b></a></td><td align="right"><b>RGMPR02306</b></td></tr><tr><td align="justify" colspan="3">De hoofdlijnen van een aantal deelterreinen van het agrarisch recht worden behandeld: pacht, landinrichting en ruilverkaveling, natuurbeheer, agrarisch milieurecht (mestregelgeving), marktordening (melkquotering, bietenquotum), Europees agrarisch recht.<br/><br/>Werkwijze: Hoorcolleges. Bij minder dan 20 studenten kan werkgroeponderwijs worden overwogen</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1342">prof. mr. D.W. Bruil</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1342">prof. mr. D.W. Bruil</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75710"><b>Belastingrecht 2</b></a></td><td align="right"><b>RGMFI00406</b></td></tr><tr><td align="justify" colspan="3">Belastingrecht 2 behandelt de fiscale aspecten van ondernemingen. Aandacht wordt besteed aan de bepalingen in de Wet inkomstenbelasting 2001 en de Wet op de vennootschapsbelasting 1969 die een belangrijke rol spelen bij de belastingheffing van ondernemingen. De harde kern van het vak bestaat uit de problematiek rondom bedrijfsopvolging, de keuze van de juiste rechtsvorm voor de onderneming, de opbouw van een concernstructuur, herstructureringen, en de positie van de directeur-aandeelhouder. Daarnaast komen het fiscale winstbegrip en de terbeschikgstellingregeling aan de orde.<br/>Een aantal belangrijke onderdelen wordt behandeld op de hoorcolleges. De overige stof is zelfstudie. Kennis van het vak Belastingrecht 1 wordt bekend verondersteld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1390">mr. H. Halma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1329">mr. M.J. Boer</a><a href="/ocasys/rug/vak/viewtutor?tutor=1390">mr. H. Halma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75655"><b>Estate Planning</b></a></td><td align="right"><b>RGMPR02506</b></td></tr><tr><td align="justify" colspan="3">Door de toegenomen welvaart overlijden mensen steeds rijker. Ongewenste neveneffecten daarbij zijn, dat een steeds groter gedeelte van de nalatenschap in de Nederlandse schatkist verdwijnt of dat de erfgenamen onderling ruzie krijgen over de verdeling van de 'buit'. Het vak Estate Planning behandelt de (on)mogelijkheden op zowel het civiele als fiscale terrein om e.e.a. - zowel voor als na het overlijden - in goede banen te leiden. Aan de orde komen onder meer de invloed van het gekozen huwelijksvermogensregime, verschillende soorten van testamenten, schenkingen, hoe in dit kader om te gaan met de Successiewet, de Inkomstenbelasting, levensverzekeringen en internationale fiscale aspecten etc.<br/><br/>Werkwijze<br/>Het vak wordt gegeven in de vorm van hoorcolleges.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5807">prof. mr. dr. W. Burgerhart</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5807">prof. mr. dr. W. Burgerhart</a><a href="/ocasys/rug/vak/viewtutor?tutor=12169">mr. G.A. Tuinstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: kennis van Relatievermogensrecht, Inkomstenbelasting, Schenk- en erfbelasting, Erfrecht.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75745"><b>Goederenrecht C.S.</b></a></td><td align="right"><b>RGMPR00306</b></td></tr><tr><td align="justify" colspan="3">In dit vak wordt aandacht besteed aan het verhaalssysteem van Boek 3 van het Burgerlijk Wetboek, waaronder ook de goederenrechtelijke zekerheidsrechten. Daarbij komen onder meer aan de orde het verhaalsrecht op goederen, de verschillende vormen van voorrang, vestiging en executie van (stil) pandrecht op zaken en vorderingen, hypotheek, eigendomsvoorbehoud, retentierecht, recht van reclame en (het verbod van) fiduciaire rechtsverhoudingen. Ook worden dwarsverbanden gelegd met het beslag- en executierecht en het faillissementsrecht. Naast het verhaalssysteem van Boek 3 worden de beperkte genotsrechten – vooral het erfpachtrecht - en het appartementsrecht behandeld. De te bestuderen stof bouwt voort op de vakken Burgerlijk Recht 1 en 2.<br/><br/>Werkwijze: Het vak wordt gegeven in de vorm van hoorcolleges en responsiecolleges (optioneel).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: Burgerlijk recht 2.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75746"><b>Internationaal Privaatrecht</b></a></td><td align="right"><b>RGMPR00506</b></td></tr><tr><td align="justify" colspan="3">In internationale gevallen is het niet altijd vanzelfsprekend dat het Nederlandse recht van toepassing is of dat de Nederlandse rechter bevoegd is over een geschil te oordelen. Over de vraag wanneer dit wel en wanneer dit niet het geval is, beslissen regels van internationaal privaatrecht (IPR). IPR kan worden omschreven als nationaal recht dat erop is gericht problemen die voortvloeien uit de samenloop van nationale rechtstelsels bij internationale privaatrechtelijke rechtsverhoudingen te reguleren.<br/>Het omvat regels inzake de internationale bevoegdheid van de Nederlandse rechter (internationaal jurisdictierecht), inzake de vraag naar het toepasselijke recht (conflicten- of verwijzingsrecht) en regels inzake de erkenning en tenuitvoerlegging van buitenlandse rechterlijke beslissingen (internationaal executierecht). Steeds vaker ook komen deze regels in geharmoniseerde vorm in verordeningen vanuit Brussel tot ons. Door de groei van het internationale rechtsverkeer wordt de Nederlandse jurist (rechter, notaris, advocaat etc.) steeds vaker geconfronteerd met vragen van internationaal privaatrecht. Een gedegen kennis van dit vakgebied is dan ook van belang.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1584">prof. mr. dr. M.H. ten Wolde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1434">mr. J.G. Knot</a><a href="/ocasys/rug/vak/viewtutor?tutor=1584">prof. mr. dr. M.H. ten Wolde</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 2 en extra aangeboden via online colleges en 1 responsiecollege in blok 3 (één tentamenkans, gelijk met hertentamen in blok 3).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75789"><b>Keuzeruimte Master</b></a></td><td align="right"><b>RGDOS04</b></td></tr><tr><td align="justify" colspan="3"><b>Algemeen</b><br/>De master-keuzeruimte kan gevuld worden met:<br/>a.keuzevakken (<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=1882" target="_blank"> Ma-keuzevakken juridisch</a> of<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=2537" target="_blank"> Ma-keuzevakken niet-juridisch</a>); <br/>b.(optioneel)verplichte vakken van andere opleidingen;<br/>c.<a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7067" target="_blank">recht in praktijkonderdelen (w.o. stage)</a>;<br/>d.<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=2568" target="_blank">Rechtstheoretische verdieping</a>.<br/><br/>Algemene uitleg: zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.<br/> <br/><br/><b>Nadere eisen en regels OER</b><br/>De OER van elke opleiding stelt nadere eisen en regels m.b.t. tot:<br/>a) omvang en aard van vakken (juridisch/niet-juridisch);<br/>b) niveau van vakken (B-, M4-, M5-niveau);<br/>c) facultair/niet-facultair(of buitenland) te kiezen vakken;<br/>d) overige voorwaarden;<b>Formele eisen goedkeuring</b><br/>Alle vakken in de keuzeruimte behoeven goedkeuring van de Examencommissie voordat een student met de keuzevakken begint. Er moet steeds een totaal masterprogramma (min. 60 ec) ter goedkeuring worden voorgelegd via Progress.www. Voor procedure zie ook Vraag en Antwoord- goedkeuring keuzepakket.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>M4-vakken zijn als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding. Voor het overige gelden de entreevoorwaarden zoals aangegeven in de vakomschrijving van een vak.</li><li>M5-vak: Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Voor het overige gelden de entreevoorwaarden zoals aangegeven in de vakomschrijving van een vak.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De omvang van de keuzeruimte varieert per opleiding. Voor de correcte omvang van de keuzeruimte zie OER van de opleiding <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75715"><b>Ondernemingsrecht 1 (NV- en BV Recht)</b></a></td><td align="right"><b>RGMHA00606</b></td></tr><tr><td align="justify" colspan="3">Het vak Ondernemingsrecht I geeft inzicht in een aantal kernthema's van het ondernemingsrecht. De volgende onderwerpen worden behandeld:<ul><li>kenmerken vennootschapsrecht; vennootschap in oprichting;</li><li>kapitaalbescherming: bijeenbrengen en instandhouden van het kapitaal;</li><li>aandeelhouders;</li><li>interne organisatie; besluitvorming; bevoegdheden organen; oligarchie;</li><li>nietigheid en vernietigbaarheid van besluiten;</li><li>vertegenwoordiging en tegenstrijdig belang;</li><li>concernverhoudingen;</li><li>jaarrekening en decharge;</li><li>onbehoorlijk bestuur en aansprakelijkheid van bestuurders.</li></ul>Tijdens de colleges zal aandacht worden besteed aan actuele ontwikkelingen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1455">prof. mr. M.L. Lennarts</a><a href="/ocasys/rug/vak/viewtutor?tutor=1519">prof. mr. dr. J.N. Schutte-Veenstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen; open boek) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges met 1 responsiecollege in blok 3. Eén (extra) tentamenkans in blok 3.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75726"><b>Scriptie</b></a></td><td align="right"><b>RG00061018</b></td></tr><tr><td align="justify" colspan="3">Nadere eisen en richtlijnen<br/><br/>Nadere eisen en richtlijnen m.b.t. scriptie zijn opgenomen in het scriptiereglement. Zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> voor meer informatie. <br/><br/>Voorbereiding <br/><br/>Ter voorbereiding op het schrijven van een scriptie organiseert de faculteit een scriptievoorbereidingstraject, bestaande uit een hoorcollege (4 x per jaar), een bibliotheekinstructie en een scriptiepracticum. De student is verplicht de onderdelen scriptiecollege en bibliotheekinstructie van het scriptievoorbereidingstraject te volgen alvorens een scriptieonderwerp ter goedkeuring voor te leggen aan de scriptiecoördinator. Het volgen van het onderdeel scriptiepracticum is facultatief, maar wordt sterk aanbevolen. Voor bijzonderheden over het Scriptievoorbereidingstraject zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7063" target="_blank">vakomschrijving in Ocasys</a>. Hierin is informatie opgenomen over de onderdelen van het traject en speciale literatuur die bij het schrijven van een scriptie wordt aanbevolen. <br/>Voor Masterstudenten Internationaal en Europees Recht geldt een apart engelstalig scriptievoorbereidingstraject (Thesisclass) zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=25170" target="_blank">vakomschrijving in Ocasys</a>.   <br/><br/><br/>Een artikel in Ars Aequi of een ander wetenschappelijk tijdschrift kan ook als een scriptie worden gehonoreerd, mits hierover tevoren overleg is gepleegd met de docent die anders als scriptiebegeleider zou zijn opgetreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75743"><b>Seminaar Notariële C.S.</b></a></td><td align="right"><b>RGMPR02906</b></td></tr><tr><td align="justify" colspan="3">Gedurende het seminaar wordt wekelijks een schriftelijke opdracht gemaakt.  <br/><br/>Tussen de in de notariële studie op zichzelf staande vakken bestaat een grote samenhang. De verschillende dwarsverbanden komen in de notariële praktijk tot uiting. Het vak Notariële Capita Selecta maakt in de schriftelijke opdrachten de samenhang tussen de notariële rechtsgebieden inzichtelijk.<br/><br/>Werkwijze: In koppels werken de studenten opdrachten en casusposities uit over onder meer de volgende onderwerpen:<ul><li>het personen-en familierecht en erfrecht</li><li>het ondernemingsrecht</li><li>het registergoederenrecht</li><li>fiscale aspecten van het notariaat</li></ul><br/>De gemaakte opdrachten worden - na beoordeling door de docent - in werkgroepverband besproken.<br/><br/><br/>Om aan het vak te kunnen deelnemen is een minimum aantal punten van 180 ec vereist. Het vak Notariële Capita Selecta wordt gewaardeerd met 6 ec. Aanwezigheid bij alle colleges is verplicht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11354">mr. dr. B. Hoops, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5807">prof. mr. dr. W. Burgerhart</a><a href="/ocasys/rug/vak/viewtutor?tutor=1437">prof. mr. dr. W.D. Kolkman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1525">mr. dr. B. Snijder-Kuipers</a><a href="/ocasys/rug/vak/viewtutor?tutor=1388">mr. J.H.M. ter Haar</a><a href="/ocasys/rug/vak/viewtutor?tutor=3220">mr. F.J. Vonck</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Niet af te leggen door studenten die voor 1-9-2016 het Seminaar Notariële C.S. 2 hebben afgelegd.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75659"><b>Successiewet voor Notariëlen</b></a></td><td align="right"><b>RGMFI01006</b></td></tr><tr><td align="justify" colspan="3">De Successiewet kent twee heffingen. Dit zijn de erfbelasting en de schenkbelasting. Gedurende het semester worden achtereenvolgens de grondslagen van de erfbelasting, het tarief en de vrijstellingen, de waardering van de verkrijging en de toepassing van de diverse fictiebepalingen besproken. Aan de bedrijfsopvolgingsfaciliteit wordt een apart college gewijd. Deze regeling is evenals het tarief en de waarderingvoorschriften ook voor de schenkbelasting van toepassing. De algemeen nut beogende instelling en het afgezonderd particulier vermogen worden behandeld in het verlengde van de schenkbelasting.<br/><br/>Werkwijze:<br/>Het vak wordt gedoceerd door middel van hoorcolleges. In deze colleges wordt ingegaan op de meer ingewikkelde onderdelen van de stof. De student wordt geacht voorafgaand aan de hoorcolleges de basiskennis steeds via zelfstudie te verwerven. In de hoorcolleges wordt de samenhang tussen de diverse bepalingen van de Successiewet verduidelijkt, en komt tevens een aantal bijzondere problemen wat uitgebreider aan de orde. In een vijftal activerende colleges wordt met concrete vraagstukken gewerkt, waarbij van de student voldoende voorbereiding en een eigen inbreng worden verwacht. De student wordt geacht naast de hoorcolleges zelfstandig de voorgeschreven literatuur te bestuderen. Via de aan het vak verbonden <a href="http://nestor.rug.nl" target="_blank">Studentportal (Nestor)</a> wordt ondersteunend materiaal zoals voorbeeldberekeningen, behandelde jurisprudentie en toelichtende teksten aangeboden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1518">mr. N.J. Schutte</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1518">mr. N.J. Schutte</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75752"><b>Verbintenissenrecht C.S.</b></a></td><td align="right"><b>RGMPR01306</b></td></tr><tr><td align="justify" colspan="3">Verbintenissenrecht c.s. biedt een verdieping in de systematiek en werking van het verbintenissenrecht aan de hand van twee samenhangende thema's: bijzondere overeenkomsten en algemene leerstukken.<br/>Voortbouwend op de kennis die op bachelorniveau is verworven, wordt ingegaan op een aantal belangrijke overeenkomsten, zoals koop, opdracht en vaststelling. Gekeken wordt naar de inhoud van deze in boek 7 geregelde contracten in samenhang met het algemene rechtshandelingen- en overeenkomstenrecht in de Boeken 3 en 6 BW. Voorts wordt ingegaan op de Europese achtergrond van een aantal van deze contracten (bijvoorbeeld koop op afstand, consumentenkoop). Verder wordt een aantal algemene leerstukken aan de orde gesteld: samenloop, nietigheid en verjaring. Gelden bijvoorbeeld naast de bijzondere regels over koop op afstand, onverkort de algemene regels over (koop)overeenkomsten (een vraag van samenloop)? Kan een contract dat dwingend recht van Boek 7 schendt deels geldig zijn of zelfs worden geconverteerd in een volledig geldig contract (vragen van nietigheid)? Hoe lang kunnen rechten worden uitgeoefend (een vraag van verjaring)? Uiteraard komt niet alleen de regelgeving aan de orde, maar ook hoe in rechtspraak en rechtspraktijk met deze problemen wordt omgegaan.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a><a href="/ocasys/rug/vak/viewtutor?tutor=7730">mr. L.B.A. Tigelaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Geadviseerd: Burgerlijk Recht 2.</li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges met 1 responsiecollege in blok 4. Eén (extra) tentamenkans in blok 4.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

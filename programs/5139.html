@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5139&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5139"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5139">Informatie over MSc Tandheelkunde;3 jarig programma</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>MSc Tandheelkunde;3 jarig programma</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>TKM.PROF1</td><td><a href="/ocasys/rechten/vak/show?module=77220">Professionalisering 1</a></td><td>Nederlands</td><td>2</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM.WET1</td><td><a href="/ocasys/rechten/vak/show?module=77204">Wetenschappelijke Scholing 1</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM1.IM1</td><td><a href="/ocasys/rechten/vak/show?module=77203">Integrale Mondzorg 1</a></td><td>Nederlands</td><td>25</td><td></td></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>TKM1.CM</td><td><a href="/ocasys/rechten/vak/show?module=77217">Complexe Mondproblemen</a></td><td>Nederlands</td><td>14</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>TKM1.SZ</td><td><a href="/ocasys/rechten/vak/show?module=77202">Specifieke Zorggroepen</a></td><td>Nederlands</td><td>14</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>TKM.PROF2</td><td><a href="/ocasys/rechten/vak/show?module=77191">Professionalisering 2</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM.WET2</td><td><a href="/ocasys/rechten/vak/show?module=77214">Wetenschappelijke Scholing 2</a></td><td>Nederlands</td><td>20</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM2.IM2</td><td><a href="/ocasys/rechten/vak/show?module=77168">Integrale Mondzorg 2</a></td><td>Nederlands</td><td>35</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>TKM.PROF3</td><td><a href="/ocasys/rechten/vak/show?module=77195">Professionalisering 3</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM.WET3</td><td><a href="/ocasys/rechten/vak/show?module=77221">Wetenschappelijke Scholing 3</a></td><td>Nederlands</td><td>3</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM3.IM3</td><td><a href="/ocasys/rechten/vak/show?module=77206">Integrale Mondzorg 3</a></td><td>Nederlands</td><td>23</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM3.IP</td><td><a href="/ocasys/rechten/vak/show?module=77208">Individuele Profilering</a></td><td>Nederlands</td><td>23</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM3.MVB</td><td><a href="/ocasys/rechten/vak/show?module=77225">Mondzorg in de volle breedte</a></td><td>Nederlands</td><td>6</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77217"><b>Complexe Mondproblemen</b></a></td><td align="right"><b>TKM1.CM</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Colleges (patiënt-, thema-, magistraal, en responsie-colleges)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting en schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">14</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77208"><b>Individuele Profilering</b></a></td><td align="right"><b>TKM3.IP</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lezing(en), opdrachten, practicum, praktijklessen, referaat, stage, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">23</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77203"><b>Integrale Mondzorg 1</b></a></td><td align="right"><b>TKM1.IM1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges en practica, practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting, beoordeling logboekje, participatie, praktijkbeoordeling, praktijktoets(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">25</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77168"><b>Integrale Mondzorg 2</b></a></td><td align="right"><b>TKM2.IM2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges en practica, klinisch wetenschappelijk ethisch redeneren, klinische werkconferentie, practicum, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">35</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77206"><b>Integrale Mondzorg 3</b></a></td><td align="right"><b>TKM3.IM3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">klinisch wetenschappelijk ethisch redeneren, practicum, praktijklessen, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">23</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77225"><b>Mondzorg in de volle breedte</b></a></td><td align="right"><b>TKM3.MVB</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Colleges (patiënt-, thema-, magistraal, en responsie-colleges), groepsdiscusies, groepsopdracht, hoor- en werkcolleges en practica, interactief werkcollege, magistraal college(s), patiënt colleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77220"><b>Professionalisering 1</b></a></td><td align="right"><b>TKM.PROF1</b></td></tr><tr><td align="justify" colspan="3">Professionalisering 1 is gericht op de volgende onderwerpen:<br/>- het functioneren in de patiëntenzorg, zowel als individu als in teamverband.<br/>- het bespreken van inhoudelijke vraagstukken; casuïstiek, verschillende methoden, wetenschappelijke onderbouwing.<br/><br/>Studenten verzamelen verslagen, rapportages en uitwerkingen en de reacties daarop van docenten, medestudenten en zichzelf in een zogenaamd portfolio. Door dit te doen schetst de student een beeld van zichzelf en van de vorderingen die gemaakt worden in de studie.<br/><br/>Het tentamen Professionalisering 1 bestaat uit de volgende onderdelen:<br/>- voldoen aan practicumverplichtingen (incl. adoptiestage)<br/>- beoordeling portfolio</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">coachgroepbijeenkomsten</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77191"><b>Professionalisering 2</b></a></td><td align="right"><b>TKM.PROF2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">coachgroepbijeenkomsten</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=77195"><b>Professionalisering 3</b></a></td><td align="right"><b>TKM.PROF3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">coachgroepbijeenkomsten, opdrachten, portfolio</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=77202"><b>Specifieke Zorggroepen</b></a></td><td align="right"><b>TKM1.SZ</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Colleges (patiënt-, thema-, magistraal, en responsie-colleges)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting en schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">14</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77204"><b>Wetenschappelijke Scholing 1</b></a></td><td align="right"><b>TKM.WET1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=77214"><b>Wetenschappelijke Scholing 2</b></a></td><td align="right"><b>TKM.WET2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=77221"><b>Wetenschappelijke Scholing 3</b></a></td><td align="right"><b>TKM.WET3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lezing(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

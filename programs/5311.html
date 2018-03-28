@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5311&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5311"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5311">Informatie over ReMa Internationale Betrekkingen / International Relations</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>ReMa Internationale Betrekkingen / International Relations</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (ReMa Modern History and International Relations)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LGR008M10</td><td><a href="/ocasys/rechten/vak/show?module=74869">Theorie Moderne Gesch. en Intern. Betr.</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Research Seminar I</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>LGR010M05</td><td><a href="/ocasys/rechten/vak/show?module=74713">Methodologie Mod.Hist.and Intern.Rel.</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>LGR007M05</td><td><a href="/ocasys/rechten/vak/show?module=74870">Advanced Methodology IR</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>LGR012M10</td><td><a href="/ocasys/rechten/vak/show?module=74166">Themes, Trends &amp; Topics</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Research Seminar II</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td></td><td>Research Seminar III</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">De onderzoekscolleges kunnen gekozen worden uit het Ma-aanbod van Geschiedenis, IB, American Studies en Mediastudies, in overleg met de Director of Studies.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (ReMa Modern History and International Relations)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>LGR013M10</td><td><a href="/ocasys/rechten/vak/show?module=74169">MHIR: Specialisatie 1</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LGR014M10</td><td><a href="/ocasys/rechten/vak/show?module=74417">MHIR: Specialisatie 2</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>LGR016M05</td><td><a href="/ocasys/rechten/vak/show?module=74187">Bridging Horizons Class</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LGR017M05</td><td><a href="/ocasys/rechten/vak/show?module=73872">Thesis Preparation Class</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LGR998M30</td><td><a href="/ocasys/rechten/vak/show?module=74282">Research Master's Thesis MHIR</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Bij een specialisatie/onderzoeksstage van 5 ECTS kunnen de volgende codes worden gebruikt: LGR013M05 en LGR014M05.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74870"><b>Advanced Methodology IR</b></a></td><td align="right"><b>LGR007M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11274">dr. X. Guillaume</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11274">dr. X. Guillaume</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74187"><b>Bridging Horizons Class</b></a></td><td align="right"><b>LGR016M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a><a href="/ocasys/rug/vak/viewtutor?tutor=288">prof. dr. D.J. Wolffram</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74713"><b>Methodologie Mod.Hist.and Intern.Rel.</b></a></td><td align="right"><b>LGR010M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6591">dr. C. Six</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11056">dr. J. Costa López</a><a href="/ocasys/rug/vak/viewtutor?tutor=6591">dr. C. Six</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74169"><b>MHIR: Specialisatie 1</b></a></td><td align="right"><b>LGR013M10</b></td></tr><tr><td align="justify" colspan="3">The research internship can be carried out at a research institute in Groningen or elsewhere in the Netherlands, or (preferably) at a research institute abroad. The student carries out his or her own small research project, or actively participates in a larger research project carried out by the local research group. As an alternative to an Internship students can take extra courses e.g. at the Dutch National Research Schools. During this specialization phase the students writes three (Tutorials) papers each worth 10 ECTS (combinations of modules are possible). One of the tutorials will be presented during the winter/summer seminars of the ReMa.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Year 1 completed of MHIR Research MA programme</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit onderdeel kan ook als 5-puntsonderdeel worden gevolgd met de vakcode: LGR013M05. Students and the Director of Studies prof. dr. H.R.H. Büschel are jointly responsible for ensuring that the chosen teaching components form a coherent study programme worth 30 ECTS.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74417"><b>MHIR: Specialisatie 2</b></a></td><td align="right"><b>LGR014M10</b></td></tr><tr><td align="justify" colspan="3">The research internship can be carried out at a research institute in Groningen or elsewhere in the Netherlands, or (preferably) at a research institute abroad. The student carries out his or her own small research project, or actively participates in a larger research project carried out by the local research group. As an alternative to an Internship Students can take extra courses e.g. at the Dutch National Research Schools. During this specialization phase the students writes three (Tutorials) papers each worth 10 ECTS (combinations of modules are possible). One of the tutorials will be presented during the winter/summer seminars of the ReMa.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Year 1 completed of MHIR Research MA programme</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit onderdeel kan ook als 5-puntsonderdeel worden gevolgd met de vakcode: LGR014M05.<br/>Students and the Director of Studies – 	prof. dr. H.R.H. Büschel – are jointly responsible for ensuring that the chosen teaching components form a coherent study programme worth 30 ECTS.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74282"><b>Research Master's Thesis MHIR</b></a></td><td align="right"><b>LGR998M30</b></td></tr><tr><td align="justify" colspan="3">In the context of the Research Master's degree, students will write a thesis in the area of their chosen specialization. Theses are then discussed in class. Students receive feedback on their work and have the opportunity to discuss questions and problems with each other. These meetings will also be used to comment on research proposals and to practice writing research proposals.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum, zelfstudie (begeleid), werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Year 1 completed of Research MA programme</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=74166"><b>Themes, Trends &amp; Topics</b></a></td><td align="right"><b>LGR012M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=63">prof. dr. M.G.J. Duijvendak</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=63">prof. dr. M.G.J. Duijvendak</a><a href="/ocasys/rug/vak/viewtutor?tutor=11293">dr. J. Hönke</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">To be admitted to the Research Master Modern History and International Relations</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=74869"><b>Theorie Moderne Gesch. en Intern. Betr.</b></a></td><td align="right"><b>LGR008M10</b></td></tr><tr><td align="justify" colspan="3">Orientation on the foundation of the humanities and social sciences and a deepening of insight in the theory of history and international relations. This course also offers students in history and IR an introduction in eachothers disciplines, based on theoretical principles and concepts.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=449">dr. E.H. Runia</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6593">dr. B.A. Herborth</a><a href="/ocasys/rug/vak/viewtutor?tutor=449">dr. E.H. Runia</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">To be admitted to the Research Master Modern History and International Relations</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73872"><b>Thesis Preparation Class</b></a></td><td align="right"><b>LGR017M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10627">prof. dr. H.R.H. Büschel</a><a href="/ocasys/rug/vak/viewtutor?tutor=7467">dr. C. Humrich</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">portfolio, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

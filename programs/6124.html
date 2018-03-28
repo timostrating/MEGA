@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6124&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6124"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6124">Informatie over LLM Law and Public Adm., track Governance and Law in Digital Society(Leeuwarden)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>LLM Law and Public Adm., track Governance and Law in Digital Society(Leeuwarden)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>compulsory</td><td>RGMBE50920</td><td><a href="/ocasys/rechten/vak/show?module=78528">Thesis Project</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr><td class="nocolor">semester I</td><td>compulsory</td><td>RGMBE50306</td><td><a href="/ocasys/rechten/vak/show?module=78522">Seminar Policy Analysis</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGMBE50106</td><td><a href="/ocasys/rechten/vak/show?module=78520">Policy Science &amp; Safety Issues</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMBE50506</td><td><a href="/ocasys/rechten/vak/show?module=78524">Safety &amp; Security in a Digital Society</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>compulsory</td><td>RGMBE50206</td><td><a href="/ocasys/rechten/vak/show?module=78521">Modern Public Management</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMBE50406</td><td><a href="/ocasys/rechten/vak/show?module=78523">Supervision &amp; Enforcement</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>OCC</td><td>RGMBE50705</td><td><a href="/ocasys/rechten/vak/show?module=78526">Cyber Crime</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>OCC</td><td>RGMBE50805</td><td><a href="/ocasys/rechten/vak/show?module=78527">Governance of Safety</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>OCC</td><td>RGMBE50605</td><td><a href="/ocasys/rechten/vak/show?module=78525">Law Enforcement in Digital Society</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">This track in the master Law and Public Administration is only offered in Leeuwarden and will fully be taught in English.<br/>OCC =  Optional compulsory course: choose 2 from a list of 3</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78526"><b>Cyber Crime</b></a></td><td align="right"><b>RGMBE50705</b></td></tr><tr><td align="justify" colspan="3">Gestart wordt met de behandeling van de supranationale wetgeving op het gebied van cybercriminaliteit en de daaruit voortvloeiende strafbaarstellingen op nationaal niveau. Achtereenvolgens komen de Cybercrimeverdragen en de daaruit volgende strafbaarstellingen aan bod. Voorts worden in verschillende colleges verschillende delicten behandeld:  <br/>1.	Cybercrimeverdrag en de Wet Computercriminaliteit I;<br/>2.	Wetten Computercriminaliteit II en III;<br/>3.	Hacken; <br/>4.	Vermogenscriminaliteit;<br/>5.	Kinderpornografie. <br/><br/>Het vak bestaat uit 5 hoorcolleges en 5 werkgroepen. Tijdens de hoorcolleges wordt de stof per thema behandeld, tijdens de werkgroepen wordt verdieping gezocht door de studenten actief met de stof aan de slag te laten gaan. De studenten worden opgedeeld in groepjes. Per week bereidt één groep de werkgroep voor, d.w.z. dat ze een verdiepende inleiding van het thema van de betreffende week geven, een artikel bespreken en een groepsdiscussie leiden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=78527"><b>Governance of Safety</b></a></td><td align="right"><b>RGMBE50805</b></td></tr><tr><td align="justify" colspan="3">Het vak draagt theoretische kennis aan over de dilemma’s van de coördinatie van veiligheidsvraagstukken in een open en democratische samenleving. Hoe waarborgen we fundamentele waarden van transparantie, rechtsbescherming en privacybescherming wanneer we tegelijkertijd met tal van uitdagingen op veiligheidsterrein worden geconfronteerd? Hoe zijn organisaties in het veiligheidsdomein aan te sturen?</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essaytentamen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78525"><b>Law Enforcement in Digital Society</b></a></td><td align="right"><b>RGMBE50605</b></td></tr><tr><td align="justify" colspan="3">In dit vak komen zowel de dreigingen als de kansen die de digitalisering voor de handhavende overheid met zich meebrengt, met de focus op strafvorderlijke regulering en de bijbehorende rechtswaarborgen voor burgers. Het spanningsveld tussen democratische legitimiteit en effectieve opsporing is een thema dat behandeld wordt. Een onderdeel van dat spanningsveld is  de noodzaak tot het betrekken van andere actoren bij de aanpak van veiligheidsproblemen. De politie kan niet overal tegelijk aanwezig zijn, vooral niet op internet. Een strategie om dat tekort op te vullen, is het betrekken van andere partijen middels publiek-private samenwerking. Hoe die betrokkenheid van anderen zich ontwikkelt en juridisch in elkaar steekt, is dan ook een ander belangrijk thema waarin verdieping wordt gezocht. De onderwerpen die aan bod komen, zijn:<br/>1.	Cybercrime en opsporing (reactief)<br/>2.	De aanpak van cybercrime als gedeelde maatschappelijke verantwoordelijkheid;<br/>3.	Cybercrimeconventie, de Wetten Computercriminaliteit en hun implicaties voor strafvordering;<br/>4.	Het gebruik van digitale middelen door de politie – deel I (proactief)<br/>5.	Het gebruik van digitale middelen door de politie – deel II (proactief)<br/><br/>Het vak bestaat uit 5 hoorcolleges en 5 werkgroepen. Tijdens de hoorcolleges wordt de stof per thema behandeld, tijdens de werkgroepen wordt verdieping gezocht door de studenten actief met de stof aan de slag te laten gaan. De studenten worden opgedeeld in groepjes. Per week bereidt één groep de werkgroep voor, d.w.z. dat het geven van een verdiepende inleiding van het thema van de desbetreffende week, het bespreken van een artikel en het leiden van een groepsdiscussie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78521"><b>Modern Public Management</b></a></td><td align="right"><b>RGMBE50206</b></td></tr><tr><td align="justify" colspan="3">De afgelopen 25 jaar heeft zich in het management van de publieke sector een revolutie voltrokken die bekend staat als New Public Management (NMP). Dat is een verzamelnaam voor allerlei soorten experimenten met nieuwe vormen van management. De grootst gemene deler ervan is het streven meer ‘marktachtige’ technieken toe te passen om de publieke sector efficiënter te maken. <br/>In deze cursus worden geschiedenis, achtergrond, werking en resultaten van NMP besproken en geanalyseerd, mede aan de hand van een internationale vergelijking. Daarbij is het fenomeen van digitalisering een recente ontwikkeling die nu al laat zien dat organisatievraagstukken daardoor worden beïnvloed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78520"><b>Policy Science &amp; Safety Issues</b></a></td><td align="right"><b>RGMBE50106</b></td></tr><tr><td align="justify" colspan="3">Om als analist bij te dragen aan de kwaliteit van het beleid of het beoordelen van het beleid, is het van belang te weten welke factoren invloed hebben op het beleidsproces. De beleidswetenschap biedt de kennis die inzicht kan geven in het verloop van dit proces. <br/><br/>Daarnaast worden verschillende analysetechnieken besproken, zoals probleemstructurering, kosten-batenanalyse, en argumentenanalyse. De kennis hierover stelt de student in staat de technieken te gebruiken, maar ook om de kwaliteit van het gebruik door anderen te beoordelen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78524"><b>Safety &amp; Security in a Digital Society</b></a></td><td align="right"><b>RGMBE50506</b></td></tr><tr><td align="justify" colspan="3">Het vak Safety and Security in Digital Society is bedoeld als inleiding op het thema veiligheid in een digitale samenleving. Het vak wordt gekenmerkt door een interdisciplinaire behandeling van de stof, waarbij inzichten uit bijvoorbeeld de criminologie, rechtssociologie en –filosofie worden gebruikt om het fenomeen digitalisering te kenschetsen. Dit gebeurt vanuit het perspectief van daders, slacht¬offers en de overheid. Het vak bestaat uit zes verschillende thema’s:<br/>1.	Belangrijkste concepten / begrippen;<br/>2.	Aard, omvang en schade als gevolg van deviant gedrag (criminologie, rechtssociologie); <br/>3.	Cybercriminelen en hun werkwijze (criminologie);<br/>4.	Materieel strafrecht in relatie tot digitalisering, magic circle (rechtswetenschap / rechtsfilosofie);<br/>5.	Grondrechten in een digitale samenleving (rechtswetenschap);<br/>6.	Techniek-filosofie.<br/><br/>Het vak bestaat uit 6 hoorcolleges en 6 werkgroepen. Tijdens de hoorcolleges wordt de stof per thema behandeld, tijdens de werkgroepen wordt verdieping gezocht door de studenten actief met de stof aan de slag te laten gaan. De studenten worden opgedeeld in groepjes. Per week bereidt één groep de werkgroep voor, d.w.z. dat het geven van een verdiepende inleiding van het thema van de desbetreffende week, het bespreken van een artikel en het leiden van een groepsdiscussie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78522"><b>Seminar Policy Analysis</b></a></td><td align="right"><b>RGMBE50306</b></td></tr><tr><td align="justify" colspan="3">De cursisten analyseren een beleid en stellen op basis van de resultaten een duidelijk en beargumenteerd advies op. Naast een schriftelijke rapportage presenteren zij de uitkomsten van het onderzoek mondeling, en verdedigen zij de conclusies. Bij de beoordeling tellen zowel het werkstuk en als de presentatie mee. Actieve participatie tijdens het seminaar is vereist.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), standaard seminaar, werkstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78523"><b>Supervision &amp; Enforcement</b></a></td><td align="right"><b>RGMBE50406</b></td></tr><tr><td align="justify" colspan="3">Het onderwijs is interdisciplinair van karakter in die zin dat naast een bestuurskundige introductie in de verschillende instrumenten die toezichthouders ter beschikking staan ook een bestuursjuridische en strafrechtelijke introductie in het toepasselijke recht en de algemene regels over toezicht en handhaving wordt gegeven. Aandacht wordt aandacht besteed aan het werk van verschillende toezichthouders op gemeentelijk, provinciaal en nationaal niveau. In het bijzonder wordt aandacht geschonken aan het werk van toezichthouders op de gegevensbescherming, veiligheid en justitie en op andere veiligheidsdomeinen (cybersafety, veiligheid op de werkplek, voedselveiligheid).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essaytentamen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=78528"><b>Thesis Project</b></a></td><td align="right"><b>RGMBE50920</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

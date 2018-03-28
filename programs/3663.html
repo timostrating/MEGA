@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3663&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3663"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3663">Informatie over Minor Recht</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Recht</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht*</td><td>RGABE70305</td><td><a href="/ocasys/rechten/vak/show?module=75934">Bestuursrecht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht*</td><td>RGAAR70105</td><td><a href="/ocasys/rechten/vak/show?module=75944">Inl. Recht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht*</td><td>RGASR70205</td><td><a href="/ocasys/rechten/vak/show?module=75931">Inleiding Strafrecht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGASR90205</td><td><a href="/ocasys/rechten/vak/show?module=75960">Inleiding Psychiatrie voor Juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>RGAPR70205</td><td><a href="/ocasys/rechten/vak/show?module=75937">Privaatrecht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGARI70110</td><td><a href="/ocasys/rechten/vak/show?module=75958">Informaticarecht voor niet-juristen</a></td><td>Nederlands</td><td>10</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>RGAPR90805</td><td><a href="/ocasys/rechten/vak/show?module=75794">Recht, Religie en Samenleving</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II a</td><td>keuze</td><td>RGARG70105</td><td><a href="/ocasys/rechten/vak/show?module=75957">Gesch. van de Europese Rechtswetenschap</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>keuze</td><td>RGAAR90305</td><td><a href="/ocasys/rechten/vak/show?module=75813">Frans recht en Franse rechtstaal</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGAAR50405</td><td><a href="/ocasys/rechten/vak/show?module=75945">German Law and Legal German</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>Minoreisen: verplicht 20 ec; keuze 10 ec;</li><li>Het is ook mogelijk om de minor Recht in een omvang van 15 EC te volgen. In dat geval dient u de vakken met de status verplicht* te behalen (dat zijn bestuursrecht voor niet-juristen, inl. recht voor niet-juristen en inleiding strafrecht voor niet-juristen)</li><li>De minoren van de Faculteit Rechtsgeleerdheid staan niet open voor uitwisselingsstudenten.</li><li>Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> </li></ul><br/><ul><li>1-9-17: Inleiding Psychiatrie voor niet-juristen is verplaatst van blok 2 naar blok 1</li><li>1-9-16: Naamswijziging: Droit Francais et langage juridique -&gt; Frans Recht en Franse Rechtstaal</li><li>1-9-16: Naamswijziging: Duits Recht en Duitse Rechtstaal -&gt; German Law and Legal German</li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75934"><b>Bestuursrecht voor niet-juristen</b></a></td><td align="right"><b>RGABE70305</b></td></tr><tr><td align="justify" colspan="3">Omschrijving<br/><br/>Het bestuursrecht gaat over de mogelijkheden die het recht aan de overheid biedt om de samenleving precies zo te organiseren als de politiek – de vertegenwoordiging van ons allemaal – het heeft afgesproken. Bestuursrecht gaat ook over de mogelijkheden van burgers om zich teweer te stellen tegen beslissingen van de overheid waarmee zij het niet eens zijn. Het bestuursrecht is m.a.w. het “recht voor, van en tegen het overheidsbestuur”. Bestuursrecht treft men aan op alle maatschappelijke velden waarop de overheid een taak heeft: bv gezondheid, onderwijs, ruimtelijke ordening, openbare orde en veiligheid,milieu. Voordat een onderneming afvalstoffen mag lozen op de rivier, moet hij in het bezit zijn van een vergunning van de overheid. Personen die het niet eens zijn met de verleende vergunning kunnen daartegen proceren bij de bestuursrechter. Maar ook vreemdelingen- en vluchtelingenrecht is bestuursrecht. Mag een vluchteling uit Soedan naar Nederland komen, hier wonen, werken of naar de universiteit gaan om hier bijvoorbeeld geneeskunde te studeren? En wat zijn zijn rechten als een vergunning wordt geweigerd? Een ander voorbeeld van bestuursrecht is het sociale zekerheidsrecht. U bent of wordt werkloos of arbeidsongeschikt en vraagt een uitkering aan. Wie beslist over die uitkering, welke regels zijn van toepassing?Het vak Bestuursrecht 1 heeft een inleidend karakter. <br/><br/>Werkwijze<br/><br/>Hoorcolleges, waarin de stof wordt behandeld. Tijdens de hoorcolleges worden geregeld cases behandeld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1340">prof. mr. dr. H.E. Broring</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen), zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href=" http://www.rug.nl/rechten/kennisbank/" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75813"><b>Frans recht en Franse rechtstaal</b></a></td><td align="right"><b>RGAAR90305</b></td></tr><tr><td align="justify" colspan="3">In interactieve hoorcolleges maakt u kennis met het constitutionele recht, het bestuursrecht, het privaatrecht en het strafrecht van Frankrijk. Tevens proberen we ons de Franse rechtsterminologie eigen te maken. Eerst wordt u echter ingewijd in de Franse rechtscultuur. Het vak plaatst het Nederlands recht in een rechtsvergelijkend perspectief.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1578">mr. A.J. Wierenga</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1578">mr. A.J. Wierenga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, zie opmerkingen</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Verplicht: propedeuse.</li><li>Dit vak wordt in het Nederlands gegeven en staat niet open voor uitwisselings-studenten.</li><li>Niet af te leggen door studenten die voor 1-9-2016 het vak Droit Francais et langage juridique hebben afgelegd.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75945"><b>German Law and Legal German</b></a></td><td align="right"><b>RGAAR50405</b></td></tr><tr><td align="justify" colspan="3">The module will be given in semester 2b and consists of a serie of seven lectures. The classes will be in English.In these lectures, attention will be paid to Germany's constitutional law, the relationship between international and national law, German private law (the BGB) and German criminal and administrative law. Several aspects will be placed in a legal history perspective. In addition, with regard to Germany's law and legal language, several court decisions (of the Bundesverfassungsgericht in particular) will be discussed in order to give students a brief introduction to German legal terms.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=242">dr. mr. P.G. Tassenaar</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=242">dr. mr. P.G. Tassenaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a><a href="/ocasys/rug/vak/viewtutor?tutor=1324">mr. P.A.J. van den Berg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>Law students: compulsory: first year certificate.</li><li>Students following the module as a Minor: Introduction to Law for non-law students highly recommended.</li><li>This course will be taught in English and is open to exchange students.</li><li>Not accessible for students who have passed German Law and Legal Language before 1-9-2016.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75957"><b>Gesch. van de Europese Rechtswetenschap</b></a></td><td align="right"><b>RGARG70105</b></td></tr><tr><td align="justify" colspan="3">Het Romeinse recht heeft een belangrijke rol gespeeld in het ontstaan van een gemeenschappelijke Europese juridische cultuur. In de zesde eeuw na Chr. is het gecodificeerd door keizer Justinianus, maar pas met zijn ‘herontdekking’ in de elfde eeuw en de stichting van de middeleeuwse universiteiten werd het de grondslag van de traditie van het ‘ius commune’, een traditie die zelfs niet werd onderbroken door de codificaties van de negentiende eeuw.<br/><br/>Het vak besteedt aandacht aan de factoren die hebben bijgedragen aan de vorming van deze traditie: Over welk Europa spreken wij? Hoe zag dat Romeinse recht eruit? Wat was de rol van het canonieke recht? Wat waren de concurrenten van het Romeinse recht? De ontwikkeling van de traditie wordt vervolgd tot in het recente verleden in zeven weken waarin op de colleges ook teksten worden voorgesteld als illustratie van het betoog. <br/><br/><b>Speciale juridische kennis wordt niet vereist.</b><br/><br/><br/><br/>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1339">prof. mr. F. Brandsma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1339">prof. mr. F. Brandsma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75958"><b>Informaticarecht voor niet-juristen</b></a></td><td align="right"><b>RGARI70110</b></td></tr><tr><td align="justify" colspan="3">Met het groeiende economisch belang van de ICT worden ook de juridische aspecten van zaken als elektronische handel, automatiseringscontracten, intellectuele eigendom van software en content, computercriminaliteit en beveiliging belangrijker. Automatiseringsdeskundigen moeten enig begrip van deze onderwerpen hebben om de juridische knelpunten te onderkennen en de invloed van het juridische kader op hun latere werkzaamheden te kunnen inschatten. Informaticarecht voor niet-juristen wordt als Algemeen Vormend Vak aangeboden aan alle niet-rechtenstudenten. Enige kennis van informatie- en communicatietechnologie is gewenst.<br/>De volgende onderwerpen komen aan de orde:<ul><li>Intellectuele eigendom van software</li><li>Internetrecht</li><li>Domeinnamen en merkenrecht</li><li>De automatiseringsovereenkomst</li><li>Verkoop via internet</li><li>Aansprakelijkheid voor software</li><li>Computercriminaliteit</li></ul></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4427">mr. R. Koolhoven</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11351">mr. L. Jensma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1429">mr. dr. A.M. Klingenberg</a><a href="/ocasys/rug/vak/viewtutor?tutor=11341">mr. K. Konings</a><a href="/ocasys/rug/vak/viewtutor?tutor=4427">mr. R. Koolhoven</a><a href="/ocasys/rug/vak/viewtutor?tutor=1482">mr. dr. E.D.C. Neppelenbroek</a><a href="/ocasys/rug/vak/viewtutor?tutor=12458">mr. F.W.J. van Geelkerken</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie [<a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75944"><b>Inl. Recht voor niet-juristen</b></a></td><td align="right"><b>RGAAR70105</b></td></tr><tr><td align="justify" colspan="3">Het onderwijs wordt gegeven in het eerste blok (semester 1a) in de vorm van een zevental hoorcolleges. Het vak heeft een studielast van 5 EC's.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7769">mr. dr. B. Roorda</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7769">mr. dr. B. Roorda</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Niet toegankelijk voor Rechtenstudenten</li></ul>Niet-rechtenstudenten: verplicht: propedeuse van de eigen faculteit;</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>, onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75960"><b>Inleiding Psychiatrie voor Juristen</b></a></td><td align="right"><b>RGASR90205</b></td></tr><tr><td align="justify" colspan="3">Binnen de juridische praktijk kan men geconfronteerd worden met gedrag waarbij een psychiatrische stoornis een rol speelt. Als jurist is kennis van het gedrag nodig om de client of verdachte te kunnen begrijpen en om daar bij de bejegening rekening mee te houden. Tevens is deze kennis een vereiste om gedragsdeskundige rapportages kritisch te beoordelen. Ook is kennis van psychiatrische stoornissen een voorwaarde om zich een beeld te vormen van mogelijk toekomstig grensoverschrijdend gedrag, zoals relevant is bij procedures betreffende verplichte psychiatrische zorg. In dit college worden de belangrijkste stoornissen besproken waarmee juristen in de praktijk te maken kunnen krijgen. De nadruk ligt daarbij op de beschrijving van hoe stoornissen zich op gedragsniveau kunnen manifesteren. Het gaat om stoornissen  die gepaard kunnen gaan met grensoverschrijdend gedrag of die een gevaar kunnen inhouden voor de betrokkene zelf of voor anderen. De behandelmogelijkheden worden beknopt bespoken. Aandacht wordt gegeven aan de raakvlakken tussen de psychiatrische invalshoek en die van het recht <br/>De opzet is die van een hoorcollege.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75931"><b>Inleiding Strafrecht voor niet-juristen</b></a></td><td align="right"><b>RGASR70205</b></td></tr><tr><td align="justify" colspan="3">In dit vak worden een aantal centrale leerstukken van het materiële en het formele strafrecht behandeld. Het materiële strafrecht beschrijft welke gedragingen strafbaar zijn en bepaalt welke sancties kunnen worden opgelegd. Het formele strafrecht is het procesrechtelijke deel van het strafrecht. Van oudsher is het strafrecht in deze twee delen opgesplitst. Maar beide delen worden geïntegreerd behandeld, omdat een zinvolle bestudering van het ene deel alleen mogelijk als daarbij de centrale beginselen van het andere deel worden betrokken. <br/><br/>In dit vak staat de bestudering van de volgende onderwerpen centraal:<ul><li>de voorwaarden voor strafbaarheid van personen</li><li>de structuur van het strafbare feit</li><li>de opbouw van de delictsomschrijving</li><li>de delictsbestanddelen opzet en culpa </li><li>de strafuitsluitingsgronden</li><li>dagvaarding en tenlastelegging</li><li>het onderzoek ter terechtzitting</li><li>bewijsrecht</li><li>de beraadslaging in raadkamer</li><li>het vonnis.</li><li>straffen en strafrechtelijke maatregelen</li></ul></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7868">mr. R.A. Hoving</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7868">mr. R.A. Hoving</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75937"><b>Privaatrecht voor niet-juristen</b></a></td><td align="right"><b>RGAPR70205</b></td></tr><tr><td align="justify" colspan="3">Privaatrecht is het recht tussen  burgers onderling. Het vak bouwt voort op Inleiding Recht voor niet-juristen. Iedereen komt in het dagelijks leven op uiteenlopende wijze in aanraking met het privaatrecht. In een collegecyclus van 6 weken passeert in feite het leven van elke dag, en de rol van het privaatrecht daarin, de revue.<br/>Kan ik zonder toestemming van mijn echtgenoot met geleend geld gaan beleggen (DEXIA) of een bedrijf kopen? Delen al mijn kinderen op gelijke wijze in mijn nalatenschap? Mag ik mijn (oudste) zoon bevoordelen? Waaraan ben ik gebonden als ik per e-mail een abonnement voor een mobiele telefoon afsluit? En als ik in een te enthousiaste bui een huis koop, kan ik dan nog terug? En wat als de grond vervuild blijkt te zijn, of de garage vijftien centimeter over de grens blijkt te zijn gebouwd? <br/>Op het gebied van letselschade geeft het leven tal van treurigheden te zien: heb ik als ouder een claim jegens de dronken automobilist die voor mijn ogen mijn kind doodrijdt? En tegen ZOO BV als een Bokito mij onverwacht aanvalt?<br/>Kortom, relevante vragen van alledag worden in een juridisch  kader geplaatst. Na afloop van dit vak heeft u inzicht in belangrijke privaatrechtelijk leerstukken en het vermogen om de daarmee samenhangende juridische vraagstukken te beoordelen. U leest de krant anders, beslist!</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12253">mr. J.T. Hiemstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1368">mr. dr. R.J.C. Flach</a><a href="/ocasys/rug/vak/viewtutor?tutor=12253">mr. J.T. Hiemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1553">prof. mr. dr. L.C.A. Verstappen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75794"><b>Recht, Religie en Samenleving</b></a></td><td align="right"><b>RGAPR90805</b></td></tr><tr><td align="justify" colspan="3">Het eerste gedeelte van de collegecyclus bestaat uit een historische uiteenzetting van het beginsel van scheiding van kerk en staat. In de hedendaagse multiculturele samenleving is dat volop actueel.Betekent scheiding van kerk en staat ook scheiding van politiek en religie? En wat houdt de term 'Neutrale staat'in? <br/> In het tweede gedeelte staat centraal de positie van kerkgenootschappen. Naast de traditionele kerkgenootschappen wordt daarbij in het bijzonder ingegaan op de islamitische geloofsgemeenschappen. Ingegaan wordt op de grenzen van de organisatievrijheid. Sharia in Nederland? Is er ruimte voor pluralistische rechtspraak? Waar ligt de grens voor kerkgenootschappen en andere religieuze gemeenschappen? Die vrijheid staat na 11 september 2001 onder druk. Een afzonderlijk college handelt over de wijze waarop de burgerlijke rechter conflicten met een religieuze lading beoordeelt. Wat is voorts de rol van mediation? In het derde deel wordt het centrale thema vanuit de (botsende) grondrechten belicht. Denk daarbij bijv. aan een (algemeen)  burkaverbod? of 'Pluriform Uniform?' (advies inzake uiterlijke verschijningsvormen politie,CGB 2007); het  Advies inzake sluiten van homohuwelijk door ambs (CGB 2008); het SGP-proces (2010); Klokluiden in Tilburg?(2011) en het Kamer-debat terzake van een verbod op ritueel slachten (2011). Schrapping van het verbod op godslastering(2013). Dat het vak actueel is hoeft geen betoog. Ook op Europees niveau speelt thans de problematiek. Denk maar aan: 4-EVRM-uitspraken (2013), o.m. Eweida tegen British Airways: mag een stewardess een kruisje dragen? De Friese ondernemer die een stagiaire die homo was voortijdig wegzond en zich daarbij op zijn geweten beriep (2016). De problematiek van de grondrechten wordt voorafgegaan door een college over de organisatievorming van de islamitische gemeenschappen in West-Europa in het perspectief van de verhouding kerk en staat. Er bestaan ook strafrechtelijke grenzen aan de vrijheid om uiting te geven aan religieuze overtuigingen en de vrijheid om anderen in hun geloofsovertuiging te krenken.  Denk aan de Cartoonkwesties,Fitna (2008) het Spandoek-arrest (2009), de  vervolging van Wilders (2011). De vervolging van Wilders is in 2016 opnieuw acteel.<br/>Werkwijze: Onderwijsvorm: uitgangspunt 2 uur hoorcollege. Nadere informatie over het rooster is te vinden op <a href="http://nestor.rug.nl" target="_blank">Studentportal (Nestor)</a>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1302">prof. mr. dr. F.T. Oldenhuis</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1341">prof. mr. dr. J.G. Brouwer</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=1479">mr. M. Nap</a><a href="/ocasys/rug/vak/viewtutor?tutor=1302">prof. mr. dr. F.T. Oldenhuis</a><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

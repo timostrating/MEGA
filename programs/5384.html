@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5384&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5384"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5384">Informatie over DD MSc Finance – UAIC of Iasi, Romania (2-jarig)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>DD MSc Finance – UAIC of Iasi, Romania (2-jarig)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (basisprogramma voor studenten uit Iasi)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td></td><td>studie aan UAIC, Iasi</td><td>Engels</td><td>60</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (basisprogramma voor studenten uit Iasi)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>EBM008B05</td><td><a href="/ocasys/rechten/vak/show?module=73315">Corporate Finance for MSc Finance</a></td><td>Engels</td><td>5</td><td>5</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM015B05</td><td><a href="/ocasys/rechten/vak/show?module=73289">Portfolio Theory</a></td><td>Engels</td><td>5</td><td>5</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM070A05</td><td><a href="/ocasys/rechten/vak/show?module=73698">Research Methods in Finance</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>EBM007C05</td><td><a href="/ocasys/rechten/vak/show?module=73149">Corporate Valuation for MSc Finance</a></td><td>Engels</td><td>5</td><td>5</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM068A05</td><td><a href="/ocasys/rechten/vak/show?module=73643">Derivative Instruments</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM071A05</td><td><a href="/ocasys/rechten/vak/show?module=73682">Responsible Finance and Investing</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>EBM866B20</td><td><a href="/ocasys/rechten/vak/show?module=73462">Master's Thesis Finance</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuzegroep <b>A</b></td><td>EBM067A05</td><td><a href="/ocasys/rechten/vak/show?module=73733">Banking, Insurance and Risk Management</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>EBM822A05</td><td><a href="/ocasys/rechten/vak/show?module=73461">Institutional Investment Management</a></td><td>Engels</td><td>5</td><td>5</td></tr><tr><td class="nocolor">semester II b</td><td>keuzegroep <b>A</b></td><td>EBM811C05</td><td><a href="/ocasys/rechten/vak/show?module=73246">Corporate Governance for MSc Finance</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Studenten kiezen 10 EC uit de keuzegroep (KG).<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73733"><b>Banking, Insurance and Risk Management</b></a></td><td align="right"><b>EBM067A05</b></td></tr><tr><td align="justify" colspan="3">Financial institutions such as banks play a key role in the current economic system. Due to this role, they are regulated and supervised to ensure that financial crises (like the 2007 subprime crisis) should not occur. This course concentrates on different risks that financial institutions take, how these risks can be managed, and how the current regulation, especially Basel III, is devised. In particular, we analyze interest rate risk, market risk, credit risk, liquidity risk and operational risk of financial intermediaries.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9789">dr. M.A. Lamers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9789">dr. M.A. Lamers</a><a href="/ocasys/rug/vak/viewtutor?tutor=2136">prof. dr. L.J.R. Scholtens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students and for students from the MSc EORAS. Students are expected to have prior knowledge about asset pricing and derivative instruments. It is highly advised to have completed the course Derivate Instruments.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: E. Jelsema, phone +31(0)50 3633685, e-mail: e.t.jelsema@rug.nl, room: 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73315"><b>Corporate Finance for MSc Finance</b></a></td><td align="right"><b>EBM008B05</b></td></tr><tr><td align="justify" colspan="3">The course deals with state-of-the art theory about Corporate Finance. The focus is from a micro-economic perspective, i.e. principal-agent theory. Game theoretic (mathematical) models will be discussed and analyzed and students are required to both master the derivations in these models and develop intuition for the various results. Topics that are dealt with are: separation of management and ownership, moral hazard and adverse selection in financing decisions, credit rationing, effects of diversification on financing constraints, active and passive monitoring, collateral, optimal contract design, and CEO renumeration. The course consists of a number of lectures and tutorials. During the tutorials homework assignments will be discussed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9818">dr. G.T.J. Zwart</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12286">dr. N. Selmane</a><a href="/ocasys/rug/vak/viewtutor?tutor=9818">dr. G.T.J. Zwart</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">accessible for MSc Finance students only</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: E.T. Jelsema, phone +31 (0)50 363 3685, e-mail e.t.jelsemal@rug.nl, room 5411.0836.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73246"><b>Corporate Governance for MSc Finance</b></a></td><td align="right"><b>EBM811C05</b></td></tr><tr><td align="justify" colspan="3">This course will provide students with an overview of the theoretical and empirical literature on the main themes in corporate governance. The aim is to provide students with in-depth knowledge of how determinants and outcomes of corporate governance arrangements have been measured and studied, using examples from the academic literature. As the literature on corporate governance is extensive, we have chosen a number of topics that are hotly debated in academic as well as policymaking circles. These topics will be related to company performance, linking corporate governance and strategy to corporate finance.<br/>The first part of the course consists of a number of general lectures, in which an overview of the theoretical literature on corporate governance is provided. The lectures are based on a set of academic articles. In the second part of the course, student teams are going to apply this knowledge, first by writing a critical report about a published academic journal article on corporate governance, then by gathering their own data on some aspects of corporate governance and finally by writing a paper about the relationship between corporate governance and firm performance and/or strategy. The course will end with a written exam.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1904">prof. dr. C.L.M. Hermes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1899">drs. M.E. Helmantel</a><a href="/ocasys/rug/vak/viewtutor?tutor=1904">prof. dr. C.L.M. Hermes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, workshop(s) </td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students and students from the MSc Business Administration-O&amp;MC.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: E.T. Jelsema, phone +31 (0)50 363 3685, e-mail e.t.jelsema@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73149"><b>Corporate Valuation for MSc Finance</b></a></td><td align="right"><b>EBM007C05</b></td></tr><tr><td align="justify" colspan="3">After passing the course Corporate Valuation, students are able to value a company using the best practices from the corporate finance practice, and to evaluate these practices from an academic and a professional perspective. The course prepares students for a job as a company analyst, financial analyst, portfolio manager, or an investment banker.<br/><br/>Two key players from the Dutch corporate finance practice present a business case for the course Corporate Valuation. Both cases are centered on a transaction of a company. At what price can the company be acquired or sold? Teams of students perform a thorough financial analysis as well as a strategic analysis of the business. Each team develops its own valuation and buyout model in Excel. Negotiations  conclude each business case.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1787">dr. ing. N. Brunia</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1787">dr. ing. N. Brunia</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Grietje Pol, phone +31 (0)50 3633685, e-mail g.pol@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73643"><b>Derivative Instruments</b></a></td><td align="right"><b>EBM068A05</b></td></tr><tr><td align="justify" colspan="3">The course focuses on the characterization and valuation of financial derivative instruments, such as options, forwards, futures, and swaps. In addition, attention will be devoted to the use of these instruments in portfolio and corporate risk management. The course material also focuses on institutional aspects, the practical and theoretical way in which market prices are established, and the relation with arbitrage and hedging strategies.<br/>The course material will be discussed during weekly lectures, and students work - and get feedback - on assigned problems during weekly tutorials.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2150">dr. P.P.M. Smid</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1899">drs. M.E. Helmantel</a><a href="/ocasys/rug/vak/viewtutor?tutor=2150">dr. P.P.M. Smid</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Grietje Pol, e-mail g.pol@rug.nl, phone +31 (0)50 3633685, room 5411.0836<br/>Resit semester IIa.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73461"><b>Institutional Investment Management</b></a></td><td align="right"><b>EBM822A05</b></td></tr><tr><td align="justify" colspan="3">This course aims to further develop the student's understanding of portfolio management and investment. More specifically, the course aims to develop an understanding of the methods and techniques used in the field of institutional investment management.<br/>The course has two main points of focus. Firstly, in order to be able to do conduct empirical research and understand the practical applications, the theoretical aspects of institutional investment management are examined. Secondly, the practical application of these theories in e.g., banking, insurance companies, pension funds and institutional investment houses are explored. The lectures (including a field trip to Amsterdam) provide a comprehensive insight in the theoretical and practical issues concerning the institutional investment management process. Students become familiar with up-to-date methods and techniques implemented in investment management via case studies and – ideally - by means of a serious investment game. Active student participation is required.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4410">prof. dr. R.M. Salomons</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6068">dr. J.J. Bosma</a><a href="/ocasys/rug/vak/viewtutor?tutor=4410">prof. dr. R.M. Salomons</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students. We strongly recommend to finish the course 'Portfolio Theory' before entering this course.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: E.T. Jelsema, phone +31 (0)50 363 3685, e-mail e.t.jelsema@rug.nl, room 5411.836. <br/>'Institutional Investment Management' together with 'Portfolio Theory' provide a good basis for the CFA/VBA postgraduate courses for investment analysts.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73462"><b>Master's Thesis Finance</b></a></td><td align="right"><b>EBM866B20</b></td></tr><tr><td align="justify" colspan="3">The Master's Thesis is the conclusion of the MSc Finance. It is a test of the student's ability to conduct independent academic research resulting in a thesis. The research project has to be in the field of Finance, with a preference for an empirical thesis. We follow a structured approach as documented in the Guidelines for Writing a Thesis in Finance. <br/>You need to submit your approved thesis proposal according to the standards specified in the Guidelines for Writing a Thesis in Finance. This proposal should be uploaded on the Nestor site of the course or be submitted to Grietje Pol (g.pol@rug.nl). The exact deadlines will be available on the Nestor website of the Msc Finance Organization. Based on your proposal, you will be assigned a supervisor. Supervisors may organize meetings jointly with other students.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2097">dr. A. Plantinga</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2097">dr. A. Plantinga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">afstudeeropdracht, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students have passed at least 20 EC in terms of courses of the MSc Finance, and also have passed the mandatory CITI modules. Students also need to have an approved program for the MSc Finance.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course is offered in both semester I and semester II.<br/>Secretary: Ms. G. Pol, phone: +31 (0)50 363 3685, e-mail: g.pol@rug.nl. Room 5411.836<br/>It is necessary that you read the “Thesis Manual MSc Finance", a document that can be downloaded from the Nestor page of the MSc Finance Organization. Please notice that there are specific deadlines for handing in a thesis proposal and the final thesis. In order to have access to this Nestor web site you need to be registered as a student of the Msc Finance and you need to enroll for the Msc Finance Thesis. Starting from the second semester of 2016-2017, we do no longer accept thesis proposals that are going to be used for different program except for students from the MSc Economics.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=73289"><b>Portfolio Theory</b></a></td><td align="right"><b>EBM015B05</b></td></tr><tr><td align="justify" colspan="3">Portfolio theory addresses the question of how to construct portfolios of individual stocks and bonds that satisfy the objectives of an investor. We study the theory of portfolio management and asset allocation In addition, we study asset pricing models (CAPM, APT) and how asset pricing models can be tested empirically. Students learn also how to use Excel in building models for constructing and evaluating portfolios.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2097">dr. A. Plantinga</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1787">dr. ing. N. Brunia</a><a href="/ocasys/rug/vak/viewtutor?tutor=2097">dr. A. Plantinga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Ms. G. Pol, tel: +31 (0)50 3633685, e-mail: g.pol@rug.nl. Room 5411.0836.<br/>During several classes, we invite students to bring their laptop to class for hands-on instruction and application of the theories discussed during class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73698"><b>Research Methods in Finance</b></a></td><td align="right"><b>EBM070A05</b></td></tr><tr><td align="justify" colspan="3">The course provides students with an introduction to econometric tools that are frequently used in finance research. The techniques will be taught during lectures and applied in computer tutorials.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5396"> V. Angelini</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5396"> V. Angelini</a><a href="/ocasys/rug/vak/viewtutor?tutor=10757"> S.S.H. Eriksen</a><a href="/ocasys/rug/vak/viewtutor?tutor=12288">dr. S. Homroy</a><a href="/ocasys/rug/vak/viewtutor?tutor=10756"> J. van Essen, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">computer practica, hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only for MSc Finance students and IFM students.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course is offered in both semester Ia and semester IIa.<br/>Secretary: Ms. G. Pol, phone: +31 (0)50 3633685, e-mail: g.pol@rug.nl@rug.nl. Room 5411.0836.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=73682"><b>Responsible Finance and Investing</b></a></td><td align="right"><b>EBM071A05</b></td></tr><tr><td align="justify" colspan="3">This course focuses on the role of non-financial attributes in production, especially the interaction between financial and social/environmental performance of firms, in particular financial institutions, and the impact of this interaction on finance and investment decisions at the level of these firms and with respect to the investment portfolio. As to financing, it especially is appropriate pricing that will be discussed; as to investing, we investigate the impact of screening on performance. We highlight the costs and benefits of managing non-financial attributes and go into their pricing and into the consequences of inappropriate pricing. Student will be required to work on projects in which they try to come to grips with responsibility in financing and investing.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2136">prof. dr. L.J.R. Scholtens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2136">prof. dr. L.J.R. Scholtens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met meerkeuzevragen, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students will have a BSc degree in Economics and/or Business, a background in Finance and a keen interest in both Environmental and Social issues and in Banking, Finance and Investing.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Ellie Jelsema, phone: +31 (0)50 3633685, e-mail: e.t.jelsema@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

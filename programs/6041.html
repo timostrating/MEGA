@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6041&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6041"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6041">Informatie over Pre-LLM European Economic Law</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Pre-LLM European Economic Law</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (For International Relations and/or Political Science students)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II a</td><td>compulsory</td><td>RGBPW50305</td><td><a href="/ocasys/rechten/vak/show?module=75882">Decision making in the EU</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGBBE50110</td><td><a href="/ocasys/rechten/vak/show?module=75865">Europeanisation of Public Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>compulsory</td><td>RGBEE50405</td><td><a href="/ocasys/rechten/vak/show?module=75895">Research seminar European Law</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II b</td><td>compulsory</td><td>RGBEO50010</td><td><a href="/ocasys/rechten/vak/show?module=75849">Economics of Int Trade &amp; Int Finance</a></td><td>Engels</td><td>10</td><td>4</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Pre-LLM European Economic Law)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGBEE50010</td><td><a href="/ocasys/rechten/vak/show?module=75876">European Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGPEE510BD</td><td><a href="/ocasys/rechten/vak/show?module=75688">Law and Legal Skills - IT for Lawyers</a></td><td>Engels</td><td></td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>compulsory</td><td>RGPAR510AD</td><td><a href="/ocasys/rechten/vak/show?module=75884">Law and Legal Skills: the Dutch example</a></td><td>Engels</td><td>10</td><td>8</td></tr><tr><td class="nocolor">semester I b</td><td>compulsory</td><td>RGPSR50110</td><td><a href="/ocasys/rechten/vak/show?module=75853">Criminal Law</a></td><td>Engels</td><td>10</td><td>8</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>compulsory</td><td>RGBPW50305</td><td><a href="/ocasys/rechten/vak/show?module=75882">Decision making in the EU</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGBBE50110</td><td><a href="/ocasys/rechten/vak/show?module=75865">Europeanisation of Public Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>compulsory</td><td>RGBEE50405</td><td><a href="/ocasys/rechten/vak/show?module=75895">Research seminar European Law</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II b</td><td>compulsory</td><td>RGBEO50010</td><td><a href="/ocasys/rechten/vak/show?module=75849">Economics of Int Trade &amp; Int Finance</a></td><td>Engels</td><td>10</td><td>4</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75853"><b>Criminal Law</b></a></td><td align="right"><b>RGPSR50110</b></td></tr><tr><td align="justify" colspan="3">The course Criminal law is divided  into two separate parts. Part A is dedicated to substantive criminal law, whereas part B is dedicated to procedural criminal law. There will be one single exam. Half of the grade is based on questions about part A and the other half of the grade is based on questions about part B. <br/><br/>Part A: substantive criminal law<br/><br/>Comparative law research shows that criminal law systems around the world deal with similar subjects and thus more or less with the same issues. Although, at first sight, every country seems to follow a path of its own, to a great extent criminal law systems have the same foundations. The objective of this part of the course is to study these fundamental and universal principles and concepts. Hypothetical cases will be used to explain legal doctrines and to explore the moral foundations of legal rules. The following topics will be discussed: the legality principle, actus reus (commission versus omission, causation), mens rea (intent versus negligence), the classification of offences, defences (justifications and excuses), inchoate offences (attempt and preparation), participation and theories of punishment.<br/><br/>Part B: procedural criminal law<br/><br/>National criminal justice systems differ substantially. The adversarial or common law approach has other roots than the inquisitorial or civil law approach. Nevertheless, all criminal law systems have to deal with similar subjects and/or legal questions, and thus more or less the same issues. In Europe, the case law of the European Court of Human Rights contains a standard that every Member State has to respect. In this course, the focus is on ECHR case law and the influence of this case law on national systems of criminal procedure. The following elements of criminal procedure will be discussed: preliminary investigations, preparation and representation at the trial, evidence, sentencing and appeal. The position and competences or rights of the different actors in criminal procedures will also be discussed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1350">dr. mr. A.A. van Dijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6187">dr. mr. L.J.J. Peters</a><a href="/ocasys/rug/vak/viewtutor?tutor=1350">dr. mr. A.A. van Dijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students who are registered for the Bachelor's degree 'International and European Law', Colloquium Doctum students 'International and European Law' or pre-master programme students provided that the course is part of the pre-master programme.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>During the first year of registration, regular first year students will have the opportunity, under certain conditions, to sit an additional prolonged oral resit exam in the same examination period as in which the (written)resit of that course takes place. For conditions and procedure, please check the Study and Information Guide for international students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75882"><b>Decision making in the EU</b></a></td><td align="right"><b>RGBPW50305</b></td></tr><tr><td align="justify" colspan="3">A substantial part of national law and policy stems from legal instruments and policy measures of the European Union. This module aims to provide students with a thorough analysis of the political and administrative processes which result in these European legal acts and policies.<br/>Content: first, the historical development, nature and functioning of the EU's political and institutional system, which is fundamentally different from national political systems in a number of ways, will be discussed. The administrative and political decision making that takes place within these frameworks will be analysed with the tools of political science. The policy process can be divided into various phases, from initiation to implementation and monitoring, and for each phase a number of specific problems and characteristics will be introduced.<br/>Teaching method: the module consists of lectures and workgroup meetings. In the workgroups students will have to write a research paper and give a presentation.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1490">dr. T. Nowak</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1490">dr. T. Nowak</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen + meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC in a legal university level programme or that participate in a pre-approved pre-master or decree programme.</li><li>This course is not open to exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Students are evaluated on the basis of the workgroup (participation, research paper, oral presentation) and an exam. In order to pass this course studtens have to pass both, workgroup and exam.<br/><br/>Not accessible for students who passed the course 'Besluitvormingsprocessen in de Europese Unie' before 1-9-11.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75849"><b>Economics of Int Trade &amp; Int Finance</b></a></td><td align="right"><b>RGBEO50010</b></td></tr><tr><td align="justify" colspan="3">The international economy is characterized by countless possibilities and uncertainties. The performance of national economies is influenced by variable factors such as exchange rates, trade barriers, constraints on international investment and the level of macroeconomic stability. If a country is to make its mark in the international economy, policymakers must be aware of these factors, how they will develop in the future, and why this is so. <br/>The module Economics of International Trade and International Finance discusses the most important economic theories that enable decision-makers, legal practitioners - and individuals in general - to (a) understand the international economy, and (b) assess national policy-making and enforcement.<br/>Motives behind and implications of trade barriers and international trade policy are explained, using classical trade theory, the Heckscher-Ohlin model, and elements from contemporary theories, such as economies of scale and imperfect competition.<br/>In International Finance, starting with the national available amount of money and the balance of payments, the interdependence of national income, national product, consumption, investments, imports, and exports between countries will be explained. A particular focus of the course is on the Mundel-Fleming model.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5809">prof. dr. S.E. Weishaar, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5809">prof. dr. S.E. Weishaar, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=12172"> Y. Zeng</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>Not accessible for students who passed the course Internationale Economie II before 1-9-11.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75876"><b>European Law</b></a></td><td align="right"><b>RGBEE50010</b></td></tr><tr><td align="justify" colspan="3">It is envisaged that this course will include the following topics although precise content and order may vary.<br/><br/>Following a brief introduction into the history of European integration, the emphasis of the course will be on <br/>(a)	the characteristics of the European Union legal order;<br/>(b)	institutional structure;<br/>(c)	substantive law including human rights and fundamental freedoms and internal market freedoms (covering an introduction to the Internal Market; free movement of goods; free movement of services and freedom of establishment; free movement of workers; European citizenship); and<br/>(d)	procedural law/remedies in the European Union legal order (including direct effect, state liability and national procedural autonomy; enforcement of European Union Law against Member States; actions for judicial review; references for preliminary rulings).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=11339">mr. dr. B.J. van Leeuwen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Please note that students must order: ONE textbook i.e. Chalmers, Davies and Monti OR Graig and De Burca AND the course Syllabus (new edition) AND the European Union Treaties &amp; Legislation. All students following this course should read Schutze (2012) An introduction to European Law before the start of this course.<ul><li>Voor bachelor Rechtsgeleerdheid (IER-studenten) zijn de online colleges van Introduction to International and European Law beschikbaar in het Engels.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75865"><b>Europeanisation of Public Law</b></a></td><td align="right"><b>RGBBE50110</b></td></tr><tr><td align="justify" colspan="3">Well known EU legal doctrines on ‘procedural autonomy’, ‘direct effect’, ‘consistent interpretation’, ‘ex officio application of European law’ and ‘state liability’ are used as a starting point for looking into the consequences of those doctrines in the various Member States. Attention is also given to important questions on the enforcement of European law in the national legal order, the organisation of the national judiciary and the influence of European law on fundamental principles of (public) law like a.o. legal certainty, non-discrimination and the proportionality principle. For those purposes case law is being analysed on how European law is actually being applied by the various national public law courts.<br/><br/>These and other doctrines show how Europeanisation affects the constitutional position of these national courts. However, not only the national courts are affected by Europeanisation. Similar effects are influencing the position of the national executives and the national parliaments. To understand these effects, the European Union will be examined as a (combination of) legal order(s), using concepts such as ‘autonomy’, ‘sovereignty’, ‘representation’ and ‘efficacy’. The aim of this analysis is to enable students to give an outline of the impact the European Union has on the position of the main actors of the Member States.<br/><br/>There will be fourteen lectures and seven tutorials.   Attendance of the tutorials is compulsory. Students can miss one tutorial. Students who miss two tutorials have the opportunity to make a one repair assignment. Repair assignments are graded with a pass of fail. Students who fail their repair assignment are not allowed to attend the written exam (both chances). Students who miss more than two tutorials are not allowed to attend the written exam (both chances) since only one repair assignment is allowed for the whole course.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7728">prof. dr. O.O. Cherednychenko</a><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed Administrative Law (RGBBE50010) before 1-9-2017.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75688"><b>Law and Legal Skills - IT for Lawyers</b></a></td><td align="right"><b>RGPEE510BD</b></td></tr><tr><td align="justify" colspan="3">This part  of the Legal Skills  module  introduces important online  legal resource tools  needed when studying European and International law. Both publicly  accessible  tools  (such as EUR-Iex, United  Nations Treaty  collection etc.)  and those available through the RUG Law Library portal  (such as Westlaw  etc.)  are used. <br/><br/>Each workgroup session is interactive with  students  and lecturer discussing  and examining the features of the online resources being used in that  session, when and where  they  may  be used and how to cite  resources accessed.<br/><br/>A number of tasks  are assigned per session to practice  skills  learnt and/or reinforce skills  gained  in previous sessions.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students who are registered for the Bachelor's degree 'International and European Law', Colloquium Doctum students 'International and European Law' or pre-master programme students provided that the course is part of the pre-master programme.</li><li>This course is not open to exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>This part does not have a separate study load. The 10 ECTS for the module 'Law and Legal Skills - IT for Lawyers' will be awarded as soon as both parts of the module (Law and Legal Skills: the Dutch example and Law and Legal Skills - ITL) have been passed.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75884"><b>Law and Legal Skills: the Dutch example</b></a></td><td align="right"><b>RGPAR510AD</b></td></tr><tr><td align="justify" colspan="3">This course provides insight into the workings of a legal system by using the Dutch system as a point of reference. The course explains general issues such as the nature of law, sources of law and the separation of political powers into three separate branches of government: legislative power, executive power and judicial power. Furthermore, the course familiarizes students with the existence and main characteristics of various areas of law in order to provide them with the basic knowledge that is expected of them in subsequent courses. Constitutional law, Administrative Law, Criminal law, International and European law and Private law will be introduced. Within these fields of law, both substantive as well as procedural law will be discussed. In addition, the course will help students to acquire the skills necessary to analyze questions of law and legal problems, such as reading legislation, analyzing case law and searching source materials (among other things law reports and literature). Apart from these specific legal skills, attention will also be given to more general skills, such as oral presentation, textual analysis and argumentation.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12167"> L.M. Bruijn, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12167"> L.M. Bruijn, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1511">mr. H.H. Runia</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students who are registered for the Bachelor's degree 'International and European Law', Colloquium Doctum students 'International and European Law' or pre-master programme students provided that the course is part of the pre-master programme.</li><li>This course is not open to exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>This part does not have a separate study load. The 10 ECTS for the module 'Law and Legal Skills: the Dutch example' will be awarded as soon as both parts of the module (Law and Legal Skills: the Dutch example and Law and Legal Skills - ITL) have been passed.</li><li>During the first year of registration, regular first year students will have the opportunity, under certain conditions, to sit an additional prolonged oral resit exam in the same examination period as in which the (written)resit of that course takes place. For conditions and procedure, please check the Study and Information Guide for international students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75895"><b>Research seminar European Law</b></a></td><td align="right"><b>RGBEE50405</b></td></tr><tr><td align="justify" colspan="3">While following European Law classes you may have realised that various European Law doctrines are related.<br/>For instance, the effectiveness of European law, combined with the preliminary reference procedure, and the interpretation of the fundamental freedoms are inherently connected. In this course you will consider in more depth a number of these connections and learn to apply concepts to practical solutions in European law. <br/><br/>The course is assessed by a mixture of assignments which will be carried out during the seven seminar weeks. The final grade for the course is a composite of the grades in the assignments.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=11339">mr. dr. B.J. van Leeuwen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>Additionally, this course is exclusively for students registered in the LLB programme International and European Law and students registered in the Dutch programme Internationaal en Europees recht.</li><li>This course is not open to exchange students.</li><li>European Law (recommended).</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

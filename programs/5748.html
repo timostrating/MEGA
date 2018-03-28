@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5748&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5748"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5748">Informatie over LLM Global Criminal Law</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>LLM Global Criminal Law</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>compulsory</td><td>RGDOS500</td><td><a href="/ocasys/rechten/vak/show?module=75642">English written proficiency support</a></td><td>Engels</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMSR50806</td><td><a href="/ocasys/rechten/vak/show?module=75658">Organised and Financial Crime</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGASR50106</td><td><a href="/ocasys/rechten/vak/show?module=75959">Comparative Criminal Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMSR50406</td><td><a href="/ocasys/rechten/vak/show?module=75651">Criminal Procedure and Human Rights</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>compulsory</td><td>RGMSR50506</td><td><a href="/ocasys/rechten/vak/show?module=75653">Cybercrime and Cyber Security</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMSR50706</td><td><a href="/ocasys/rechten/vak/show?module=75828">International Criminal Trib. and Courts</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II</td><td>compulsory</td><td></td><td>Master’s thesis LL.M.: CLC</td><td>Engels</td><td>18</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>compulsory</td><td>RGMSR50206</td><td><a href="/ocasys/rechten/vak/show?module=75933">Seminar Int Cooperation in Crim Matters</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>compulsory</td><td>RGMSR50606</td><td><a href="/ocasys/rechten/vak/show?module=75644">International Crimes</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">The programme consists of 60 ECTS: <br/>1. Six compulsory courses and a compulsory seminar (42 ECTS);<br/>2. Thesis (18 ECTS).<br/><br/>This programme is only accessible to those students that have been fully admitted by the Admissions Board. More information about the programmes and the admission procedures can be found on <a href="http://www.rug.nl/law/llm" target="_blank">www.rug.nl/law/llm</a>.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75959"><b>Comparative Criminal Law</b></a></td><td align="right"><b>RGASR50106</b></td></tr><tr><td align="justify" colspan="3">The lecture course Comparative Criminal Law offers a review of selected topics in comparative substantive criminal law. The basis will be formed by an introduction into the concept of comparative criminal law (lecture 1), in which its functions, aims and methods will be discussed. In the following lectures various subjects will on this basis be treated in a comparative perspective: culpability, double jeopardy (non bis in idem), sanction systems, homicide, participation in crime, serious traffic offences, sexual offences (in particular rape law) and the criminal liability of corporations. The last meeting in the course will consist of a Question and Answer session. The course will be concluded by a three hour written examination. The legal comparison will focus primarily on continental criminal justices systems and Anglo-American criminal justice systems.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9327">prof. mr. dr. W.N. Ferdinandusse</a><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a><a href="/ocasys/rug/vak/viewtutor?tutor=1350">dr. mr. A.A. van Dijk</a><a href="/ocasys/rug/vak/viewtutor?tutor=1393">mr. dr. W.F. van Hattum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75651"><b>Criminal Procedure and Human Rights</b></a></td><td align="right"><b>RGMSR50406</b></td></tr><tr><td align="justify" colspan="3">Detailed study of the impact of human rights (right to a fair trial in particular) on criminal law and criminal procedure to assess whether a coherent normative corpus of common standards of evidence is emerging. This course adopts a ‘horizontal’ comparative approach to critically explore various criminal law systems and traditions and to identify the challenges raised by fact-finding procedures. It also adopts a ‘vertical’ comparative approach to assess the import and significance of international human rights instruments – and notably the European Convention on Human Rights - which influence both the theory and the application of domestic criminal law in an increasing number of countries.<br/><br/>Formative assessment: Oral (individual or group) case law analysis, contextualising judicial decisions and critically assessing their import and impact.<br/>Summative assessment: Critical legal essay or case analysis based on relevant case law and academic literature (maximum 2,500 words).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed Proof, Evidence and Law before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75653"><b>Cybercrime and Cyber Security</b></a></td><td align="right"><b>RGMSR50506</b></td></tr><tr><td align="justify" colspan="3">The increasing growth of internet will probably constitute one of law’s biggest challenges for the years to come. The use of computers and of Internet to engage in a huge diversity of criminal behavior – including, but not limited to, child pornography, hate speech, hacking of information (personal or otherwise confidential), espionage or financial theft – is a real and serious threat to both individual rights as well as to State security.<br/>This course thus identifies and explores the range of different criminal exploitations of the Internet (also known as Netcrimes) as well as the solutions and/or possibilities offered by law (at the international, regional and national levels) to prevent Netcrimes and punish their perpetrators.<br/>Lectures will deal with both technological and legal aspects of cybercrime. In one lecture students will execute lab exercises concerning cybercrime, to get familiar with technological aspects. Other lectures will focus on different types of cybercrime, investigation into cybercrime and dataprotection and cybercrime, as well as on criminological aspects of cybercrime.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=11303">dr. R.J. van der Staaij</a><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75642"><b>English written proficiency support</b></a></td><td align="right"><b>RGDOS500</b></td></tr><tr><td align="justify" colspan="3">The English proficiency support workshops consist of three parts:<br/>1.	A compulsory test<br/>2.	7 workshops<br/>3.	One-on-one tutorials<br/><br/>Ad 1. All students participate in a short English proficiency test upon arrival to Groningen. This test takes 60 minutes and students need to write an argumentative essay in academic style in this time which deals with one of six suggested topics.<br/><br/>Ad 2. Based on this test score, students are advised as to which workshops, if any, they should attend. These areas include:<br/>-	Punctuation<br/>-	Formality<br/>-	articles &amp; concord<br/>-	digital tools<br/>-	the verb phrases (tenses, voice) &amp; grammar pitfalls<br/>-	sentence structure <br/>-	paragraph structure <br/>Student are obliged to attend in the workshops that are indicated as compulsory for them after the test. But all workshops are open to all LLM students. <br/><br/>Ad 3. In semester 2 one-on-one tutorials are offered for students who have followed the required workshops. These tutorials deal with written work produced by the individual students (e.g. one of the already produced papers from semester 1 or a chapter of the thesis). The tutor will provide feedback on this written piece.<br/><br/>Please be aware that the tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The one-on-one tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The support starts with a compulsory test and is followed by (partly compulsory, partly optional) workshops on specific topics.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75644"><b>International Crimes</b></a></td><td align="right"><b>RGMSR50606</b></td></tr><tr><td align="justify" colspan="3">Detailed legal and criminological study of specific international crimes, including terrorism, and of the perpetrators of such atrocities. This course explores a diversity of mass violence crimes: war crimes, genocide, extermination, persecutions, crimes of sexual violence, torture and terrorism. It overall adopts a two-fold (law and criminology) critical approach to fully grasp the concept of international criminality in terms of prohibited acts, protected victims and identity of perpetrators. Students will study the relevant legal instruments and case-law at the domestic, regional and international levels. They will also be taught how to critically reflect on criminological research and literature. This will provide them with a full understanding of the causes and true nature of these mass crimes. It will ultimately allow for the identification of the challenges faced by (international) criminal law in preventing, investigating and punishing international crimes and the assessment of the effectiveness of legal and enforcement measures at the international, regional and national levels.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a><a href="/ocasys/rug/vak/viewtutor?tutor=9487">prof. dr. A.L. Smeulers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>course on international criminal law and/or international humanitarian law.</li><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75828"><b>International Criminal Trib. and Courts</b></a></td><td align="right"><b>RGMSR50706</b></td></tr><tr><td align="justify" colspan="3">Detailed study of international criminal law and justice, with a specific focus on the ad hoc International Criminal Tribunals and the International Criminal Court. This course adopts both a substantive and procedural approach so as to offer a complete insight into this very fast-growing and highly contemporary legal subject. Based on an in-depth analysis of the different legal instruments and of the relevant case-law, this course addresses both the domestic and the international responses to mass atrocities and the prosecution of international crimes.  It thus explores the very functioning of international (and internationalised) courts and tribunals at the pre-trial, trial and post-trial stages, focusing on the investigation of international crimes, on the gathering and admissibility of evidence (including forensic evidence), on issues of State cooperation as well as on modes of participation (individual criminal responsibility, joint criminal enterprise), on available defences, on sentencing and on the place given to victims of, and witnesses to, international crimes in the proceedings. The course  adopts a critical approach to assess the role and effectiveness of international criminal law institutions in an international legal environment torn between globalization and fragmentation.<br/><br/>Formative assessment: Oral (individual or group) case law analysis, contextualising judicial decisions and critically assessing their import and impact.<br/>Summative assessment: Critical legal essay or case analysis based on relevant case law and academic literature (maximum 3,500 words).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law. </li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed  International Criminal Tribunals before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75658"><b>Organised and Financial Crime</b></a></td><td align="right"><b>RGMSR50806</b></td></tr><tr><td align="justify" colspan="3">Keywords for the course: <br/>Transnational criminality, organised crimes, financial crimes<br/><br/>Brief course description: <br/>This course explores different types of criminal activity, all involving an organised and/or financial aspect and often transcending domestic borders. The analyses of different crimes rely on the study of international and domestic legislation as well as on relevant case law. Far from remaining purely theoretical, the course identifies the challenges this type of criminality raises for individual states, and for the international community as a whole, both in terms of prevention and of punishment, and assesses the viability and efficiency of the legal responses adopted so far. A number of guest lectures will be given by legal practitioners working in this field of law.<br/>This course includes analyses of the following organised and financial crimes: terrorism, drug trafficking, human trafficking, corruption and money laundering.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12182">mr. dr. W. Geelhoed</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12182">mr. dr. W. Geelhoed</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75933"><b>Seminar Int Cooperation in Crim Matters</b></a></td><td align="right"><b>RGMSR50206</b></td></tr><tr><td align="justify" colspan="3">Detailed analysis of state jurisdiction and of the most important forms of international cooperation in the context of criminal cases, such as extradition, mutual legal assistance, the transfer of proceedings and the transfer of the execution of sentences.  Special attention is given to the function of treaties and their status in the legal order of individual states, and to the system of mutual recognition in the European Union, which can be regarded as a paradigm shift in international cooperation in criminal matters. These topics are analyzed by way of studying, writing papers, giving class presentations and participating in group discussions.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9487">prof. dr. A.L. Smeulers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9487">prof. dr. A.L. Smeulers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">standaard seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to the master's degree programme Criminal Law and Criminology and master's degree programme Global Criminal Law.</li><li>This course is not open to exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

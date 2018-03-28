@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4903&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4903"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4903">Informatie over   Verdieping - Rechtsgeleerdheid</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>  Verdieping - Rechtsgeleerdheid</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Honours Programma Rechtsgeleerdheid)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCRG10105</td><td><a href="/ocasys/rechten/vak/show?module=77551">Honours Seminaar Rechten</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In het reguliere programma is de complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (Honours Programma Rechtsgeleerdheid)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>HCRG20105</td><td><a href="/ocasys/rechten/vak/show?module=77459">Privatissimum 1</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCRG20205</td><td><a href="/ocasys/rechten/vak/show?module=77460">Privatissimum 2</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Studenten kiezen in semester I een vak uit keuzegroep A en in semester II een vak uit keuzegroep B.<br/><br/>In het reguliere programma is de complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Honours Programma Rechtsgeleerdheid)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCRG30105</td><td><a href="/ocasys/rechten/vak/show?module=77528">Privatissimum 3</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCRG30205</td><td><a href="/ocasys/rechten/vak/show?module=77529">Individueel onderzoekstraject FRG</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In het reguliere programma is de complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Specialisatie Honours Programma Rechtsgeleerdheid)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCRG30105</td><td><a href="/ocasys/rechten/vak/show?module=77528">Privatissimum 3</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>HCPL403</td><td><a href="/ocasys/rechten/vak/show?module=77463">Petrus Camper Finale</a></td><td>Engels en Nederlands</td><td></td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCRG30205</td><td><a href="/ocasys/rechten/vak/show?module=77529">Individueel onderzoekstraject FRG</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">In het Specialisatieprogramma is een deel van de <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Leergang</a>(kies 10 ECTS of meer) verplicht. Het PYOT programma is verplicht. Kies dus de overige 9 ECTS uit de Petrus Camper Leergang. (Een voorbeeld is 2 vaardigheden modules en een verbredende module)<br/><br/>Het Specialisatieprogramma wordt voor nieuwe studenten niet meer aangeboden. Studenten die dit programma reeds volgen kunnen het wel afronden.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77551"><b>Honours Seminaar Rechten</b></a></td><td align="right"><b>HCRG10105</b></td></tr><tr><td align="justify" colspan="3">De bijeenkomsten van het seminar zijn gekoppeld aan enerzijds staats- en bestuursrecht en anderzijds aan strafrecht en privaatrecht. Iedere bijeenkomst bespreekt een docent uit een van deze disciplines een actueel vraagstuk in wetenschap en rechtspraktijk. De werkgroepen hebben een seminarachtig karakter waarbij studenten opdrachten voorbereiden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3148">   en anderen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Individuele beoordeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor FRG-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77529"><b>Individueel onderzoekstraject FRG</b></a></td><td align="right"><b>HCRG30205</b></td></tr><tr><td align="justify" colspan="3">Onderzoek doen is een centraal onderdeel van de juridische beroepsuitoefening en wetenschappelijk onderzoek bedrijven is een belangrijk element in de academische beroepsvorming. In het individueel onderzoekstraject assisteert de student bij een onderzoek van een onderzoeker van de faculteit (ongeveer 140 uur; 5 ects). In het onderzoektraject komen alle aspecten van onderzoek doen aan de orde: bronnen verzamelen en analyseren, het formuleren van een onderzoeksvraag en het schrijven van een onderzoeksverslag. Idealiter leidt de onderzoeksstage tot (een bijdrage aan) een publicatie. Naast een inhoudelijk verslag maakt de student ook een overzicht van de leerdoelen waaraan gewerkt is en van werkzaamheden die daartoe zijn verricht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1343">prof. dr. M.M.T.A. Brus</a><a href="/ocasys/rug/vak/viewtutor?tutor=12182">mr. dr. W. Geelhoed</a><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a><a href="/ocasys/rug/vak/viewtutor?tutor=1437">prof. mr. dr. W.D. Kolkman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1553">prof. mr. dr. L.C.A. Verstappen</a><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Individuele beoordeling, Individuele opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor FRG-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77463"><b>Petrus Camper Finale</b></a></td><td align="right"><b>HCPL403</b></td></tr><tr><td align="justify" colspan="3">Het laatste onderdeel van de Petrus Camper Leergang is een onderdeel waarin alle componenten worden samengebracht en waarin studenten zich actief, in een interdisciplinaire setting, bezighouden met een maatschappelijk thema/vraagstuk. De thema’s/vraagstukken waaruit gekozen kan worden vloeien voort uit de verbredende honoursmodules die door de faculteiten worden aangeboden. <br/>Iedere faculteit biedt één honoursmodule aan, waarmee het aantal thema’s op negen komt. De student kiest voor het thema van één van de twee honoursmodules die hij/zij in het tweede jaar heeft gevolgd. Het thema is daarmee voor de student per definitie verbredend, aangezien honoursmodules gekozen dienen te worden uit het aanbod van andere faculteiten dan de eigen faculteit.<br/>Dit onderdeel van de PCL begint aan het einde van het tweede jaar met een Summer School. Deze dient als startbijeenkomst en introductie op het thema. Vervolgens wordt het thema/vraagstuk door de studenten zelf in een Atelier verder geëxploreerd en uitgewerkt, waarna dit onderdeel wordt afgesloten met een presentatie (in de ruimste zin des woords) tijdens de Petrus Camper Festival aan het eind van jaar 3.<br/>De begeleiding van Summer School en Atelier is door de koppeling aan de verbredende honoursmodules verdeeld over de negen faculteiten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3149">  nog niet bekend</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77436"><b>Pick Your Own-talent Programma</b></a></td><td align="right"><b>HCPCLPYOT</b></td></tr><tr><td align="justify" colspan="3">In het Bachelor Honours programma besteden we gedurende het gehele traject aandacht aan talentontwikkeling. Het Honours College vindt het belangrijk dat honoursstudenten stilstaan bij vragen als: ‘wie ben ik, wat kan ik en wat wil ik?’. Deze vragen lopen als een rode draad door het Pick Your Own-talent programma.<br/><br/>--Opbouw Pick Your Own-talent programma--<br/><br/>Jaar 1 Welcoming Ceremony: gezamenlijke start van het Bachelor Honours programma<br/><br/>Tijdens de openingsceremonie komen alle nieuwe honoursstudenten bij elkaar. Elk jaar wordt er een aansprekende en inspirerende gastspreker uitgenodigd. Hij of zij vertelt over zijn of haar talent, carrière en over de keuzes die hij of zij heeft gemaakt om zijn of haar talenten ten volle te benutten. <br/><br/>Jaar 2 Kick-off: gezamenlijke start van het tweede jaar<br/><br/>Het tweede academische jaar start met de Kick-off. Tijdens deze avond inspireert een talentvolle spreker de tweedejaars honoursstudenten door hen na te laten denken over vragen als ‘wie ben ik, wat kan ik en wat wil ik’ en ‘hoe kan ik dat bereiken?’. Ieder jaar wordt er een andere inspirerende spreker uitgenodigd. Deze avond vindt dit jaar plaats op woensdag 6 september 2017 en is verplicht voor iedere tweedejaars honoursstudent. <br/><br/>Jaar 2 Plenaire avond naar keuze: Academia of Entrepreneurship (keuzegroep E)<br/><br/>Vervolgens wordt de blik gericht op het werkveld. In dit onderdeel oriënteer je je op werken in de wetenschap of op Entrepreneurship (ondernemen met al je talenten in de breedste zin van het woord). Waar zou je na je studie willen werken? Ambieer je een carrière in de wetenschap of weet je al dat je in het bedrijfsleven of de publieke sector aan de slag wilt? Misschien weet je het nog niet. Om je al halverwege je bachelor studie in aanraking te brengen met de Academia en met Entrepreneurship, worden er twee plenaire avonden georganiseerd met een interactief karakter. Tijdens deze twee avonden staat telkens één van de twee thema’s centraal. Deze avonden worden georganiseerd op respectievelijk dinsdag 14 november 2016 en op donderdag 8 februari 2018. Het deelnemen aan één van deze twee avonden is verplicht voor iedere tweedejaars honoursstudent.<br/><br/>Jaar 2 Workshops (keuzegroep F)<br/><br/>In het tweede semester van het tweede jaar ga je zelf aan de slag met jouw potentiële talent. Er zijn verschillende workshops met thema’s zoals ‘passie’, ‘wilskracht’, ‘pick your own time’, ‘omgaan met keuzestress’, ‘sturen of coachen’ en ‘succes en ambitie’. De workshops worden zowel in het Nederlands als in het Engels aangeboden. Het doel van de workshop is dat je kennis maakt met het betreffende onderwerp en hiermee aan de slag gaat. Tijdens de startbijeenkomst van de workshop worden verschillende aspecten geïntroduceerd. Gedurende een periode van één of twee weken neem je jouw talent onder de loep en probeer je de opgedane kennis in de praktijk te brengen. De workshop wordt afgesloten met een slotbijeenkomst, waarin je reflecteert op wat je hebt geleerd. Bovendien kijk je vooruit naar hoe je het thema kunt gebruiken in jouw studiecarrière of zelfs daarna. Iedere workshop bestaat uit twee sessies. De workshops worden in semester II gegeven. Het volgen van één workshop is verplicht voor ieder tweedejaars honoursstudent. <br/><br/>Jaar 3 Workshops (keuzegroep I)<br/><br/>In het derde jaar wordt de laatste stap in het PYO-t programma genomen en sta je gericht stil bij ‘wat wil ik’. Welke carrière ambieer je? Je kunt kiezen uit verschillende thema’s en ontwikkelt een loopbaanprofiel of verkent de arbeidsmarkt in relatie tot jouw ambitie. Ook kun je bijvoorbeeld onderzoeken of je een onderneming op wilt starten. Andere thema’s zijn o.a. 'bouw aan je persoonlijke merk' en 'het leven als experiment'. In het derde jaar van je studie maak je al belangrijke keuzes voor jouw toekomstige carrière. De eerste stappen richting de ontwikkeling van jouw talenten zijn gezet, wat zijn jouw volgende stappen? Welke talenten kun jij in de toekomst aanwenden om al jouw kennis en kunde optimaal in te kunnen zetten ten behoeve van wetenschap, maatschappij of elders. Iedere workshop bestaat uit twee sessies. De workshops worden het gehele derde jaar aangeboden, dus je kunt òf in semester I òf in semester II een workshop volgen. Kijk dus goed naar de planning van bijvoorbeeld een buitenlandverblijf, het schrijven van je scriptie, etc. Het volgen van één workshop is verplicht voor iedere derdejaars honoursstudent. <br/><br/>Pick Your Own-talent programma op een rij:<br/><br/>Jaar 1 <br/>• Welcoming Ceremony<br/><br/>Jaar 2 <br/>• Kick off<br/>• Academia of Entrepreneurship <br/>• Workshop jaar 2 <br/><br/>Jaar 3 <br/>• Workshop jaar 3<br/><br/>Eén ECTS wordt toegekend als alle PYO-t onderdelen van jaar 1, 2 en 3 voldoende zijn afgerond.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Hoorcolleges, Praktische werkvormen, Various styles of action learning</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">1</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77459"><b>Privatissimum 1</b></a></td><td align="right"><b>HCRG20105</b></td></tr><tr><td align="justify" colspan="3">Privatissimum 1 is een rechtsgebiedoverstijgend themavak, dat op interactieve wijze door wetenschappers uit de diverse vakgebieden als docent wordt verzorgd. Privatissimum 1 kent een Nederlandstalige en een Engelstalige variant.<br/>In het Nederlandstalige Privatissimum zijn de bijeenkomsten gekoppeld aan respectievelijk Strafrecht 2 en Burgerlijkrecht 2. Dat betekent dat in semester 1a docenten van de vakgroep Strafrecht en van de vakgroep Rechtstheorie optreden en in semester 1b docenten van Privaatrecht en van Rechtstheorie.  Iedere bijeenkomst bespreekt een docent een vraagstuk dat een uitbreiding dan wel een verdieping vormt van het desbetreffende hoofdvak.<br/>In het Engelstalige Privatissimum staan mensenrechten centraal. Dat thema wordt vanuit verschillende juridische invalshoeken benaderd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1406">dr. mr. A.J.J. de Hoogh</a><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a><a href="/ocasys/rug/vak/viewtutor?tutor=11824">mr. drs. A.A.J. Smelt</a><a href="/ocasys/rug/vak/viewtutor?tutor=7730">mr. L.B.A. Tigelaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=6934">prof. mr. dr. B.C.A. Toebes</a><a href="/ocasys/rug/vak/viewtutor?tutor=1393">mr. dr. W.F. van Hattum</a><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Paper, Portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor FRG-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77460"><b>Privatissimum 2</b></a></td><td align="right"><b>HCRG20205</b></td></tr><tr><td align="justify" colspan="3">Recht is een manier om ordening te geven aan de samenleving. Maatschappelijke vragen kunnen worden opgelost door wet- en regelgeving vast te stellen. Hierin spelen internationale verdragen ook een rol. Burgers kunnen rechten ontlenen aan deze verdragen, die zich soms wellicht niet verdragen met de bedoeling van de nationale wetgever. Anderzijds kunnen bepaalde wensen van de wetgever of van het bestuur op belemmeringen stuiten uit wetten en verdragen. Dit leidt dan tot vragen bij de instellingen en burgers die hiermee te maken krijgen. <br/>Door de opkomst van het internet en nieuwe technologieën is onze samenleving sterk in ontwikkeling. Het is mogelijk om op grote schaal data te verzamelen (datamining) en te analyseren zodat onze samenleving steeds efficiënter kan worden ingericht. Dit kan zowel door het verzamelen van nieuwe data, als door het analyseren van oude data. Zo is het mogelijk om de maximale snelheid op snelwegen aan te passen aan de gemeten drukte op de weg. Met diezelfde gegevens kunnen ook risicoprofielen (profiling) worden opgesteld van auto’s die vaak te hard rijden. <br/>In dit kader kunnen vragen voor de overheid zijn: wat doen we met alle gegevens die we over burgers hebben? Kunnen we daar meer mee doen dan strikt onze wettelijke taak uitoefenen? Kunnen we de gegevens van ingeschreven studenten bijvoorbeeld gebruiken om andere overheidsinstellingen te helpen doelen te bereiken die niks met de reden van inschrijving te maken hebben? Of kunnen we met alles wat we van de ingeschrevenen weten, hen gepersonaliseerde diensten gaan aanbieden? <br/><br/>Vorm: colleges, opdrachten, presentatie en discussie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1429">mr. dr. A.M. Klingenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Organisatie van de cursus, Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Paper, Portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor FRG-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77528"><b>Privatissimum 3</b></a></td><td align="right"><b>HCRG30105</b></td></tr><tr><td align="justify" colspan="3">Het Privatissimum is een rechtsgebiedoverstijgend themavak, dat op interactieve wijze door wetenschappers uit de diverse vakgebieden als docent wordt verzorgd. Privatissimum 3 kent een Nederlandstalige en een Engelstalige variant. In de Nederlandstalige variant (eerste semester) staat rechtvergelijking centraal; in de Engelstalige (tweede semester) wordt gewerkt aan het simuleren van een rechtszaak.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1324">mr. P.A.J. van den Berg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10707">prof. dr. A.L.B. Colombi Ciacchi</a><a href="/ocasys/rug/vak/viewtutor?tutor=1380">prof. mr. dr. K.J. de Graaf</a><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a><a href="/ocasys/rug/vak/viewtutor?tutor=10816"> M.M.E. Hesselman, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=12168"> A. Rachovitsa, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a><a href="/ocasys/rug/vak/viewtutor?tutor=5648">prof. mr. dr. M. Vols</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Organisatie van de cursus, Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor FRG-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

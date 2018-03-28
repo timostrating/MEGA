@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3580&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3580"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3580">Informatie over BSc Biologie en LS&amp;T: Semester I</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>BSc Biologie en LS&amp;T: Semester I</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>WLP10A03</td><td><a href="/ocasys/rechten/vak/show?module=76803">Biochemie</a></td><td>Nederlands</td><td>4</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WLP10A02</td><td><a href="/ocasys/rechten/vak/show?module=76802">Celbiologie</a></td><td>Nederlands</td><td>4</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>WLP10A04</td><td><a href="/ocasys/rechten/vak/show?module=76805">Genetica</a></td><td>Nederlands</td><td>4</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WLP10A01</td><td><a href="/ocasys/rechten/vak/show?module=76639">Practicum minimale cel</a></td><td>Nederlands</td><td>3</td><td></td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>WLP10A06</td><td><a href="/ocasys/rechten/vak/show?module=76753">Diversiteit, ecologie en gedrag</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WLP10A09</td><td><a href="/ocasys/rechten/vak/show?module=76553">Eerstejaars symposium</a></td><td>Nederlands</td><td>2</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>WPLS13001</td><td><a href="/ocasys/rechten/vak/show?module=76796">Fysiologie en therapie</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WPLS13002</td><td><a href="/ocasys/rechten/vak/show?module=76754">Practicum anatomie en fysiologie</a></td><td>Nederlands</td><td>3</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=76803"><b>Biochemie</b></a></td><td align="right"><b>WLP10A03</b></td></tr><tr><td align="justify" colspan="3">Tijdens de cursus worden basale processen en biochemische hoofdrolspelers in een levende cel geïntroduceerd. Aan de orde komen: biochemische evolutie, aminozuren, eiwit-structuur en -functie, allosterie en cooperativiteit, enzymkinetiek en enzymmechanismen, lipiden en membranen, genetische informatie, DNA-structuur en -replicatie, RNA en transscriptie, en eiwitsynthese. <br/><br/>De student kan:<br/>1 de structuur en chemische eigenschappen uitleggen van de biomoleculen die een centrale rol vervullen in cellen (Eiwitten, lipiden, nucleinezuren, koolhydraten). <br/>2 de moleculaire basis van de interacties tussen biomoleculen uitleggen, in het bijzonder de binding van zuurstof aan hemoglobine en myoglobine. <br/>3 eenvoudige berekeningen uitvoeren die betrekking hebben op de thermodynamica en kinetiek van enzym-gekatalyseerde reacties<br/>4 de moleculaire mechanismen uitleggen die aan de basis liggen van de overdracht van genetische informatie (replicatie, transcriptie, translatie)</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a><a href="/ocasys/rug/vak/viewtutor?tutor=2819">prof. dr. D.J. Slotboom</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">;sbu;<br/>hc; 22<br/>wc; 2<br/>pr; -<br/>PGO; -<br/>Ovw; - <br/>Opgenomen in Opleiding Jaar Periode Type <br/>BSc Biologie en LS&amp;T: Semester I  1  semester I a  verplicht<br/><br/>Vanwege overlap mag Biochemie niet in hetzelfde studieprogramma worden opgenomen als Celbiologie 1 (WPFA16002) en Celbiologie 2 (WPFA16003).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=76802"><b>Celbiologie</b></a></td><td align="right"><b>WLP10A02</b></td></tr><tr><td align="justify" colspan="3">Karakteristieken van de eukaryote cel, introductie in de microscopie, structuur/functie van celorganellen (inclusief energie conversie in mitochondriën en chloroplasten), eiwitsortering, vesicle transport.<br/>Cytoskelet en celbeweging, signaaltransductie, celcylcus incl. celgroei en celdood, kanker als integratie van biochemie en celbiologie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2582">prof. dr. I.J. van der Klei</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2582">prof. dr. I.J. van der Klei</a><a href="/ocasys/rug/vak/viewtutor?tutor=2483">prof. dr. P.J.M. van Haastert</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak is een ingangseis voor de vakken Biologische Evaluatie van Implantaten en Computational Molecular Biology. Dit vak is gewenst voor Microbiologie.<br/><br/>Vanwege overlap mag Celbiologie niet in hetzelfde studieprogramma worden opgenomen als Celbiologie 1 (WPFA16002) en Celbiologie 2 (WPFA16003).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=76753"><b>Diversiteit, ecologie en gedrag</b></a></td><td align="right"><b>WLP10A06</b></td></tr><tr><td align="justify" colspan="3">Systeem Aarde nu (homeostase, water-buffer, e.a), systeem Aarde vroeger (zuurstofloze atmosfeer, invloed biota, e.a.), stofkringlopen (P+N+C cycli, fotosynthese, respiratie, decompositie, e.a.), energiekringlopen, energie-pyramiden, interacties in ecosystemen, herbivorie, carnivorie, predator-prooi, groei, reproductie, begrip niche, co-evolutie van niches en biota, interactieve wapenwedloop, diversificatie, radiatie, eencelligen, niche-flexibiliteit, eencelligen predator-prooi-relaties, netwerken en functionele groepen, malaria-cyclus, (leverbot-cyclus,) levensverrichtingen, ordening adhv processen, ordening adhv bouw, intraspecifieke interacties, predator-prooi-interacties, aangeboren gedrag, conditioneren, gedrags-genetica, ontwikkeling van gedrag, communicatie, sociaal gedrag, baltsgedrag, populatie-ecologie, migratie, ecosysteem dynamica, conservatie.<br/>Toepassen en integratie van de leerstof gebeurt tijdens een practicum, uitgevoerd in groepjes van 2 studenten. Aan de orde komen: Het aanleren van praktische vaardigheden en schriftelijk rapporteren. <br/>Omschrijving Practicum:<br/>1) Reproductie schimmel vs. Protist vs. bloemplant<br/>2) Segmentatie en cephalisatie<br/>3) Computer-practicum ecosysteem <br/>4) Gedrags-practicum adhv computer-video’s</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2516">dr. J. Hille</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2476">prof. dr. A.G.G. Groothuis</a><a href="/ocasys/rug/vak/viewtutor?tutor=2706">prof. dr. H. Olff</a><a href="/ocasys/rug/vak/viewtutor?tutor=2764">dr. M. van Rijssel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het tentamen bestaat uit 50 multiple choice vragen. Het tentamen cijfer wordt vastgesteld met het criterium 55% kennis niveau is een 5,5.<br/><br/><br/>Voor het tentamen moet minimaal een 5 gehaald worden. Deze 5 kan dan gecompenseerd worden door het practicum cijfer.  Het practicumcijfer wordt bepaald door het gemiddelde van 4 practicum toetsen. Het practicum cijfer moet minimaal een 5,5 zijn.<br/><br/>;sbu;<br/>hc; 24<br/>wc; 2<br/>pr; 20<br/>PGO; -<br/>Ovw; 3</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=76553"><b>Eerstejaars symposium</b></a></td><td align="right"><b>WLP10A09</b></td></tr><tr><td align="justify" colspan="3">Aan het begin van periode Ib kan een keuze worden gemaakt uit een groot gevarieerd aanbod van onderwerpen. Per groep van drie/vier studenten wordt tijdens dit blok het toegewezen onderwerp tot een posterpresentatie bewerkt. Gedurende dit proces wordt de groep begeleid door de docent die het onderwerp heeft ingebracht. Aan de hand van enkele instructies worden literatuurontsluiting en posterontwerp toegelicht. Aan het eind van het eerste semester is er een gezamenlijke presentatie van alle posters, waarbij ook peer-review (beoordeling door studenten onderling) wordt toegepast.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a><a href="/ocasys/rug/vak/viewtutor?tutor=2483">prof. dr. P.J.M. van Haastert</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst (S), Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Presentatie (P)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=76796"><b>Fysiologie en therapie</b></a></td><td align="right"><b>WPLS13001</b></td></tr><tr><td align="justify" colspan="3">Introductie in de fysiologie en de farmacologie. Basiskennis van allerlei fysiologische, immunologische en farmacologische begrippen en principes. Tijdens de colleges Fysiologie en Farmacologie worden o.a. behandeld: <br/>Communicatie en homeostase, integratieve fysiologie, farmacologische principes, receptoren, het centrale en perifere zenuwstelsel, hersenfuncties, het cardiovasculaire systeem, endocrinologie, ademhaling, fysiologie van de energiehuishouding, Diabetes, glucose en insuline, technologische ontwikkelingen in relatie tot Diabetes.<br/>Tijdens de colleges immunologie wordt behandeld:<br/>introductie van het humane immuunsysteem met daarbij de componenten (cellen en weefsels) van het immuunsysteem, B-lymfocyten en antilichamen, T-lymfocyten en effectorfuncties, het MHC, interacties tussen de aangeboren en de verworven immuniteit, de immuunrespons op maat.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2377">dr. B. Buwalda</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2377">dr. B. Buwalda</a><a href="/ocasys/rug/vak/viewtutor?tutor=2499">prof. dr. P. Heeringa</a><a href="/ocasys/rug/vak/viewtutor?tutor=2792">prof. dr. A.J.W. Scheurink</a><a href="/ocasys/rug/vak/viewtutor?tutor=2797">prof. dr. M. Schmidt</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Meerkeuze toets (MC), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Het vak wordt vaak gevolgd door/bereidt voor op Farmacologie practicum (2.Ib), Farmacokinetiek (2.IIa), Metabolisme &amp; Toxicologie (2.IIa), Mol. Farmacol. Res. (3.IIb) van de opleiding Farmacie waar de hier behaalde leerdoelen als voorkennis gevraagd worden.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Digitale toets met daarin meerkeuzevragen en evt. invulvragen en vragen waarbij structuren moeten worden aangewezen. De gokkans wordt bepaald door het totaal aantal vragen en het totaal aan opties (4) voor antwoorden. Cijfer komt als volgt tot stand: ((aantal goede antwoorden -/- de gokkans)/ (totaal aantal vragen -/- gokkans)) * 10. Er zullen twee deeltentamens worden afgenomen. Voor elk tentamen moet minimaal een 5 worden gehaald. Het gemiddelde van beide tentamens bepaald door weging van beide cijfers gebaseerd op het aantal vragen. Gemiddeld dient een cijfer te worden behaald hoger dan 5,5.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=76805"><b>Genetica</b></a></td><td align="right"><b>WLP10A04</b></td></tr><tr><td align="justify" colspan="3">Introduceren van mechanismen van reproductie en de overerving van eigenschappen. Kennis verwerven van genetische termen en principes, essenties van DNA structuur en replicatie, alsmede genetische organisatie van virussen, prokaryoten en eukaryoten. Statistisch toetsen van overervingsmodellen via kansverdelingsprocessen en Chi-kwadraat analyse. Principes van gentechnologie en ontwikkelingsgenetica. Inleiding in de kwantitatieve genetica, populatiegenetica en genomica. De volgende termen en processen komen aan bod: gen als eenheid van overerving, Mendel’s wetten, overerving, stambomen, gen-interacties, mitose en meiose, geslachtsgekoppelde overerving, extra-nucleaire overerving, genoomkaarten, chromosoomafwijkingen, recombinatie, geslachtsbepaling, mutatie, essenties evolutietheorie, genetische variatie, allel-frequenties, inteelt, migratie, selectie, genetische drift, genetic engineering, DNA manipulatie, DNA sequencing, genetische organisatie virussen, bacteriën en eukaryoten, introductie genomics, transcriptie regulatie, kenmerken bacteriële en eukaryote genen, transscriptie-regulatie, veroudering, ontregeling celgroei en replicatie, kanker, kloneren, stamcellen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2321">prof. dr. L.W. Beukeboom</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2321">prof. dr. L.W. Beukeboom</a><a href="/ocasys/rug/vak/viewtutor?tutor=2976">dr. L.P.W.G.M. Jacobus Mgn Van De Zande</a><a href="/ocasys/rug/vak/viewtutor?tutor=4512">prof. dr. J. Kok</a><a href="/ocasys/rug/vak/viewtutor?tutor=2618">prof. dr. O.P. Kuipers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Meerkeuze toets (MC)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Er zijn geen verplichte entreevoorwaarden. Het vak veronderstelt voorkennis van genetica op middelbaar school niveau.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">In verband met overlap van de stof is het niet toegestaan om in een individueel bachelorprogramma zowel Genetica (Bio/LST) als Genetica (Farmacie) op te nemen.<br/><br/>Zelfstudie: 90 uur<br/>Hoorcolleges: 22 uur.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=76754"><b>Practicum anatomie en fysiologie</b></a></td><td align="right"><b>WPLS13002</b></td></tr><tr><td align="justify" colspan="3">Dit vak dient om de leerstof behandeld in het vak Fysiologie en therapie (WPLS13001) toe te passen en te integreren. Aan de hand van biologisch materiaal (rat en hart), computer programma’s en korte fysiologische experimenten (door en aan de student zelf) wordt inzicht verkregen in de anatomie van organismen en het hart in het bijzonder, de hartwerking en bloeddrukregulatie, alsmede in de histologie van epitheel en bindweefsel, klieren en bloed waarbij, er extra aandacht is voor diabetes. Praktisch betekent dit dat de student aan een 6-tal practica meedoet: 1) dissectie van de rat, 2) dissectie van het zoogdier hart, 3) computer practicum Histologie, 4) computer practicum hartspier werking, 5) computer practicum bloeddruk regulatie, en 6) Biopac: een practicum waarbij een aantal fysiologische experimenten wordt uitgevoerd m.b.v. ECG registratie. De student dient op eigen gelegenheid 3 werkcolleges te volgen die aangeboden worden op DVD en/of Nestor.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2762">dr. B.J. Riedstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2377">dr. B. Buwalda</a><a href="/ocasys/rug/vak/viewtutor?tutor=2762">dr. B.J. Riedstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Het vak is  een ingangseis voor het Farmacologie Practicum, Farmacokinetiek en Metabolisme &amp; Toxicologie.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het eindcijfer is het gewogen gemiddelde van de verschillende onderdelen. Als eindcijfer dient minimaal een 5.50 te worden gehaald.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=76639"><b>Practicum minimale cel</b></a></td><td align="right"><b>WLP10A01</b></td></tr><tr><td align="justify" colspan="3">Groepjes van 2 (of 3) studenten voeren opdrachten uit op de terreinen van Celbiologie, Biochemie en Genetica.<br/>In 3 opeenvolgende weken zijn er 3-4 practicumdagen die beginnen met een theoretische inleiding en die worden afgesloten met een labjournaal.<br/><br/>Onderdeel Celbiologie:<br/>Hier staat de cel als producent van en als target voor (potentiële) geneesmiddelen centraal. Daarnaast maakt de student kennis met verschillende vormen van microscopie, waarmee een aantal celbiologische processen wordt bestudeerd.<br/><br/>Onderdeel Biochemie:<br/>Tijdens dit onderdeel wordt vanillyl alcohol oxidase uit bacteriecellen gezuiverd met behulp van kolomchromatografie. Vervolgens wordt de zuiverheid van het enzym geanalyseerd middels gelelectroforese en wordt het enzym gebruikt voor enzymkinetiek metingen en de synthese van de geur- en smaakstof vanilline.<br/><br/>Onderdeel Genetica:<br/>In dit practicum staat de relatie genotype – fenotype – milieu centraal. Het genotype van 2 Bacillus subtilis stammen zal worden bepaald door analyse van nutriëntbehoefte en genetische transformatie. Tevens wordt genklonering in Escherichia coli uitgevoerd. Tevens zal aan de hand van een aantal theoretische opgaven het opstellen, uitvoeren, analyseren en statistisch evalueren van genetische (kruisings)experimenten worden geoefend. Er wordt een korte instructie in het gebruik van het programma Excel gegeven voor dataverwerking en berekening van een genetisch experiment.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3214">dr. R.H. Cool</a><a href="/ocasys/rug/vak/viewtutor?tutor=2446">prof. dr. ir. M.W. Fraaije</a><a href="/ocasys/rug/vak/viewtutor?tutor=2976">dr. L.P.W.G.M. Jacobus Mgn Van De Zande</a><a href="/ocasys/rug/vak/viewtutor?tutor=4512">prof. dr. J. Kok</a><a href="/ocasys/rug/vak/viewtutor?tutor=2633">dr. M.H.K. Linskens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Er zijn geen verplichte entreevoorwaarden. Het vak veronderstelt voorkennis uit Genetica, Celbiologie en Biochemie (eerstejaars vakken Biologie, LST en Farmacie).<br/><br/>Dit vak is een ingangseis voor Farmaceutische Microbiologie, Farmacologie Practicum, Farmacokinetiek en Metabolisme &amp; Toxicologie.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

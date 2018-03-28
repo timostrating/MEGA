@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=233&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D233"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=233">Informatie over Researchmaster Philosophy</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Researchmaster Philosophy</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>FI1242RP1</td><td><a href="/ocasys/rechten/vak/show?module=75409">Research in Practice 1</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Specialisation courses</td><td>Nederlands</td><td>30</td><td></td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>FI1741CI2</td><td><a href="/ocasys/rechten/vak/show?module=78404">Core Issues: Philosophy and its Past</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174CS</td><td><a href="/ocasys/rechten/vak/show?module=78315">Justice in Migration</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI164MD</td><td><a href="/ocasys/rechten/vak/show?module=75372">Modernity as Dominance</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174PA</td><td><a href="/ocasys/rechten/vak/show?module=78155">Philosophy of Argument</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI164SR</td><td><a href="/ocasys/rechten/vak/show?module=75383">Scientific Representation</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174LN</td><td><a href="/ocasys/rechten/vak/show?module=78128">Thomas Hobbes’s Leviathan</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>FI1741CI1</td><td><a href="/ocasys/rechten/vak/show?module=78405">Core Issues: Non-Cognitivism</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI024FK</td><td><a href="/ocasys/rechten/vak/show?module=75418">Philosophy of Neuroscience</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI164RG</td><td><a href="/ocasys/rechten/vak/show?module=75463">Philosophy of Race and Gender</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174AJ</td><td><a href="/ocasys/rechten/vak/show?module=78375">Plato’s Republic</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI174SE</td><td><a href="/ocasys/rechten/vak/show?module=78154">Spinoza’s Ethics</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174FH</td><td><a href="/ocasys/rechten/vak/show?module=78277">The Responsibilities of Organizations</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>FI045SEM</td><td><a href="/ocasys/rechten/vak/show?module=75433">Seminar</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>FI1741CI3</td><td><a href="/ocasys/rechten/vak/show?module=78406">Core Issues: Kant and Kantian Ethics</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI174BL</td><td><a href="/ocasys/rechten/vak/show?module=78150">Bruno Latour</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174HR</td><td><a href="/ocasys/rechten/vak/show?module=78245">Evolutionary Game Theory</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI174BT</td><td><a href="/ocasys/rechten/vak/show?module=78171">Heidegger’s Being and Time</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174TS</td><td><a href="/ocasys/rechten/vak/show?module=78170">Privacy and Surveillance</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI174WP</td><td><a href="/ocasys/rechten/vak/show?module=78158">Women Philosophers</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>FI1741CI4</td><td><a href="/ocasys/rechten/vak/show?module=78417">Core Issues : Reichenbach</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>FI174AT</td><td><a href="/ocasys/rechten/vak/show?module=78165">Arguing about taste</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI164CI</td><td><a href="/ocasys/rechten/vak/show?module=75381">Klassieke Indische Filosofie</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>KIM.MAS03</td><td><a href="/ocasys/rechten/vak/show?module=76599">Multi-Agent Systems</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>FI174EM</td><td><a href="/ocasys/rechten/vak/show?module=78396">Truth and reference in fiction</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>FI0441TRAI</td><td><a href="/ocasys/rechten/vak/show?module=75432">Term abroad</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>FI045THE</td><td><a href="/ocasys/rechten/vak/show?module=75435">Master's Thesis</a></td><td>Engels</td><td>25</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>FI1543RP2</td><td><a href="/ocasys/rechten/vak/show?module=75388">Research in Practice 2</a></td><td>Engels</td><td>5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78165"><b>Arguing about taste</b></a></td><td align="right"><b>FI174AT</b></td></tr><tr><td align="justify" colspan="3">Wat is de aard van schoonheid en andere esthetische eigenschappen? Zijn zij objectief? Wat is de beste theorie over esthetisch taalgebruik? Waarom twisten we over kwaliteit in de kunst? Hoe interageren morele en artistieke evaluatie?</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9648">dr. H.W.A. Evers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9648">dr. H.W.A. Evers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Ethiek 1, or comparable introduction to ethics or metaethics</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=78150"><b>Bruno Latour</b></a></td><td align="right"><b>FI174BL</b></td></tr><tr><td align="justify" colspan="3">Bruno Latour behoort tot de hoofdfiguren van de hedendaagse filosofie en sociale wetenschap. Zijn etnografische studies hebben ons denken over zulke uiteenlopende domeinen als wetenschap, recht, politiek en religie flink overhoop gehaald. Ter bevordering van een meer realistisch begrip van de wereld heeft Latour een radicaal nieuwe filosofie en een nieuwe aanpak in de sociale wetenschappen ontwikkeld – de ‘Acor-Netwerk Theorie’.<br/><br/>In invloedrijke studies zoals <i>Laboratory Life, We Have Never Been Modern</i> en <i>An Inquiry into Modes of Existence</i> worden de funderende dichotomieën van het ‘moderne’ Westerse denken verworpen – met name het onderscheid tussen natuur en samenleving. Daarvoor in de plaats biedt Latours ‘empirische filosofie’ alternatieve beschrijvingen van de wereld waarin we leven – beschrijvingen die vergaande gevolgen hebben voor ons begrip van bv. de ecologische crisis en de rol van wetenschap in de democratie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1227">dr. J.A. Harbers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, leesgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78417"><b>Core Issues : Reichenbach</b></a></td><td align="right"><b>FI1741CI4</b></td></tr><tr><td align="justify" colspan="3">Reichenbachs The Rise of Scientific Philosophy (1961) geldt als een van de invloedrijkste wetenschapsfilosofische studies van de 20ste eeuw. We lezen het van kaft tot kaft en bespreken zijn centrale stellingen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=860">dr. A.M. Tamminga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">leesgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, referaat/presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">BA Wijsbegeerte, BA Wijsbegeerte van een bepaald Wetenschapsgebied</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78406"><b>Core Issues: Kant and Kantian Ethics</b></a></td><td align="right"><b>FI1741CI3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6346">prof. dr. P. Kleingeld</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78405"><b>Core Issues: Non-Cognitivism</b></a></td><td align="right"><b>FI1741CI1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12163">prof. dr. B. Streumer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78404"><b>Core Issues: Philosophy and its Past</b></a></td><td align="right"><b>FI1741CI2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8108">prof. dr. M. Lenz</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78245"><b>Evolutionary Game Theory</b></a></td><td align="right"><b>FI174HR</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12158"> H.M. Rubin, PhD.</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78171"><b>Heidegger’s Being and Time</b></a></td><td align="right"><b>FI174BT</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12339"> C.M.A. van Mazijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=78315"><b>Justice in Migration</b></a></td><td align="right"><b>FI174CS</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12156">prof. dr. C. Straehle</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75381"><b>Klassieke Indische Filosofie</b></a></td><td align="right"><b>FI164CI</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8147"> Lucas den Boer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8147"> Lucas den Boer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75435"><b>Master's Thesis</b></a></td><td align="right"><b>FI045THE</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">25</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=75372"><b>Modernity as Dominance</b></a></td><td align="right"><b>FI164MD</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1249">dr. J.A. Vega</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=76599"><b>Multi-Agent Systems</b></a></td><td align="right"><b>KIM.MAS03</b></td></tr><tr><td align="justify" colspan="3">Epistemische Logica is de logica van kennis: hoe redeneer je over wat jijzelf en anderen weten? Deze logica blijkt cruciaal bij het beschrijven van onderhandelingen in de economie, van parallelle processoren in de informatica, en van multi-agent systemen in de Kunstmatige Intelligentie. Verder is de epistemische logica ook technisch interessant: ze kent een mooie semantiek. In dit college komen aan de orde: axiomatische systemen en Kripke-semantiek voor kennis van meerdere actoren (agents); toepassing op gedistribueerde systemen; algemene kennis (common knowledge) en gedistribueerde kennis; uitbreiding van de epistemische logica met modale operatoren voor geloven, wensen en intenties.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1152">prof. dr. L.C. Verbrugge</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1152">prof. dr. L.C. Verbrugge</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Presentatie (P)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=78155"><b>Philosophy of Argument</b></a></td><td align="right"><b>FI174PA</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1237">dr. J.A. van Laar</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, colloquium</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, referaat/presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="15"></a>15</b></td><td><a href="/ocasys/rechten/vak/show?module=75418"><b>Philosophy of Neuroscience</b></a></td><td align="right"><b>FI024FK</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1005">dr. F.A. Keijzer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="16"></a>16</b></td><td><a href="/ocasys/rechten/vak/show?module=75463"><b>Philosophy of Race and Gender</b></a></td><td align="right"><b>FI164RG</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7151">prof. dr. C. Dutilh Novaes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7151">prof. dr. C. Dutilh Novaes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, referaat/presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="17"></a>17</b></td><td><a href="/ocasys/rechten/vak/show?module=78375"><b>Plato’s Republic</b></a></td><td align="right"><b>FI174AJ</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11377">dr. L.A. Joosse</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="18"></a>18</b></td><td><a href="/ocasys/rechten/vak/show?module=78170"><b>Privacy and Surveillance</b></a></td><td align="right"><b>FI174TS</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10470">dr. U.T.R. Stahl</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10470">dr. U.T.R. Stahl</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="19"></a>19</b></td><td><a href="/ocasys/rechten/vak/show?module=75409"><b>Research in Practice 1</b></a></td><td align="right"><b>FI1242RP1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1005">dr. F.A. Keijzer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="20"></a>20</b></td><td><a href="/ocasys/rechten/vak/show?module=75388"><b>Research in Practice 2</b></a></td><td align="right"><b>FI1543RP2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1239">prof. dr. L.W. Nauta</a><a href="/ocasys/rug/vak/viewtutor?tutor=8109">Dr. Bart Streumer</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="21"></a>21</b></td><td><a href="/ocasys/rechten/vak/show?module=75383"><b>Scientific Representation</b></a></td><td align="right"><b>FI164SR</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1004">prof. dr. J.W. Romeijn</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1004">prof. dr. J.W. Romeijn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, mondeling tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="22"></a>22</b></td><td><a href="/ocasys/rechten/vak/show?module=75433"><b>Seminar</b></a></td><td align="right"><b>FI045SEM</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="23"></a>23</b></td><td><a href="/ocasys/rechten/vak/show?module=78154"><b>Spinoza’s Ethics</b></a></td><td align="right"><b>FI174SE</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8108">prof. dr. M. Lenz</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="24"></a>24</b></td><td><a href="/ocasys/rechten/vak/show?module=75432"><b>Term abroad</b></a></td><td align="right"><b>FI0441TRAI</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="25"></a>25</b></td><td><a href="/ocasys/rechten/vak/show?module=78277"><b>The Responsibilities of Organizations</b></a></td><td align="right"><b>FI174FH</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1261">prof. dr. F.A. Hindriks</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="26"></a>26</b></td><td><a href="/ocasys/rechten/vak/show?module=78128"><b>Thomas Hobbes’s Leviathan</b></a></td><td align="right"><b>FI174LN</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1239">prof. dr. L.W. Nauta</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1239">prof. dr. L.W. Nauta</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="27"></a>27</b></td><td><a href="/ocasys/rechten/vak/show?module=78396"><b>Truth and reference in fiction</b></a></td><td align="right"><b>FI174EM</b></td></tr><tr><td align="justify" colspan="3">Deze cursus introduceert de kernbegrippen van de twintigste eeuwse taalfilosofie (waarheid, (directe) verwijzing, semantiek, mogelijke werelden, etc.) aan de hand van een specifiek thema: fictie. Waarnaar verwijst de naam “Frodo”? Is de uitspraak “Frodo is een hobbit” waar, onwaar of geen van beide? En hoe zit dat met “Frodo bestaat niet”? Aan de hand van primaire teksten bestuderen we de antwoorden van de belangrijke taalfilosofen uit de twintigste eeuw, zoals Frege, Russell, Quine, Kripke en Lewis, maar ook recentere opvattingen zoals die van Kendall Walton en Stacie Friend.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6347">dr. E. Maier</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="28"></a>28</b></td><td><a href="/ocasys/rechten/vak/show?module=78158"><b>Women Philosophers</b></a></td><td align="right"><b>FI174WP</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Wijsbegeerte</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12615">dr. D. Rusu</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

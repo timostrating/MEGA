@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=378&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D378"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=378">Informatie over Pre-master Recht en Bestuur </a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Pre-master Recht en Bestuur </b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>i.o</td><td>RGABE70305</td><td><a href="/ocasys/rechten/vak/show?module=75934">Bestuursrecht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>i.o</td><td>RGBBE00010</td><td><a href="/ocasys/rechten/vak/show?module=75878">Bestuursrecht 2</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr class="color"><td class="nocolor"> </td><td>i.o</td><td>RGBBE01005</td><td><a href="/ocasys/rechten/vak/show?module=75875">Elementaire Bestuurskunde</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>i.o</td><td>RGBPW00105</td><td><a href="/ocasys/rechten/vak/show?module=75681">Inleiding Politicologie</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>i.o.</td><td>RGBEE00110</td><td><a href="/ocasys/rechten/vak/show?module=75984">Europees Recht</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr><td class="nocolor"> </td><td>i.o</td><td>RGAPR70205</td><td><a href="/ocasys/rechten/vak/show?module=75937">Privaatrecht voor niet-juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>i.o</td><td>RGPST00105</td><td><a href="/ocasys/rechten/vak/show?module=75854">Staatsrecht 1</a></td><td>Nederlands</td><td>5</td><td>6</td></tr><tr><td class="nocolor"> </td><td>i.o</td><td>RGBBE00205</td><td><a href="/ocasys/rechten/vak/show?module=75824">Theorie Sociale Wetenschappen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>i.o</td><td>RGBBE00905</td><td><a href="/ocasys/rechten/vak/show?module=75910">Beleidsanalyse</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>i.o.</td><td>RGBBE00310</td><td><a href="/ocasys/rechten/vak/show?module=75988">Organisatie en bestuur</a></td><td>Nederlands</td><td>10</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>i.o</td><td>RGBST00105</td><td><a href="/ocasys/rechten/vak/show?module=75899">Staatsrecht 2</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II b</td><td>i.o</td><td>RGBBE00605</td><td><a href="/ocasys/rechten/vak/show?module=75908">Bestuursrecht 3</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>i.o</td><td>RGBBE00210</td><td><a href="/ocasys/rechten/vak/show?module=75906">Methoden Sociaalw. onderzoek</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>i.o = de hierboven genoemde onderdelen kunnen deel uitmaken van het Pre-masterprogramma. Dit programma wordt vastgesteld op individuele basis en mag niet meer dan 60 ec omvatten. </li><li>De aspirant-student ontvangt vrijstellingen voor die onderdelen waarvoor hij in een voorgaande studie reeds een equivalente studieprestatie heeft verricht. </li></ul><br/>------------------------------------------------------------<ul><li>Studenten die voor 1-9-2014 met het pre-master(schakel)programma zijn begonnen vallen onder een overgangsregeling die op individuele basis in overleg met een studie-adviseur dient te worden vastgesteld. </li><li>Het <a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=367" target="_blank">aansluitende masterprogramma </a> kan worden gevolgd na volledige afronding van het pre-masterprogramma.</li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75910"><b>Beleidsanalyse</b></a></td><td align="right"><b>RGBBE00905</b></td></tr><tr><td align="justify" colspan="3">Het openbaar bestuur heeft de opdracht maatschappelijke problemen aan te pakken in naam van en ten gunste van de leden van de samenleving. Denk bijvoorbeeld aan armoede, integratie van nieuwkomers, alcoholmisbruik, allerlei vormen van criminaliteit, gebrek aan betaalbare woningen voor starters en vergrijzing. Daartoe zijn tal van organisaties in het leven geroepen, die de problemen in kaart moeten brengen, oplossingen moet bedenken en beslissingen van gezagsdragers ten uitvoer moeten brengen, dan wel burgers moet ondersteunen bij het oplossen van die problemen. De stroom van ideeën, problemen, oplossingen, besluiten, uitvoerende handelingen en effecten wordt wel aangeduid als het beleidsproces. In dat beleidsproces worden maatschappelijke vraagstukken omgezet in beleid en dat beleid is vervolgens uitgangspunt voor pogingen om de problemen te verminderen of op te lossen.<br/>Het vak beleidsanalyse is een inleiding in de analyse van (overheids-)beleid en de processen rond beleid: Hoe gaat het formuleren en kiezen van vraagstukken, het bedenken van oplossingen, het beslissen over de te kiezen oplossing, de uitvoering van gekozen oplossingen en de beoordeling van de gevolgen daarvan in zijn werk?<br/><br/>Werkwijze: In de hoorcolleges worden de kernbegrippen en -theorieën behandeld. In de werkcolleges en door het maken van opdrachten maakt de student kennis met enkele analytische methoden en oefent in de toepassing daarvan.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12694"> P. de Winter, MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12694"> P. de Winter, MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1533">mr. dr. A. Tollenaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=12177">mr. M. Wever</a><a href="/ocasys/rug/vak/viewtutor?tutor=1580">prof. dr. H.B. Winter</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Niet af te leggen door studenten die voor 1-9-08  Seminaar Bestuurswetenschappen deel 1 hebben gehaald.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75934"><b>Bestuursrecht voor niet-juristen</b></a></td><td align="right"><b>RGABE70305</b></td></tr><tr><td align="justify" colspan="3">Omschrijving<br/><br/>Het bestuursrecht gaat over de mogelijkheden die het recht aan de overheid biedt om de samenleving precies zo te organiseren als de politiek – de vertegenwoordiging van ons allemaal – het heeft afgesproken. Bestuursrecht gaat ook over de mogelijkheden van burgers om zich teweer te stellen tegen beslissingen van de overheid waarmee zij het niet eens zijn. Het bestuursrecht is m.a.w. het “recht voor, van en tegen het overheidsbestuur”. Bestuursrecht treft men aan op alle maatschappelijke velden waarop de overheid een taak heeft: bv gezondheid, onderwijs, ruimtelijke ordening, openbare orde en veiligheid,milieu. Voordat een onderneming afvalstoffen mag lozen op de rivier, moet hij in het bezit zijn van een vergunning van de overheid. Personen die het niet eens zijn met de verleende vergunning kunnen daartegen proceren bij de bestuursrechter. Maar ook vreemdelingen- en vluchtelingenrecht is bestuursrecht. Mag een vluchteling uit Soedan naar Nederland komen, hier wonen, werken of naar de universiteit gaan om hier bijvoorbeeld geneeskunde te studeren? En wat zijn zijn rechten als een vergunning wordt geweigerd? Een ander voorbeeld van bestuursrecht is het sociale zekerheidsrecht. U bent of wordt werkloos of arbeidsongeschikt en vraagt een uitkering aan. Wie beslist over die uitkering, welke regels zijn van toepassing?Het vak Bestuursrecht 1 heeft een inleidend karakter. <br/><br/>Werkwijze<br/><br/>Hoorcolleges, waarin de stof wordt behandeld. Tijdens de hoorcolleges worden geregeld cases behandeld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1340">prof. mr. dr. H.E. Broring</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen), zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href=" http://www.rug.nl/rechten/kennisbank/" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75878"><b>Bestuursrecht 2</b></a></td><td align="right"><b>RGBBE00010</b></td></tr><tr><td align="justify" colspan="3">Het vak Bestuursrecht 2 gaat over de normering van besluiten en andere handelingen. De rode draad wordt gevormd door de vraag aan welke rechtsnormen een bestuursorgaan, dat bevoegd of gerechtigd is tot bestuurshandelen, moet voldoen bij het nemen van besluiten of het verrichten van andere handelingen. Aan de orde komen onder andere: formele en materiële normen voor besluitvorming, openbaarheid van bestuur, subsidies, privaatrechtelijk handelen door de overheid, aansprakelijkheid van de overheid voor rechtmatige en onrechtmatige daden (nadeelcompensatie en schadevergoeding) en bestuursrechtelijke handhaving (reparatoire- en punitieve sancties). Daarbij is bij de verschillende onderwerpen aandacht voor de doorwerking van het EU recht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1340">prof. mr. dr. H.E. Broring</a><a href="/ocasys/rug/vak/viewtutor?tutor=1380">prof. mr. dr. K.J. de Graaf</a><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75908"><b>Bestuursrecht 3</b></a></td><td align="right"><b>RGBBE00605</b></td></tr><tr><td align="justify" colspan="3">Besluiten en andere bestuurlijke handelingen kunnen burgers en particuliere organisaties in hun belangen treffen; bovendien is het niet uitgesloten dat het bestuur bij zijn besluiten en andere handelingen fouten maakt. Daaruit volgt de behoefte aan rechtsbescherming tegen overheidshandelen. Meer principieel wordt de mogelijkheid van rechterlijke controle vereist door de beginselen van de democratische rechtsstaat.<br/><br/>Het vak Bestuursrecht 3 gaat over de rechtsbescherming tegen overheidshandelen: het bestuursprocesrecht in ruime zin. Aan de orde komen onder andere:<br/>- de bezwaarschriftprocedure<br/>- de procedure bij de bestuursrechter<br/>- de voorlopige voorzieningsprocedure<br/>- de procedure bij de burgerlijke rechter<br/>- de klachtvoorzieningen, o.a. bij de Nationale ombudsman.<br/>Per type voorziening wordt ingegaan op de bevoegdheids- en ontvankelijkheidsaspecten, de toetsing en de uitspraak.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a><a href="/ocasys/rug/vak/viewtutor?tutor=12177">mr. M. Wever</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75875"><b>Elementaire Bestuurskunde</b></a></td><td align="right"><b>RGBBE01005</b></td></tr><tr><td align="justify" colspan="3">Deze cursus is een inleiding in de inrichting en werking van de Nederlandse publieke sector. De publieke sector is een complex geheel van overheden, autonome en semi-autonome overheidsinstanties en private organisaties. Afzonderlijk en tezamen zijn zij verantwoordelijk voor de behartiging van de vele uiteenlopende taken die de overheid als publieke taken heeft aangemerkt. Dit vak biedt een inleiding, een atlas van de publieke sector, met aandacht voor de verhouding tussen openbaar bestuur en maatschappelijk ondernemen, overheid en samenleving, centrale en lagere overheid, sectoren en actoren rond de overheid. Ingewikkelde beleidsprocessen zoals het dossier rond de aardgaswinning in Groningen komen aan de orde, maar ook lokale problemen als de reorganisatie van een gemeentelijke muziekschool. Ook veranderingen als de centralisatie van de politie,de privatisering van de sociale zekerheid en de ontwikkelingen op het sociaal domein passeren de revue. <br/>In zeven hoorcolleges worden zeven belangrijke thema´s van de publieke sector behandeld. De voorgeschreven literatuur is daarbij achtergrond en hulpmiddel. De toets is een (digitaal) tentamen over de literatuur en de collegestof. Het tentamen bevat onder meer opdrachten waarbij de verworven kennis moet worden toegepast op actuele ontwikkelingen in de publieke sector. Door mee te doen aan een opdrachtenreeks  kan een bonus voor het tentamen worden verdiend.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1580">prof. dr. H.B. Winter</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1580">prof. dr. H.B. Winter</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75984"><b>Europees Recht</b></a></td><td align="right"><b>RGBEE00110</b></td></tr><tr><td align="justify" colspan="3">Dit vak is gericht op studenten die straks als juristen in Nederland willen werken. De kernaspecten van dit vak hebben betrekking op het EU-recht als zodanig, maar er is ook aandacht voor de doorwerking van het EU recht in de nationale rechtsorde. De volgende onderwerpen worden behandeld:<br/>- De Europese Instellingen en institutioneel evenwicht<br/>- Het rechtsstatelijk karakter van de Unie<br/>- Bevoegdheden en besluitvorming op EU-niveau<br/>- Handhaving en rechtsbescherming binnen de EU-rechtsorde<br/>- Autonomie, voorrang, doorwerking en volle werking van unierecht<br/>- De Interne markt en invloeden van andere beleidsterreinen daarop<br/>- Burgerschap van de Unie<br/>- Mededingingsrecht<br/>- Ontwikkeling van de Europese integratie</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1488">  Nog niet bekend</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75681"><b>Inleiding Politicologie</b></a></td><td align="right"><b>RGBPW00105</b></td></tr><tr><td align="justify" colspan="3">Politiek is het proces waarmee mensen onderhandelen en concurreren in het maken en uitvoeren van gedeelde of collectieve beslissingen. Deze cursus laat studenten kennis maken met de kernbegrippen, benaderingen en argumenten die hen in staat stellen de fundamenten, structuren en processen van politieke systemen wereldwijd succesvol te vergelijken.  Ze leren hoe democratieën en autoritaire regimes worden geanalyseerd, rekening houdend met de verschillende instituties van de overheid en de verschillende politieke culturen die van invloed zijn op de politieke ontwikkelingen en hier tegelijkertijd door worden beïnvloed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=259">prof. dr. G. Voerman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die de propedeuse Rechtsgeleerdheid hebben behaald of het vak in de minor Politiek en Bestuur of in een goedgekeurd pre-master programma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75906"><b>Methoden Sociaalw. onderzoek</b></a></td><td align="right"><b>RGBBE00210</b></td></tr><tr><td align="justify" colspan="3">Om te weten te komen hoe de overheid functioneert en of overheidsbeleid effectief is, wordt gebruik gemaakt van sociaalwetenschappelijk onderzoek. Bestuurskundigen moeten niet alleen in staat zijn de resultaten van dergelijk onderzoek te beoordelen, maar ook zelf dergelijk onderzoek kunnen opzetten en de uitkomsten ervan kunnen analyseren.<br/>In dit vak staat het opzetten van sociaalwetenschappelijk onderzoek en het analyseren en beoordelen van de resultaten ervan centraal. Op systematische wijze worden de verschillende fasen van een sociaalwetenschappelijk onderzoek behandeld: de onderzoeksopzet, gegevensverzameling, kwalitatieve en kwantitatieve data-analyse, het formuleren van conclusies en de presentatie van onderzoeksresultaten.<br/>Het vak biedt zowel aandacht voor de meer beschouwende kanten van sociaalwetenschappelijk onderzoek (wat is de verhouding tussen sociaaalwetenschappelijke theorievorming en hypothesevorming en -toetsing? wat is het verschil tussen hypothestoetsend onderzoek en beleidsevaluerend onderzoek? wat zijn de voor- en nadelen van kwalitatief en kwantitatief onderzoek?) als ook voor de praktische aspecten van het doen van onderzoek (hoe zet ik een onderzoek op? voor welke onderzoeksmethode kies ik? wat voor vragen neem ik in een enquête op? wanneer is het wel/niet verantwoord de resultaten met hulp van welke welk statistische methoden te analyseren?).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6827">dr. B. Brink</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6827">dr. B. Brink</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75988"><b>Organisatie en bestuur</b></a></td><td align="right"><b>RGBBE00310</b></td></tr><tr><td align="justify" colspan="3">In organisaties werken mensen samen om een bepaald doel te bereiken. In dit vak wordt gekeken naar het functioneren van organisaties in het algemeen en van overheidsorganisaties in het bijzonder. De overheid bestaat uit een groot aantal organisaties, zoals de gemeente Groningen, de  het Ministerie van Financiën, DUO, UWV en de Autoriteit Consument &amp; Markt. Deze organisaties verschillen voor wat betreft de taken en interne vormgeving. In dit vak komt deze variatie aan de orde. Welke taken worden door overheidsorganisaties vervuld? Waarom is het eigenlijk de overheid die deze taken vervult? Hoe zien de organisaties eruit? Hoe verhouden de organisaties zich tot elkaar (samenwerking, verdeling middelen)? En hoe werken interne organisatiestructuren? Wat is de rol van leiderschap(stijlen) in dit verband? <br/><br/>Werkwijze: twee keer per week een hoorcollege van twee uur. Enkele colleges worden verzorgd door gastdocenten die in de praktijk werkzaam zijn. De colleges worden tevens benut voor de bespreking van opdrachten. Met deze opdracht kan een deel van het tentamencijfer worden verdiend.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1533">mr. dr. A. Tollenaar</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75937"><b>Privaatrecht voor niet-juristen</b></a></td><td align="right"><b>RGAPR70205</b></td></tr><tr><td align="justify" colspan="3">Privaatrecht is het recht tussen  burgers onderling. Het vak bouwt voort op Inleiding Recht voor niet-juristen. Iedereen komt in het dagelijks leven op uiteenlopende wijze in aanraking met het privaatrecht. In een collegecyclus van 6 weken passeert in feite het leven van elke dag, en de rol van het privaatrecht daarin, de revue.<br/>Kan ik zonder toestemming van mijn echtgenoot met geleend geld gaan beleggen (DEXIA) of een bedrijf kopen? Delen al mijn kinderen op gelijke wijze in mijn nalatenschap? Mag ik mijn (oudste) zoon bevoordelen? Waaraan ben ik gebonden als ik per e-mail een abonnement voor een mobiele telefoon afsluit? En als ik in een te enthousiaste bui een huis koop, kan ik dan nog terug? En wat als de grond vervuild blijkt te zijn, of de garage vijftien centimeter over de grens blijkt te zijn gebouwd? <br/>Op het gebied van letselschade geeft het leven tal van treurigheden te zien: heb ik als ouder een claim jegens de dronken automobilist die voor mijn ogen mijn kind doodrijdt? En tegen ZOO BV als een Bokito mij onverwacht aanvalt?<br/>Kortom, relevante vragen van alledag worden in een juridisch  kader geplaatst. Na afloop van dit vak heeft u inzicht in belangrijke privaatrechtelijk leerstukken en het vermogen om de daarmee samenhangende juridische vraagstukken te beoordelen. U leest de krant anders, beslist!</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12253">mr. J.T. Hiemstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1368">mr. dr. R.J.C. Flach</a><a href="/ocasys/rug/vak/viewtutor?tutor=12253">mr. J.T. Hiemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1553">prof. mr. dr. L.C.A. Verstappen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor een minor rechten of voor studenten die minimaal 45 ECTS hebben behaald in een andere WO-bachelor, mits de collegecapaciteit het toelaat. Het vak is niet toegankelijk voor rechtenstudenten.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor toegang tot (actuele) roosters, inschrijfregels en -instructies, jaarindeling van Rechten en meer, zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> onder het kopje 'Informatie voor niet-rechtenstudenten'.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75854"><b>Staatsrecht 1</b></a></td><td align="right"><b>RGPST00105</b></td></tr><tr><td align="justify" colspan="3">De volgende onderwerpen komen in het vak aan de orde:<br/><br/>1. Staat, overheid en constitutie<br/>2. De vormgeving van de Nederlandse democratie<br/>3. De samenwerking tussen regering en Staten-Generaal<br/>4. Decentralisatie van bevoegdheden<br/>5. Rechters en rechtspraak<br/>6. De wisselwerking tussen nationaal en internationaal recht<br/>7. De garantie en bescherming van grondrechten door de staat</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12175">mr. R.L. Herregodts</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12236">mr. I. de Haan</a><a href="/ocasys/rug/vak/viewtutor?tutor=12175">mr. R.L. Herregodts</a><a href="/ocasys/rug/vak/viewtutor?tutor=1405">prof. mr. H.G. Hoogers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor de bachelor Rechtsgeleerdheid, Colloquium Doctum studenten of pre-master studenten op voorwaarde dat het vak onderdeel uitmaakt van het pre-master programma.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Aan propedeusestudenten wordt in het eerste jaar van inschrijving als rechtenstudent onder bepaalde voorwaarden de mogelijkheid geboden een verlengd mondeling hertentamen van dit vak af te leggen, in dezelfde tentamenperiode als waarin het (schriftelijk) hertentamen van dit vak is afgenomen. Voor de voorwaarden en de procedure zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=75899"><b>Staatsrecht 2</b></a></td><td align="right"><b>RGBST00105</b></td></tr><tr><td align="justify" colspan="3">Het vak Staatsrecht 2 bouwt voort op de kennis van het positieve constitutionele recht zoals die is opgedaan bij het vak Staatsrecht 1. Het vak geeft studenten inzicht in constitutionele kernbegrippen en de onderlinge verbanden waarin die begrippen een rol spelen. Daartoe worden de inzichten die bij Staatsrecht 1 zijn opgedaan, verdiept en wordt op de vernieuwde kennis gereflecteerd. Waar mogelijk gebeurt dat aan de hand van actuele maatschappelijke vraagstukken die, meer of minder zichtbaar, steeds een constitutionele ondertoon hebben.<br/>De geselecteerde staatsrechtelijke thema’s worden bestudeerd als verhoudingsvraagstukken. Iedere collegeweek kent een hoorcollege van 2 uur en een werkgroep van 2 uur. Het hoorcollege en de werkgroep zijn gewijd aan hetzelfde thema. De thema’s zijn: <ul><li>Democratie, rechtsstaat en mensenrechten</li><li>Parlement, parlementaire controle en politiek vertrouwen</li><li>Wetgeving, regulering en de rol van de rechter</li><li>Constitutioneel organisatierecht en decentraal bestuur</li><li>Nederland, Europa en de wereld</li><li>Grondrechten: algemene begrippen</li><li>Gelijkheid, vrijheid van godsdienst en onderwijsvrijheid</li></ul>De hoorcolleges zijn bedoeld om de thema’s te introduceren en te voorzien van een context. In de werkcolleges worden studenten uitgenodigd om aan de hand van literatuur en jurisprudentie de aangedragen kennis en inzichten te verwerken en toe te passen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1479">mr. M. Nap</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11490">prof. mr. dr. S.A.J. Munneke</a><a href="/ocasys/rug/vak/viewtutor?tutor=1479">mr. M. Nap</a><a href="/ocasys/rug/vak/viewtutor?tutor=1488">  Nog niet bekend</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=75824"><b>Theorie Sociale Wetenschappen</b></a></td><td align="right"><b>RGBBE00205</b></td></tr><tr><td align="justify" colspan="3">Door de tijd heen hebben verschillende filosofen, economen, historici en sociologen geprobeerd verklaringen te vinden voor maatschappelijke problemen. De verklaringen die zij gevonden hebben worden in dit college ingedeeld in vier stromingen: <br/><br/>- utilitaristisch individualisme<br/>- historisch materialisme<br/>- structureel functionalisme<br/>- interpretatief individualisme<br/><br/>Deze benaderingen worden toegelicht aan de hand van drie grote thema's uit de sociologie:<br/>- cohesie<br/>- ongelijkheid<br/>- rationalisering</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6827">dr. B. Brink</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6827">dr. B. Brink</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

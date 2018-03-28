@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5642&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5642"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5642">Informatie over DD MSc Economics - Universidad de Chile, Santiago (1,5-jarig)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>DD MSc Economics - Universidad de Chile, Santiago (1,5-jarig)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 ( basisprogramma voor studenten van FEB)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td></td><td>gelijk aan MSc Economics</td><td>Engels</td><td>60</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">DD-studenten kunnen alleen starten in september.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (basisprogramma voor studenten uit Chili)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td></td><td>studie aan Universidad de Chile,Santiago</td><td>Engels</td><td>60</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">DD-studenten kunnen alleen starten in september.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 ( basisprogramma voor studenten van FEB)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td></td><td>studie aan Universidad de Chile,Santiago</td><td>Engels</td><td>30</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (basisprogramma voor studenten uit Chili)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td></td><td>keuzevakken voor studenten uit Chili</td><td>Engels</td><td>10</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM877A20</td><td><a href="/ocasys/rechten/vak/show?module=73500">Master's Thesis Economics</a></td><td>Engels</td><td>20</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (keuzevakken voor studenten uit Chili)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester II a</td><td>keuze</td><td>EBM110A05</td><td><a href="/ocasys/rechten/vak/show?module=73662">Applied Microeconometrics</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM111A05</td><td><a href="/ocasys/rechten/vak/show?module=73720">Asset and Liability Management</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBM093A05</td><td><a href="/ocasys/rechten/vak/show?module=73710">Country Studies</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM094A05</td><td><a href="/ocasys/rechten/vak/show?module=73331">Economic Geography</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBM167A05</td><td><a href="/ocasys/rechten/vak/show?module=73556">Energy Transition &amp; Innovation</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM194A05</td><td><a href="/ocasys/rechten/vak/show?module=77809">Fin. &amp; Econ. Org. of Healthcare Markets</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBM106A05</td><td><a href="/ocasys/rechten/vak/show?module=73623">Microeconomics of Household Behaviour</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM107A05</td><td><a href="/ocasys/rechten/vak/show?module=73728">Monetary Policy and Financial Regulation</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II b</td><td>keuze</td><td>EBM806B05</td><td><a href="/ocasys/rechten/vak/show?module=73463">Behavioural Finance &amp; Personal Investing</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM148A05</td><td><a href="/ocasys/rechten/vak/show?module=73267">Economics of Regulating Markets</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBM069A05</td><td><a href="/ocasys/rechten/vak/show?module=73300">Finance and Development</a></td><td>Engels</td><td>5</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>EBM108A05</td><td><a href="/ocasys/rechten/vak/show?module=73706">Public Economics and Social Policy</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Studenten kiezen 10 EC uit de lijst van keuzevakken voor studenten uit Chili. Het is niet toegestaan keuzevakken te kiezen die sterk overeenkomen met vakken die al in Chili gevolgd zijn.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73662"><b>Applied Microeconometrics</b></a></td><td align="right"><b>EBM110A05</b></td></tr><tr><td align="justify" colspan="3">This course provides a thorough understanding of microeconometric methods. During the course applications of the different methods are discussed mainly in the fields of consumption (saving) behavior, labor economics, industrial organisation and financial economics.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a><a href="/ocasys/rug/vak/viewtutor?tutor=2242">prof. dr. T.J. Wansbeek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, practica, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Econometric theory and methods<br/>Econometric inference</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Info: Prof. Rob Alessie, phone: +31(0)50 363 7240, e-mail: r.j.m.alessie@rug.nl<br/>Secretary: Kimberley Vudinh, k.m.vudinh@rug.nl, room 5411.0734</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73720"><b>Asset and Liability Management</b></a></td><td align="right"><b>EBM111A05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11196"> B.S. Kramer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11196"> B.S. Kramer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Affinity with math, statistics and finance, comfortable with matlab or related languages, or willing and able to become so.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Martine Geerlings-Koolman, phone: +31(0)50 363 7018, e-mail: m.a.koolman@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73463"><b>Behavioural Finance &amp; Personal Investing</b></a></td><td align="right"><b>EBM806B05</b></td></tr><tr><td align="justify" colspan="3">Behavioral Finance (BF) is a new development in the field of finance, which has been going on for more than two decades now. This development has not only affected academic finance, but has also gained profound interest from practitioners, in particular in the field of investments. In BF, empirical phenomena are being analyzed in terms of behavioral characteristics. In doing so, it explicitly deviates from the rational decision-making approach of financial economics. In this course we will focus mainly on individual investor psychology and behavior and contrast it with the neo-classical approach.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1681">dr. M.M. Kramer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1681">dr. M.M. Kramer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students have a bachelor in Economics or Business.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Grietje Pol, phone: +31 (0)50 363 3685, e-mail: g.pol@rug.nl, room: 5411.0836.<br/>The course literature mentioned in the above is only indicative. The final reading list of the course will be published in due time.<br/>This course is also open for a max of 8 exchange students.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73710"><b>Country Studies</b></a></td><td align="right"><b>EBM093A05</b></td></tr><tr><td align="justify" colspan="3">What are the opportunities for growth and development in a country and what holds it back? What are the lessons for government policies and firms that are contemplating investment? In this hands-on course, you will focus in-depth on the causes and consequences of growth in a specific country. As part of a small team, you will analyze one particular institution such as the innovation system, trade openness or the financial sector. Your analysis will be based on academic literature that discusses what makes a successful institution and statistical data sources. The literature on your institution will be introduced in thematic groups with members from other country teams. The analysis of your theme forms one chapter of the final country report.<br/>The insights from the different analyses by the group members are synthesized into a summary chapter to provide useful information for policy makers or multinational firms about the prospects for economic growth and doing business in your country. Together with your team, you will present the findings and policy or business recommendations from your report to the lecturers and other course participants.<br/>Your final course grade is based on an individual grade for the chapter you contribute to the country report; a grade for the quality of the feedback you provide to fellow students; a group grade for the summary chapter that synthesizes the other chapters; and a grade for your contribution to a discussion panel.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1929">prof. dr. R.C. Inklaar</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1929">prof. dr. R.C. Inklaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=2021">prof. dr. B. Los</a><a href="/ocasys/rug/vak/viewtutor?tutor=12417">dr. A. Minasyan</a><a href="/ocasys/rug/vak/viewtutor?tutor=11608">dr. A.C. Steiner</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor's degree in Economics and Business Economics or comparable qualification. Builds on knowledge of macroeconomics and economic growth.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0536 <br/>Coordinator: r.c.inklaar@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73331"><b>Economic Geography</b></a></td><td align="right"><b>EBM094A05</b></td></tr><tr><td align="justify" colspan="3">The geo-economic map of the world changes constantly. Globalization has led to a rapid increase of these changes in the location decisions of firms. This course aims to provide students with a better understanding of the resulting changes in the geo-economic patterns of FDI and international trade and the underlying strategic decision of firms to locate in (or offshore to) knowledge intensive clusters of economic activity. We discuss key theories and empirical evidence to understand these changes and, subsequently, discuss the firm level drivers of these changes.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1773">prof. dr. S. Brakman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1773">prof. dr. S. Brakman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1860">prof. dr. J.H. Garretsen</a><a href="/ocasys/rug/vak/viewtutor?tutor=8589">dr. M.J. Gerritse</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariat GEM: gem.feb@rug.nl, +31(0)50 363 3458, 5411.0538</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73267"><b>Economics of Regulating Markets</b></a></td><td align="right"><b>EBM148A05</b></td></tr><tr><td align="justify" colspan="3">The central theme of the course is: how can governments (regulators) effectively improve the functioning of markets, in particular those markets which are characterized by economies of scale resulting in natural monopolies? Examples of those markets are energy markets, transport markets and telecom markets. Topics to be discussed are among others: how to determine the tariffs that an operator of an gas network, airport or rail track is allowed to charge on users of the network infrastructure as gas users, airlines and railway companies, respectively? How to implement competition in the energy industry, both on wholesale level and retail level? <br/>Knowledge of economics of regulating market is useful for positions within regulated companies (TenneT, Gasunie, Schiphol, Prorail, etc.), companies using regulated infrastructures (airlines, large energy users, etc.) regulatory bodies (ACM, ACER, etc.) and consultancies (PWC, Oxera, etc.).<br/>The course not only deals with the economic theory behind the regulation of markets, but also applies this theory to real-life problems in particularly energy markets, but also in telecom and transport.<br/>The course consists of 7 meetings of 3 hours per week. In each meeting we discuss a specific topic. We start by discussing the question why some markets, in particular energy markets, need regulation and others not (Meeting 1). Then, we discuss how the government could regulate these markets (Meeting 2). These first two meetings are meant to give the students some theoretical background in economic regulation. Afterwards, we have two meetings in which we discuss key issues in the daily practice of regulation. The first one is on benchmarking on efficiency (Meeting 3). Here we discuss how to assess the costs of a regulated firm. In the other one we discuss how to determine the appropriate reward (i.e. the WACC) on capital which is invested in the network (Meeting 4). These questions are highly important for regulated firms as it affects how much profit they are allowed to make and to which extent they are able to finance the investments. Then, we go into in the question how to implement competition in these industries. These sessions are mainly directed at energy markets. First, we discuss the design of electricity and gas markets on wholesale level (Meeting 5). Afterwards, we analyze how electricity and gas markets can become more integrated on an international level (Meeting 6). In the final meeting, we pay attention to the retail market, discussing how competition can be implemented in markets where consumers (instead of firms) play a key role (Meeting 7).<br/>For those not having a strong background in microeconomics, two additional lectures are organized in which all relevant microeconomic concepts are discussed.<br/>This course is part of the focus area 'Energy'. When you focus your MSc on energy subjects you will be awarded an official acknowledgement on your diploma, improving and broadening your career opportunities in the energy sector. Prerequisites are mentioned in the Teaching and Examiniation Regulations: 'Focus areas in the master programmes'.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7967">prof. dr. M. Mulder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7967">prof. dr. M. Mulder</a><a href="/ocasys/rug/vak/viewtutor?tutor=11397"> M. Ollar, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open to all MSc students, but students are recommended to have some background in microeconomics and finance.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Info: Prof. Machiel Mulder, e-mail machiel.mulder@rug.nl<br/>Secretary: Kim Vudinh, e-mail k.m.vudinh@rug.nl, room 5411.0734</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73556"><b>Energy Transition &amp; Innovation</b></a></td><td align="right"><b>EBM167A05</b></td></tr><tr><td align="justify" colspan="3">The shift towards renewable energy requires innovation in technologies and social behavior. The energy industry has changed and is changing dramatically. Once an oligopolistic structure, the industry is rapidly changing and incumbent businesses face threats from disruptive innovation. Similarly, newcomers face high levels of uncertainty about future demand, technological trajectories, and governmental policies. What does this mean for the established players and new start-ups? And what is the role of renewable energy innovation to be competitive in this industry? The purpose of this course is to give students an advanced understanding of these topics, using current academic research on strategy and innovation, to understand how collaboration and innovation can be used in this industry to adjust to change. We consider the complex transition towards sustainable energy, and will focus on the role of government-industry and industry-industry collaborations. In the process, students gain knowledge about how to realize and align partnerships in the transition of traditional (fossil fuels) to more sustainable sources of energy (wind, solar, biomass, tidal power).<br/>This course is part of the focus area 'Energy'. When you focus your MSc on energy subjects you will be awarded an official acknowledgement on your diploma, improving and broadening your career opportunities in the energy sector. Prerequisites are mentioned in the Teaching and Examiniation Regulations: 'Focus areas in the master programmes'.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2034">dr. K.J. McCarthy</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2034">dr. K.J. McCarthy</a><a href="/ocasys/rug/vak/viewtutor?tutor=9264">dr. F. Noseleit</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">individueel tentamen, paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">General requirements for admittance to the MSc</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Mirjam Berghuis, room 5411-0434, phone +31(0)50-363 3453, email: m.berghuis@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77809"><b>Fin. &amp; Econ. Org. of Healthcare Markets</b></a></td><td align="right"><b>EBM194A05</b></td></tr><tr><td align="justify" colspan="3">This course incorporates an advanced perspective on the economics behind organisations operating in the health and healthcare sectors.<br/>We recap the individual decision to buy health insurance, and discuss the social benefits and costs arising from its provision.  We explain why health insurance markets may fail, and solutions that may arise to obviate such market failure.<br/>We then discuss major actors in health and healthcare markets: physicians, hospitals, and the pharmaceutical industry.  We examine how principal-agent problems characterise the patient-physicians relationship, and regulation aimed at solving these problems.  We examine funding methods for hospitals, and different incentives arising out of different funding methods.  We finally examine the role of the pharmaceutical industry in researching and developing new health technologies and treatments, as well as the process of getting drugs to market.<br/>This course is part of the focus area 'Health Economics'. When you focus your MSc on health economics subjects you will be awarded an official acknowledgement on your diploma, improving and broadening your career opportunities in the health sector. Prerequisites are mentioned in the Teaching and Examiniation Regulations: 'Focus areas in the master programmes'.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2050">dr. J.O. Mierau</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12052">dr. D.D. Howdon, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: Grietje Pol, g.pol@rug.nl, phone +31 (0)50 3633685, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73300"><b>Finance and Development</b></a></td><td align="right"><b>EBM069A05</b></td></tr><tr><td align="justify" colspan="3">The course is designed for MSc students with a background in (business) economics. The focus is on the role of finance in the process of development in developing countries, with a strong focus on microfinance. The basis for the course consists of theories on financial development and the economics of microfinance which are applied to developing countries. Attention is paid to the opportunities and limitations of financial institutions in developing countries in general, and microfinance institutions in particular. Questions regarding the functioning and performance of (rural) financial markets in the context of developing economies are raised and discussed. Specific topics include: Finance and Development; Finance and Inequality; the role of state banks; why intervene in credit markets?; the economics of microfinance; techniques to measure impact of financial interventions. The course contains main lectures, guest lectures and group oral presentations by students.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11190"> F. Cecchi, PhD.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11190"> F. Cecchi, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=10758">dr. A.M. Mueller</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The course is open for all students with a Bsc in business or economics.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The course can be followed as an elective for the different master programmes within the Faculty of Economics and Business and is open for a max of 8 Exchange Students.<br/><br/>Secretary: Grietje Pol, phone +31 (0)50 3633685, e-mail: g.pol@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=73500"><b>Master's Thesis Economics</b></a></td><td align="right"><b>EBM877A20</b></td></tr><tr><td align="justify" colspan="3">Students write an empirical research paper of 20-50 pages over a period of 3-5 months. This paper can cover all but one of the subjects within Economics as e.g. described in the main themes of the Journal of Economic Literature. Students have to register for this “course”, which starts with an introductory lecture in the first week of semester 1 or semester 2. The paper needs to be finished at the end of that semester.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1945">dr. R.M. Jong A Pin</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1945">dr. R.M. Jong A Pin</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">afstudeeropdracht, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">20 EC within Master Economics.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Info: Dr R.M. Jong a Pin, r.m.jong.a.pin@rug.nl <br/>Secretary: Ms K.M. Vudingh, k.m.vudinh@rug.nl, room 5411.0734.<br/>This course is offered in both semester I and semester II.<br/>Detailed information can be found in the brochure "Manual for Master Thesis Economics" posted on Nestor. Students who want to write a combined thesis for the masters of Economics and of Finance need to hand in their proposal to the master thesis coordinator of Economics only and two weeks before the start of the semester.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=73623"><b>Microeconomics of Household Behaviour</b></a></td><td align="right"><b>EBM106A05</b></td></tr><tr><td align="justify" colspan="3">The course will cover intertemporal models of consumption, saving and retirement decisions and review the empirical evidence on these issues. Particular attention will be paid to the question whether people save enough for retirement and to the saving behaviour of older people. Intertemporal choices will be analysed in the context of the life-cycle framework. However, deviations from economic rationality and the standard life-cycle model will also be evaluated.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a><a href="/ocasys/rug/vak/viewtutor?tutor=10767"> R. van Ooijen, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie, gecombineerde hoor-/werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The course also goes into the mathematical details of the models. Students should have a working knowledge of simple constrained optimization problems using the method of Lagrange multipliers.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator: Dr Viola Angelini, v.angelini@rug.nl<br/>Secretary: Kimberly Vudinh, k.m.vudinh@rug.nl room 5411.0734</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=73728"><b>Monetary Policy and Financial Regulation</b></a></td><td align="right"><b>EBM107A05</b></td></tr><tr><td align="justify" colspan="3">The course will discuss the following topics: European Economic and Monetary Union and the European System of Central Banks; European monetary policy (conventional and unconventional); global financial crisis; European debt crisis; European Banking Union; supporting policies needed in an incomplete monetary union, financial systems in the Netherlands, Europe, and worldwide; recent developments in the financial system and their mutual relationships; developments in prudential supervision of banks and other financial institutions; financial crises; macro-prudential supervision; systemic risk and financial stability.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6949">prof. dr. J.M. Berk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6949">prof. dr. J.M. Berk</a><a href="/ocasys/rug/vak/viewtutor?tutor=11405"> S. Pool, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open for all Master students</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Only available on Friday. <br/>Coordinator: Prof. Jan Marc Berk, j.m.berk@rug.nl<br/>Secretary: Grietje Pol, g.pol@rug.nl, room 5411.0836</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=73706"><b>Public Economics and Social Policy</b></a></td><td align="right"><b>EBM108A05</b></td></tr><tr><td align="justify" colspan="3">This course:<br/>- analyzes the impact of social insurance programs  (such as unemployment insurance, disability insurance and health care) and of the tax system on individual behavior, poverty rates and health outcomes.<br/>- discusses (optimal) design of social insurances schemes: trade- off between providing a decent coverage to the population and the existence of moral hazard and adverse selection problems.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1729">prof. dr. R.J.M. Alessie</a><a href="/ocasys/rug/vak/viewtutor?tutor=12174">dr. M. Groneck</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Open only for MSc Economics students<br/>- Microeconomics at the intermediate level<br/>- Mathematics and statistics at the BSc economics level<br/>- Knowledge of basic econometrics</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secr: K.M. Vudinh, k.m.vudinh@rug.nl, kamer 5411.0734</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

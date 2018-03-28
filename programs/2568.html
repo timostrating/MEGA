@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=2568&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D2568"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=2568">Informatie over Ma+ Rechtstheoretisch Verdiepingstraject</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma+ Rechtstheoretisch Verdiepingstraject</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>a.</td><td>RGMRF50206</td><td><a href="/ocasys/rechten/vak/show?module=75768">Anthropology of Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr><td class="nocolor"> </td><td>a.</td><td>RGARF90106</td><td><a href="/ocasys/rechten/vak/show?module=75954">Gelijke monniken, gelijke kappen</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>a.</td><td>RGMRF00806</td><td><a href="/ocasys/rechten/vak/show?module=75759">Juridische Oordeelsvorming</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester I b</td><td>a.</td><td>RGMPW00206</td><td><a href="/ocasys/rechten/vak/show?module=75757">Politicologie</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>RG00061018</td><td><a href="/ocasys/rechten/vak/show?module=75726">Scriptie</a></td><td>Nederlands</td><td>18</td><td></td></tr><tr><td class="nocolor">semester II a</td><td>a.</td><td>RGMRF00306</td><td><a href="/ocasys/rechten/vak/show?module=75965">Seminaar Boontje komt om z'n loontje?</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>a.</td><td>RGMRF00706</td><td><a href="/ocasys/rechten/vak/show?module=75766">Wetenschapsleer</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Het is mogelijk te kiezen voor een facultair vastgesteld samenhangend pakket dat voorziet in een rechtstheoretische verdieping op de bachelor- en masteropleiding. In dit keuzepakket wordt filosofisch, politicologisch of antropologisch / sociologisch gereflecteerd op het recht. Indien dit zogenaamde masterplus programma binnen Nederlands recht met succes is afgerond wordt hiervan op de bul aantekening gemaakt.<br/><br/>Studenten krijgen de masterplus aantekening indien zij: </p><ul><li>inleiding rechtsfilosofie of inleiding rechtssociologie of inleiding rechtsinformatica of Denken over Democratie en Rechtsstaat hebben behaald; </li><li>(a) minimaal 20 ec behaald hebben met vakken uit bovenstaande keuzelijst; </li><li>(b) de scriptie aangevuld hebben met een rechtstheoretische component.</li></ul><br/>Voor meer informatie over de mogelijkheden binnen de 'masterplus' kun je contact opnemen met de coördinator van het programma: mevr. dr. H. Weyers.<br/>-----------------------------<br/>Voor wijzigingen zie Overgangsregelingen via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>:<br/><ul><li>1-9-16: Anthropology of Law en Gelijke Monniken, gelijke kappen van 5 ec -&gt; 6 ec</li><li>1-9-16: Naamswijziging: Juridisch redeneren (Rechtsfilosofie 1)-&gt; Juridische Oordeelsvorming</li><li>1-9-16: Seminaar Boontje komt om z'n loontje? gaat naar blok 3 (was blok 3 en 4)</li><li>1-9-15: Het vak Rechtsfilosofie 2 (Ethiek van Recht en Bestuur) is komen te vervallen. </li><li>1-9-13: enkele naamswijzigingen en semesterwijzigingen;</li><li>1-9-12 invoering harde knip, sommige vakken zijn van naam/status veranderd; </li><li>1-9-11 enkele wijzigingen door een versobering van het aanbod keuzevakken. </li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75768"><b>Anthropology of Law</b></a></td><td align="right"><b>RGMRF50206</b></td></tr><tr><td align="justify" colspan="3">This course offers a first introduction to several key concepts and ideas of anthropology of law. Anthropology of law has much to contribute to the social scientific study of processes of creating and maintaining rules as well as the ways of dealing with conflicts. Empirical research both in small-scale and complex societies has produced a rich variety of data on socio-legal phenomena of order and conflict in different social and cultural contexts, of all times and places. These data allow for detailed comparative analysis of a variety of issues concerning law and social behaviour. In addition to the importance of anthropology of law for socio-legal theory, the insights and methods from anthropology of law have great practical relevance for understanding problems in socio-legal reality both in the so-called developing countries and in western society. Some of the subjects that will be dealt with in this course are legal culture, legal pluralism, and the interaction between state law and living law in contemporary society. <br/><br/>Students are expected to study the required texts for each lecture in advance. The course will be concluded with an essay.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>If taken as an optional course, this course is only accessible for students that have obtained their first year certificate (propedeuse) at a research university and for students that have been admitted to a master's degree programme at a research university. If this course is concluded as part of a bachelor's degree programme, these credits cannot be taken into consideration within a master's degree programme.</li><li>Foreign students: none.</li><li>Not accessible for students who passed the course Anthropology of Law 1 before 1-9-11.</li><li>This course is also open to non-law exchange students (please contact the International Office of the Faculty of Law for more information).</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">1-9-2016: has been changes in 6 EC (instead of 5 EC).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75954"><b>Gelijke monniken, gelijke kappen</b></a></td><td align="right"><b>RGARF90106</b></td></tr><tr><td align="justify" colspan="3">Sinds 1983 wordt het gelijkheidsbeginsel vergezeld van een uitdrukkelijk verbod tot discriminatie. In dit vak wordt het beginsel nader onder de loep genomen en vanuit verschillende gezichtspunten geanalyseerd. Vanuit rechtsfilosofisch perspectief wordt de vraag gesteld naar het verband tussen gelijkheid en rechtvaardigheid. Wordt rechtvaardigheid niet veeleer gediend door rekening te houden met de verschillen tussen bijzondere gevallen? Vanuit sociologisch perspectief wordt de vraag gesteld naar de maatschappelijke werking van het beginsel en de manier waarop het wordt geimplementeerd, terwijl vanuit politicologisch perspectief het gelijkheidsbeginsel wordt geanalyseerd als inzet van politieke processen.<br/><br/>Werkwijze<br/>De verschillende perspectieven worden behandeld door verschillende docenten. Tentamen in de vorm van een paper van beperkte omvang.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1398">prof. dr. M.L.M. Hertogh</a><a href="/ocasys/rug/vak/viewtutor?tutor=1574">prof. dr. P.C. Westerman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">take home tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75759"><b>Juridische Oordeelsvorming</b></a></td><td align="right"><b>RGMRF00806</b></td></tr><tr><td align="justify" colspan="3">In dit vak staat de vraag naar rechterlijke oordeelsvorming centraal. In hoeverre vindt de rechter recht; in hoeverre schept hij het? Wat is de verhouding tussen regeltoepassing en belangenafweging? Welke status hebben de beginselen die hem/haar leiden bij deze afweging en wat is het verschil tussen morele en juridische beginselen?<br/>De vraag naar de rechterlijke oordeelsvorming wordt vervolgens in verband gebracht met bredere kwesties als de verhouding tussen rechter en wetgever en het verband tussen recht en moraal.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1574">prof. dr. P.C. Westerman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1574">prof. dr. P.C. Westerman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten. Voor nadere informatie over de entreevoorwaarden van de Master Rechtswetenschappelijk Onderzoek zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.<ul><li>Niet af te leggen door studenten die voor 1-9-2016 het vak Juridisch redeneren (Rechtsfilosofie 1) hebben afgelegd.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75757"><b>Politicologie</b></a></td><td align="right"><b>RGMPW00206</b></td></tr><tr><td align="justify" colspan="3">Het polismodel van beleidsvorming, ontwikkeld door Deborah Stone in haar boek Policy Paradox, vindt zijn toepassing in de analyse van beleid betreffende morele en andere kwesties. Het model sluit aan bij het arenamodel van beleidsvorming maar legt meer nadruk op de politieke en discursieve dimensie van dit proces: beleidsvorming als strijd om ideeën. Het polismodel is ontwikkeld op basis van de kritiek op de overige genoemde modellen. Deze zouden beleidsvormingsprocessen en met name de politieke dimensie hiervan niet adequaat beschrijven en verklaren omdat ze de chaotische, emotionele,irrationele en retorische aspecten, die juist het hart van de politiek vormen, buiten beschouwing laten. Stone legt de nadruk op de processen waarin beleidscategorieën gevormd en afgebakend worden en laat zien welke rol het redeneren over oorzaken, belangen, statistieken en het gebruik van metaforen, analogie en andere stijlmiddelen hierbij spelen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde WO-propedeuse en voor studenten die zijn toegelaten tot een WO-masteropleiding. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li><li>Het vak is ook toegankelijk voor studenten die zijn toegelaten tot de Educatieve Master Maatschappijleer en de Master Sociologie.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75726"><b>Scriptie</b></a></td><td align="right"><b>RG00061018</b></td></tr><tr><td align="justify" colspan="3">Nadere eisen en richtlijnen<br/><br/>Nadere eisen en richtlijnen m.b.t. scriptie zijn opgenomen in het scriptiereglement. Zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> voor meer informatie. <br/><br/>Voorbereiding <br/><br/>Ter voorbereiding op het schrijven van een scriptie organiseert de faculteit een scriptievoorbereidingstraject, bestaande uit een hoorcollege (4 x per jaar), een bibliotheekinstructie en een scriptiepracticum. De student is verplicht de onderdelen scriptiecollege en bibliotheekinstructie van het scriptievoorbereidingstraject te volgen alvorens een scriptieonderwerp ter goedkeuring voor te leggen aan de scriptiecoördinator. Het volgen van het onderdeel scriptiepracticum is facultatief, maar wordt sterk aanbevolen. Voor bijzonderheden over het Scriptievoorbereidingstraject zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7063" target="_blank">vakomschrijving in Ocasys</a>. Hierin is informatie opgenomen over de onderdelen van het traject en speciale literatuur die bij het schrijven van een scriptie wordt aanbevolen. <br/>Voor Masterstudenten Internationaal en Europees Recht geldt een apart engelstalig scriptievoorbereidingstraject (Thesisclass) zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=25170" target="_blank">vakomschrijving in Ocasys</a>.   <br/><br/><br/>Een artikel in Ars Aequi of een ander wetenschappelijk tijdschrift kan ook als een scriptie worden gehonoreerd, mits hierover tevoren overleg is gepleegd met de docent die anders als scriptiebegeleider zou zijn opgetreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75965"><b>Seminaar Boontje komt om z'n loontje?</b></a></td><td align="right"><b>RGMRF00306</b></td></tr><tr><td align="justify" colspan="3">Het gezegde 'boontje komt om zijn loontje' wordt gebruikt wanneer iemand zijn verdiende straf krijgt. In de volksmond lijkt men geen moeite te hebben met deze uitspraak. Maar wat is eigenlijk `verdiend’? En straft men wel omdat iemand dat verdiend heeft? Of omdat men erger wil voorkomen? Of zijn er nog andere redenen om te straffen en welke reden vinden wij dan eigenlijk het belangrijkste? En is belonen eigenlijk geen betere manier om gedrag te beïnvloeden?<br/>In deze collegereeks worden enkele ogenschijnlijke vanzelfsprekendheden uit het strafrecht ter discussie gesteld en steeds vanuit zowel een strafrechtelijk als filosofische perspectief belicht.  Daarbij komen concrete thema’ s aan de orde, zoals de vraag of tbs eigenlijk wel zo humaan is als vaak wordt voorgesteld en of iemand ooit levenslang verdient. <br/><br/>Alle colleges worden verzorgd door zowel een strafrechtdocent (Ten Voorde) als een rechtsfilosoof (afwisselend Mackor, Westerman en Geeraets (gastdocent VU)). Elke week worden een of meer actuele juridische, rechtsfilosofische en literaire teksten gelezen. Van de student wordt een actieve inbreng verwacht op basis van aanvullend eigen literatuuronderzoek.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9288">prof. mr. dr. J.M. ten Voorde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1255">prof. mr. dr. A.R. Mackor</a><a href="/ocasys/rug/vak/viewtutor?tutor=9288">prof. mr. dr. J.M. ten Voorde</a><a href="/ocasys/rug/vak/viewtutor?tutor=1574">prof. dr. P.C. Westerman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: Sanctierecht en Inl. Rechtsfilosofie;</li><li>Kennis van en belangstelling voor strafrecht is noodzakelijk</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Belangstellenden die nog niet (geheel) aan de entree-eisen voldoen worden verzocht voor intekening contact op te nemen met dhr. Ten Voorde en/of mw. Mackor en/of mw. Westerman. Nadere gegevens van de betrokken docenten:<ul><li>J.M.ten.Voorde@rug.nl - Vakgroep Rechtstheorie 3635695</li><li>P.C.Westerman@rug.nl - Vakgroep Rechtstheorie 3635695</li><li>A.R.Mackor@rug.nl - Vakgroep Rechtstheorie 3635695</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75766"><b>Wetenschapsleer</b></a></td><td align="right"><b>RGMRF00706</b></td></tr><tr><td align="justify" colspan="3">In dit vak staat de vraag naar de aard van de rechtswetenschap centraal. Het vak biedt een korte inleiding kentheorie en een overzicht van de belangrijkste wetenschapsfilosofische theorieën (logisch positivisme, Popper, Kuhn, Lakatos). Daarbij wordt steeds onderzocht hoe vanuit deze theorieën over de aard van de rechtswetenschap wordt geoordeeld. We bestuderen niet alleen teksten van filosofen. Ook worden klassieke en recente teksten (Paul Scholten en o.a. Carel Stolker) besproken waarin juristen zelf zich over de aard van hun wetenschap uitlaten. <br/><br/>Werkwijze: Een combinatie van hoor- en werkcolleges waarin alle studenten een afsluitend referaat houden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1255">prof. mr. dr. A.R. Mackor</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1255">prof. mr. dr. A.R. Mackor</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Geadviseerd: Inleiding Rechtsfilosofie.</li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

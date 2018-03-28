@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3275&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3275"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3275">Informatie over Ma Onderwijskunde</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Onderwijskunde</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Ma onderwijskunde (Evidence-based education))</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>PAMAOK019A</td><td><a href="/ocasys/rechten/vak/show?module=75335">Tutorgroep</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PAMAOK019B</td><td><a href="/ocasys/rechten/vak/show?module=75012">Masterthesis</a></td><td>Engels en Nederlands</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>PAMAOK025</td><td><a href="/ocasys/rechten/vak/show?module=75249">Methods and techniques for evaluation-research</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PAMAOK029</td><td><a href="/ocasys/rechten/vak/show?module=74960">Evidence-based education</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PAMAOK023</td><td><a href="/ocasys/rechten/vak/show?module=75102">Learning Problems and Learning Disabilities</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PAMAOK024</td><td><a href="/ocasys/rechten/vak/show?module=75104">Theory of Learning and Instruction</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>PAMAOK021</td><td><a href="/ocasys/rechten/vak/show?module=74936">Capita Selecta: Systematic review</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PAMAOK022</td><td><a href="/ocasys/rechten/vak/show?module=74937">Advanced research methods</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>PAMAOK018</td><td><a href="/ocasys/rechten/vak/show?module=75322">Internship</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PAMAOK026</td><td><a href="/ocasys/rechten/vak/show?module=75108">Onderwijsorganisatie en management</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PAMAOK027</td><td><a href="/ocasys/rechten/vak/show?module=75105">Digitale leeromgevingen</a></td><td>Engels</td><td>5</td><td>18</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Ma Onderwijskunde (Onderwijskunde))</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>PAMAOK018</td><td><a href="/ocasys/rechten/vak/show?module=75322">Internship</a></td><td>Engels en Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>PAMAOK019A</td><td><a href="/ocasys/rechten/vak/show?module=75335">Tutorgroep</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PAMAOK019B</td><td><a href="/ocasys/rechten/vak/show?module=75012">Masterthesis</a></td><td>Engels en Nederlands</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>PAMAOK025</td><td><a href="/ocasys/rechten/vak/show?module=75249">Methods and techniques for evaluation-research</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PAMAOK007</td><td><a href="/ocasys/rechten/vak/show?module=75107">Onderwijsbeleid</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PAMAOK023</td><td><a href="/ocasys/rechten/vak/show?module=75102">Learning Problems and Learning Disabilities</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PAMAOK024</td><td><a href="/ocasys/rechten/vak/show?module=75104">Theory of Learning and Instruction</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>PAMAOK006</td><td><a href="/ocasys/rechten/vak/show?module=75106">Curriculumtheorie</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>PAMAOK025</td><td><a href="/ocasys/rechten/vak/show?module=75249">Methods and techniques for evaluation-research</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PAMAOK015</td><td><a href="/ocasys/rechten/vak/show?module=75103">Professionalisering en onderwijsbehoeften</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PAMAOK026</td><td><a href="/ocasys/rechten/vak/show?module=75108">Onderwijsorganisatie en management</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PAMAOK027</td><td><a href="/ocasys/rechten/vak/show?module=75105">Digitale leeromgevingen</a></td><td>Engels</td><td>5</td><td>18</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>PAMAOK006</td><td><a href="/ocasys/rechten/vak/show?module=75106">Curriculumtheorie</a></td><td>Engels</td><td>5</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74937"><b>Advanced research methods</b></a></td><td align="right"><b>PAMAOK022</b></td></tr><tr><td align="justify" colspan="3">Verschillende veel gebruikte methoden in de onderwijswetenschappen zijn complexer dan de methoden die de studenten in de bachelor en masteropleiding aangeleerd krijgen. Om de bevindingen van artikelen waarin dergelijke methoden zijn toegepast beter te kunnen begrijpen is een basiskennis van de methode noodzakelijk. Op basis van artikelen die als "goede voorbeelden" zijn geselecteerd, zullen de complexe methoden worden besproken en bediscussieerd. <br/><br/>De volgende methoden zullen in de cursus aan de orde komen:<br/>-Multilevel analysis<br/>-Structural Equation Modelling (SEM)<br/>-Clustering and person centered benaderingen<br/>-Regressie discontinuïteit (RD)<br/>-Propensity Score (PS) Matching<br/>-Difference-in-Differences analyse<br/>-Meta-analyses<br/><br/>Voor elk van de methoden worden de volgende onderwerpen behandeld:<br/>1)Wat is de basis van de methode en waarom wordt deze toegepast?<br/>2)Hoe kan een methode omgaan met verschillende variabelen?<br/>3)Wat zou in een artikel gerapporteerd moeten worden?</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=900">prof. dr. R.J. Bosker</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=900">prof. dr. R.J. Bosker</a><a href="/ocasys/rug/vak/viewtutor?tutor=11132">dr. M.J. Warrens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, schriftelijk tentamen (essay)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74936"><b>Capita Selecta: Systematic review</b></a></td><td align="right"><b>PAMAOK021</b></td></tr><tr><td align="justify" colspan="3">In deze cursus oefenen studenten met alle stappen van een systematische review studie. Op basis van een onderwerp naar keuze (uit een set van 3), maken de studenten opdrachten die gericht zijn op het ontwerpen van een geschikte onderzoeksvraag voor een literatuur review, de procedures die horen bij het zoeken van literatuur en het bijhouden daarvan in een logboek, de selectie en analyse van relevante bronnen, en de systematische synthese van onderzoeksuitkomsten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9747">dr. M.N. Mascareño Lara</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3181">dr. M.I. Deunk</a><a href="/ocasys/rug/vak/viewtutor?tutor=9747">dr. M.N. Mascareño Lara</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, praktische oefening</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75106"><b>Curriculumtheorie</b></a></td><td align="right"><b>PAMAOK006</b></td></tr><tr><td align="justify" colspan="3">Hedendaagse curriculuminnovaties steunen op ideeen die onderwijskundigen in de loop van de tijd hebben ontwikkeld. Om vernieuwingen te kunnen doorzien is het van belang kennis te hebben van deze ideeen en van de context waar ze zijn ontstaan. Dit onderdeel behandelt het curriculum vanuit een theoretisch en cultuur-historisch perspectief. Aan bod komen enkele belangrijke stromingen en klassieke auteurs op het gebied van het curriculum.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=891">dr. H.T.A. Amsing</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=891">dr. H.T.A. Amsing</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum, hoorcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75105"><b>Digitale leeromgevingen</b></a></td><td align="right"><b>PAMAOK027</b></td></tr><tr><td align="justify" colspan="3">De term ‘leeromgeving’ is in zwang geraakt met het ontstaan van leren via de computer en het Internet, maar hoeft daar niet speciaal betrekking op te hebben. In een leeromgeving zijn didactische functies vormgegeven zoals: informatie over leerdoelen en organisatie van het onderwijs, de presentatie van leerinhouden, het bieden van opdrachten en inhoudelijke feedback of het geven van evaluatiemiddelen. Deze cursus gaat over het op een effectieve manier vorm geven van digitale leeromgevingen die adaptief, interactief en contextrijk onderwijs bieden.<br/> <br/>Doel is de verdieping van kennis over het toepassen van leerpsychologie en instructietheorie in digitale onderwijsprogramma’s rekening houdend met de aard van de doelstellingen en situationele factoren gelegen in de persoon van de lerende en de omgeving. In het eerste deel van de cursus wordt ingegaan op de multimediatheorie van Richard Mayer en de consequenties daarvan voor het ontwerpen van digitale leeromgevingen. Het tweede deel gaat over specifieke aspecten en toepassingen zoals computerondersteund samenwerkend leren, interaction design en recente ontwikkelingen zoals augmented en virtual reality.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11082">prof. dr. J.W. Strijbos</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11082">prof. dr. J.W. Strijbos</a><a href="/ocasys/rug/vak/viewtutor?tutor=11852"> M. Tscholl, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74960"><b>Evidence-based education</b></a></td><td align="right"><b>PAMAOK029</b></td></tr><tr><td align="justify" colspan="3">Deze cursus biedt een uitvoerige introductie op het onderwijsprogramma in de Evidence-Based Education track. De focus van de cursus – en de rode draad in het programma – is het dichter bij elkaar brengen van onderwijsonderzoek en de onderwijspraktijk. Studenten reflecteren op de doelen en processen van schoolverbetering op verschillende niveaus (macro, meso en micro) van de onderwijsstructuur. Studenten leren onderscheid maken tussen wat werkt en wat niet, maar zullen bovenal kritisch bekijken onder welke condities onderwijsverbeteringen succesvol zijn. Of een interventie succesvol is – resulterend in verbeterde uitkomsten – hangt af van de processen die plaatsvinden op de verschillende lagen in de onderwijsstructuur: het macroniveau van beleidsontwikkeling, het meso niveau van management en leiderschap in onderwijsorganisaties, en op het microniveau van lesgeven en processen in de klas.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6445">dr. H. Korpershoek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6445">dr. H. Korpershoek</a><a href="/ocasys/rug/vak/viewtutor?tutor=10367">prof. dr. A.J. Visscher</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, presentatie, werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75322"><b>Internship</b></a></td><td align="right"><b>PAMAOK018</b></td></tr><tr><td align="justify" colspan="3">De stage vindt plaats bij een onderwijsinstelling of een organisatie werkzaam ten behoeve van het onderwijsveld. Studenten maken tijdens de stage kennis met het functioneren van de organisatie, en nemen daarbij aan reguliere activiteiten binnen de organisatie deel. Daarnaast brengen zij een specifiek vraagstuk in kaart dat binnen de betreffende instelling of organisatie actueel is, en doen hiervan verslag. De eisen die aan de stage en het stageverslag worden gesteld, zijn beschreven in de Handleiding voor de Stage Onderwijskunde.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11081">dr. E.S. Ritzema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11081">dr. E.S. Ritzema</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">stageverslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75102"><b>Learning Problems and Learning Disabilities</b></a></td><td align="right"><b>PAMAOK023</b></td></tr><tr><td align="justify" colspan="3">Focus van dit onderdeel is tweevoudig: diagnostiek en interventie. De diagnostiek van onderwijsleerproblemen vereist inzicht in de achtergronden en verklaringstheorieën van o.a. lezen, spellen en rekenen. De (ortho)didactische en onderwijskundige (al dan niet interventiegerichte) aanpak vraagt daarentegen inzicht in gangbare modellen en technieken ter preventie en remediëring van onderwijsleerproblemen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1027">prof. dr. A.E.M.G. Minnaert</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1027">prof. dr. A.E.M.G. Minnaert</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, responsiecollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay), werkstuk (individueel)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75012"><b>Masterthesis</b></a></td><td align="right"><b>PAMAOK019B</b></td></tr><tr><td align="justify" colspan="3">De kern van het afstudeerproject bestaat uit het relatief zelfstandig ontwerpen en uitvoeren van onderzoek. Daarover wordt gerapporteerd in de ‘masterthesis’. De masterthesis is een beredeneerd verslag van een afgerond weten¬schap¬pelijk onderzoek in de vorm van een experiment, een veldonderzoek, een secundaire analyse of een literatuur¬onder¬zoek. In de masterthesis toont de student zijn vermogen een eigen wetenschappelij¬ke bijdrage te kunnen leveren. De masterthesis is een individueel product. Als twee studenten samen een thesis schrijven is van elk de individuele bijdrage zichtbaar. Uit de thesis moet blijken dat een gedegen oriëntatie heeft plaatsgehad op de literatuur met betrekking tot het onderwerp. De oriëntatie moet resulteren in een wetenschappelijk verantwoorde probleemstelling en in een duidelijk interpretatiekader voor de onderzoeksresultaten. De student dient de uitkomsten van zijn of haar onderzoek te presenteren in een forum.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6006">dr. D.D.N.M. Kostons</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75249"><b>Methods and techniques for evaluation-research</b></a></td><td align="right"><b>PAMAOK025</b></td></tr><tr><td align="justify" colspan="3">De student verwerft kennis over evalueren van onderwijsprogramma’s en de onderzoeksmethoden die daarvoor gebruikt kunnen worden. Een onderwijsprogramma wordt daarbij omschreven als een samenhangend geheel van maatregelen dat genomen wordt om een probleem in het onderwijs op te lossen. Bij evaluatie-onderzoek naar deze onderwijsprogramma’s gaat het dan om de systematische toepassing van sociaal-wetenschappelijke onderzoeksprocedures om de conceptualisering, het ontwerp, de implementatie, en de effecten van dergelijke programma’s vast te stellen. <br/><br/>Verschillende sociaal wetenschappelijke procedures zullen aan de orde komen, voornamelijk de (quasi)experimentele onderzoeksopzetten. Hierbij wordt veel aandacht besteed aan verschillende keuzes die gemaakt kunnen worden in deze opzetten met betrekking tot het aantal groepen, interventies, toetsen etc. De gevolgen die deze keuzes hebben voor de interne en externe validiteit van een onderzoek zullen worden besproken. Tevens zullen een aantal alternatieven worden besproken voor situaties in de praktijk waarin geen experimenteel onderzoek kan worden opgezet. <br/><br/>De leerdoelen voor deze cursus betreffen:<br/>1) De student kan voor- en nadelen van verschillende designelementen van (quasi-)experimenteel onderzoek benoemen. <br/>2) De student kan op basis van concrete voorbeelden van (quasi-) experimenteel onderzoek en uitkomsten daarvan bepalen welke validiteitsbedreigers een rol kunnen spelen.<br/>3) De student kan een beredeneerd voorstel doen voor aanpassingen van het onderzoeksdesign ter verbetering van de interne validiteit.<br/>4) De student kent de belangrijkste stadia van evaluatieonderzoek, d.w.z. reconstructie van de programmatheorie, implementatie-assessment en effect-evaluatie, en de daarbijhorende onderzoeksmethoden. <br/>5) De student kan op basis van concrete voorbeelden van evaluatie onderzoek reflecteren op de geschiktheid en beperkingen van de toegepaste onderzoeksmethoden en de onderzoeksresultaten. <br/>6) De student kan bij eenvoudige (quasi-)experimentele studies passende statistische analyses voorstellen, uitvoeren, interpreteren en rapporteren.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5827">dr. A.C. Timmermans</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9747">dr. M.N. Mascareño Lara</a><a href="/ocasys/rug/vak/viewtutor?tutor=5827">dr. A.C. Timmermans</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">computerpracticum, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, schriftelijk tentamen (essay)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75107"><b>Onderwijsbeleid</b></a></td><td align="right"><b>PAMAOK007</b></td></tr><tr><td align="justify" colspan="3">In dit onderdeel verwerft de student kennis over de wijze waarop de overheid het onderwijs aanstuurt, gegeven de maatschappelijke functies die het onderwijs dient te vervullen. Bestudeerd wordt de inrichting van het onderwijsbestel, en theorieën over beleidsvoering en sturing in het onderwijs. Deze onderwerpen worden in de cursus onder meer in historisch perspectief beschouwd. Daarbij worden enerzijds consistente beleidslijnen over de jaren heen, als ook paradoxen en inconsistenties in de beleidsvoering onderscheiden. Meer concreet wordt ingegaan op het dilemma van enerzijds centrale sturing en anderzijds een grotere autonomie voor instellingen, en hoe dit in de beleidspraktijk gestalte krijgt. Belicht in dit verband wordt het gevoerde beleid met betrekking tot de kwaliteit en de effectiviteit van het onderwijs, de verhouding tussen publiek en privaat onderwijs, het toezicht op het onderwijs, het leraarschap, en de bekostiging van het onderwijs. De student krijgt hiermee een conceptueel kader aangereikt voor het bestuderen en evalueren van onderwijsbeleid.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1045">dr. R. Maslowski</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=900">prof. dr. R.J. Bosker</a><a href="/ocasys/rug/vak/viewtutor?tutor=1045">dr. R. Maslowski</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay), schriftelijke opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">geen</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75108"><b>Onderwijsorganisatie en management</b></a></td><td align="right"><b>PAMAOK026</b></td></tr><tr><td align="justify" colspan="3">In dit onderdeel verwerft de student kennis over de organisatie en het management van onderwijsinstellingen. Uitgangspunt vormen verschillende benaderingen voor de organisatie van scholen die voortvloeien uit verschillende perspectieven op organisaties. Met name wordt ingegaan op de contingentietheorie van organisaties, waarin de centrale gedachte is dat de meest optimale structuur van een organisatie en de meest effectieve wijze om werkprocessen te coördineren afhangt van factoren in de interne en externe omgeving van de organisatie. Organisatiestructuren worden wel de ‘blauwdruk’ van organisaties genoemd. Daar kan men de ‘rooddruk’ tegenover stellen, ofwel de cultuur in de organisatie. Met name voor veranderingsprocessen (‘transformaties’) zijn die culturele aspecten van wezenlijk belang. Daarnaast is aandacht voor het kwaliteitsbeleid in onderwijsinstellingen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11081">dr. E.S. Ritzema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1045">dr. R. Maslowski</a><a href="/ocasys/rug/vak/viewtutor?tutor=11081">dr. E.S. Ritzema</a><a href="/ocasys/rug/vak/viewtutor?tutor=10367">prof. dr. A.J. Visscher</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het vak wordt in beginsel volledig in het Engels verzorgd, aangezien het tevens wordt aangeboden voor studenten uit de internationale master, en openstaat voor Erasmus studenten. Bij het ontbreken van buitenlandse deelname aan het vak, kunnen onderdelen in het Nederlands plaatsvinden.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=75103"><b>Professionalisering en onderwijsbehoeften</b></a></td><td align="right"><b>PAMAOK015</b></td></tr><tr><td align="justify" colspan="3">Onderwijs is continu aan verandering onderhevig. Door de trend richting inclusie neemt het aantal leerlingen met bijzondere onderwijsbehoeften in het regulier onderwijs toe, terwijl er van de docent meer dan ooit maatwerk wordt verwacht. Dit betekent ook dat de noodzaak tot ‘een leven lang leren’, ofwel professionalisering van leraren, toeneemt.<br/>In dit vak verwerf je als student kennis over professionalisering van docenten op het gebied van (bijzondere) onderwijsbehoeften van leerlingen, wetenschappelijk onderzoek op dit gebied en de meest recente inzichten van gastdocenten uit de praktijk. Door middel van een casusopdracht waarbij je je verder verdiept in een individueel professionaliseringstraject van 1 leerkracht krijg je meer inzicht in de verhouding tussen theorie en onderwijspraktijk.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9207">dr. W.E. Kupers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9207">dr. W.E. Kupers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijk tentamen (essay), schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=75104"><b>Theory of Learning and Instruction</b></a></td><td align="right"><b>PAMAOK024</b></td></tr><tr><td align="justify" colspan="3">De cursus is gericht op verschillende theorieen over leren en instructie. De wetenschappelijke ontwikkeling van instructie omvat de beschrijving en analyse van de kennis en vaardigheden die verworven moeten worden, beschrijving van de condities die leren bevorderen (leerprocessen en de leeromgeving), en de effecten van instructie. In de cursus wordt in het bijzonder aandacht besteed aan de resultaten van empirisch onderzoek naar de relaties tussen deze componenten. Hierdoor worden antwoorden verkregen op vragen zoals voor welk soort kennis of vaardigheden en voor welk type leerlingen zijn welke instructievormen het meest effectief. Niet alleen cognitieve aspecten van leren worden behandeld, maar ook motivationele en emotionele aspecten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6006">dr. D.D.N.M. Kostons</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6006">dr. D.D.N.M. Kostons</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">tentamen, werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=75335"><b>Tutorgroep</b></a></td><td align="right"><b>PAMAOK019A</b></td></tr><tr><td align="justify" colspan="3">De tutorgroepen dienen enerzijds als voorbereiding op de masterthesis, en anderzijds als ondersteuning tijdens het uitvoeren van het onderzoek ten behoeve van de masterthesis. De voorbereiding op de masterthesis vindt plaats in een werkcollegereeks van 7 weken in het tweede blok na aanvang van de studie. De bijeenkomsten van de tutorgroep staan in dit blok in het teken van verschillende aspecten van het doen van wetenschappelijk onderzoek, zoals onderzoeksethiek en wetenschappelijke verslaglegging. In de tutorgroep werkt de student daarnaast aan zijn of haar onderzoeksvoorstel, dat goedgekeurd moet zijn voor de student aan zijn afstudeeronderzoek mag beginnen. Daarnaast het de tutorgroep tot taak ook de stages in blok 2 te monitoren. De tutorgroepen blijven in het tweede semester doorlopen, en hebben dan de functie om problemen te bespreken die studenten in hun onderzoek tegenkomen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6006">dr. D.D.N.M. Kostons</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">intervisie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

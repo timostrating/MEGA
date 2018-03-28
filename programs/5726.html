@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5726&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5726"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5726">Informatie over BSc Medicine, LC Molecular Medicine</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>BSc Medicine, LC Molecular Medicine</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>GKE01.3A</td><td><a href="/ocasys/rechten/vak/show?module=77037">Kennisprogressie B1</a></td><td>Engels</td><td>4</td><td></td></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>GKE01.1</td><td><a href="/ocasys/rechten/vak/show?module=77007">Oorzaken van ziekten B1.1</a></td><td>Engels</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>GKE01.4MM</td><td><a href="/ocasys/rechten/vak/show?module=77010">Competentie ontwikkeling MM B1.1</a></td><td>Engels</td><td>10</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>GKE01.2</td><td><a href="/ocasys/rechten/vak/show?module=77056">Oorzaken van ziekten B1.2</a></td><td>Engels</td><td>17</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>GKE01.5MMA</td><td><a href="/ocasys/rechten/vak/show?module=77026">Competentieontwikkeling MM B1.2</a></td><td>Engels</td><td>11</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>GKE02.3</td><td><a href="/ocasys/rechten/vak/show?module=77041">Kennisprogressie B2</a></td><td>Engels</td><td>4</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>GKE02.6</td><td><a href="/ocasys/rechten/vak/show?module=77015">Profileringsonderwijs</a></td><td>Engels</td><td>2</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>GKE02.6C</td><td><a href="/ocasys/rechten/vak/show?module=77014">Profileringscursus</a></td><td>Engels</td><td>2</td><td></td></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>GKE02.1</td><td><a href="/ocasys/rechten/vak/show?module=77025">Oorzaken van ziekten B2.1</a></td><td>Engels</td><td>18</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>GKE02.4MM</td><td><a href="/ocasys/rechten/vak/show?module=77042">Competentieontwikkeling MM B2.1</a></td><td>Engels</td><td>8</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>GKE02.2</td><td><a href="/ocasys/rechten/vak/show?module=77039">Oorzaken van ziekten B2.2</a></td><td>Engels</td><td>18</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>GKE02.5MM</td><td><a href="/ocasys/rechten/vak/show?module=77016">Competentieontwikkeling MM B2.2</a></td><td>Engels</td><td>8</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>GKE03.3</td><td><a href="/ocasys/rechten/vak/show?module=77049">Kennisprogressie B3</a></td><td>Engels</td><td>4</td><td></td></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>GKE03.1</td><td><a href="/ocasys/rechten/vak/show?module=77048">Oorzaken van ziekten B3.1</a></td><td>Engels</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>GKE03.4MM</td><td><a href="/ocasys/rechten/vak/show?module=77050">Competentieontwikkeling MM B3.1</a></td><td>Engels</td><td>8</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>GKE03.2MM</td><td><a href="/ocasys/rechten/vak/show?module=77051">Bachelor eindwerkstuk MM</a></td><td>Engels</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>GKE03.5MM</td><td><a href="/ocasys/rechten/vak/show?module=77052">Competentieontwikkeling MM B3.2</a></td><td>Engels</td><td>10</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77051"><b>Bachelor eindwerkstuk MM</b></a></td><td align="right"><b>GKE03.2MM</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77010"><b>Competentie ontwikkeling MM B1.1</b></a></td><td align="right"><b>GKE01.4MM</b></td></tr><tr><td align="justify" colspan="3">De Learning Community Molecular Medicine heeft een specifiek programma ontwikkeld (aangeduid als “competentieontwikkeling I en II”, waarbij “competentieontwikkeling I” hoort bij alle activiteiten in het 1e semester en “competentieontwikkeling II” hoort bij alle activiteiten in het 2e semester).<br/>Een diepgaand mechanistisch en moleculair begrip van de ziekte bij de mens is essentieel voor toekomstige artsen, te informeren en te behandelen patiënten, implementatie van nieuwe therapieën in de dagelijkse praktijk, en bij te dragen aan medisch en technologisch onderzoek. Studenten in de LC MM zullen daarom de vereiste competenties ontwikkelen, in een curriculum dat is gericht op het  verdiepen van medische kennis en het kennismaken met medisch onderzoek, terwijl tegelijkertijd vaardigheden worden aangeleerd om zodoende te communiceren met hun toekomstige medische en wetenschappelijke collega's, en vooral, hun patiënten.<br/><br/>Competentieontwikkeling I en II bestaat ieder uit ongeveer 10 taken, die betrekking hebben op verschillende onderwerpen. Deze opdrachten zullen de studenten helpen om de medische kennis, gerelateerd aan de ziektebeelden, beter te kunnen begrijpen en zullen zorgen voor ontwikkeling van verschillende competenties die de studenten nodig hebben in hun toekomstige carrière. Elke 3 of 4 weken zullen de studenten een specifieke taak of opdracht krijgen, waaraan individueel of in kleine groepen gewerkt zal worden. De taken richten zich op kritisch lezen (primair wetenschappelijk literatuur), schrijfvaardigheden, presentatie vaardigheden, kennis over statistische toetsen en vaardigheden die nodig zijn voor laboratoriumonderzoek. De inhoud, maar ook de manier van presenteren zal verschillend zijn per thema. <br/><br/>Wij verwachten dat studenten in dit curriculum een actieve rol spelen in het verwerven van kennis en competenties. Studenten krijgen geen ‘klassieke’ college’s waarin de docent de kennis toont die de student moet leren. In dit curriculum is de student vereist om zich goed voor te bereiden voor seminars of bijeenkomsten, samen met mede studenten tot nieuwe inzichten te komen en de vele bronnen van beschikbare informatie (geprint of online) te raadplegen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77026"><b>Competentieontwikkeling MM B1.2</b></a></td><td align="right"><b>GKE01.5MMA</b></td></tr><tr><td align="justify" colspan="3">De Learning Community Molecular Medicine heeft een specifiek programma ontwikkeld (aangeduid als “competentieontwikkeling I en II”, waarbij “competentieontwikkeling I” hoort bij alle activiteiten in het 1e semester en “competentieontwikkeling II” hoort bij alle activiteiten in het 2e semester).<br/>Een diepgaand mechanistisch en moleculair begrip van de ziekte bij de mens is essentieel voor toekomstige artsen, te informeren en te behandelen patiënten, implementatie van nieuwe therapieën in de dagelijkse praktijk, en bij te dragen aan medisch en technologisch onderzoek. Studenten in de LC MM zullen daarom de vereiste competenties ontwikkelen, in een curriculum dat is gericht op het  verdiepen van medische kennis en het kennismaken met medisch onderzoek, terwijl tegelijkertijd vaardigheden worden aangeleerd om zodoende te communiceren met hun toekomstige medische en wetenschappelijke collega's, en vooral, hun patiënten.<br/><br/>Competentieontwikkeling I en II bestaat ieder uit ongeveer 10 taken, die betrekking hebben op verschillende onderwerpen. Deze opdrachten zullen de studenten helpen om de medische kennis, gerelateerd aan de ziektebeelden, beter te kunnen begrijpen en zullen zorgen voor ontwikkeling van verschillende competenties die de studenten nodig hebben in hun toekomstige carrière. Elke 3 of 4 weken zullen de studenten een specifieke taak of opdracht krijgen, waaraan individueel of in kleine groepen gewerkt zal worden. De taken richten zich op kritisch lezen (primair wetenschappelijk literatuur), schrijfvaardigheden, presentatie vaardigheden, kennis over statistische toetsen en vaardigheden die nodig zijn voor laboratoriumonderzoek. De inhoud, maar ook de manier van presenteren zal verschillend zijn per thema. <br/><br/>Wij verwachten dat studenten in dit curriculum een actieve rol spelen in het verwerven van kennis en competenties. Studenten krijgen geen ‘klassieke’ college’s waarin de docent de kennis toont die de student moet leren. In dit curriculum is de student vereist om zich goed voor te bereiden voor seminars of bijeenkomsten, samen met mede studenten tot nieuwe inzichten te komen en de vele bronnen van beschikbare informatie (geprint of online) te raadplegen. <br/><br/>In het tweede semester staat een 2-weekse zorgstage gepland. De zorgstage is een intensieve introductie van patiëntzorg instellingen en is een belangrijke stap in de training van studenten om een professionele medicus te worden. Tijdens de zorgstage maken de studenten deel uit van een team met verplegers en verzorgers binnen een ziekenhuis of verpleeghuis. <br/><br/>Tevens is in het tweede semester een 2-weekse onderzoeksstage geroosterd, waarin de studenten een klein onderzoeksproject uitvoeren in het laboratorium.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">11</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77042"><b>Competentieontwikkeling MM B2.1</b></a></td><td align="right"><b>GKE02.4MM</b></td></tr><tr><td align="justify" colspan="3">De Learning Community Molecular Medicine heeft een specifiek programma ontwikkeld (aangeduid als “competentieontwikkeling I en II”, waarbij “competentieontwikkeling I” hoort bij alle activiteiten in het 1e semester en “competentieontwikkeling II” hoort bij alle activiteiten in het 2e semester).<br/>Een diepgaand mechanistisch en moleculair begrip van de ziekte bij de mens is essentieel voor toekomstige artsen, te informeren en te behandelen patiënten, implementatie van nieuwe therapieën in de dagelijkse praktijk, en bij te dragen aan medisch en technologisch onderzoek. Studenten in de LC MM zullen daarom de vereiste competenties ontwikkelen, in een curriculum dat is gericht op het  verdiepen van medische kennis en het kennismaken met medisch onderzoek, terwijl tegelijkertijd vaardigheden worden aangeleerd om zodoende te communiceren met hun toekomstige medische en wetenschappelijke collega's, en vooral, hun patiënten.<br/><br/>Competentieontwikkeling I en II bestaat ieder uit ongeveer 10 taken, die betrekking hebben op verschillende onderwerpen. Deze opdrachten zullen de studenten helpen om de medische kennis, gerelateerd aan de ziektebeelden, beter te kunnen begrijpen en zullen zorgen voor ontwikkeling van verschillende competenties die de studenten nodig hebben in hun toekomstige carrière. Elke 3 of 4 weken zullen de studenten een specifieke taak of opdracht krijgen, waaraan individueel of in kleine groepen gewerkt zal worden. De taken richten zich op kritisch lezen (primair wetenschappelijk literatuur), schrijfvaardigheden, presentatie vaardigheden, kennis over statistische toetsen en vaardigheden die nodig zijn voor laboratoriumonderzoek. De inhoud, maar ook de manier van presenteren zal verschillend zijn per thema. <br/><br/>Wij verwachten dat studenten in dit curriculum een actieve rol spelen in het verwerven van kennis en competenties. Studenten krijgen geen ‘klassieke’ college’s waarin de docent de kennis toont die de student moet leren. In dit curriculum is de student vereist om zich goed voor te bereiden voor seminars of bijeenkomsten, samen met mede studenten tot nieuwe inzichten te komen en de vele bronnen van beschikbare informatie (geprint of online) te raadplegen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77016"><b>Competentieontwikkeling MM B2.2</b></a></td><td align="right"><b>GKE02.5MM</b></td></tr><tr><td align="justify" colspan="3">De Learning Community Molecular Medicine heeft een specifiek programma ontwikkeld (aangeduid als “competentieontwikkeling I en II”, waarbij “competentieontwikkeling I” hoort bij alle activiteiten in het 1e semester en “competentieontwikkeling II” hoort bij alle activiteiten in het 2e semester).<br/>Een diepgaand mechanistisch en moleculair begrip van de ziekte bij de mens is essentieel voor toekomstige artsen, te informeren en te behandelen patiënten, implementatie van nieuwe therapieën in de dagelijkse praktijk, en bij te dragen aan medisch en technologisch onderzoek. Studenten in de LC MM zullen daarom de vereiste competenties ontwikkelen, in een curriculum dat is gericht op het  verdiepen van medische kennis en het kennismaken met medisch onderzoek, terwijl tegelijkertijd vaardigheden worden aangeleerd om zodoende te communiceren met hun toekomstige medische en wetenschappelijke collega's, en vooral, hun patiënten.<br/><br/>Competentieontwikkeling I en II bestaat ieder uit ongeveer 10 taken, die betrekking hebben op verschillende onderwerpen. Deze opdrachten zullen de studenten helpen om de medische kennis, gerelateerd aan de ziektebeelden, beter te kunnen begrijpen en zullen zorgen voor ontwikkeling van verschillende competenties die de studenten nodig hebben in hun toekomstige carrière. Elke 3 of 4 weken zullen de studenten een specifieke taak of opdracht krijgen, waaraan individueel of in kleine groepen gewerkt zal worden. De taken richten zich op kritisch lezen (primair wetenschappelijk literatuur), schrijfvaardigheden, presentatie vaardigheden, kennis over statistische toetsen en vaardigheden die nodig zijn voor laboratoriumonderzoek. De inhoud, maar ook de manier van presenteren zal verschillend zijn per thema. <br/><br/>Wij verwachten dat studenten in dit curriculum een actieve rol spelen in het verwerven van kennis en competenties. Studenten krijgen geen ‘klassieke’ college’s waarin de docent de kennis toont die de student moet leren. In dit curriculum is de student vereist om zich goed voor te bereiden voor seminars of bijeenkomsten, samen met mede studenten tot nieuwe inzichten te komen en de vele bronnen van beschikbare informatie (geprint of online) te raadplegen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77050"><b>Competentieontwikkeling MM B3.1</b></a></td><td align="right"><b>GKE03.4MM</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77052"><b>Competentieontwikkeling MM B3.2</b></a></td><td align="right"><b>GKE03.5MM</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77037"><b>Kennisprogressie B1</b></a></td><td align="right"><b>GKE01.3A</b></td></tr><tr><td align="justify" colspan="3">De onderwijseenheid Kennisprogressie B1 bestaat uit 4 toetsen die verspreid over het hele studiejaar worden afgenomen. Dit zijn de zogenoemde voortgangstoetsen. Een voortgangs­toets is een toets die bij alle studenten geneeskunde, jaar één tot en met zes, op hetzelfde moment wordt afgenomen. <br/><br/>De voortgangstoets is niet verbonden aan een specifiek blok of een specifieke cursus. Met een voortgangstoets kan kennis worden gemeten, maar het kan ook om vaardigheden gaan. De vragen in de voortgangstoets worden gesteld op het niveau van het artsexamen. De vragen moeten goed kunnen worden beantwoord door een student bij diens afstuderen. Een eerstejaarsstudent zal dus maar een deel van de vragen goed kunnen beantwoorden. Bij de volgende voortgangstoets zal de score wat stijgen en deze groei zal zich in de loop der jaren voortzetten. <br/><br/>De voortgangstoets is ‘interuniversitair’. Dit wil zeggen dat dezelfde toets tegelijkertijd wordt voorgelegd aan studenten geneeskunde in Leiden, Maastricht, Amsterdam (VU) en Nijmegen. Aan iedere voortgangs­toets doen in totaal meer dan 10.000 studenten mee.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=77041"><b>Kennisprogressie B2</b></a></td><td align="right"><b>GKE02.3</b></td></tr><tr><td align="justify" colspan="3">De onderwijseenheid Kennisprogressie B2 bestaat uit 4 toetsen die verspreid over het hele studiejaar worden afgenomen. Dit zijn de zogenoemde voortgangstoetsen. Een voortgangs­toets is een toets die bij alle studenten geneeskunde, jaar één tot en met zes, op hetzelfde moment wordt afgenomen. <br/><br/>De voortgangstoets is niet verbonden aan een specifiek blok of een specifieke cursus. Met een voortgangstoets kan kennis worden gemeten, maar het kan ook om vaardigheden gaan. De vragen in de voortgangstoets worden gesteld op het niveau van het artsexamen. De vragen moeten goed kunnen worden beantwoord door een student bij diens afstuderen. Een eerstejaarsstudent zal dus maar een deel van de vragen goed kunnen beantwoorden. Bij de volgende voortgangstoets zal de score wat stijgen en deze groei zal zich in de loop der jaren voortzetten. <br/><br/>De voortgangstoets is ‘interuniversitair’. Dit wil zeggen dat dezelfde toets tegelijkertijd wordt voorgelegd aan studenten geneeskunde in Leiden, Maastricht, Amsterdam (VU) en Nijmegen. Aan iedere voortgangs­toets doen in totaal meer dan 10.000 studenten mee.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=77049"><b>Kennisprogressie B3</b></a></td><td align="right"><b>GKE03.3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77007"><b>Oorzaken van ziekten B1.1</b></a></td><td align="right"><b>GKE01.1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=77056"><b>Oorzaken van ziekten B1.2</b></a></td><td align="right"><b>GKE01.2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">17</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=77025"><b>Oorzaken van ziekten B2.1</b></a></td><td align="right"><b>GKE02.1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=77039"><b>Oorzaken van ziekten B2.2</b></a></td><td align="right"><b>GKE02.2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="15"></a>15</b></td><td><a href="/ocasys/rechten/vak/show?module=77048"><b>Oorzaken van ziekten B3.1</b></a></td><td align="right"><b>GKE03.1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="16"></a>16</b></td><td><a href="/ocasys/rechten/vak/show?module=77014"><b>Profileringscursus</b></a></td><td align="right"><b>GKE02.6C</b></td></tr><tr><td align="justify" colspan="3">Met een profileringscursus kan de student de kennis verbreden of verdiepen van een onderwerp van persoonlijke interesse dat in het curriculum niet of weinig aan bod is gekomen. In de cursus werkt men in een team van 4 of 5 studenten aan een (klinisch) onderwerp of probleem met een hoge mate van zelfwerkzaamheid. Er is een kennismaking met het vakgebied en het team wordt begeleidt door een vaste docent. Deze beoordeelt ook de (eind)opdracht en het niveau van deelname. De waardering van de eindopdracht is de eindbeoordeling voor elk groepslid. Een onderlinge individuele beoordeling van elkaar en van de samenwerking is onderdeel van elke cursus. <br/><br/>In jaar 2 moet iedere student minstens één profileringscursus doen en daarnaast nog één cursus of project. Voor aanvang van elk semester verschijnt een syllabus met een aanbod van cursussen. Inschrijven gaat via een online inschrijvingsformulier.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="17"></a>17</b></td><td><a href="/ocasys/rechten/vak/show?module=77015"><b>Profileringsonderwijs</b></a></td><td align="right"><b>GKE02.6</b></td></tr><tr><td align="justify" colspan="3">Voor aanvang van elk semester verschijnt een lijst met het aanbod van cursussen en projecten. Inschrijven gaat via een online inschrijvingsformulier. Je kunt kiezen om een cursus of project te volgen. <br/><br/>- Een project biedt de student de mogelijkheid tot het vervullen van persoonlijke interesse op een gebied dat in het kerncurriculum niet of weinig aan de orde komt. Tevens kan een project worden gebruikt voor verdieping of verbreding in bepaalde aspecten waar de student zich onzeker over voelt, het is mogelijk te werken aan bepaalde lacunes of achterstanden wat betreft kennis en/of vaardigheden.<br/><br/>- Met een profileringscursus kan de student de kennis verbreden of verdiepen van een onderwerp van persoonlijke interesse dat in het curriculum niet of weinig aan bod is gekomen. In de cursus werkt men in een team van 4 of 5 studenten aan een (klinisch) onderwerp of probleem met een hoge mate van zelfwerkzaamheid. Er is een kennismaking met het vakgebied en het team wordt begeleidt door een vaste docent.<br/><br/>Naast het aanbod van de cursussen en projecten, is het ook mogelijk om een ‘buitenperiodeproject’ te volgen (een door de commissie persoonlijke profilering aangeboden project dat buiten de studieperiode valt), of een eigen individueel project waarvoor de student eerst een voorstel schrijft dat moet worden goedgekeurd door de Commissie Profileringsonderwijs. Tevens is het mogelijk om een minor van de RUG te volgen die vooraf is goedgekeurd door de commissie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

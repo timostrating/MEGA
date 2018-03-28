@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=2356&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D2356"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=2356">Informatie over Ba Vrije keuzeruimte / Bijvakken overig</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba Vrije keuzeruimte / Bijvakken overig</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>LNX045B05</td><td><a href="/ocasys/rechten/vak/show?module=78045">Werkgroep Gastschrijver 2017</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>keuze</td><td>LGX031B10</td><td><a href="/ocasys/rechten/vak/show?module=78598">Internationale conflictpreventie</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>keuze</td><td>LHU002B05</td><td><a href="/ocasys/rechten/vak/show?module=77973">Digital Skills</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>keuze</td><td>LBA000B10</td><td><a href="/ocasys/rechten/vak/show?module=74596">Bachelorstage Letteren</a></td><td>Engels en Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>LMX001X10</td><td><a href="/ocasys/rechten/vak/show?module=74771">Middeleeuws Latijn I</a></td><td>Engels en Nederlands</td><td>10</td><td>4</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LMX007X10</td><td><a href="/ocasys/rechten/vak/show?module=74816">Schrift,handschrift,druk ME &amp; Renaiss.I</a></td><td>Nederlands</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LQG015P05</td><td><a href="/ocasys/rechten/vak/show?module=74331">Grieks voor beginners I</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LQL016P05</td><td><a href="/ocasys/rechten/vak/show?module=74323">Latijn voor beginners I</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>keuze</td><td>LGX226B05</td><td><a href="/ocasys/rechten/vak/show?module=74343">Sport in history, culture and the media</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II</td><td>keuze</td><td>LMX002X10</td><td><a href="/ocasys/rechten/vak/show?module=74772">Middeleeuws Latijn II</a></td><td>Engels en Nederlands</td><td>10</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LQG016P05</td><td><a href="/ocasys/rechten/vak/show?module=74290">Grieks voor beginners II</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LQL017P05</td><td><a href="/ocasys/rechten/vak/show?module=74312">Latijn voor beginners II</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LQX029B10</td><td><a href="/ocasys/rechten/vak/show?module=74320">Ancient Mythology</a></td><td>Engels</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LXX005B10</td><td><a href="/ocasys/rechten/vak/show?module=78064">Arabische Lente tot Islamitische Staat</a></td><td>Nederlands</td><td>10</td><td>4</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74320"><b>Ancient Mythology</b></a></td><td align="right"><b>LQX029B10</b></td></tr><tr><td align="justify" colspan="3">De cursus bestaat uit twee blokken: "Perioden" en "Gestalten". In het blok "Perioden" zal een doorgang door de geschiedenis gemaakt worden van de Oudheid tot nu, en bestudeerd worden hoe antieke mythen in de loop der tijd gelezen en geïnterpreteerd zijn en van invloed zijn geweest op wijdverbreide denkvormen in de Westerse cultuur (van allegorische interpretaties tot voorstellingen over de terugkeer van de 'Gouden Tijd' tot aan het 'Oedipus-complex' en het 'narcisme'). In het blok ‘Gestalten’ zal per college een bepaalde persoon (bijv. Odysseus of Prometheus of Medea of Antigone) uit de antieke mythologie centraal staan en zullen belangrijke antieke en moderne werken bestudeerd worden waarin deze gestalten telkens nieuwe vormen hebben aangenomen. De ‘werken’ zullen niet beperkt blijven tot literatuur, maar er zal ook aandacht besteed worden aan beeldende kunst, opera en film. Alle niet-Engelstalige teksten zullen in Engelse vertaling worden gelezen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10275">dr. J.J.H. Klooster</a><a href="/ocasys/rug/vak/viewtutor?tutor=309">prof. dr. R.R. Nauta</a><a href="/ocasys/rug/vak/viewtutor?tutor=11375">dr. C.M. van der Keur</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Geen</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De cursus is in de eerste plaats geconcipieerd voor studenten in de moderne talen, kunstgeschiedenis en KCM, maar is gezien de alomtegenwoordigheid van de antieke mythologie in de westerse cultuur van belang voor een ieder met cultuurhistorische interesse.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=78064"><b>Arabische Lente tot Islamitische Staat</b></a></td><td align="right"><b>LXX005B10</b></td></tr><tr><td align="justify" colspan="3">In deze module bestuderen we hedendaagse ontwikkelingen in het Midden-Oosten, met nadruk op de recente politieke omwentelingen en conflicten in de regio. We besteden aandacht aan thema’s als religie, politiek en samenleving en bespreken deze thema’s aan de hand van casussen als Egypte, Syrië, Turkije en Israël. Op de hoorcolleges introduceren de docenten de verschillende thema’s die op de werkcolleges verder worden uitgediept door middel van literatuur, opdrachten en presentaties.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6046">dr. K.M. Santing</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5528">dr. P.G.T. Nanninga</a><a href="/ocasys/rug/vak/viewtutor?tutor=6046">dr. K.M. Santing</a><a href="/ocasys/rug/vak/viewtutor?tutor=17">prof. dr. W.J. van Bekkum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">tentamen, wekelijkse opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak staat open voor bijvakstudenten</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74596"><b>Bachelorstage Letteren</b></a></td><td align="right"><b>LBA000B10</b></td></tr><tr><td align="justify" colspan="3">In de vrije keuzeruimte kan de student er voor kiezen een stage te volgen. De examencommissie moet hieraan goedkeuring verlenen. De bachelorstage is een maatschappelijke stage (10 ECTS) via het stagebureau Letteren. Voorafgaand aan de stage wordt een stageplan opgesteld, dat een omschrijving van de doelstellingen, de inhoud van de stage en een activiteitenplan omvat. Dit plan wordt goedgekeurd door de begeleiders. Afspraken worden vastgelegd in een facultair stagecontract. De beoordeling van de stage wordt verricht door een begeleider vanuit de opleiding, die als examinator is aangewezen door de examencommissie. Gedurende de stage is er daarnaast een begeleider vanwege de stagegever. De stage wordt afgesloten met een stageverslag dat wordt beoordeeld door de begeleider vanuit de opleiding en ter kennis wordt gesteld van de stagegever.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Voorwaarde voor een stage is dat de propedeuse is behaald en dat ten minste 120 ECTS-studiepunten zijn behaald in de combinatie van major- en minoronderdelen (erkend door de examencommissie van de majoropleiding). Daarnaast dient de student de Career Day te hebben gevolgd. Inschrijving hiervoor kan bij Bureau Student Zaken.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Facultair beleid is dat studenten zelf hun stage zoeken. Het stagebureau helpt hierbij wanneer gevraagd. Het heeft daarvoor een vacatureservice die beschikbaar is via het tabblad My Career in Nestor en via de mobiele app iGroningen.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77973"><b>Digital Skills</b></a></td><td align="right"><b>LHU002B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=660">dr. B. Plank</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=660">dr. B. Plank</a><a href="/ocasys/rug/vak/viewtutor?tutor=10290">  student-assistent</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, computerpracticum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, wekelijkse opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74331"><b>Grieks voor beginners I</b></a></td><td align="right"><b>LQG015P05</b></td></tr><tr><td align="justify" colspan="3">Het doel van dit college is het aanbrengen van de basiskennis van de Griekse grammatica en het trainen in vertaalvaardigheid. Hiertoe richt het college zich op: (1) het verwerven van een systematisch overzicht van de Griekse vormleer en de voornaamste syntactische en syntactisch-semantische verschijnselen van het Grieks; (2) verwerving van een woordenschat (3) het maken van grammaticale oefeningen en het vertalen van eenvoudige passages.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12233">dr. S. Peels</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12233">dr. S. Peels</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">continue toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht.<br/>Dit vak bereidt voor op Grieks voor beginners II, waarin de grammatica wordt afgerond.<br/>Dit vak staat ook open voor bijvakstudenten</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74290"><b>Grieks voor beginners II</b></a></td><td align="right"><b>LQG016P05</b></td></tr><tr><td align="justify" colspan="3">Het doel van dit college is het consolideren en uitbreiden van de in de module Grieks voor Beginners I verworven basiskennis van de Griekse grammatica en het verder trainen van de vertaalvaardigheid. Hiertoe richt het college zich op: (1) een systematisch overzicht van de Griekse vormleer en de voornaamste syntactische en syntactisch-semantische verschijnselen van het Grieks; (2) verwerving van een woordenschat (3) het maken van grammaticale oefeningen en het vertalen van eenvoudige passages.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">continue toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Succesvolle afronding van Grieks voor beginners I (of een vergelijkbaar niveau)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht<br/>Dit vak is een vervolg op Grieks voor beginners I, maar kan in overleg met de betrokken docent ook afzonderlijk gevolgd worden.<br/>Dit vak staat ook open voor bijvakstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78598"><b>Internationale conflictpreventie</b></a></td><td align="right"><b>LGX031B10</b></td></tr><tr><td align="justify" colspan="3">Het bijvak  ‘Internationale conflictpreventie, stabilisatie en wederopbouw’ is een combinatie van theorie en praktijk van het ontstaan, voorkomen en oplossen van conflicten, waarbij speciale aandacht voor de civiele als militaire kant van vredesoperaties. Een tweede belangrijke thema gaat over eventuele oplossingen als interventie, hulp en handel, waarbij speciale aandacht is voor de dilemma’s van wederopbouw en hulpbeleid. <br/>De rol van het militaire bedrijf (de Nederlandse Krijgsmacht) in crisisgebieden en de samenwerking met ngo's en bedrijfsleven in het samen bouwen aan vrede komen aan bod. De cursus omvat zowel hoorcolleges, lezingen, cases, rollenspelen en opdrachten (individueel en in groepsverband). Een aantal excursies (KMA, luchtmobiele Brigade, ministeries van Buitenlandse Zaken en Defensie) maken deel uit van het programma. <br/>Het bijvak duurt een hele dag gedurende het eerste semester.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=118">dr. S. de Hoop</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=118">dr. S. de Hoop</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">100 EC waaronder minimaal de propedeuse. Toegankelijk voor derdejaars BA-studenten.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Aanmelding gaat niet via progress.www.<br/>Inschrijven kan via het secretariaat van de opleiding Geschiedenis, via opleiding.geschiedenis@rug.nl, onder vermelding van naam, studentnummer, vakcode en vaknaam.<br/>Ook dient de student één motivatiebrief en cv in te leveren bij het secretariaat. <br/>Dit vak wordt i.s.m. de Nederlandse Defensie Akademie aangeboden.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=74323"><b>Latijn voor beginners I</b></a></td><td align="right"><b>LQL016P05</b></td></tr><tr><td align="justify" colspan="3">Het doel van dit college is het aanbrengen van de basiskennis van de Latijnse grammatica en het trainen in vertaalvaardigheid. Hiertoe richt het college zich op: (1) het verwerven van een systematisch overzicht van de Latijnse vormleer en de voornaamste syntactische en syntactisch-semantische verschijnselen van het Latijn; (2) verwerving van een woordenschat (3) het maken van grammaticale oefeningen en het vertalen van eenvoudige passages.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10280"> A.F.J. Dorleijn</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10280"> A.F.J. Dorleijn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">continue toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Eindexamen VWO (of een gelijkwaardig niveau)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht<br/>Dit vak bereidt voor op Latijn voor beginners II, waarin de grammatica wordt afgerond<br/>Dit vak staat ook open voor bijvakstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=74312"><b>Latijn voor beginners II</b></a></td><td align="right"><b>LQL017P05</b></td></tr><tr><td align="justify" colspan="3">Het doel van dit college is het consolideren en uitbreiden van de in de module Latijn voor beginners I verworven basiskennis van de Latijnse grammatica en het verder trainen in vertaalvaardigheid. Hiertoe richt het college zich op: (1) een systematisch overzicht van de Latijnse vormleer en de voornaamste syntactische en syntactisch-semantische verschijnselen van het Latijn; (2) verwerving van een woordenschat (3) het maken van grammaticale oefeningen en het vertalen van eenvoudige passages.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11375">dr. C.M. van der Keur</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11375">dr. C.M. van der Keur</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">continue toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Succesvolle afronding van Latijn voor beginners I (of een gelijkwaardig niveau)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% aanwezigheidsplicht<br/>Dit vak is een vervolg op Latijn voor beginners I, maar kan in overleg met de betrokken docent ook afzonderlijk gevolgd worden.<br/>Dit vak staat ook open voor bijvakstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=74771"><b>Middeleeuws Latijn I</b></a></td><td align="right"><b>LMX001X10</b></td></tr><tr><td align="justify" colspan="3">Kennis van het Latijn is voor de studie van Middeleeuwen en Renaissance van groot belang. Deze cursus richt zich op Middeleeuws Latijn voor studenten die geen of slechts weinig kennis van het Latijn bezitten. Door grammaticatraining en de analyse van teksten en vertalingen wordt de basis gelegd voor het lezen van middeleeuws-latijnse teksten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=29">dr. B.A. Blokhuis</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=29">dr. B.A. Blokhuis</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege, praktische oefening</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=74772"><b>Middeleeuws Latijn II</b></a></td><td align="right"><b>LMX002X10</b></td></tr><tr><td align="justify" colspan="3">Kennis van het Latijn is voor de studie van Middeleeuwen en Renaissance van groot belang. Deze cursus richt zich op Middeleeuws Latijn voor gevorderden, dat wil zeggen op studenten die Latijn als eindexamenvak op het VWO hebben gehad, of een vergelijkbaar niveau hebben bereikt.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">praktische oefening, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Eindexamen Latijn, of Middeleeuws Latijn I, of Basiscursus Latijn, of Beginnerscursus Latijn I en II.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Het schriftelijk tentamen gaat over een zelfstandig gelezen pensum van ca. 30 pp.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=74816"><b>Schrift,handschrift,druk ME &amp; Renaiss.I</b></a></td><td align="right"><b>LMX007X10</b></td></tr><tr><td align="justify" colspan="3">De cursus biedt een introductie in ontwikkeling, functie en gebruik van schrift, schrifttypen, geschreven en gedrukt boek in diverse sectoren van de Europese samenleving van de late Oudheid tot in de Renaissance. Daarbij komen de materiële aspecten van het geschrevene en gedrukte  boek alsmede bibliotheek- en archiefvorming aan bod. Voor eenieder die (vanuit taal- of letterkundige, historische, archeologische of kunsthistorische interesse) met handschriften en boeken uit de Middeleeuwen en Renaissance wil werken, is het mogelijk zowel elementaire leesvaardigheid te ontwikkelen als ook basiselementen van handschriftbeschrijving onder de knie te krijgen. Veelvuldig wordt gewerkt met handschriften en drukken uit de collectie van de Universiteitsbibliotheek. Een introductie in het archiefwezen is voorzien.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=655">prof. dr. S. Corbellini</a><a href="/ocasys/rug/vak/viewtutor?tutor=364">dr. K.J. Heidecker</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, practicum, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, wekelijkse opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">a) bijvak in vrije ruimte voor elke Bachelor-opleiding van de Letterenfaculteit en andere faculteiten, (b) keuzevak binnen Masteropleidingen in de Faculteit der Letteren en andere faculteiten na toestemming betrokken Examencommissie. Voor Research-Master Classical, Medieval &amp; Renaissance Studies (variant Middeleeuwen &amp; Renaissance) geldt de cursus als een aanbevolen keuzevak. 80 % Aanwezigheids- en prestatieplicht bij hoor- en werkcolleges. Voor ReMa-studenten is na afronding van deze cursus in principe een verdieping mogelijk in tutorial vorm na toestemming van de Director of Studies, en voor Ma-studenten na toestemming van betrokken Examencommissie (na overleg met docenten)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=74343"><b>Sport in history, culture and the media</b></a></td><td align="right"><b>LGX226B05</b></td></tr><tr><td align="justify" colspan="3">We are so accustomed to the central role of sport in our daily life and in the media, that we tend to think that sport and mass sport are universal phenomena. Mass sport - both as regularized competition and as systematic individual training- is in fact historically contingent. It depends on a range of cultural, social and political factors, that determine the place of sport and sporters in society, that guide who can participate and under which conditions, and that influence how sport is valued in society at large.<br/>This course offers a broad overview of the main historical trajectories of sport from antiquity to the present day. It will give special attention to the cultural political and social-economic factors that enable and regulate sport activity, and investigate the place of sport as a practice and idea and their societal impact from a historical perspective. We shall study how sport and sporters are represented and discussed in different kinds of media over time: from art and literature to journalism, radio and TV, and social media; and investigate how these representations have in their turn influenced the role of sport and sporters in society.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8607"> I.K. Stoter, MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=355">prof. dr. O.M. van Nijf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Propaedeutic degree. Registration at RUG. This is an introductory course that can be followed at all BA levels; Sufficient knowledge of English is required.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course is one of the options in the minor Sport Science, but it can also be chosen as a special topic by other students; (It can be expanded to a 10 ECTS module)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=78045"><b>Werkgroep Gastschrijver 2017</b></a></td><td align="right"><b>LNX045B05</b></td></tr><tr><td align="justify" colspan="3">Werkcolleges Ellen Deckwitz<br/><br/>Gastschrijver Ellen Deckwitz verzorgt voor 16 RUG-studenten een training in het schrijven van columns, korte verhalen en poëzie. Via schrijfoefeningen en het lezen van achtergrondliteratuur leer je welke literaire technieken je voor deze verschillende genres kunt gebruiken. Uiteindelijk specialiseert iedere student zich in een genre naar keuze en gaat aan de slag. De acht colleges zijn op dinsdagen van 11.00-13.00 uur, op 26 september en 3, 10 en 17 oktober, en van 13.00-15.00 uur op 14, 21 en 28 november en 5 december. RUG-studenten kunnen zich voor maandag 28 augustus a.s. aanmelden (met korte motivatie en vermelding van hun studie) bij het roosterbureau Letteren, Harmoniecomplex, a.m.koning@rug.nl, tel. 363 8250. Bij overintekening wordt geloot. Voor de werkcolleges staan 5 ECTS (vrije ruimte).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

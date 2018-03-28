@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5437&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5437"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5437">Informatie over ReMa Kunst- en Cultuurwetenschappen / Arts and Culture</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>ReMa Kunst- en Cultuurwetenschappen / Arts and Culture</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (ReMa Cultural Leadership)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td></td><td>Disciplinary Elective I</td><td>Engels</td><td>10</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Disciplinary Elective II</td><td>Engels</td><td>10</td><td></td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>LCR007M05</td><td><a href="/ocasys/rechten/vak/show?module=78371">Cultural Leadership I</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>LCR008M05</td><td><a href="/ocasys/rechten/vak/show?module=78372">Cultural Leadership II</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>LCR001M05</td><td><a href="/ocasys/rechten/vak/show?module=78364">Cultural Politics and Policy</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LCR002M05</td><td><a href="/ocasys/rechten/vak/show?module=78365">Culture and Law</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LCR006M05</td><td><a href="/ocasys/rechten/vak/show?module=78370">Cultural Entrepreneurship</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>LCR003M05</td><td><a href="/ocasys/rechten/vak/show?module=78366">Culture and Media</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LCR004M05</td><td><a href="/ocasys/rechten/vak/show?module=78367">Heritage</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LCR005M05</td><td><a href="/ocasys/rechten/vak/show?module=78368">Sustainability and Cultural Awareness</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (ReMa Literary and Cultural Studies)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td></td><td>Research Seminar I</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Research Seminar II</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td></td><td>Research Seminar III</td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>LWR012M05</td><td><a href="/ocasys/rechten/vak/show?module=78138">Theories of Culture and Research</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>LWR011M05</td><td><a href="/ocasys/rechten/vak/show?module=78137">Theories and Analysis</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td></td><td>Research Seminar IV</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>LWR013M05</td><td><a href="/ocasys/rechten/vak/show?module=78139">Arts and Media in Society</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LWR015M05</td><td><a href="/ocasys/rechten/vak/show?module=78141">Research Methods 1</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>LWR016M05</td><td><a href="/ocasys/rechten/vak/show?module=78142">Research Methods 2</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (ReMa Cultural Leadership)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>LCR000M30</td><td><a href="/ocasys/rechten/vak/show?module=78373">Cultural Leadership Research Traineeship</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>LCR999M30</td><td><a href="/ocasys/rechten/vak/show?module=78369">Research MA Thesis Cultural Leadership</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (ReMa Literary and Cultural Studies)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>LWR017M10</td><td><a href="/ocasys/rechten/vak/show?module=78143">Specialisation 1</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LWR018M10</td><td><a href="/ocasys/rechten/vak/show?module=78144">Specialisation 2</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LWR019M05</td><td><a href="/ocasys/rechten/vak/show?module=78145">Specialisation 3</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>LWR014M05</td><td><a href="/ocasys/rechten/vak/show?module=78140">Research Design</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LWR999M30</td><td><a href="/ocasys/rechten/vak/show?module=74851">Research Master's Thesis LCS</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Bij een specialisatie/onderzoeksstage van 5 ECTS kunnen de volgende codes worden gebruikt: LWR003M05 en LWR004M05.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78139"><b>Arts and Media in Society</b></a></td><td align="right"><b>LWR013M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7215">dr. T.E. Lijster</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"> nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=78370"><b>Cultural Entrepreneurship</b></a></td><td align="right"><b>LCR006M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10630">dr. J.A.C. Kolsteeg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10630">dr. J.A.C. Kolsteeg</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78371"><b>Cultural Leadership I</b></a></td><td align="right"><b>LCR007M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=35">prof. dr. C.W. Bosch</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=35">prof. dr. C.W. Bosch</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78372"><b>Cultural Leadership II</b></a></td><td align="right"><b>LCR008M05</b></td></tr><tr><td align="justify" colspan="3">The main goal is to help students developing a vision on cultural leadership, as well as to identify such visions (and accompanying values), especially where they tend to remain implicit (as in policy documents or in mission statements). <br/><br/>1.	The first goal is to discuss the difference as well as the complex relation between science (theory, observation) and ideology / politics, between hypotheses and facts on the one hand and values and opinions on the other. <br/>2.	We will then discuss issues / documents (policy statements, mission statements, interviews) issued by different actors in the field of culture, in order to identify the implicitly or explicitly stated vision and values. Combining an historical dimension with contemporary issues (actuality), we will relate these to value systems and ideologies. We systematically compare different ideological perspectives in terms of value-regimes.<br/>3.	Students are then encouraged to develop and build an argument for their own vision on cultural leadership.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=403">dr. M.L. Wilders</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=403">dr. M.L. Wilders</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, actieve participatie, werkstuk(ken), presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Admittance to the Research Master Cultural<br/>Leadership</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78373"><b>Cultural Leadership Research Traineeship</b></a></td><td align="right"><b>LCR000M30</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=432">prof. dr. B.A.M. Ramakers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78364"><b>Cultural Politics and Policy</b></a></td><td align="right"><b>LCR001M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=312">dr. Q.L. van den Hoogen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=312">dr. Q.L. van den Hoogen</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78365"><b>Culture and Law</b></a></td><td align="right"><b>LCR002M05</b></td></tr><tr><td align="justify" colspan="3">Participants in this course will be presented first with a general introduction to law. This will take place on the basis of both a legal as well as a philosophical perspective. The course starts with a general overview of the main branches of law, i.e. private law, administrative law, criminal law and constitutional law. The characteristics and key concepts of each of these areas of law will be analyzed and discussed. The general introduction to law will be rounded off with a philosophical analysis of the concept of law. Fundamental philosophical questions relating to law will be addressed, such as: ‘What is a rule?’ and ‘How does a legal rule differ from other types of rules?’<br/><br/>In addition to the general introduction to law, certain aspects will be addressed that are of particular importance to cultural policy-making. In relation to this, the following themes will be discussed:<br/><br/>-Government policy in relation to cultural affairs is often based upon the assumption that law can be used as a means to realize policy aims. This assumption, however, is problematic. In this course, attention will be given to the question as to what extent the legal system is capable of steering society into a specific desired direction. In relation to this, theories shall be discussed concerning the idea of law as a self-regulating autonomous system.<br/><br/>- Most cultural associations are constituted on the basis of legal constructs derived from private law. However, many of these associations receive public funding. Therefore, these associations are to a certain extent hybrid mixes combining both private law as well as public law elements. In this course, special attention will be given to the differences between private law and public law and the problems that potentially arise when private and public are mixed together.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11295">mr. D.H. van der Meulen, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11295">mr. D.H. van der Meulen, LLM.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78366"><b>Culture and Media</b></a></td><td align="right"><b>LCR003M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=78367"><b>Heritage</b></a></td><td align="right"><b>LCR004M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=78140"><b>Research Design</b></a></td><td align="right"><b>LWR014M05</b></td></tr><tr><td align="justify" colspan="3">Students work under the supervision of a senior researcher (i.e. the course coordinator) on the following topics:<br/><br/>a. Selecting, studying and discussing key texts related to the master thesis.<br/>b. Setting up a research design (including a research question, a hypothesis and a paragraph on relevance) – based on the proposed thesis – according to generally accepted academic standards, the results of which are aimed at an academic audience.<br/>c. Discuss this design with fellow students on the basis of a fixed set of qualitative criteria and adjust the proposal where necessary.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12036">prof. dr. M.P.J. Sanders</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12036">prof. dr. M.P.J. Sanders</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=78369"><b>Research MA Thesis Cultural Leadership</b></a></td><td align="right"><b>LCR999M30</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=74851"><b>Research Master's Thesis LCS</b></a></td><td align="right"><b>LWR999M30</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">intervisie, zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">1st year of the Research MA must be completed, as well as 2 of the specializations</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The thesis proposal must have been approved by supervisor and Director of Studies; final mark is proposed by the supervisor and second reader, based on a completed thesis. Assessment criteria: theoretical depth, originality, independence of the design of the research proposal and the approach, critical aspects. See Exam Regulations.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=78141"><b>Research Methods 1</b></a></td><td align="right"><b>LWR015M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10530">prof. dr. A.S. Lehmann</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12415">dr. S.M. Strandvad</a><a href="/ocasys/rug/vak/viewtutor?tutor=11373">dr. C.J. Tonelli</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, veldwerk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=78142"><b>Research Methods 2</b></a></td><td align="right"><b>LWR016M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7402">dr. J. Hanich</a><a href="/ocasys/rug/vak/viewtutor?tutor=10652">dr. J.P. Keizer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="15"></a>15</b></td><td><a href="/ocasys/rechten/vak/show?module=78143"><b>Specialisation 1</b></a></td><td align="right"><b>LWR017M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="16"></a>16</b></td><td><a href="/ocasys/rechten/vak/show?module=78144"><b>Specialisation 2</b></a></td><td align="right"><b>LWR018M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="17"></a>17</b></td><td><a href="/ocasys/rechten/vak/show?module=78145"><b>Specialisation 3</b></a></td><td align="right"><b>LWR019M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="18"></a>18</b></td><td><a href="/ocasys/rechten/vak/show?module=78368"><b>Sustainability and Cultural Awareness</b></a></td><td align="right"><b>LCR005M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="19"></a>19</b></td><td><a href="/ocasys/rechten/vak/show?module=78137"><b>Theories and Analysis</b></a></td><td align="right"><b>LWR011M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, actieve participatie, essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="20"></a>20</b></td><td><a href="/ocasys/rechten/vak/show?module=78138"><b>Theories of Culture and Research</b></a></td><td align="right"><b>LWR012M05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=109">prof. dr. B.P. van Heusden</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdrachten, actieve participatie, essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

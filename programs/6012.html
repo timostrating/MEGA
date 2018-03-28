@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6012&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6012"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6012">Informatie over Minor Entrepreneurship</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Entrepreneurship</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>EBB128A05</td><td><a href="/ocasys/rechten/vak/show?module=77787">Fin. &amp; Legal Aspects of Entrepreneurship</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBB124A05</td><td><a href="/ocasys/rechten/vak/show?module=77786">Introduction to Entrepreneurship</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBB129A05</td><td><a href="/ocasys/rechten/vak/show?module=77788">Market- and Knowledge-based Entr.ship</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>EBB118B10</td><td><a href="/ocasys/rechten/vak/show?module=73280">Entrepreneurship Project</a></td><td>Engels</td><td>10</td><td>8</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>GMW-MIN001</td><td><a href="/ocasys/rechten/vak/show?module=78136">Entrepeneurship in a social context</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBB126A05</td><td><a href="/ocasys/rechten/vak/show?module=77789">Entrepreneurship in Context</a></td><td>Engels</td><td>5</td><td>3</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78136"><b>Entrepeneurship in a social context</b></a></td><td align="right"><b>GMW-MIN001</b></td></tr><tr><td align="justify" colspan="3">This course provides an introduction to entrepreneurship in a social context by taking a multidisciplinary perspective: educational sciences, psychology and sociology. In the 21st century the job market dynamics, especially for students with a social science background, have become increasingly dynamic. Given the magnitude of these changes and their potential rippling effects, it is essential for social science graduates to be aware of potential career paths, such as entrepreneurship in a social context, where they could apply their unique skillsets as well as work towards solving societally relevant problems. In this course, we will focus on 1) providing an understanding of the broader framework for entrepreneurship in a social context as well as on 2) helping students identify their unique interests, passions and skillsets that could be deployed towards solving socially relevant problems via entrepreneurship. As such, students will be exposed to academic and practitioner perspectives, by means of readings, lectures, videos, case presentations and workshops.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=968">prof. dr. M.C. Timmerman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8068">dr. T. Kretschmer</a><a href="/ocasys/rug/vak/viewtutor?tutor=888">dr. D.C. Rus</a><a href="/ocasys/rug/vak/viewtutor?tutor=968">prof. dr. M.C. Timmerman</a><a href="/ocasys/rug/vak/viewtutor?tutor=5626">drs. T.G. van der Zee</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, praktische oefening, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77789"><b>Entrepreneurship in Context</b></a></td><td align="right"><b>EBB126A05</b></td></tr><tr><td align="justify" colspan="3">If you want to successfully develop a new business, insight in the entrepreneurial context is of vital importance. Specifically, the potential of your business opportunity could be significantly affected by external contextual factors. These factors may be related to, for example, important stakeholders or competitors, the entrepreneurial culture, or the technology involved.  <br/>The aim of this course is to provide students with an overview of different contexts in which entrepreneurship occurs, including their basic characteristics. Students will learn about the communalities underlying entrepreneurial activity in general, but also the idiosyncrasies of each context. Guest lectures and field trips will be used to further illustrate these contexts. <br/>At the same time, different theories, methods, and tools will be introduced which can be used to identify and analyze contextual success factors for new business development. Students will apply this knowledge to the specific context of a real life entrepreneurial case.  This will enable them to identify the contextual success factors associated with a  business opportunity.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2175">drs. F.D. Streefland</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11729"> S.M. Dos Santos Fernandes Costa, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=9261">  Guest Lecturer(s)</a><a href="/ocasys/rug/vak/viewtutor?tutor=2175">drs. F.D. Streefland</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, workshop(s) </td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Propaedeutics<br/>- This course has a limited number of participants and can only be taken in combination with the other courses of the university minor “Entrepreneurship”. <br/>- The university minor “Entrepreneurship” is not open to students of the faculty of Economics &amp; Business and the BSc Industrial Engineering &amp; Management.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For more information contact the course coordinator: f.d.streefland@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73280"><b>Entrepreneurship Project</b></a></td><td align="right"><b>EBB118B10</b></td></tr><tr><td align="justify" colspan="3">The course “Entrepreneurship project” is the concluding course of the faculty minor “Innovation &amp; Entrepreneurship” and university minor “Entrepreneurship”, and can be considered a Student Venturelab. In this course, students will develop an empirically well-founded solution to a practical business development challenge in a multidisciplinary project setting. There are two main sources of challenges:<br/>- the student’s own entrepreneurial idea;<br/>- an entrepreneurial idea delivered by an existing SME, larger firm or entrepreneurial team.<br/>The starting point of the course is a certain knowledge element. This element is often technology based, for example health- or energy-related devices, developed at the University of Groningen. The goal is to create an empirically validated understanding of the corresponding business model. In-between steps are:<br/>- validating customer needs;<br/>- developing suggestions for products/services to satisfy those needs;<br/>- validating the solution.<br/>Theory and tools from the disciplines of (entrepreneurial) marketing, entrepreneurship and innovation &amp; technology management are applied during these three steps.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2175">drs. F.D. Streefland</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1750">dr. W.G. Biemans</a><a href="/ocasys/rug/vak/viewtutor?tutor=10209"> Y. Deen</a><a href="/ocasys/rug/vak/viewtutor?tutor=11729"> S.M. Dos Santos Fernandes Costa, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=11347">dr. A.J. Frederiks</a><a href="/ocasys/rug/vak/viewtutor?tutor=1876">mr. dr. W.M.H. Grooten</a><a href="/ocasys/rug/vak/viewtutor?tutor=1102">dr. K.R.E. Huizingh</a><a href="/ocasys/rug/vak/viewtutor?tutor=1981"> T.J. Kooijenga</a><a href="/ocasys/rug/vak/viewtutor?tutor=1991">drs. M.M. Kroese</a><a href="/ocasys/rug/vak/viewtutor?tutor=12327">drs. B.M.A. Munstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=11394"> H.C. Nguyen, B.</a><a href="/ocasys/rug/vak/viewtutor?tutor=7088">drs. M.J.M. Schoevers</a><a href="/ocasys/rug/vak/viewtutor?tutor=2175">drs. F.D. Streefland</a><a href="/ocasys/rug/vak/viewtutor?tutor=5626">drs. T.G. van der Zee</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, opdracht(en), workshop(s) </td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), verplichte aanwezigheid</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Propaedeutics<br/>- This course has a limited number of participants and can only be taken in combination with the other courses of either the faculty minor “Innovation &amp; Entrepreneurship” or the university minor “Entrepreneurship”. <br/>- Final admission to the faculty minor is based on a letter of motivation (including resume), which needs to be submitted to the coordinator of the minor (f.d.streefland@rug.nl) on July 1st of the academic year, prior to the academic year in which the student wants to do the minor, at the latest.<br/>- The university minor is not open to students of the faculty of Economics &amp; Business and the BSc Industrial Engineering &amp; Management.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For more information contact the coordinator Frank Streefland: f.d.streefland@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77787"><b>Fin. &amp; Legal Aspects of Entrepreneurship</b></a></td><td align="right"><b>EBB128A05</b></td></tr><tr><td align="justify" colspan="3">This course gives students of the university minor “Entrepreneurship” the necessary legal, tax and financial basis to successfully develop a new business.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1907">drs. D.J.J. Heslinga</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11233">mr. W. Grooten</a><a href="/ocasys/rug/vak/viewtutor?tutor=1907">drs. D.J.J. Heslinga</a><a href="/ocasys/rug/vak/viewtutor?tutor=1981"> T.J. Kooijenga</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, opdracht(en), werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Propaedeutics<br/>- This course has a limited number of participants and can only be taken in combination with the other courses of the university minor “Entrepreneurship”. <br/>- The university minor “Entrepreneurship” is not open to students of the faculty of Economics &amp; Business and the BSc Industrial Engineering &amp; Management.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><b>The part of the course that covers the legal aspects of Entrepreneurship in the context of Dutch law will be taught in Dutch</b><br/>For more information contact the coordinator: d.j.j.heslinga@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77786"><b>Introduction to Entrepreneurship</b></a></td><td align="right"><b>EBB124A05</b></td></tr><tr><td align="justify" colspan="3">The attention paid to entrepreneurship in economics and business has steadily increased during the last decades. Policy makers and practitioners are seeking to promote the supply of entrepreneurs in order to encourage economic benefits (e.g. employment, wealth creation and competition) as well as social benefits (e.g. social cohesion and empowerment).<br/>Entrepreneurship is a multi-dimensional concept that takes a variety of forms and appears in both large and small businesses, in both new and established firms, in both the formal and informal economy, in technological and non-technological industries and in many world regions. It is important to understand the basic characteristics of entrepreneurship in different settings in order to derive meaningful implications for different stakeholders. <br/>This course offers basic knowledge in the field of entrepreneurship to students with various educational backgrounds. We discuss entrepreneurship from different perspectives (e.g. psychological, economic and process perspectives) and in different forms (e.g. new ventures and established businesses), and we discuss the value and importance of entrepreneurship in the modern economy. We also discuss theories and models that help in explaining antecedents and consequences of behaviors during the exploration and the exploitation phases in the entrepreneurial process.<br/>After students have obtained an understanding of the importance of entrepreneurship and the entrepreneurial processes occurring at the micro level, we go back to the macro level and discuss how and under what circumstances institutions can promote entrepreneurship. <br/>Finally, in addition to the theoretical knowledge on entrepreneurship, throughout the course we aim to provide students with the opportunity to reflect on this knowledge by providing them with practical examples from a wide range of contexts, inviting guest lecturers from the field, and by providing a small group assignment in which students have to link the theory to practice and present their findings to an audience.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1799">dr. E.P.M. Croonen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1799">dr. E.P.M. Croonen</a><a href="/ocasys/rug/vak/viewtutor?tutor=11729"> S.M. Dos Santos Fernandes Costa, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=11536"> S. Murtinu</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Propaedeutics<br/>- This course can not be taken in combination with the course “Entrepreneurship B&amp;M/TM” (EBB106A05)<br/>- This course has a limited number of participants and can only be taken in combination with the other courses of either the faculty minor “Innovation &amp; Entrepreneurship” or the university minor “Entrepreneurship”. <br/>- Final admission to the faculty minor is based on a letter of motivation (including resume), which needs to be submitted to the coordinator of the minor (f.d.streefland@rug.nl) on July 1st of the academic year, prior to the academic year in which the student wants to do the minor, at the latest.<br/>- The university minor is not open to students of the faculty of Economics &amp; Business and the BSc Industrial Engineering &amp; Management.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For more information contact the course coordinator: e.p.m.croonen@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77788"><b>Market- and Knowledge-based Entr.ship</b></a></td><td align="right"><b>EBB129A05</b></td></tr><tr><td align="justify" colspan="3">Entrepreneurship is about identifying promising new business opportunities and developing them into viable businesses. Successful entrepreneurs create superior value for customers by matching an as yet unsatisfied need in the marketplace with a superior solution for that need. This course presents the basic market-related factors (representing the demand for the new solution) and knowledge-based factors (representing the solution itself) and shows how firms need to find a match between them. In other words: by creatively matching demand and supply.<br/><br/>Demand is represented by market-related factors. Markets are constantly changing, with new competitors offering new products and services and sometimes changing the basic rules of competition. Familiar examples are Spotify, Netflix, Amazon and Tesla. Firms need to monitor this constantly changing business environment to identify promising areas where they can create superior value for customers.<br/><br/>The supply side of the equation is represented by the firm’s new offering, which is (technology-related) knowledge in the form of a new product, new service, new procedure or new process. Successful firms develop new business opportunities that (a) address an as yet unsatisfied need and (b) exploits the firm’s strengths in terms of its technologies, capabilities or knowledge.<br/>The successful combination of these market- and knowledge-based factors results in the creation of superior value for customers, which is the basis for short-term profits and long-term success.<br/><br/>The course is structured around the following key topics:<br/>1.	Basic concepts of marketing and technology management; e.g. products vs. services, market orientation, market segmentation, market pull vs. technology push, technology evolution, dominant design, minimum viable product.<br/>2.	Identifying business opportunities; e.g. market sensing, market research, design thinking.<br/>3.	Assessing business opportunities; e.g. assessment methods, ratio vs. intuition, technology adoption and diffusion.<br/>4.	Developing a value proposition; e.g. types of value propositions, characteristics of a good value proposition, business models.<br/>5.	Implementing the value proposition; e.g. scalability, intellectual property, marketing mix, next product.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1750">dr. W.G. Biemans</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1750">dr. W.G. Biemans</a><a href="/ocasys/rug/vak/viewtutor?tutor=2175">drs. F.D. Streefland</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, opdracht(en), workshop(s) </td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">- Propaedeutics<br/><br/>- This course has a limited number of participants and can only be taken in combination with the other courses of the university minor “Entrepreneurship”. <br/><br/>- The university minor “Entrepreneurship” is not open to students of the faculty of Economics &amp; Business and the BSc Industrial Engineering &amp; Management.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For more information contact the course coordinator: w.g.biemans@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

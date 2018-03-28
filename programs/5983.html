@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5983&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5983"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5983">Informatie over  Verdieping - Gedrags- en Maatschappijwetenschappen - Psychologie</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b> Verdieping - Gedrags- en Maatschappijwetenschappen - Psychologie</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Excellentietraject gericht op de professie)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>HCPCTSKILLS</td><td><a href="/ocasys/rechten/vak/show?module=77511">Vaardigheden</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Dit zijn de onderdelen in het eerste jaar van de verplichte <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS).</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Regulier Honours Programma Gedrags- en Sociale wetenschappen - Psychologie)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>HCGM10205</td><td><a href="/ocasys/rechten/vak/show?module=78650">Oriëntatie op onderzoek - PSY</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In dit programma is de <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) in zijn geheel verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (Regulier Honours Programma Gedrags- en Sociale wetenschappen - Psychologie)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCGM20404</td><td><a href="/ocasys/rechten/vak/show?module=78656">Thematic Meetings (Psychology)</a></td><td>Engels en Nederlands</td><td>4</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCGM20505</td><td><a href="/ocasys/rechten/vak/show?module=78652">Research Internship I (Psychology)</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCGM20602</td><td><a href="/ocasys/rechten/vak/show?module=78654">Research Seminar (Psychology)</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In dit programma is de <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) in zijn geheel verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Regulier Honours Programma Gedrags- en Sociale wetenschappen - Psychologie)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCGM30402</td><td><a href="/ocasys/rechten/vak/show?module=78657">Theoretical Seminar (Psychology)</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCGM30507</td><td><a href="/ocasys/rechten/vak/show?module=78653">Research Internship II (Psychology)</a></td><td>Engels en Nederlands</td><td>7</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">In dit programma is de <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) in zijn geheel verplicht.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78650"><b>Oriëntatie op onderzoek - PSY</b></a></td><td align="right"><b>HCGM10205</b></td></tr><tr><td align="justify" colspan="3">Studenten wonen discussiebijeenkomsten bij van de verschillende onderzoeksprogramma'’s. Elke student neemt deel aan minimaal vijf bijeenkomsten. Centraal daarin staan thema’s als: het dominante onderzoeksparadigma, de relatie tussen theorie en praktijk, de (on)mogelijkheden tot interdisciplinaire samenwerking.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1009">prof. dr. A. Johnson</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7047">dr. R.F.A. Cox</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor GMW studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt ook in het Engels aangeboden.<br/>De volgende voorwaarde (Artikel 3.6 van de OTR, te vinden in je Student Portal onder Organizations) geldt: “Voor alle studieonderdelen van het Honoursprogramma geldt, met uitzondering van bijzondere omstandigheden, een aanwezigheidsplicht van 100%. Hieronder wordt verstaan het voorbereid hebben van en actief deelnemen aan de studieonderdelen. Bij goede reden kan de docent de student toestaan een gemiste bijeenkomst te vervangen door een reparatieopdracht.”</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77436"><b>Pick Your Own-talent Programma</b></a></td><td align="right"><b>HCPCLPYOT</b></td></tr><tr><td align="justify" colspan="3">In het Bachelor Honours programma besteden we gedurende het gehele traject aandacht aan talentontwikkeling. Het Honours College vindt het belangrijk dat honoursstudenten stilstaan bij vragen als: ‘wie ben ik, wat kan ik en wat wil ik?’. Deze vragen lopen als een rode draad door het Pick Your Own-talent programma.<br/><br/>--Opbouw Pick Your Own-talent programma--<br/><br/>Jaar 1 Welcoming Ceremony: gezamenlijke start van het Bachelor Honours programma<br/><br/>Tijdens de openingsceremonie komen alle nieuwe honoursstudenten bij elkaar. Elk jaar wordt er een aansprekende en inspirerende gastspreker uitgenodigd. Hij of zij vertelt over zijn of haar talent, carrière en over de keuzes die hij of zij heeft gemaakt om zijn of haar talenten ten volle te benutten. <br/><br/>Jaar 2 Kick-off: gezamenlijke start van het tweede jaar<br/><br/>Het tweede academische jaar start met de Kick-off. Tijdens deze avond inspireert een talentvolle spreker de tweedejaars honoursstudenten door hen na te laten denken over vragen als ‘wie ben ik, wat kan ik en wat wil ik’ en ‘hoe kan ik dat bereiken?’. Ieder jaar wordt er een andere inspirerende spreker uitgenodigd. Deze avond vindt dit jaar plaats op woensdag 6 september 2017 en is verplicht voor iedere tweedejaars honoursstudent. <br/><br/>Jaar 2 Plenaire avond naar keuze: Academia of Entrepreneurship (keuzegroep E)<br/><br/>Vervolgens wordt de blik gericht op het werkveld. In dit onderdeel oriënteer je je op werken in de wetenschap of op Entrepreneurship (ondernemen met al je talenten in de breedste zin van het woord). Waar zou je na je studie willen werken? Ambieer je een carrière in de wetenschap of weet je al dat je in het bedrijfsleven of de publieke sector aan de slag wilt? Misschien weet je het nog niet. Om je al halverwege je bachelor studie in aanraking te brengen met de Academia en met Entrepreneurship, worden er twee plenaire avonden georganiseerd met een interactief karakter. Tijdens deze twee avonden staat telkens één van de twee thema’s centraal. Deze avonden worden georganiseerd op respectievelijk dinsdag 14 november 2016 en op donderdag 8 februari 2018. Het deelnemen aan één van deze twee avonden is verplicht voor iedere tweedejaars honoursstudent.<br/><br/>Jaar 2 Workshops (keuzegroep F)<br/><br/>In het tweede semester van het tweede jaar ga je zelf aan de slag met jouw potentiële talent. Er zijn verschillende workshops met thema’s zoals ‘passie’, ‘wilskracht’, ‘pick your own time’, ‘omgaan met keuzestress’, ‘sturen of coachen’ en ‘succes en ambitie’. De workshops worden zowel in het Nederlands als in het Engels aangeboden. Het doel van de workshop is dat je kennis maakt met het betreffende onderwerp en hiermee aan de slag gaat. Tijdens de startbijeenkomst van de workshop worden verschillende aspecten geïntroduceerd. Gedurende een periode van één of twee weken neem je jouw talent onder de loep en probeer je de opgedane kennis in de praktijk te brengen. De workshop wordt afgesloten met een slotbijeenkomst, waarin je reflecteert op wat je hebt geleerd. Bovendien kijk je vooruit naar hoe je het thema kunt gebruiken in jouw studiecarrière of zelfs daarna. Iedere workshop bestaat uit twee sessies. De workshops worden in semester II gegeven. Het volgen van één workshop is verplicht voor ieder tweedejaars honoursstudent. <br/><br/>Jaar 3 Workshops (keuzegroep I)<br/><br/>In het derde jaar wordt de laatste stap in het PYO-t programma genomen en sta je gericht stil bij ‘wat wil ik’. Welke carrière ambieer je? Je kunt kiezen uit verschillende thema’s en ontwikkelt een loopbaanprofiel of verkent de arbeidsmarkt in relatie tot jouw ambitie. Ook kun je bijvoorbeeld onderzoeken of je een onderneming op wilt starten. Andere thema’s zijn o.a. 'bouw aan je persoonlijke merk' en 'het leven als experiment'. In het derde jaar van je studie maak je al belangrijke keuzes voor jouw toekomstige carrière. De eerste stappen richting de ontwikkeling van jouw talenten zijn gezet, wat zijn jouw volgende stappen? Welke talenten kun jij in de toekomst aanwenden om al jouw kennis en kunde optimaal in te kunnen zetten ten behoeve van wetenschap, maatschappij of elders. Iedere workshop bestaat uit twee sessies. De workshops worden het gehele derde jaar aangeboden, dus je kunt òf in semester I òf in semester II een workshop volgen. Kijk dus goed naar de planning van bijvoorbeeld een buitenlandverblijf, het schrijven van je scriptie, etc. Het volgen van één workshop is verplicht voor iedere derdejaars honoursstudent. <br/><br/>Pick Your Own-talent programma op een rij:<br/><br/>Jaar 1 <br/>• Welcoming Ceremony<br/><br/>Jaar 2 <br/>• Kick off<br/>• Academia of Entrepreneurship <br/>• Workshop jaar 2 <br/><br/>Jaar 3 <br/>• Workshop jaar 3<br/><br/>Eén ECTS wordt toegekend als alle PYO-t onderdelen van jaar 1, 2 en 3 voldoende zijn afgerond.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Hoorcolleges, Praktische werkvormen, Various styles of action learning</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">1</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78652"><b>Research Internship I (Psychology)</b></a></td><td align="right"><b>HCGM20505</b></td></tr><tr><td align="justify" colspan="3">De onderzoeksstage is gekoppeld aan het tweedejaars onderzoekspracticum in de reguliere Psychologie Bachelor. Direct bij aanvang van het tweede jaar wordt een groep van 4 studenten gekoppeld aan één van de onderzoekers van het Heijmans Instituut voor Psychologisch onderzoek. Zo leren de studenten in een meester-gezel verhouding alle facetten van de onderzoekspraktijk kennen. Naast het uitvoeren van praktische werkzaamheden, draaien ze mee in de onderzoeksgroep, bijvoorbeeld door het deelnemen aan alle relevante bijeenkomsten. Studenten lopen gedurende het hele tweede jaar met “hun” onderzoeker mee en krijgen bovendien de gelegenheid een symposium of congres over een relevant thema bij te wonen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">HC studenten Psychologie</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78653"><b>Research Internship II (Psychology)</b></a></td><td align="right"><b>HCGM30507</b></td></tr><tr><td align="justify" colspan="3">Dit practicum bestaat uit twee delen. Ten eerste ontwikkelen de studenten hun onderzoekvaardigheden verder in een gebied van de psychologie naar keuze. Zij zoeken daarvoor zelf een supervisor met wie zij 140 uur meelopen. Naast binnen de RUG mag de stageplaats ook bij een andere universiteit binnen of buiten Nederland worden gezocht, maar zij moet worden goedgekeurd door de coördinator van het Excellentie programma. <br/>Het tweede gedeelte van het practicum (56 uur, in periodes IIa en IIb) bestaat uit het begeleiden van een groep in het tweedejaars Psychologie onderzoekspracticum. De studenten worden intensief getraind in het geven van practicum onderwijs. Zij doen de begeleiding in tweetallen en geven elkaar regelmatig feedback.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1074">dr. A. Sarampalis</a><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78654"><b>Research Seminar (Psychology)</b></a></td><td align="right"><b>HCGM20602</b></td></tr><tr><td align="justify" colspan="3">In groepsbijeenkomsten en aan de hand van opdrachten komt het proces van het communiceren van empirische onderzoeksresultaten aan bod. Studenten maken kennis met het peer-review proces en met manieren om voor verschillende doelgroepen te schrijven, om constructief commentaar op het werk van anderen te leveren en breiden hun vaardigheden m.b.t. mondeling presenteren uit. Verder leren ze hoe ze zich op een carrière in het onderzoek kunnen voorbereiden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1073">dr. M. aan het Rot</a><a href="/ocasys/rug/vak/viewtutor?tutor=7055">dr. B.D. Ostafin</a><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De eerste week van dit seminar vindt plaats in de herkansingsweek van blok 2a (week 19; 8/5 - 12/5/2017). De 2e week is gepland in week 26 (26/6 - 30/6/2017)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78656"><b>Thematic Meetings (Psychology)</b></a></td><td align="right"><b>HCGM20404</b></td></tr><tr><td align="justify" colspan="3">Studenten in het honoursprogramma komen gedurende het jaar regelmatig bijeen. Rode draad is het kritisch reflecteren op verschillende thema’s in de Psychologie. Dat neemt uiteenlopende vormen aan waarbij controverses niet worden geschuwd. Zo nemen studenten deel aan discussiebijeenkomsten, bezoeken lezingen (zowel binnen als buiten de afdeling psychologie) en kijken gezamenlijk naar films over relevante onderwerpen voor het vakgebied.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=880">dr. J.P. Wessel</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78657"><b>Theoretical Seminar (Psychology)</b></a></td><td align="right"><b>HCGM30402</b></td></tr><tr><td align="justify" colspan="3">Met de agrarische revolutie annexeerde de mens de aarde en dieren voor zijn economische doelen. Met de industriële revolutie in de 19de en 20ste eeuw deed hij dat ook met de menselijke arbeidskracht. Tegen het einde van de 20ste en vooral in de 21ste eeuw vindt de derde revolutie plaats, waarin het menselijk lichaam (inclusief het brein) zelf tot grondstof voor de economie worden gemaakt. <br/>Hoe kunnen we de negatieve kanten vermijden van de vorige twee revoluties die veel goeds hebben gebracht maar de aarde, dieren en mensen tot op heden ook uitbuiten? <br/>De huidige neurobiologische revolutie brengt vergaande veranderingen met zich mee in de definitie van wat het is om een mens te zijn en zeker wat het is om een sociaal mens te zijn. Velen gebruiken nu al chemische stoffen of elektronische apparatuur om de kwaliteit van hun gevoelens of hun functioneren te verbeteren. Maar wie definieert wat kwalitatief goede gevoelens of prestaties zijn? <br/>Er zitten bepaalde ‘scripts’ in pillen of apps met een antwoord op die vraag. Wie een antidepressivum ontwerpt bepaalt bijvoorbeeld wat telt als ‘niet langer depressief’ en dus ook als ‘gelukkig’ (of ‘gelukkig genoeg’). En hoe moeten we denken over technologie voor ‘monitoring’ vanaf een afstand of over ‘electroceuticals’ (pillen met een microchip erin) die in de maak zijn? Die maken het verzamelen van grote hoeveelheden data over ons mogelijk door overheden en bedrijven. <br/>De studenten lezen artikelen, bekijken films en documentaires, schrijven zelf stukken en geven presentaties over dit soort onderwerpen die ze met elkaar bediscussiëren.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=796">  vacancy</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Bovenstaande was het thema tot en met 2015 - 2016. Momenteel loopt er een sollicitatieprocedure voor een nieuwe coordinator. Afhankelijk van diens expertise kan het thema veranderen.<br/>De cursus vindt plaats in de hertentamenweken in de blokken 2a (week 9) en 2b (week 19).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77511"><b>Vaardigheden</b></a></td><td align="right"><b>HCPCTSKILLS</b></td></tr><tr><td align="justify" colspan="3">Voor meer informatie zie <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">de Petrus Camper Track</a>.<br/><br/>De student doet één vak in jaar 1 en één in jaar 2. Let op dat semester 2a in het tweede jaar de laatste mogelijkheid is om een vak te volgen. De vakken worden dus niet aangeboden tijdens jaar 2 semester 2b en niet in jaar 3.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

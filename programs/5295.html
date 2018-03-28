@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5295&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5295"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5295">Informatie over Ma Noord-Amerikastudies</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Noord-Amerikastudies</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Ma American Studies)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LAX036M10</td><td><a href="/ocasys/rechten/vak/show?module=74398">Religion in the Borderlands</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LAX039M10</td><td><a href="/ocasys/rechten/vak/show?module=74603">Leaders and Followers</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LAX040M10</td><td><a href="/ocasys/rechten/vak/show?module=78075">Rhetoric and Identity in America</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LAX999M20</td><td><a href="/ocasys/rechten/vak/show?module=74845">Master's Thesis American Studies</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LAX000M10</td><td><a href="/ocasys/rechten/vak/show?module=74787">Masterstage American Studies</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LAX041M10</td><td><a href="/ocasys/rechten/vak/show?module=78076">Politics &amp; Culture 21st Century US</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td></td><td>Study Abroad</td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">1. Students have the option to replace the second semester Research Seminar with an MA Internship (10 ECTS), which is to be carried out during the second semester, in principle in the U.S. or the Americas.<br/>2. Pending availability of exchange places, eligible students have the option to do additional course work during the second semester at one of the institutions in the Americas with which the degree program has a formal exchange agreement. Students doing course work in America will in principle complete the equivalent of 3 research seminars at 400 level or higher.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74603"><b>Leaders and Followers</b></a></td><td align="right"><b>LAX039M10</b></td></tr><tr><td align="justify" colspan="3">This seminar considers how leadership worked in early America and how it relates to leadership today.  It addresses problems in political culture such as: how subjects and officials negotiated authority in diverse colonial and postcolonial settings; how and why certain political communities achieved stability while others did not; and to what extent deference and disobedience characterized settlements in the New World.  But it also looks beyond traditional political questions to examine how leadership was expressed (and contested) in other arenas, including indigenous communities, radical religious associations, households, and workplaces ranging from plantations to pirate ships. Ultimately, the course aims to historicize leadership in different contexts and eras but also to draw out connections and parallels across those various settings.  Readings will be drawn from primary sources (ca. 1600-1800) and related secondary materials in history, political science, cultural studies, and business and management studies.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4747"> M.L. Thompson</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4747"> M.L. Thompson</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA programme (check the degree programmes Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars.<br/>Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74845"><b>Master's Thesis American Studies</b></a></td><td align="right"><b>LAX999M20</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9629">dr. A.M. Martinez</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie (begeleid)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">BA American Studies obtained and admission to the MA programme (check the degree programme’s Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars.<br/>Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74787"><b>Masterstage American Studies</b></a></td><td align="right"><b>LAX000M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9629">dr. A.M. Martinez</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9629">dr. A.M. Martinez</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">praktische oefening</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA program (check the degree program’s Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Extensive general information about the master placement can be found on:<br/><br/>    The Student Portal - Career(useful links, placement jobs, events) - Master's Placement about procedures, placementcoordinators, forms for registration, placementplan, evaluation and grants.<br/>    www.rug.nl/let/mobilityoffice<br/>    www.rug.nl/let/careerstrategy<br/><br/>The desk of the Mobility Office is open daily between 1.00-4.00 p.m located at the same spot as the desk of the Office for Student Affairs.<br/>Information about office hours is available via the Student Portal-Career-Master's Placement.<br/><br/>Useful literature:  Esther Haag: Internship Guide, Work Placements Step by Step. 2013. The Hague: Eleven International Publishing. ISBN 978-94-90947-88-0 (E-book: 978-94-6094-675-2).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78076"><b>Politics &amp; Culture 21st Century US</b></a></td><td align="right"><b>LAX041M10</b></td></tr><tr><td align="justify" colspan="3">Inspired by Hannah Arendt's 1972 essay collection, Crises of the Republic, this course examines the ways in which the still-young 21st century might or might not be usefully characterized as one in which the United States has found itself afflicted by a succession of crises, from the national security crisis ushered in by the attacks of 9/11 to the global financial crisis that began in 2007-08 and the ongoing "constitutional crisis" that some have argued the Trump presidency has precipitated.<br/><br/>We will study specific 21st century crises in detail, but also explore and seek to problematize the history and theory of crisis as a concept, while investigating the ways in which different forms of narrative culture, including novels, films and TV series, have represented various "crises" of the 21st century U.S.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6707">dr. T. Jelfs</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6707">dr. T. Jelfs</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">actieve participatie, onderzoekswerkstuk, presentatie, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA programme (check the degree programmes Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars.<br/>Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74398"><b>Religion in the Borderlands</b></a></td><td align="right"><b>LAX036M10</b></td></tr><tr><td align="justify" colspan="3">This seminar centers religions in the U.S.-Mexico borderlands to consider the cultural, historical, and political position of this region in relationship to governing bodies, cultural groups and religious peoples and organizations. Religion challenges and changes the meanings and uses of democracy in frontier areas, where authority is distant and local power is often centralized in, around, or in contradistinction to the church. The focus of the course is religion in the U.S.-Mexico borderlands in the past 150 years. However, we will be attentive to the legacies of religious institutions, practices, and conflicts that frame this era. This liminal space served and serves to delineate the limits of colonial and contemporary political bodies. Religions and the religious have also been shaped by the socio-political dimensions of this national, international and transnational landscape. This seminar considers how this region is understood in historical, literary, and popular cultural contexts and how its  Americanness  is perceived and shaped by religious, cultural, racial, discursive, and political forces. The haunting of the borderlands by indigenous and Spanish religious and cultural formations marks the distinctive character of the region. The ethical challenges and choices that are revealed in this space showcase the making of the American nation and its relations to Mexico and Latin America in the past century and a half.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9629">dr. A.M. Martinez</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9629">dr. A.M. Martinez</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, wekelijkse opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA programme (check the degree programmes Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This module cannot be taken as an elective Minor or Open Module. Major students take precedence.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78075"><b>Rhetoric and Identity in America</b></a></td><td align="right"><b>LAX040M10</b></td></tr><tr><td align="justify" colspan="3">This course starts from the premise that American culture is fundamentally rhetorical. The United States was conceived in speech and speech has been a favorite medium of those—ranging from Frederick Douglas to Jerry Falwell to Lady Gaga—seeking to rally support for their vision for America. In this course we will study the medium of the speech as a defining feature and force of change in American political culture, past and present. In particular, we will focus on how speakers (re)defined and challenged the narrative of what it means to be American. We will study the roots of American speech culture in the republican notion of appealing to the people, as well as the threat that (populist) rhetoric is considered to be to democracy. Students will familiarize themselves with rhetorical theory and speech criticism and reflect on and join current issues debated in the field. We will explore the full breadth and variety of the speech genre—from State of the Union to Oscar Acceptance—and the increasingly blurring lines between them (celebrity politics, etc.)</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6847">dr. J. Olthof</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6847">dr. J. Olthof</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">actieve participatie, onderzoekswerkstuk, presentatie, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA programme (check the degree programmes Teaching and Examination Regulations).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars.<br/>Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

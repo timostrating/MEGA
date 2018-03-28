@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5412&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5412"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5412">Informatie over DD MSc TOM – NUBS, Newcastle (1,5-jarig)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>DD MSc TOM – NUBS, Newcastle (1,5-jarig)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (basisprogramma)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td></td><td>studie aan NUBS, Newcastle</td><td>Engels</td><td>30</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td></td><td>voorbereiding Master's Thesis</td><td>Engels</td><td></td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>EBM024A05</td><td><a href="/ocasys/rechten/vak/show?module=73701">Asset Management</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM036B05</td><td><a href="/ocasys/rechten/vak/show?module=73689">Process Improvement and Change</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM760D05</td><td><a href="/ocasys/rechten/vak/show?module=73204">Technology-enabled Innovation</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>EBM032A05</td><td><a href="/ocasys/rechten/vak/show?module=73642">Behavioural Operations Management</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM026A05</td><td><a href="/ocasys/rechten/vak/show?module=73739">Inventory Management</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM031A05</td><td><a href="/ocasys/rechten/vak/show?module=73336">Research Methods for TOM</a></td><td>Engels</td><td>5</td><td>6</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In semester 2 nemen alle studenten deel aan de voorbereiding Master's Thesis', aangeboden in Groningen.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (basisprogramma)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>EBM028A30</td><td><a href="/ocasys/rechten/vak/show?module=73335">Master’s Thesis TOM-DD Newcastle</a></td><td>Engels</td><td>30</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73701"><b>Asset Management</b></a></td><td align="right"><b>EBM024A05</b></td></tr><tr><td align="justify" colspan="3">Many industrial companies require complex ‘assets’ or ‘capital goods’ in their primary process. Examples can be found in a wide range of industries and include real estate, facilities and infrastructure, manufacturing and production plants and flexible manufacturing systems. The design, proper use, and maintenance of such assets are usually critical for the performance of the company. Complex production assets typically have a long life-span, whereby the total cost of ownership (including e.g. maintenance and renovation costs) may far exceed the initial investment. This course consists of plenary lectures and tutorials related to assignments, during which the stages of the asset-life cycle will be discussed. Investment and design decisions related to manufacturing automation will be discussed. In addition, the following topics will receive attention: quantitative methods in the front-end, the organisation of operations and maintenance, reliability engineering in maintenance and operations, and condition monitoring. <br/>Students are asked to exercise with and reflect on these topics by conducting assignments, and do an intermediate exam. The assignments are all preceded by a tutorial/Q&amp;A session.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7947">dr. J. Veldman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1947">dr. B. de Jonge</a><a href="/ocasys/rug/vak/viewtutor?tutor=7947">dr. J. Veldman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">vraag- en antwoordsessies, hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For MSc IEM students this course is exclusively open for those students following all courses in the Production Logistics Engineering specialisation within the Production Technology and Logistics track.<br/>Secretary Room: Dui-634, Phone: +31(0)50 3637491, E-mail: secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73642"><b>Behavioural Operations Management</b></a></td><td align="right"><b>EBM032A05</b></td></tr><tr><td align="justify" colspan="3">The primary goal of the course is to understand the effects of behavioural variables (such as cognitive limitations and effects of team work) on Operations Management decisions. Four lectures provide a basic background in the history and methodology of Behavioural Operations Management. Students develop research questions regarding the effects of behavioural variables on an Operations Management decision problem. Subsequently,students will, in multidisciplinary teams, setup and execute a scientific study to answer their research questions. The Operations Management problem will be chosen by the lecturers. <br/>The behavioural variables that will be investigated are chosen by the students and can be different per team. Examples are the effect of bounded rationality on purchasing decisions in the supply chain and the effect of team structure on rescheduling decisions. Steps in this project include formulating predictions, collecting data (e.g., experiments, cognitive task analyses, or surveys), analysing the results, and drawing conclusions.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2254">dr. W.M.C. van Wezel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2369">dr. ir. P. Buijs</a><a href="/ocasys/rug/vak/viewtutor?tutor=2254">dr. W.M.C. van Wezel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">In semester Ib this course is exclusively opened for students from the programmes MSc Technology and Operations Management and MSc Supply Chain Management. In semester IIb, this course is offered to other students as well, including a max of 8 exchange students.<br/>Secretary office: room: 5411.0634, phone: +31(0)50 3637491, e-mail: secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73739"><b>Inventory Management</b></a></td><td align="right"><b>EBM026A05</b></td></tr><tr><td align="justify" colspan="3">The course Inventory Management provides students with the necessary knowledge and skills to<br/>analyze, improve, design and manage actual inventory systems. Topics that will be discussed<br/>are demand forecasting, production/inventory and item characteristics, performance measures,<br/>inventory control policies and policy improvement. In particular applying inventory control models<br/>to improve the company performance will be important. Spread sheet modeling skills are essential.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11211">dr. O.A. Kilic</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11211">dr. O.A. Kilic</a><a href="/ocasys/rug/vak/viewtutor?tutor=1850">dr. N.D. van Foreest</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">computer practica, hoor- en werkcolleges, vraag- en antwoordsessies</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">individueel tentamen, opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students should already be familiar with <br/>•	model building in Excel <br/>•	basic statistics and stochastics<br/>•	mathematics of inventory theory <br/>•	inventory control methods, such as <br/>o	time series analysis, <br/>o	economic ordering, <br/>o	material requirements planning, <br/>o	safety stock, and <br/>o	reordering systems.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: room 5411-0631, phone +31(0)50 3637020, email secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73335"><b>Master’s Thesis TOM-DD Newcastle</b></a></td><td align="right"><b>EBM028A30</b></td></tr><tr><td align="justify" colspan="3">With the Master thesis you give proof of your academic ability. This last phase of the study offers you the opportunity to produce an academic piece of work in the area of Operations Management and to explore this area in depth. In your thesis, you demonstrate and report in a systematic, objective and verifiable way, on the knowledge you have acquired and contributions you made in line with academic research.<br/>Writing a clear research proposal is the first essential step in this course. Guidance is offered related to all components of a successful scientific proposal, such as defining the problem definition and research questions, stating the significance of the research, critically discuss the literature, selecting and motivating the appropriate research design to answer the research questions, and planning of the project. The next step is to actually undertake the research (collect, analyse, and interpret quantitative and/or qualitative data with appropriate techniques) and draw conclusions, make recommendations, generalise findings and identify limitations. You will report on all aspects mentioned by means of a master thesis and presentations. For this course, a set of research themes will be formulated.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2180">dr. N.B. Szirbik</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1761">dr. J.A.C. Bokhorst</a><a href="/ocasys/rug/vak/viewtutor?tutor=1670">  Individual supervisor</a><a href="/ocasys/rug/vak/viewtutor?tutor=2180">dr. N.B. Szirbik</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">individuele beoordeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">20 EC of the Double Degree Master programme courses.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Staff from the University of Groningen and staff from the Newcastle University are involved in the supervision of Dual Award dissertations. You will be allocated two supervisors, one from each institution. Your lead supervisor will usually be at the institution where you have selected to be based for the dissertation. In the first semester, supervisors from Groningen will formulate initial research themes (and projects) for which they are the lead supervisors. The supervisors from Newcastle will discuss possible research topics with you, for which they will be the lead supervisors. You will then first decide where you want to be based for the dissertation. The final allocation of students to projects/supervisors, is done early in semester IIa. Next, students start to write their research proposal in Groningen in IIa and will finish it in IIb. During part of the summer and in the first semester of the second year, students will perform the actual research, full-time.<br/><br/>Secretary office: Dui-634<br/>Phone: 050-3637491<br/>E-mail: secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73689"><b>Process Improvement and Change</b></a></td><td align="right"><b>EBM036B05</b></td></tr><tr><td align="justify" colspan="3">The course Process Improvement &amp; Change (PI&amp;C) starts with describing a framework for discussing critically several change and improvement approaches and methods that are applied in the field of operations and supply chains. For each approach we will focus on analysing the ‘how’ of the process improvement approach. The review of several approaches such as Lean Manufacturing, Six Sigma, Total Quality Management, and Business Process Reengineering, will reveal gaps, differences and similarities. Furthermore, we will discuss in this course how a diagnosis of the change content and context can be made, and what this diagnosis implies for an improvement plan. A final focus is on the execution of a real-case improvement project. Representatives of companies will introduce their case. Specific topics that will be addressed in this course are the roles of different players in the change processes, the role of performance indicators in the change processes and the input of both customers and suppliers in change processes.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12217">dr. ir. S. Boscari</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12217">dr. ir. S. Boscari</a><a href="/ocasys/rug/vak/viewtutor?tutor=1780">prof. dr. H. Broekhuis</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: room 5411-0634, phone +31(0)50 3637491, email secr.operations.feb@rug.nl<br/>This course is also open for a max of 8 exchange students.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73336"><b>Research Methods for TOM</b></a></td><td align="right"><b>EBM031A05</b></td></tr><tr><td align="justify" colspan="3">The course focuses on research methods used in the field of technology and operations management. Students have to do two modules, these modules provide in-depth knowledge and skills, first in the design science research method (DSRM), and second in the analytical quantitative research (AQR) method. Both modules are mandatory.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2279">dr. X. Zhu</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2180">dr. N.B. Szirbik</a><a href="/ocasys/rug/vak/viewtutor?tutor=12295"> X. Tong</a><a href="/ocasys/rug/vak/viewtutor?tutor=2279">dr. X. Zhu</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course can also be taken in period IIb.<br/>Secretary office: Dui-634<br/>Phone: 505-3637491<br/>E-mail: secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73204"><b>Technology-enabled Innovation</b></a></td><td align="right"><b>EBM760D05</b></td></tr><tr><td align="justify" colspan="3">This course combines regular lectures with a team effort under pressure in which a concept for new products, services or systems is developed, in conjunction with a company. Teams are coached on their progress by the lecturers.<br/>Lectures follow the course book, extended with selected subjects in service innovations and technological developments. Understanding will be tested in an individual written exam. <br/>Teams will apply this knowledge and understanding in an actual product, service or system development activity, covering relevant business, technical and organizational aspects. Toll-gate reports and pitches are the deliverables of this team effort.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1761">dr. J.A.C. Bokhorst</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1761">dr. J.A.C. Bokhorst</a><a href="/ocasys/rug/vak/viewtutor?tutor=1924">prof. dr. G.B. Huitema</a><a href="/ocasys/rug/vak/viewtutor?tutor=2270">prof. dr. ir. J.C. Wortmann</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">General knowledge of Innovation Management (Bachelor course Management of Product Innovation (EBB652B05) or similar)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">For students enrolled in the MSc Technology and Operations Management/TOM programme, the courses 'Facility Design and Planning' and 'Technology-enabled Innovation' together form option group A. As part of the core programme of the MSc TOM, these students are required to select one of the courses in option group A. Additionally, two elective courses need to be selected from the elective courses of MSc TOM and/or option group A. For MSc IEM students this course is exclusively open for those students following all courses in the Production Logistics Engineering specialisation within the Production Technology and Logistics track.<br/>Secretary: room 5411-0634, phone +31(0)50 3637491, e-mail: secr.operations.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

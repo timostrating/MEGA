@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4949&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4949"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4949">Informatie over Minor Future Planet Innovation</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Future Planet Innovation</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>WBEE17001</td><td><a href="/ocasys/rechten/vak/show?module=77848">Global Challenges</a></td><td>Nederlands</td><td>10</td><td>28</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WBEE17002</td><td><a href="/ocasys/rechten/vak/show?module=77849">Sustainability in Perspective</a></td><td>Nederlands</td><td>5</td><td>14</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>WBEE17003</td><td><a href="/ocasys/rechten/vak/show?module=77850">Sustainable Contributions to Society</a></td><td>Nederlands</td><td>15</td><td>40</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77848"><b>Global Challenges</b></a></td><td align="right"><b>WBEE17001</b></td></tr><tr><td align="justify" colspan="3">Deze cursus is een voorbeeld van activerend onderwijs, waarin je zelf bijdraagt aan het ontwerpen van een duurzame toekomst. Naast een combinatie van hoor- en werkcolleges speel je een interactieve management game in een multidisciplinaire context. Aan de hand van het geleerde ontwerp je haalbare oplossingen voor mondiale duurzaamheidsproblemen. Zo ontdek je hoe een innovatieve bijdrage kunt leveren aan deze veranderende wereld. <br/><br/>In het vak Global Challenges maak je kennis met de basisprincipes van beleid, innovatie en management. Je leert de natuurwetenschappelijk achtergrond van milieuproblemen en duurzaamheid (zoals energieproblematiek, consumptiepatronen, grondstoffenbeheer, ketenbeheer, etc.), de sociaal-culturele aspecten (denk aan de rol van beleid en technologie, de rol van lifestyle, ethiek, etc.) en de sociaaleconomische aspecten (bijvoorbeeld gedragssturing middels belastingen of subsidies) van duurzaamheid. De cursus worden verzorgd door een breed team van docenten van zowel de faculteit Science and Engineering als daarbuiten. Daarnaast nodigen we gastdocenten uit de praktijk uit, om te illustreren hoe vernieuwing en verandering daadwerkelijk vorm gegeven wordt. <br/><br/>Het eindcijfer op de cursus is opgebouwd uit een cijfer voor de game (groepscijfer) en je cijfer op het tentamen. Gelijktijdig aan de cursus Global Challenges schrijf je een essay over een zelfgekozen duurzaamheidsonderwerp (zie Sustainability in Perspective).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9328">drs. A.J. Abma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1618">drs. M.R. Berger</a><a href="/ocasys/rug/vak/viewtutor?tutor=3184">drs. S. Grooters</a><a href="/ocasys/rug/vak/viewtutor?tutor=2965">dr. H.J. van der Windt</a><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst (S), Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Presentatie (P), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Maximaal 40 studenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77849"><b>Sustainability in Perspective</b></a></td><td align="right"><b>WBEE17002</b></td></tr><tr><td align="justify" colspan="3">De cursus Sustainability in Perspective biedt de mogelijkheid om een duurzaamheidsonderwerp vanuit je eigen expertise zelfstandig uit te werken. Uiteraard besteedt je aandacht aan de geleerde duurzaamheids-aspecten en plaatst deze in het multidisciplinaire perspectief. Je doet dit door middel van een paper, waarbij je wordt begeleid door één van de stafleden. Daarnaast ontvang je extra feedback van je medestudenten via peer-review.  <br/> <br/>NB. Deze cursus kun je alleen volgen in combinatie met de cursus Global Challenges van minorpakket FPI 1a.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9328">drs. A.J. Abma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1618">drs. M.R. Berger</a><a href="/ocasys/rug/vak/viewtutor?tutor=3184">drs. S. Grooters</a><a href="/ocasys/rug/vak/viewtutor?tutor=2965">dr. H.J. van der Windt</a><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Opdracht (ASM)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Dit paper kan alleen gedaan worden in combinatie met de cursus Global Challenges</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This minor will be taught in Dutch in 2017 and switches to English in 2018</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77850"><b>Sustainable Contributions to Society</b></a></td><td align="right"><b>WBEE17003</b></td></tr><tr><td align="justify" colspan="3">Het vak Sustainable Contributions to Society bestaat uit een groot project uit de praktijk. Je werkt in een multidisciplinaire groep aan een duurzaamheidsvraagstuk uit de praktijk. Middels verschillende workshops waarin diverse onderzoeksmethoden, maar ook beleids- en innovatie-aspecten aan bod zullen komen, werk je toe naar een integraal eindrapport. Gedurende het project spreek je met actoren en stakeholders vanuit de maatschappij. De bevindingen van je project presenteer je tijdens een ronde-tafel sessie aan geïnterviewde stakeholders en experts uit het veld. Daarnaast schrijf je een rapport over het onderwerp. Voor een overzicht van de projecten van voorgaande jaren, zie: www.rug.nl/fse/fpi</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9328">drs. A.J. Abma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1618">drs. M.R. Berger</a><a href="/ocasys/rug/vak/viewtutor?tutor=3184">drs. S. Grooters</a><a href="/ocasys/rug/vak/viewtutor?tutor=2965">dr. H.J. van der Windt</a><a href="/ocasys/rug/vak/viewtutor?tutor=7429"> J. Zevenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst (S), Opdracht (ASM), Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST), Presentatie (P), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Minorpakket FPI 1a: Global Challenges en Sustainability in Perspective</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Maximaal 40 studenten</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

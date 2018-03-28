@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4900&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4900"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4900">Informatie over   Verdieping - Letteren </a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>  Verdieping - Letteren </b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Honours Programma Faculteit der Letteren)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>HCLE10305</td><td><a href="/ocasys/rechten/vak/show?module=77555">Power of Words</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">De <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) is in zijn geheel verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (Honours Programma Faculteit der Letteren)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>keuze</td><td>HCLE21305</td><td><a href="/ocasys/rechten/vak/show?module=77599">Fear of rhetoric or rhetoric of fear</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>HCLE21405</td><td><a href="/ocasys/rechten/vak/show?module=78544">Introduction to the humanities</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester I b</td><td>keuze</td><td>HCLE20805</td><td><a href="/ocasys/rechten/vak/show?module=77567">Uses of Narrative</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuze</td><td>HCLE20405</td><td><a href="/ocasys/rechten/vak/show?module=77527">Man, Space and Ritual Places</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>HCLE20705</td><td><a href="/ocasys/rechten/vak/show?module=77566">Nature versus Nurture in Language</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>keuze</td><td>HCLE21105</td><td><a href="/ocasys/rechten/vak/show?module=77632">History of Ideals about Life</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Studenten dienen 2 keuzemodules te volgen in het tweede jaar voor totaal 10 ECTS.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Honours Programma Faculteit der Letteren)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCLE30205</td><td><a href="/ocasys/rechten/vak/show?module=77479">Verzwaring BA-scriptie</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>HCLE30105</td><td><a href="/ocasys/rechten/vak/show?module=77423">Research tutorial</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>keuzegroep <b>B</b></td><td>HCLE21305</td><td><a href="/ocasys/rechten/vak/show?module=77599">Fear of rhetoric or rhetoric of fear</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>HCLE21405</td><td><a href="/ocasys/rechten/vak/show?module=78544">Introduction to the humanities</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>keuzegroep <b>B</b></td><td>HCLE20805</td><td><a href="/ocasys/rechten/vak/show?module=77567">Uses of Narrative</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor">semester II a</td><td>keuzegroep <b>B</b></td><td>HCLE20405</td><td><a href="/ocasys/rechten/vak/show?module=77527">Man, Space and Ritual Places</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>HCLE20705</td><td><a href="/ocasys/rechten/vak/show?module=77566">Nature versus Nurture in Language</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>keuzegroep <b>B</b></td><td>HCLE21105</td><td><a href="/ocasys/rechten/vak/show?module=77632">History of Ideals about Life</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Er moet een module gekozen worden uit groep A of groep B.<br/><br/>De <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) is in zijn geheel verplicht.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Honours Research Course)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCLE30110</td><td><a href="/ocasys/rechten/vak/show?module=77564">Research tutorial (extended)</a></td><td>Engels en Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCLE30205</td><td><a href="/ocasys/rechten/vak/show?module=77479">Verzwaring BA-scriptie</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Het Honours Research track wordt niet meer aangeboden aan nieuwe studenten. Studenten die in dit track zitten kunnen het wel afronden.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77599"><b>Fear of rhetoric or rhetoric of fear</b></a></td><td align="right"><b>HCLE21305</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6847">dr. J. Olthof</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6847">dr. J. Olthof</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77632"><b>History of Ideals about Life</b></a></td><td align="right"><b>HCLE21105</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4627">dr. B.S. Hellemans</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Werkcolleges, Workshop(s)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Individuele beoordeling, Paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78544"><b>Introduction to the humanities</b></a></td><td align="right"><b>HCLE21405</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4855">drs. E.M. Feringa</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=63">prof. dr. M.G.J. Duijvendak</a><a href="/ocasys/rug/vak/viewtutor?tutor=469">dr. S. van der Poel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Discussiebijeenkomsten, Hoor- en werkcolleges, Praktische werkvormen</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Opdracht(en), Presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77527"><b>Man, Space and Ritual Places</b></a></td><td align="right"><b>HCLE20405</b></td></tr><tr><td align="justify" colspan="3">In deze cursus richten wij ons op de gecreëerde omgeving van rituele plaatsen en de definitie ervan. We verdiepen ons in de vraag hoe in het verre en meer recente verleden rituele plaatsen ontstonden en met welke middelen betekenissen werden gegenereerd. Ofwel: welke rol hadden hierin architectuur, sculptuur, schilderkunst en toegepaste kunst? Welke plattegronden en vormentaal werden gehanteerd in de architectuur en stedenbouw en welke stijl- en beeldmotieven in de beeldhouwkunst, schilderkunst en toegepaste kunst. Welke tradities ontwikkelden zich hierbinnen en van welke vernieuwingen was er sprake? De definiëring, de vormgeving en de ruimtelijke organisatie van rituele plaatsen zal in deze colleges het concrete uitgangspunt vormen.<br/>Ons doel is te onderzoeken wat deze door mensen gecreëerde omgevingen ons te vertellen hebben over hun drijfveren, bedoelingen en overtuigingen, zowel die van de makers zelf, als die van groepen en instanties daar weer achter. Hiermee leert de studenten om bewust te reflecteren op de steeds weerkerende behoefte van de mensen om hun waarden en overtuigingen gerepresenteerd te zien in materieel vormgegeven entourages van architectuur, beeldhouwkunst, schilderkunst, toegepaste kunst en design.<br/>Dit doel wordt bereikt door ons te richten op een reeks van chronologische ijkpunten in de West Europese Kunstgeschiedenis maar ook in onze directe omgeving. Tijdens deze cursus zullen drie  excursies worden georganiseerd in Groningen: naar de Martini kerk, de synagoge en een moskee. In een afsluitende paper reflecteert de student over het concept ‘rituele ruimte’ en demonstreert hij/zij de aangeleerde vaardigheden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=165">dr. E. van 't Lindenhout</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=165">dr. E. van 't Lindenhout</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Excursie(s), Hoorcolleges, Workshop(s)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor studenten van de Faculteut der Letteren.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De colleges worden in het Nederlands gegeven. Met een passieve kennis van het Nederlands zijn de colleges en excursies goed te volgen voor studenten uit het buitenland. De opdrachten mogen in het Engels worden gemaakt.<br/>De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77566"><b>Nature versus Nurture in Language</b></a></td><td align="right"><b>HCLE20705</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=370">dr. A.M.H. van Hout</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=370">dr. A.M.H. van Hout</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges, Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Essay, Presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to students of the faculty of Arts.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">7x3 hours seminars.<br/>The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77436"><b>Pick Your Own-talent Programma</b></a></td><td align="right"><b>HCPCLPYOT</b></td></tr><tr><td align="justify" colspan="3">In het Bachelor Honours programma besteden we gedurende het gehele traject aandacht aan talentontwikkeling. Het Honours College vindt het belangrijk dat honoursstudenten stilstaan bij vragen als: ‘wie ben ik, wat kan ik en wat wil ik?’. Deze vragen lopen als een rode draad door het Pick Your Own-talent programma.<br/><br/>--Opbouw Pick Your Own-talent programma--<br/><br/>Jaar 1 Welcoming Ceremony: gezamenlijke start van het Bachelor Honours programma<br/><br/>Tijdens de openingsceremonie komen alle nieuwe honoursstudenten bij elkaar. Elk jaar wordt er een aansprekende en inspirerende gastspreker uitgenodigd. Hij of zij vertelt over zijn of haar talent, carrière en over de keuzes die hij of zij heeft gemaakt om zijn of haar talenten ten volle te benutten. <br/><br/>Jaar 2 Kick-off: gezamenlijke start van het tweede jaar<br/><br/>Het tweede academische jaar start met de Kick-off. Tijdens deze avond inspireert een talentvolle spreker de tweedejaars honoursstudenten door hen na te laten denken over vragen als ‘wie ben ik, wat kan ik en wat wil ik’ en ‘hoe kan ik dat bereiken?’. Ieder jaar wordt er een andere inspirerende spreker uitgenodigd. Deze avond vindt dit jaar plaats op woensdag 6 september 2017 en is verplicht voor iedere tweedejaars honoursstudent. <br/><br/>Jaar 2 Plenaire avond naar keuze: Academia of Entrepreneurship (keuzegroep E)<br/><br/>Vervolgens wordt de blik gericht op het werkveld. In dit onderdeel oriënteer je je op werken in de wetenschap of op Entrepreneurship (ondernemen met al je talenten in de breedste zin van het woord). Waar zou je na je studie willen werken? Ambieer je een carrière in de wetenschap of weet je al dat je in het bedrijfsleven of de publieke sector aan de slag wilt? Misschien weet je het nog niet. Om je al halverwege je bachelor studie in aanraking te brengen met de Academia en met Entrepreneurship, worden er twee plenaire avonden georganiseerd met een interactief karakter. Tijdens deze twee avonden staat telkens één van de twee thema’s centraal. Deze avonden worden georganiseerd op respectievelijk dinsdag 14 november 2016 en op donderdag 8 februari 2018. Het deelnemen aan één van deze twee avonden is verplicht voor iedere tweedejaars honoursstudent.<br/><br/>Jaar 2 Workshops (keuzegroep F)<br/><br/>In het tweede semester van het tweede jaar ga je zelf aan de slag met jouw potentiële talent. Er zijn verschillende workshops met thema’s zoals ‘passie’, ‘wilskracht’, ‘pick your own time’, ‘omgaan met keuzestress’, ‘sturen of coachen’ en ‘succes en ambitie’. De workshops worden zowel in het Nederlands als in het Engels aangeboden. Het doel van de workshop is dat je kennis maakt met het betreffende onderwerp en hiermee aan de slag gaat. Tijdens de startbijeenkomst van de workshop worden verschillende aspecten geïntroduceerd. Gedurende een periode van één of twee weken neem je jouw talent onder de loep en probeer je de opgedane kennis in de praktijk te brengen. De workshop wordt afgesloten met een slotbijeenkomst, waarin je reflecteert op wat je hebt geleerd. Bovendien kijk je vooruit naar hoe je het thema kunt gebruiken in jouw studiecarrière of zelfs daarna. Iedere workshop bestaat uit twee sessies. De workshops worden in semester II gegeven. Het volgen van één workshop is verplicht voor ieder tweedejaars honoursstudent. <br/><br/>Jaar 3 Workshops (keuzegroep I)<br/><br/>In het derde jaar wordt de laatste stap in het PYO-t programma genomen en sta je gericht stil bij ‘wat wil ik’. Welke carrière ambieer je? Je kunt kiezen uit verschillende thema’s en ontwikkelt een loopbaanprofiel of verkent de arbeidsmarkt in relatie tot jouw ambitie. Ook kun je bijvoorbeeld onderzoeken of je een onderneming op wilt starten. Andere thema’s zijn o.a. 'bouw aan je persoonlijke merk' en 'het leven als experiment'. In het derde jaar van je studie maak je al belangrijke keuzes voor jouw toekomstige carrière. De eerste stappen richting de ontwikkeling van jouw talenten zijn gezet, wat zijn jouw volgende stappen? Welke talenten kun jij in de toekomst aanwenden om al jouw kennis en kunde optimaal in te kunnen zetten ten behoeve van wetenschap, maatschappij of elders. Iedere workshop bestaat uit twee sessies. De workshops worden het gehele derde jaar aangeboden, dus je kunt òf in semester I òf in semester II een workshop volgen. Kijk dus goed naar de planning van bijvoorbeeld een buitenlandverblijf, het schrijven van je scriptie, etc. Het volgen van één workshop is verplicht voor iedere derdejaars honoursstudent. <br/><br/>Pick Your Own-talent programma op een rij:<br/><br/>Jaar 1 <br/>• Welcoming Ceremony<br/><br/>Jaar 2 <br/>• Kick off<br/>• Academia of Entrepreneurship <br/>• Workshop jaar 2 <br/><br/>Jaar 3 <br/>• Workshop jaar 3<br/><br/>Eén ECTS wordt toegekend als alle PYO-t onderdelen van jaar 1, 2 en 3 voldoende zijn afgerond.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Hoorcolleges, Praktische werkvormen, Various styles of action learning</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">1</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77555"><b>Power of Words</b></a></td><td align="right"><b>HCLE10305</b></td></tr><tr><td align="justify" colspan="3">Bij het zoeken naar het gelijk kunnen argumenten en retorische middelen bondgenoot en vijand zijn. Inzicht in argumentatieleer en retorica zijn daarom voor van groot praktisch belang. Waar welsprekendheid in vroeger tijden was voorbehouden aan sociale, politieke en  culturele elites, zijn tegenwoordig alle burgers van informatiesamenlevingen gebaat bij analytische en productieve vermogens die aan hun weerbaarheid en wendbaarheid kunnen bijdragen. In dit college leren studenten wetenschappelijk gefundeerde analyses te maken van redelijke en onredelijke pogingen tot overtuigen en doen ze experimenteel onderzoek naar argumentatie en persuasie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4855">drs. E.M. Feringa</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6847">dr. J. Olthof</a><a href="/ocasys/rug/vak/viewtutor?tutor=349">dr. R.G.P. Peters</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen open voor HC FdL-studenten.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77423"><b>Research tutorial</b></a></td><td align="right"><b>HCLE30105</b></td></tr><tr><td align="justify" colspan="3">In het kader van dit tutorial doet de student ervaring op in het uitvoeren van onderzoekstaken in de meest concrete zin, namelijk door mee te werken aan het onderzoek voor een wetenschappelijke publicatie van de begeleider. De werkzaamheden kunnen bestaan uit het verrichten van literatuuronderzoek, het verzamelen, bewerken, interpreteren van data/gegevens en (alleen in combinatie met een van de voornoemde werkzaamheden) het verrichten van zuiver bibliografische en redactionele werkzaamheden ten behoeve van de publicatie. De student spreekt vooraf met zijn/haar begeleider af waaruit de werkzaamheden bestaan. Dit wordt schriftelijk vastgelegd. De duur van het onderzoekstutorial is maximaal één semester. Ter afsluiting schrijft de student een reflectierapport.<br/><br/>Het tutorial wordt beoordeeld met een cijfer.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4855">drs. E.M. Feringa</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay, Paper, Verslag(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Propedeuse + minimal 55 ECTS post-propedeuse + minimaal 20 ECTS honours programma (jaar 1 en 2).<br/>Alleen open voor studenten van de Faculteit der Letteren.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">In plaats van dit onderzoekstutorial kan de student ook kiezen voor een derde onderzoeksmodule uit het verdiepende programma van Honours College Letteren.<br/>De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=77564"><b>Research tutorial (extended)</b></a></td><td align="right"><b>HCLE30110</b></td></tr><tr><td align="justify" colspan="3">In het kader van dit tutorial doet de student ervaring op in het zelfstandig opzetten en uitvoeren van een wetenschappelijk onderzoek op het terrein van een van de thema’s van de eigen BA opleiding of eigen faculteit. Dit onderzoek is probleem gestuurd, d.w.z vanuit een project of lopend wetenschappelijk onderzoek van een staflid, doet een student een klein leeronderzoek. Het betrokken staflid treedt op als begeleider.  Het onderzoek kan leiden tot een WIKI, een Blog, een videopresentatie, een (in beginsel publicabel) artikel, een bijdrage aan een congres, etc..<br/>Het tutorial kent de volgende drie eindprodukten:<br/> 1. onderzoekspaper (incl Wiki etc);<br/> 2. reflectierapport (waarin de student middels een sterkte/zwakte analyse, zijn/haar eigen functioneren analyseert);<br/> 3. presentatie (van het onderzoek tijdens de Petrus Camper Festival).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4855">drs. E.M. Feringa</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankleijk voor studenten van de Faculteit der Letteren.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=77567"><b>Uses of Narrative</b></a></td><td align="right"><b>HCLE20805</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=341">prof. dr. E.J. Korthals Altes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Discussiebijeenkomsten, Essay, Groepsbijeenkomst(en) en -onderzoeksopdracht(en), Hoor- en werkcolleges, Individuele bijeenkomsten, Presentatie(s), Werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Essay, Groepsopdracht(en), Individuele beoordeling, Individuele opdracht(en), Presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77479"><b>Verzwaring BA-scriptie</b></a></td><td align="right"><b>HCLE30205</b></td></tr><tr><td align="justify" colspan="3">Met deze module verzwaart de student de BA-scriptie met 5 ECTS (bovenop de reguliere omvang van 10 ECTS). De student spreekt vooraf met zijn/haar scriptiebegeleider af waaruit de verzwaring van de BA-scriptie zal bestaan. Zij leggen hun afspraken schriftelijk vast. De verzwaring kan zowel verdiepend als verbredend van karakter zijn en betrekking hebben op de vraagstelling (complexiteit) de te bestuderen literatuurof de te verzamelen gegevens (of een combinatie van deze). De verzwaring kan leiden tot een grotere scriptieomvang, maar ze dient daar niet in de eerste plaats in gezocht worden. De verzwaring kan bijvoorbeeld bestaan uit het omwerken van de scriptie tot een publicabel artikel.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4855">drs. E.M. Feringa</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Propedeuse + minimaal 55 ECTS post-propedeuse + minimaal 20 ECTS honours programma (jaar 1 en 2).<br/>Alleen toegankelijk voor studenten van de Faculteit der Letteren.<br/>Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

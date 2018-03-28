@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3231&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3231"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3231">Informatie over MSc Applied mathematics</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>MSc Applied mathematics</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Computational Mathematics</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>WISTAGE15</td><td><a href="/ocasys/rechten/vak/show?module=76168">Internship Applied Mathematics</a></td><td>Engels</td><td>15</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WIAFST35EC</td><td><a href="/ocasys/rechten/vak/show?module=76273">Master Research Project in Applied Mathematics</a></td><td>Engels</td><td>35</td><td></td></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>XDUMMY4</td><td><a href="/ocasys/rechten/vak/show?module=76729">Numerical Linear Algebra (MasterMath)</a></td><td>Engels</td><td>8</td><td></td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>WMMA16002</td><td><a href="/ocasys/rechten/vak/show?module=76577">Mathematics and its Environment</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>WMMA16000</td><td><a href="/ocasys/rechten/vak/show?module=76278">Complexity and Networks</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WICFD-03</td><td><a href="/ocasys/rechten/vak/show?module=76299">Computational fluid dynamics</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>XDUMMY1</td><td><a href="/ocasys/rechten/vak/show?module=76279">Num. Bifurcation Analysis of Large Scale Syst (MM,18/19)</a></td><td>Engels</td><td>8</td><td></td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>WMMA16001</td><td><a href="/ocasys/rechten/vak/show?module=76143">Mathematical Modeling Colloquium</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>WMMA17001</td><td><a href="/ocasys/rechten/vak/show?module=77780">Modeling of Fluid Flow (17/18)</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">The track Computational Mathematics comprises of 120 ects:<br/>- 15 ects compulosry courses, Complexity and Networks, Mathematics Modelling Colloquium, Mathematics and its Environment, joinlty for all MSc Mathematics and Applied Mathematics students.<br/>- (at least) 25 ects track specific courses: the four compulsory courses in the table above.<br/>- (at least) 15 ects of Guided Choice: to be chosen from the compulsory courses of any of the tracks in Mathematics and Applied Mathematics or the Mastermath programme. In addition, students can follow the Guided Choice Computational Mathematics in the table below.<br/>- (at most) 15 ects of Free Choice: free choice out of modules on Master level relevant for the master Applied Mathematics (at the discretion of the Board of Examiners)<br/>- 35 ects Research project in the specialization track<br/>- 15 ects Internship in Applied Mathematics<br/></p></td></tr><tr><td class="yearHeader" colspan="8">» Computational Mathematics: Guided Choice</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>keuze</td><td>NACP-11</td><td><a href="/ocasys/rechten/vak/show?module=76625">Computational physics</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>INMMS-08</td><td><a href="/ocasys/rechten/vak/show?module=76961">Modelling and Simulation</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester I b</td><td>keuze</td><td>RC-C++2</td><td><a href="/ocasys/rechten/vak/show?module=76919">Programming in C/C++ (part II)</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuze</td><td>INMSV-08</td><td><a href="/ocasys/rechten/vak/show?module=76598">Scientific Visualization</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In addition to the above local courses  relevant courses from the Mastermath programme, labelled with Num Wisk., see elo.mastermath.nl (in 2017-2018: Parallel Algorithms, Introduction to Numerical Bifurcation Analysis of ODEs and Maps, in addition in 2017-2018 Applied Finite Elements (labeled 4TU)) can be chosen</p></td></tr><tr><td class="yearHeader" colspan="8">» Systems and Control</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>WMMA16005</td><td><a href="/ocasys/rechten/vak/show?module=76149">Convex Optimization (18/19)</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>WISTAGE15</td><td><a href="/ocasys/rechten/vak/show?module=76168">Internship Applied Mathematics</a></td><td>Engels</td><td>15</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WIAFST35EC</td><td><a href="/ocasys/rechten/vak/show?module=76273">Master Research Project in Applied Mathematics</a></td><td>Engels</td><td>35</td><td></td></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>XDUMMY5</td><td><a href="/ocasys/rechten/vak/show?module=76360">Systems and Control (Mastermath)</a></td><td>Engels</td><td>6</td><td></td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>WMMA16002</td><td><a href="/ocasys/rechten/vak/show?module=76577">Mathematics and its Environment</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>WIMI-10</td><td><a href="/ocasys/rechten/vak/show?module=76327">Modeling and identification (17/18)</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>WMMA16000</td><td><a href="/ocasys/rechten/vak/show?module=76278">Complexity and Networks</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>WIMCCNES12</td><td><a href="/ocasys/rechten/vak/show?module=76771">Modeling and Control of Complex Nonlinear Engineering System</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>WIRC-09</td><td><a href="/ocasys/rechten/vak/show?module=76743">Robust control</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>WMMA16001</td><td><a href="/ocasys/rechten/vak/show?module=76143">Mathematical Modeling Colloquium</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">The track Systems and Control comprises of 120 ects:<br/>- 15 ects compulosry courses, Complexity and Networks, Mathematics Modelling Colloquium, Mathematics and its Environment, joinlty for all MSc Mathematics and Applied Mathematics students.<br/>- (at least) 25 ects track specific courses: the five compulsory courses in the table above.<br/>- (at least) 15 ects of Guided Choice: to be chosen from the compulsory courses of any of the tracks in Mathematics and Applied Mathematics or the Mastermath Programme. In addition, students can follow the Guided Choice Systems &amp; Control in the table below.<br/>- (at most) 15 ects of Free Choice: free choice out of modules on Master level relevant for the master Applied Mathematics (at the discretion of the Board of Examiners)<br/>- 35 ects Research project in the specialization track<br/>- 15 ects Internship in Applied Mathematics<br/><br/></p></td></tr><tr><td class="yearHeader" colspan="8">» Systems and Control: Guided Choice</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>keuze</td><td>TBROB-12</td><td><a href="/ocasys/rechten/vak/show?module=76780">Robotics for IEM</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>keuze</td><td>XDUMMY2</td><td><a href="/ocasys/rechten/vak/show?module=78660">Dynamics of Networks (MasterMath, 17/18)</a></td><td>Engels</td><td>6</td><td></td></tr><tr><td class="nocolor">semester II a</td><td>keuze</td><td>WMIE14007</td><td><a href="/ocasys/rechten/vak/show?module=76241">Advanced Digital and Hybrid Control Systems</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>TBACSS-11</td><td><a href="/ocasys/rechten/vak/show?module=76461">Analysis and control of smart systems</a></td><td>Engels</td><td>5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=76241"><b>Advanced Digital and Hybrid Control Systems</b></a></td><td align="right"><b>WMIE14007</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9027">dr. P. Tesi</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9027">dr. P. Tesi</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=76461"><b>Analysis and control of smart systems</b></a></td><td align="right"><b>TBACSS-11</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6089">prof. dr. C. De Persis</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6089">prof. dr. C. De Persis</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=76278"><b>Complexity and Networks</b></a></td><td align="right"><b>WMMA16000</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2378">prof. dr. M.K. Camlibel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2378">prof. dr. M.K. Camlibel</a><a href="/ocasys/rug/vak/viewtutor?tutor=2379">prof. dr. ir. M. Cao</a><a href="/ocasys/rug/vak/viewtutor?tutor=2424"> K. Efstathiou, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=9811"> D. Rodrigues Valesin, PhD.</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=76299"><b>Computational fluid dynamics</b></a></td><td align="right"><b>WICFD-03</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2645">dr. ir. R. Luppes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2645">dr. ir. R. Luppes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=76625"><b>Computational physics</b></a></td><td align="right"><b>NACP-11</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2755">prof. dr. H.A. de Raedt</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2755">prof. dr. H.A. de Raedt</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=76149"><b>Convex Optimization (18/19)</b></a></td><td align="right"><b>WMMA16005</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2378">prof. dr. M.K. Camlibel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2378">prof. dr. M.K. Camlibel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE), Opdracht (AST)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=78660"><b>Dynamics of Networks (MasterMath, 17/18)</b></a></td><td align="right"><b>XDUMMY2</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=76168"><b>Internship Applied Mathematics</b></a></td><td align="right"><b>WISTAGE15</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Presentatie (P), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=76273"><b>Master Research Project in Applied Mathematics</b></a></td><td align="right"><b>WIAFST35EC</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Presentatie (P), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">35</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=76143"><b>Mathematical Modeling Colloquium</b></a></td><td align="right"><b>WMMA16001</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2935">prof. dr. H. Waalkens</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11393">dr. ir. B. Besselink</a><a href="/ocasys/rug/vak/viewtutor?tutor=9811"> D. Rodrigues Valesin, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=2935">prof. dr. H. Waalkens</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst (S), Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Presentatie (P)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=76577"><b>Mathematics and its Environment</b></a></td><td align="right"><b>WMMA16002</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6647">dr. A.F.B. Dijkstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6647">dr. A.F.B. Dijkstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=2884">prof. dr. H.L. Trentelman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Opdracht (ASM), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST), Presentatie (P), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=76771"><b>Modeling and Control of Complex Nonlinear Engineering System</b></a></td><td align="right"><b>WIMCCNES12</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2787">prof. dr. A.J. van der Schaft</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2791">prof. dr. ir. J.M.A. Scherpen</a><a href="/ocasys/rug/vak/viewtutor?tutor=2787">prof. dr. A.J. van der Schaft</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Werkcollege (T), Hoorcollege (LC), Opdracht (ASM)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=76327"><b>Modeling and identification (17/18)</b></a></td><td align="right"><b>WIMI-10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11393">dr. ir. B. Besselink</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11393">dr. ir. B. Besselink</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE), Opdracht (AST)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=77780"><b>Modeling of Fluid Flow (17/18)</b></a></td><td align="right"><b>WMMA17001</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12180">dr. C.A. Bertoglio</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12180">dr. C.A. Bertoglio</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="15"></a>15</b></td><td><a href="/ocasys/rechten/vak/show?module=76961"><b>Modelling and Simulation</b></a></td><td align="right"><b>INMMS-08</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1188">prof. dr. M. Biehl</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1188">prof. dr. M. Biehl</a><a href="/ocasys/rug/vak/viewtutor?tutor=2961">dr. M.H.F. Wilkinson</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="16"></a>16</b></td><td><a href="/ocasys/rechten/vak/show?module=76279"><b>Num. Bifurcation Analysis of Large Scale Syst (MM,18/19)</b></a></td><td align="right"><b>XDUMMY1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2974">dr. ir. F.W. Wubs</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="17"></a>17</b></td><td><a href="/ocasys/rechten/vak/show?module=76729"><b>Numerical Linear Algebra (MasterMath)</b></a></td><td align="right"><b>XDUMMY4</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="18"></a>18</b></td><td><a href="/ocasys/rechten/vak/show?module=76919"><b>Programming in C/C++ (part II)</b></a></td><td align="right"><b>RC-C++2</b></td></tr><tr><td align="justify" colspan="3">voor nadere informatie zie<br/><a href="http://www.icce.rug.nl/edu/2/studiegids.shtml" target="_blank">Programming in C/C++ </a></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10548"> J. Bokma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1081">dr. F.B. Brokken</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">studenten dienen zich in te schrijven op <a href="http://www.icce.rug.nl/edu/2/register.shtml" target="_blank">http://www.icce.rug.nl/edu/2/register.shtml</a>, niet op ProgRESS.WWW</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="19"></a>19</b></td><td><a href="/ocasys/rechten/vak/show?module=76780"><b>Robotics for IEM</b></a></td><td align="right"><b>TBROB-12</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2379">prof. dr. ir. M. Cao</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2379">prof. dr. ir. M. Cao</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen (WE), Verslag (R)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="20"></a>20</b></td><td><a href="/ocasys/rechten/vak/show?module=76743"><b>Robust control</b></a></td><td align="right"><b>WIRC-09</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2884">prof. dr. H.L. Trentelman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2884">prof. dr. H.L. Trentelman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Opdracht (ASM), Hoorcollege (LC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="21"></a>21</b></td><td><a href="/ocasys/rechten/vak/show?module=76598"><b>Scientific Visualization</b></a></td><td align="right"><b>INMSV-08</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2861">prof. dr. A.C. Telea</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2861">prof. dr. A.C. Telea</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Practisch werk (PRC)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Practisch werk (PR), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="22"></a>22</b></td><td><a href="/ocasys/rechten/vak/show?module=76360"><b>Systems and Control (Mastermath)</b></a></td><td align="right"><b>XDUMMY5</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

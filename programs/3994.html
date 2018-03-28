@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=3994&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D3994"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=3994">Informatie over Ma Interdisciplinaire onderzoekscolleges</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Interdisciplinaire onderzoekscolleges</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>LLS014M10</td><td><a href="/ocasys/rechten/vak/show?module=74592">Van schrijver naar lezer: Edities</a></td><td>Engels en Nederlands</td><td>10</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LLS048M10</td><td><a href="/ocasys/rechten/vak/show?module=73932">Literature and Conflict in the 20th Cen.</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LLS050M10</td><td><a href="/ocasys/rechten/vak/show?module=78412">Migrant and Minority Writers</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LLS052M10</td><td><a href="/ocasys/rechten/vak/show?module=78414">Biography and History</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LUX020M10</td><td><a href="/ocasys/rechten/vak/show?module=74543">Res. seminar III: Dimensions of Citizens</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr><td class="nocolor">semester II</td><td>keuze</td><td>LLS047M10</td><td><a href="/ocasys/rechten/vak/show?module=73847">The Detective Story</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>LLS049M10</td><td><a href="/ocasys/rechten/vak/show?module=78411">Mapping the Present</a></td><td>Engels</td><td>10</td><td>3</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>LLS051M10</td><td><a href="/ocasys/rechten/vak/show?module=78413">Passions of the Soul</a></td><td>Engels</td><td>10</td><td>3</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78414"><b>Biography and History</b></a></td><td align="right"><b>LLS052M10</b></td></tr><tr><td align="justify" colspan="3">De biografie kan zich steeds meer zowel binnen als buiten de wetenschap verheugen op grote belangstelling. Hoe komt dat en welke rol spelen biografieën precies in het academische, literaire en publieke debat?<br/>In deze collegereeks wordt een introductie gegeven in diverse theoretische benaderingen die binnen de Biografie Studies te onderscheiden zijn.Van studenten wordt verwacht dat ze de theoretische literatuur bestuderen en presenteren, evenals in overleg te kiezen biografieën en biografische studies. Hoewel het college een sterk interdisciplinair karakter heeft, zal het accent op de historische benadering liggen. Van de studenten wordt verwacht dat ze een paper schrijven gebaseerd op een van de aangereikte onderwerpen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=318">prof. dr. J.W. Renders</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=318">prof. dr. J.W. Renders</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie, schriftelijke opdracht(en), werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">- Paper (60%), presentatie (20%) en aandeel in college en referentschap (20%). <br/>- Aanwezigheidsplicht van 80% minimaal. Studenten worden geacht actief te participeren in werkcolleges en opdrachten buiten de colleges tijdig en correct uit te voeren.<br/>Deze module staat open voor zowel historisch als modern letterkundigen, historici en classici.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73932"><b>Literature and Conflict in the 20th Cen.</b></a></td><td align="right"><b>LLS048M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11287">prof. dr. P. Valdivia Martin</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10732">dr. V. Alexander</a><a href="/ocasys/rug/vak/viewtutor?tutor=9467">dr. F.J. Lippert</a><a href="/ocasys/rug/vak/viewtutor?tutor=11287">prof. dr. P. Valdivia Martin</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=78411"><b>Mapping the Present</b></a></td><td align="right"><b>LLS049M10</b></td></tr><tr><td align="justify" colspan="3">This module will focus on contemporary representations of space within and beyond Europe, across a variety of media, ranging from literature to film, photography, and computer games. By examining a corpus of representative works from the last two decades, our discussion will encompass global networks , migration routes, neglected suburbs, and militarized border zones. Space will be considered both as a theme and with regard to the stylistic and narrative features of the selected works, also in relation to the current debates on the ‘Return of the Real’ and the end of postmodernism.<br/>The theoretical framework of the course will include: 1) Key thinkers associated to the ‘spatial turn’ in the humanities and the social sciences (Foucault, Lefebvre, De Certeau, Soja); 2) Eco- and Geo-criticism (Heise, Westphal); 3) Spectrality and spectro-geography; 4) Mobility and migration studies;  5) The return of the Real in contemporary literature, philosophy, and visual culture (Foster, Žižek, Ferraris, etc.).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10732">dr. V. Alexander</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10732">dr. V. Alexander</a><a href="/ocasys/rug/vak/viewtutor?tutor=10729"> A. Godioli, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en), werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor obtained and admission to the MA programme (check the degree programme’s Teaching and Examination Regulations</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars. Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=78412"><b>Migrant and Minority Writers</b></a></td><td align="right"><b>LLS050M10</b></td></tr><tr><td align="justify" colspan="3">In this course we propose to examine the theory of cultural transfer in relation to migrant writing and the notion of minority cultures. We are interested in the role of migrant and minority writers as cultural transmitters and bridge builders between cultures. We will contextualize literature of migrant authors and descendants of ‘guest workers’ that for political and/or economic reasons have migrated to or within Europe or Canada. We will also investigate to what extent literature of historical minorities can be contextualized in the same way. In order to define the notion of migrant and minority cultures and to have a critical tool-set ready, we will discuss theoretical texts that focus on different methodological approaches such as post-colonialism, hybridity, transculturality, subalternity, among others. Particular attention will be paid to the position of young post-migration writers in the literary field, and to literary and media discourse regarding urban youths and street culture values. We will examine texts written by authors that pinpointed cultural minorities in the postcolonial era mainly focusing on Canadian, French and Scandinavian cultures. As the theoretical categories partially overlap, the course will cover a variety of literary landscapes.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=409">dr. J.M.L. den Toonder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=42">dr. P. Broomans</a><a href="/ocasys/rug/vak/viewtutor?tutor=409">dr. J.M.L. den Toonder</a><a href="/ocasys/rug/vak/viewtutor?tutor=166">dr. S.I. Linn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentatie, schriftelijke opdracht(en), wekelijkse opdrachten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Completed Bachelor programme in Arts or other study relevant to this course.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">80% Compulsory attendance in seminars.<br/>Students are expected to participate actively in discussions during seminars and to duly carry out all assignments in and outside class.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78413"><b>Passions of the Soul</b></a></td><td align="right"><b>LLS051M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=432">prof. dr. B.A.M. Ramakers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=432">prof. dr. B.A.M. Ramakers</a><a href="/ocasys/rug/vak/viewtutor?tutor=227">prof. dr. C.G. Santing</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en), werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74543"><b>Res. seminar III: Dimensions of Citizens</b></a></td><td align="right"><b>LUX020M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9528">dr. S. Neuman-Stanivukovic</a><a href="/ocasys/rug/vak/viewtutor?tutor=399">dr. M.C. van der Waal</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en), werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73847"><b>The Detective Story</b></a></td><td align="right"><b>LLS047M10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=131">dr. E.C.S. Jongeneel</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=131">dr. E.C.S. Jongeneel</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">werkstuk(ken), opdrachten, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=74592"><b>Van schrijver naar lezer: Edities</b></a></td><td align="right"><b>LLS014M10</b></td></tr><tr><td align="justify" colspan="3">In deze cursus maken studenten kennis met de geschiedenis, de theorie en de praktijk van het maken van tekstedities en leren ze die te gebruiken. In de eerste helft verdiepen de studenten zich in de  geschiedenis van de editietechniek, in methoden en theorieën daarvan, gedifferentieerd naar de klassieke en de volkstalige tradities, en maken kennis met de editiepraktijk door de bestudering van uiteenlopende tekst- en bronnenuitgaven. Tijdens een bezoek aan het Huygens ING-KNAW (Amsterdam) krijgen studenten voorbeelden te zien van historische tekstedities en maken kennis met digitale editietechnieken. In het tweede deel bekwamen de studenten zich individueel of in twee- of drietallen in de editie van teksten in de taal van hun studie. Daarna leggen ze zich individueel toe op de editie van een tekst of bron (of een fragment).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=655">prof. dr. S. Corbellini</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">werkstuk(ken), presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor behaald  en toegang tot het Masterprogramma (zie hiervoor de Onderwijs- en Examenregeling van de opleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De cursus is in de eerste plaats bestemd voor classici en historisch letterkundigen, maar ook modern letterkundigen en historici zijn welkom.<br/>80 % Aanwezigheidsplicht bij werkcolleges.<br/>Studenten worden geacht actief te participeren in alle werkcolleges en alle opdrachten buiten de colleges tijdig en correct uit te voeren.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

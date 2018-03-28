@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=2539&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D2539"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=2539">Informatie over Ba Keuzevakken niet juridisch (selectie, zie toelichting)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba Keuzevakken niet juridisch (selectie, zie toelichting)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>RGASR90206</td><td><a href="/ocasys/rechten/vak/show?module=75961">Strafrechtelijke Gespreksvoering</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester I a</td><td>keuze</td><td>RGBPW00105</td><td><a href="/ocasys/rechten/vak/show?module=75681">Inleiding Politicologie</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>RGASR90205</td><td><a href="/ocasys/rechten/vak/show?module=75960">Inleiding Psychiatrie voor Juristen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester I b</td><td>keuze</td><td>RGBRF00105</td><td><a href="/ocasys/rechten/vak/show?module=75767">Denken over Democratie en Rechtsstaat</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>RGASR70105</td><td><a href="/ocasys/rechten/vak/show?module=75930">Recht en Psychologie</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGACR70405</td><td><a href="/ocasys/rechten/vak/show?module=75929">Terrorisme en terrorismebestrijding</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuze</td><td>RGARG70105</td><td><a href="/ocasys/rechten/vak/show?module=75957">Gesch. van de Europese Rechtswetenschap</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGASR90306</td><td><a href="/ocasys/rechten/vak/show?module=75964">Psychiatrie en Recht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li><b>De lijst hierboven geeft slechts een overzicht van alle niet-juridische facultaire Bachelorkeuzevakken die NIET in enige andere Ba- of Ma opleiding (optioneel)verplicht zijn opgenomen.</b> </li></ul><br/><ul><li>1-9-17: Inleiding Psychiatrie voor Juristen is verplaatst van blok 2 naar blok 1</li><li>1-9-16: Inleiding Psychiatrie voor Juristen is verplaatst van blok 1 naar blok 2</li><li>1-9-12 invoering harde knip, een aantal vakken zijn van naam en/of status veranderd, zie overgangsregeling via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li><li>1-9-11 grondige herziening van het aanbod keuzevakken -&gt; voor de gevolgen-&gt; zie overgangsregeling in Kennisbank Rechten(vervallen vakken, semesterindeling en omvang van vakken).</li></ul> <ul><li>Voor de overige facultaire vakken zie elders in Ocasys onder Rechtsgeleerdheid, en voor de mogelijkheden om deze op te voeren als keuzevak in de Bachelor, zie de Oer en <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li></ul><br/></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75767"><b>Denken over Democratie en Rechtsstaat</b></a></td><td align="right"><b>RGBRF00105</b></td></tr><tr><td align="justify" colspan="3">Al meer dan 2500 jaar is democratie en de binding van magistraten aan de wet een onderwerp dat mensen boeit. Wat onder democratie verstaan moet worden; of democratie een wenselijke regeringsvorm is; hoe democratie vorm gegeven moet worden; hoe de binding aan de wet er uit moet zien, of er grondrechten moeten zijn, wat de relatie is tussen democratie en rechtsstaat; dat zijn allemaal vragen die op zeer uiteenlopende wijzen beantwoord zijn door politieke theoretici. <br/>In het college worden aan de hand van originele teksten zowel lijnen geschetst waarlangs ideeën over democratie en rechtsstaat ontwikkeld als politieke concepten geïntroduceerd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk), schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Studenten Minor Politiek en Bestuur: geen entree-eisen.</li><li>Niet af te leggen door studenten die voor 1-9-12 het vak Rechtsfilosofie 4 (Denken over democratie) hebben gehaald.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75957"><b>Gesch. van de Europese Rechtswetenschap</b></a></td><td align="right"><b>RGARG70105</b></td></tr><tr><td align="justify" colspan="3">Het Romeinse recht heeft een belangrijke rol gespeeld in het ontstaan van een gemeenschappelijke Europese juridische cultuur. In de zesde eeuw na Chr. is het gecodificeerd door keizer Justinianus, maar pas met zijn ‘herontdekking’ in de elfde eeuw en de stichting van de middeleeuwse universiteiten werd het de grondslag van de traditie van het ‘ius commune’, een traditie die zelfs niet werd onderbroken door de codificaties van de negentiende eeuw.<br/><br/>Het vak besteedt aandacht aan de factoren die hebben bijgedragen aan de vorming van deze traditie: Over welk Europa spreken wij? Hoe zag dat Romeinse recht eruit? Wat was de rol van het canonieke recht? Wat waren de concurrenten van het Romeinse recht? De ontwikkeling van de traditie wordt vervolgd tot in het recente verleden in zeven weken waarin op de colleges ook teksten worden voorgesteld als illustratie van het betoog. <br/><br/><b>Speciale juridische kennis wordt niet vereist.</b><br/><br/><br/><br/>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1339">prof. mr. F. Brandsma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1339">prof. mr. F. Brandsma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75681"><b>Inleiding Politicologie</b></a></td><td align="right"><b>RGBPW00105</b></td></tr><tr><td align="justify" colspan="3">Politiek is het proces waarmee mensen onderhandelen en concurreren in het maken en uitvoeren van gedeelde of collectieve beslissingen. Deze cursus laat studenten kennis maken met de kernbegrippen, benaderingen en argumenten die hen in staat stellen de fundamenten, structuren en processen van politieke systemen wereldwijd succesvol te vergelijken.  Ze leren hoe democratieën en autoritaire regimes worden geanalyseerd, rekening houdend met de verschillende instituties van de overheid en de verschillende politieke culturen die van invloed zijn op de politieke ontwikkelingen en hier tegelijkertijd door worden beïnvloed.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=259">prof. dr. G. Voerman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1575">dr. H.A.M. Weyers</a><a href="/ocasys/rug/vak/viewtutor?tutor=1591">dr. N.E.H.M. Zeegers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die de propedeuse Rechtsgeleerdheid hebben behaald of het vak in de minor Politiek en Bestuur of in een goedgekeurd pre-master programma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75960"><b>Inleiding Psychiatrie voor Juristen</b></a></td><td align="right"><b>RGASR90205</b></td></tr><tr><td align="justify" colspan="3">Binnen de juridische praktijk kan men geconfronteerd worden met gedrag waarbij een psychiatrische stoornis een rol speelt. Als jurist is kennis van het gedrag nodig om de client of verdachte te kunnen begrijpen en om daar bij de bejegening rekening mee te houden. Tevens is deze kennis een vereiste om gedragsdeskundige rapportages kritisch te beoordelen. Ook is kennis van psychiatrische stoornissen een voorwaarde om zich een beeld te vormen van mogelijk toekomstig grensoverschrijdend gedrag, zoals relevant is bij procedures betreffende verplichte psychiatrische zorg. In dit college worden de belangrijkste stoornissen besproken waarmee juristen in de praktijk te maken kunnen krijgen. De nadruk ligt daarbij op de beschrijving van hoe stoornissen zich op gedragsniveau kunnen manifesteren. Het gaat om stoornissen  die gepaard kunnen gaan met grensoverschrijdend gedrag of die een gevaar kunnen inhouden voor de betrokkene zelf of voor anderen. De behandelmogelijkheden worden beknopt bespoken. Aandacht wordt gegeven aan de raakvlakken tussen de psychiatrische invalshoek en die van het recht <br/>De opzet is die van een hoorcollege.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75964"><b>Psychiatrie en Recht</b></a></td><td align="right"><b>RGASR90306</b></td></tr><tr><td align="justify" colspan="3">Dit vak geeft een inleiding in de forensische psychiatrie. Aan de orde komen de wijze waarop een rapportage pro justitia tot stand komt, de bepaling van de toerekeningsvatbaarheid, de tbs-problematiek en het optreden van psychische stoornissen gedurende detentie. Ook wordt aandacht gegeven aan risicotaxatie-instrumenten ten behoeve van de bepaling van de kans op een recidive. Daarnaast worden de uitgangspunten bij forensisch psychiatrische behandelingen besproken. Een belangrijk deel van de colleges worden besteed aan de juridische kaders van verplichte psychiatrische opnames. Zowel vanuit het strafrecht opgelegde maatregelen als ook overige toepassingen van vrijheidsbeperking en dwang in de psychiatrie, zullen gelegitimeerd en met rechtswaarborgen omgeven moeten zijn. Van tijd tot tijd wordt de maatschappij opgeschrikt door ernstige delicten die gepleegd worden door een persoon met een psychische of psychiatrische stoornis. ‘Verwarde personen’ is een term die hierbij sinds enkele jaren vaak gebruik wordt. In de media en politiek ontstaat in die gevallen vaak veel beroering en wordt de vraag gesteld hoe het kan het dat die persoon vrij op straat rond kon lopen. Zeker als diegene al bekend was bij politie, justitie en/of hulpverlenende instanties is de verontwaardiging vaak groot.<br/>Voor dit college hoeft men niet bekend te zijn met de inhoud van het vak Inleiding psychiatrie voor juristen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6942">Mr. Loeska Bos</a><a href="/ocasys/rug/vak/viewtutor?tutor=3235">prof. dr. J.W. Hummelen</a><a href="/ocasys/rug/vak/viewtutor?tutor=12603">dr. mr. M.J.F. van der Wolf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde WO-propedeuse en voor studenten die zijn toegelaten tot een WO-masteropleiding. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">1-9-2016: is gewijzigd in 6 ec (i.p.v. 5 ec).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75930"><b>Recht en Psychologie</b></a></td><td align="right"><b>RGASR70105</b></td></tr><tr><td align="justify" colspan="3">In de voorbije jaren is het inzicht gegroeid dat de inbreng van de psycholoog in de rechtszaal niet kan worden gemist. Centraal staat de vraag welke betekenis inzichten uit de psychologie hebben voor het vormen van juridische oordelen. Uit het empirisch onderzoek naar rechtspsychologische aspecten is een keuze gemaakt voor onderwerpen waarvan bekend is dat juristen er meer van willen weten: het ontstaan en voorkomen van tunnelvisie, de betrouwbaarheid van het geheugen, vergissingen van getuigen, politie en ovj, trauma en dissociatie, leugendetectie, visuele waarneming, groepsdruk, verhoormethodes, en de communicatie tussen professionele procesdeelnemers en deskundigen. Het vak Recht en Psychologie richt zich niet op diagnostiek en behandeling in het kader van forensische rapportage en forensische hulpverlening. Deze onderwerpen komen aan bod bij het vak Forensische Psychologie (GMW) en Psychiatrie en Recht (Rechtsgeleerdheid).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1523">drs. M.J. Smilde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75961"><b>Strafrechtelijke Gespreksvoering</b></a></td><td align="right"><b>RGASR90206</b></td></tr><tr><td align="justify" colspan="3">Het voeren van gesprekken met cliënten behoort tot de dagelijkse bezigheden van veel juristen. In het strafrecht vormt het gesprek met de cliënt, naast de feiten uit het proces-verbaal, het fundament van elke zaak. Zorgvuldige gespreksvoering is van belang voor de verdere behandeling van de zaak. Maar hoe doe je dat eigenlijk? Het practicum strafrechtelijke gespreksvoering bereidt je voor op dit belangrijke aspect van de beroepspraktijk.<br/><br/>Werkwijze: 9 bijeenkomsten van 2 uur die zijn voorbereid met het zelf-instructie programma StrafGeVaT in <a href="http://nestor.rug.nl" target="_blank">Studentportal (Nestor)</a>. Een belangrijk deel hiervan is gewijd aan oefeningen in communicatie, simulaties van juridische gesprekken en feedback aan de hand van video-opnames. Het vak is bedoeld voor gevorderde studenten. Intekening is verplicht (max. 12 plaatsen) en bij overintekening krijgen masterstudenten strafrecht voorrang. Bij voldoende aanmeldingen start een tweede groep.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1523">drs. M.J. Smilde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1523">drs. M.J. Smilde</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">praktisch vak</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">mondeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde WO-propedeuse en voor studenten die zijn toegelaten tot een WO-masteropleiding. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li><li>Geadviseerd: studenten die de Studentenrechtbank met goed gevolg hebben afgerond.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75929"><b>Terrorisme en terrorismebestrijding</b></a></td><td align="right"><b>RGACR70405</b></td></tr><tr><td align="justify" colspan="3">Het thema wordt multidisciplinair behandeld vanuit sociaal-wetenschappelijk (criminologisch) en juridisch (strafrechtelijk) perspectief.<br/>Aan de orde komen de volgende onderwerpen:<ul><li>de definitie(s) van terrorisme</li><li>hedendaags (moslim)terrorisme en radicalisering</li><li>instrumenten ter bestrijding van terrorisme </li><li>de paradox: burgers beschermen tegen terrorisme door burgers te korten op hun rechten</li><li>het strafrecht als instrument in de strijd tegen het terrorisme</li><li>materieelrechtelijke aanpassingen in het strafrecht in het kader van de terrorismebestrijding</li><li>procesrechtelijke aanpassingen in het strafrecht in het kader van de terrorismebestrijding</li><li>de verhouding tussen bestuurlijke en strafrechtelijke instrumenten ter bestrijding van terrorisme</li><li>de verhouding tussen de strafrechtelijke keten en de AIVD</li></ul></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1313">dr. M. Althoff</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1313">dr. M. Althoff</a><a href="/ocasys/rug/vak/viewtutor?tutor=1446">mr. dr. N.J.M. Kwakman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Studenten Minor Misdaad en Straf geadviseerd: Inleiding strafrecht voor niet-juristen (semester 1a) voorts geen entree-eisen</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

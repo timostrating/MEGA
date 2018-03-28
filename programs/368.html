@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=368&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D368"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=368">Informatie over Ma European Law School</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma European Law School</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>b. (OV)1-2</td><td>RGMHA50906</td><td><a href="/ocasys/rechten/vak/show?module=75836">Multi-level Labour Law and CSR</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht / a.</td><td>RGDOS018</td><td><a href="/ocasys/rechten/vak/show?module=75735">Seminaar European Law School</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>b. (OV)1-2</td><td>RGMHA00106</td><td><a href="/ocasys/rechten/vak/show?module=75712">Arbeidsovereenkomstenrecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>RGMPR50406</td><td><a href="/ocasys/rechten/vak/show?module=75756">International Contracts Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht / e.</td><td>RGMHA00606</td><td><a href="/ocasys/rechten/vak/show?module=75715">Ondernemingsrecht 1 (NV- en BV Recht)</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>f. (OV)1-2</td><td>RGMEE50306</td><td><a href="/ocasys/rechten/vak/show?module=75704">Competition Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>c. (OV)1-2</td><td>RGMPR00306</td><td><a href="/ocasys/rechten/vak/show?module=75745">Goederenrecht C.S.</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>RG00061018</td><td><a href="/ocasys/rechten/vak/show?module=75726">Scriptie</a></td><td>Nederlands</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>f. (OV)1-2</td><td>RGMEE00206</td><td><a href="/ocasys/rechten/vak/show?module=75702">Mededingingsrecht</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>d.</td><td>RGDOS206</td><td><a href="/ocasys/rechten/vak/show?module=75641">Vak in Duitsland</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>c. (OV)1-2</td><td>RGMPR01306</td><td><a href="/ocasys/rechten/vak/show?module=75752">Verbintenissenrecht C.S.</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">De master European Law School zal per 1 september 2016 geen nieuwe instroom meer hebben (de opleiding wordt stopgezet). Studenten wordt afgeraden om nog met deze opleiding te starten. In plaats daarvan kan  beter worden gekozen voor de afstudeerrichting Ondernemingsrecht van de master Nederlands Recht of het Engelstalige masterprogramma International Business Law. Voor degenen die voor 1 september 2016 toch met de opleiding willen beginnen of degenen die het oude programma nog willen afronden is het bovenstaande programma. De uiterste afstudeerdatum is 31 januari 2018</p><ul><li>1-9-15: Multi-level Labour Law and CSR niet af te leggen indien European Labour Law voor 1-9-15 is behaald. Verbintenissenrecht: In dit schema staat het vak in blok 4 in de vorm van onlinecolleges + responsiecollege. Het vak wordt live gegeven in blok 1.</li><li>1-9-14: Arbeidsovereenkomstenrecht is verplaatst van semester 1 naar sem 1a. </li><li>1-9-12: herziening oer (invoering harde knip),1-9-11 herziening exameneisen/oer/indeling onderdelen, zie Overgangsregeling via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a></li><li>a. het seminaar dient bedrijfsrechtelijk Europees georienteerd of rechtsvergelijkend van aard te zijn, bijvoorbeeld Seminar European Private Law;</li><li>b. Optioneel verplicht 1 vak te kiezen uit 2;</li><li>c. Optioneel verplicht 1 vak te kiezen uit 2, of een vak in Duitsland;</li><li>d. per 1-9-16 is het vak Corporate Law and Economics komen te vervallen. Studenten die dit vak nog niet hebben afgelegd, dienen hiervoor in de plaats een vak in Duitsland af te leggen. </li><li>e. studenten uit Duitsland die niet het vak Inleiding Ondernemingsrecht hebben afgelegd, mogen in plaats van Ondernemingsrecht 1 het vak Company Law volgen.</li><li>f. Optioneel verplicht 1 vak te kiezen uit 2.</li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75712"><b>Arbeidsovereenkomstenrecht</b></a></td><td align="right"><b>RGMHA00106</b></td></tr><tr><td align="justify" colspan="3">Tijdens de hoorcolleges worden verschillende arbeidsrechtelijke thema's besproken. Aan de orde komen onder andere: het kwalificatievraagstuk, aspecten van loon, bijzondere bedingen, wijziging van de arbeidsovereenkomst, overgang van onderneming, civielrechtelijke aspecten van arbeidsongeschiktheid,  gelijke behandeling, de arbeidsovereenkomst voor bepaalde tijd, ontbindende voorwaarde. Bijzondere aandacht is er voor het ontslagrecht (drie of vier colleges). In de colleges wordt ingegaan op de verhouding tussen de 'bijzondere' arbeidsrechtelijke regels en het algemene contractenrecht. Bij de behandeling is er, waar mogelijk, aandacht voor de Europese herkomst van de regels. <br/>Enkele colleges zullen worden verzorgd door docenten "uit de praktijk".</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8348">prof. mr. dr. S.S.M. Peters</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=12155">mr. G.R. Oldenhuis</a><a href="/ocasys/rug/vak/viewtutor?tutor=8348">prof. mr. dr. S.S.M. Peters</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Aanbevolen: Inleiding Sociaal Recht</li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75704"><b>Competition Law</b></a></td><td align="right"><b>RGMEE50306</b></td></tr><tr><td align="justify" colspan="3">The course is taught using lectures. Active student participation is expected during the lectures. <br/><br/>The following topics are dealt with:<br/><br/>-	Economic principles of competition law<br/>-	Principles of competition law<br/>-	The prohibition of restrictive agreements (Art. 101 TFEU)<br/>-	The prohibition of abuse of dominance (Art. 102 TFEU)<br/>-	Merger control (Reg 139/2004)<br/><br/>Students cannot follow this course and the Dutch language course in Mededingingsrecht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12739"> R.J. Busscher, LLM. MA.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.<br/>This course is not open to non-law exchange students.<br/>Students cannot follow this course and the Dutch language course in Mededingingsrecht.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75745"><b>Goederenrecht C.S.</b></a></td><td align="right"><b>RGMPR00306</b></td></tr><tr><td align="justify" colspan="3">In dit vak wordt aandacht besteed aan het verhaalssysteem van Boek 3 van het Burgerlijk Wetboek, waaronder ook de goederenrechtelijke zekerheidsrechten. Daarbij komen onder meer aan de orde het verhaalsrecht op goederen, de verschillende vormen van voorrang, vestiging en executie van (stil) pandrecht op zaken en vorderingen, hypotheek, eigendomsvoorbehoud, retentierecht, recht van reclame en (het verbod van) fiduciaire rechtsverhoudingen. Ook worden dwarsverbanden gelegd met het beslag- en executierecht en het faillissementsrecht. Naast het verhaalssysteem van Boek 3 worden de beperkte genotsrechten – vooral het erfpachtrecht - en het appartementsrecht behandeld. De te bestuderen stof bouwt voort op de vakken Burgerlijk Recht 1 en 2.<br/><br/>Werkwijze: Het vak wordt gegeven in de vorm van hoorcolleges en responsiecolleges (optioneel).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: Burgerlijk recht 2.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75756"><b>International Contracts Law</b></a></td><td align="right"><b>RGMPR50406</b></td></tr><tr><td align="justify" colspan="3">In the age of globalization, cross-border contracts are becoming increasingly common. In this course students will get acquainted with the main international contract law instruments and the world's major contract law systems, as well as the important contract clauses regularly used in international commercial contracts. The course will enable students to gain knowledge of and insight into the main concepts of contract law in international and comparative perspective and to develop skills required for applying these concepts in global commercial practice. In particular, the course will focus on the issues related to pre-contractual liability, agency, contract interpretation, remedies for non-performance, and the effect of supervening events on contracts.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7728">prof. dr. O.O. Cherednychenko</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7728">prof. dr. O.O. Cherednychenko</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Compulsory: Bachelor course on contracts law.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75702"><b>Mededingingsrecht</b></a></td><td align="right"><b>RGMEE00206</b></td></tr><tr><td align="justify" colspan="3">Het vak wordt gegeven door middel van hoorcolleges en werkgroepen; laatstgenoemde zullen in de tweede helft van het semester plaatshebben. Ook tijdens de hoorcolleges wordt uitgegaan van participatie van de studenten. Deelname aan de werkgroepen is facultatief. Tijdens deze werkgroepen zullen studenten casus oplossen en oefenen met tentamenvragen die een kritische analyse van het recht vergen.<br/><br/>De volgende onderwerpen komen aan de orde:<br/><br/>-	Beginselen van mededinging als economisch fenomeen (marktafbakening, marktvormen en hun verband met de gedragingen en prestaties)<br/>-	Beginselen van mededingingsrecht<br/>-	Het kartelverbod (art. 101 VWEU/6 Mw.)<br/>-	Het verbod van misbruik van een machtspositie (art. 102 VWEU/24 Mw.)<br/>-	De controle op concentraties (Vo. 139/2004 en Hfdst. 5 Mw.)<br/>-	Het verbod van staatssteun (art. 107 VWEU)<br/>-	Mededingingsrecht ten aanzien van overheidsingrijpen in de mededinging (art. 106 VWEU en de nuttig effect doctrine)<br/>-	Handhaving van de mededingingsregels<br/>-	Rechtsbescherming in het mededingingsrecht</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12739"> R.J. Busscher, LLM. MA.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Verplicht: Europees Recht.</li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Dit vak is niet toegankelijk voor studenten die het vak Competition law hebben gevolgd of volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75836"><b>Multi-level Labour Law and CSR</b></a></td><td align="right"><b>RGMHA50906</b></td></tr><tr><td align="justify" colspan="3">The aim of this module is to gain knowledge and insight in the field of Labour Law from a multi-level angle. Labour law is to be found in many different sources, national law including case law is still by far the most important legal source. Increasingly, labour law is to be found elsewhere: in the conventions of the International Labour Organization (ILO), in the case law of the European Court of Human Rights in Strasbourg and in EU directives and the case law of the Court of Justice of the EU in Luxembourg and also in private or public codes of conduct. The lawyer must be able to work with interferences between all these levels. <br/>Substantively, the course will deal with fundamental issues of labour law, e.g. the concepts of employed and self-employed, the main elements of dismissals’ law, freedom of association, the right to strike and collective bargaining. Other topics are equal treatment, child labour, forced labour and migrant workers and labour law. Finally, public and private codes of conducts concerning corporate social responsibility are becoming important sources of labour law. Also international framework agreements concluded by multinational corporations and global trade unions are becoming more important. These instruments are essential because multinational corporations operate at a global level, while (national) labour law is restricted territorially.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=262">mr. dr. H.H. Voogsgeerd</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=262">mr. dr. H.H. Voogsgeerd</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed International Labour Law and/or European Labour Law before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75715"><b>Ondernemingsrecht 1 (NV- en BV Recht)</b></a></td><td align="right"><b>RGMHA00606</b></td></tr><tr><td align="justify" colspan="3">Het vak Ondernemingsrecht I geeft inzicht in een aantal kernthema's van het ondernemingsrecht. De volgende onderwerpen worden behandeld:<ul><li>kenmerken vennootschapsrecht; vennootschap in oprichting;</li><li>kapitaalbescherming: bijeenbrengen en instandhouden van het kapitaal;</li><li>aandeelhouders;</li><li>interne organisatie; besluitvorming; bevoegdheden organen; oligarchie;</li><li>nietigheid en vernietigbaarheid van besluiten;</li><li>vertegenwoordiging en tegenstrijdig belang;</li><li>concernverhoudingen;</li><li>jaarrekening en decharge;</li><li>onbehoorlijk bestuur en aansprakelijkheid van bestuurders.</li></ul>Tijdens de colleges zal aandacht worden besteed aan actuele ontwikkelingen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1455">prof. mr. M.L. Lennarts</a><a href="/ocasys/rug/vak/viewtutor?tutor=1519">prof. mr. dr. J.N. Schutte-Veenstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen; open boek) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges met 1 responsiecollege in blok 3. Eén (extra) tentamenkans in blok 3.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75726"><b>Scriptie</b></a></td><td align="right"><b>RG00061018</b></td></tr><tr><td align="justify" colspan="3">Nadere eisen en richtlijnen<br/><br/>Nadere eisen en richtlijnen m.b.t. scriptie zijn opgenomen in het scriptiereglement. Zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> voor meer informatie. <br/><br/>Voorbereiding <br/><br/>Ter voorbereiding op het schrijven van een scriptie organiseert de faculteit een scriptievoorbereidingstraject, bestaande uit een hoorcollege (4 x per jaar), een bibliotheekinstructie en een scriptiepracticum. De student is verplicht de onderdelen scriptiecollege en bibliotheekinstructie van het scriptievoorbereidingstraject te volgen alvorens een scriptieonderwerp ter goedkeuring voor te leggen aan de scriptiecoördinator. Het volgen van het onderdeel scriptiepracticum is facultatief, maar wordt sterk aanbevolen. Voor bijzonderheden over het Scriptievoorbereidingstraject zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7063" target="_blank">vakomschrijving in Ocasys</a>. Hierin is informatie opgenomen over de onderdelen van het traject en speciale literatuur die bij het schrijven van een scriptie wordt aanbevolen. <br/>Voor Masterstudenten Internationaal en Europees Recht geldt een apart engelstalig scriptievoorbereidingstraject (Thesisclass) zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=25170" target="_blank">vakomschrijving in Ocasys</a>.   <br/><br/><br/>Een artikel in Ars Aequi of een ander wetenschappelijk tijdschrift kan ook als een scriptie worden gehonoreerd, mits hierover tevoren overleg is gepleegd met de docent die anders als scriptiebegeleider zou zijn opgetreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75735"><b>Seminaar European Law School</b></a></td><td align="right"><b>RGDOS018</b></td></tr><tr><td align="justify" colspan="3">In het verplichte seminaar wordt het vaardighedencurriculum vervolgd, zoals dat in de bachelorfase is ingezet, en komen diverse academische vaardigheden aan bod, zoals kritisch lezen, analyseren, abstraheren, argumenteren, synthetiseren, probleemidentificatie, probleem oplossen, en overige vaardigheden als schrijven, presenteren en samenwerken. Het gaat daarbij om een wetenschappelijke denktraining, waarbij, nadat een goede analyse heeft plaats gevonden, een (creatieve) oplossing voor een juridische vraagstelling helder wordt gepresenteerd, voorzien van argumenten.<br/><br/>Het seminar European Law School dient bedrijfsrechtelijk Europees of rechtsvergelijkend van aard te zijn, bijvoorbeeld het <a href="http://www.rug.nl/ocasys/rechten/vak/show?code=RGMRG50506" target="_blank"> Seminar European Private Law</a>.<br/><br/>Zie voor het totale aanbod van seminaars de opleidingsschema's van alle specialisaties Nederlands Recht en de opleiding Internationaal en Europees Recht (zie de opleidingsschema's elders in Ocasys).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Zie voorts de vakomschrijving van de seminaars in Ocasys.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75641"><b>Vak in Duitsland</b></a></td><td align="right"><b>RGDOS206</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75752"><b>Verbintenissenrecht C.S.</b></a></td><td align="right"><b>RGMPR01306</b></td></tr><tr><td align="justify" colspan="3">Verbintenissenrecht c.s. biedt een verdieping in de systematiek en werking van het verbintenissenrecht aan de hand van twee samenhangende thema's: bijzondere overeenkomsten en algemene leerstukken.<br/>Voortbouwend op de kennis die op bachelorniveau is verworven, wordt ingegaan op een aantal belangrijke overeenkomsten, zoals koop, opdracht en vaststelling. Gekeken wordt naar de inhoud van deze in boek 7 geregelde contracten in samenhang met het algemene rechtshandelingen- en overeenkomstenrecht in de Boeken 3 en 6 BW. Voorts wordt ingegaan op de Europese achtergrond van een aantal van deze contracten (bijvoorbeeld koop op afstand, consumentenkoop). Verder wordt een aantal algemene leerstukken aan de orde gesteld: samenloop, nietigheid en verjaring. Gelden bijvoorbeeld naast de bijzondere regels over koop op afstand, onverkort de algemene regels over (koop)overeenkomsten (een vraag van samenloop)? Kan een contract dat dwingend recht van Boek 7 schendt deels geldig zijn of zelfs worden geconverteerd in een volledig geldig contract (vragen van nietigheid)? Hoe lang kunnen rechten worden uitgeoefend (een vraag van verjaring)? Uiteraard komt niet alleen de regelgeving aan de orde, maar ook hoe in rechtspraak en rechtspraktijk met deze problemen wordt omgegaan.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a><a href="/ocasys/rug/vak/viewtutor?tutor=7730">mr. L.B.A. Tigelaar</a><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Geadviseerd: Burgerlijk Recht 2.</li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges met 1 responsiecollege in blok 4. Eén (extra) tentamenkans in blok 4.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

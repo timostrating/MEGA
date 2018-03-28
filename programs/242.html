@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=242&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D242"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=242">Informatie over Ma Programma Geestelijke Verzorging - deeltijd</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Programma Geestelijke Verzorging - deeltijd</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>THMFS</td><td><a href="/ocasys/rechten/vak/show?module=75591">Forum Scriptorium</a></td><td>Nederlands</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td></td><td>Masterscriptie (inclusief scriptieklas)</td><td>Engels en Nederlands</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>THMPSPRE5</td><td><a href="/ocasys/rechten/vak/show?module=75528">Psychopathologie en religie</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>THMGV1E5</td><td><a href="/ocasys/rechten/vak/show?module=75530">Geestelijke verzorging 1</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>THMGVSTE20</td><td><a href="/ocasys/rechten/vak/show?module=75531">Stage Geestelijke verzorging</a></td><td>Nederlands</td><td>20</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>THMEE5</td><td><a href="/ocasys/rechten/vak/show?module=75527">Ethiek in de zorg</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>THMGV2E5</td><td><a href="/ocasys/rechten/vak/show?module=75611">Geestelijke verzorging 2</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75527"><b>Ethiek in de zorg</b></a></td><td align="right"><b>THMEE5</b></td></tr><tr><td align="justify" colspan="3">Geestelijk Verzorgers treden vaak op als ethische deskundige in een zorginstelling (individuele advisering, ethische commissie, Moreel Beraad).  De ethiek meldt zich niet alleen aan het woord in de vorm van ethische dilemma’s op de werkvloer, maar ook in de manier waarop de zorg wordt georganiseerd in het beleid van een organisatie, en in de wijze waarop de relatie tussen zorggever en zorgontvanger gestalte krijgt.  <br/>Het werk van de Geestelijk Verzorger zelf kent daarnaast veel morele aspecten ( bv. vertrouwelijkheid, macht) die onderkend  dienen te worden, waarop moet worden gereflecteerd, en die in een beroepsethische houding moeten worden geïntegreerd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9307">dr. T.A. Boer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9307">dr. T.A. Boer</a><a href="/ocasys/rug/vak/viewtutor?tutor=9308">prof. dr. F. de Lange</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (50%), werkstuk (50%), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Verplichte literatuur wordt voor aanvang van de module bekend gemaakt.</li><li>Belasting student: 5 ECTS =  140 uur. Colleges: 24 uur; voorbereiding colleges 48 uur; schriftelijke toets (voorbereiding plus toets zelf) 28 uur; paper en paperpresentatie: 40 uur.</li><li>Verdeling cijfer: schriftelijke toets: 50%; paper en paperpresentatie 50%.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75591"><b>Forum Scriptorium</b></a></td><td align="right"><b>THMFS</b></td></tr><tr><td align="justify" colspan="3">Deze cursus wordt zowel in het eerste als in het tweede semester gegeven. <br/>Tijdens de bijeenkomsten bespreken en oefenen we de verschillende aspecten van het plannings-, onderzoeks- en schrijfproces die horen bij het schrijven van een masterscriptie. Door collegiale toetsing (peer review) profiteert iedere student van elkaars feedback. Naast deze scriptiebijeenkomsten nemen de studenten deel aan workshops over bepaalde onderzoeksmethoden zoals interviewen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10888">dr. A. Visser-Nieraeth</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">assignments</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Deelname aan de scriptiebijeenkomsten is verplicht voor alle studenten die hun masterscriptie gaan schrijven. Studenten moeten zich aanmelden voor deze bijeenkomsten via Progresswww.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75530"><b>Geestelijke verzorging 1</b></a></td><td align="right"><b>THMGV1E5</b></td></tr><tr><td align="justify" colspan="3">In deze cursus krijg je een algemene inleiding in het veld van de (ongebonden) geestelijke verzorging en werken we verder aan de levensbeschouwelijke leerlijn. De cursus dient als ingangseis voor de stage. <br/>We onderzoeken het beroepsprofiel van de geestelijk verzorger en de positie van de geestelijke verzorging ten opzicht van andere disciplines. Hierbij komen diverse professionele en levensbeschouwelijke competenties van de beroepsbeoefenaar aan bod.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10888">dr. A. Visser-Nieraeth</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11708">drs. J.A. Delver</a><a href="/ocasys/rug/vak/viewtutor?tutor=1297">dr. J.K. Muthert</a><a href="/ocasys/rug/vak/viewtutor?tutor=10888">dr. A. Visser-Nieraeth</a><a href="/ocasys/rug/vak/viewtutor?tutor=9529">drs. G. Wiersma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie, gastcollege(s), groepsdiscussie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Deze cursus dient als entreevoorwaarde voor de stage geestelijke verzorging</li><li>De studielast bedraagt 140 uur: 24 uur hoor-/werkcolleges, 5 uur excursie, 95 uur bestuderen van de literatuur, 16 uur voorbereiding opdrachten</li><li>Voor deze curus geldt een aanwezigheidsverplichting conform de Onderwijs -en Examenregeling.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75611"><b>Geestelijke verzorging 2</b></a></td><td align="right"><b>THMGV2E5</b></td></tr><tr><td align="justify" colspan="3">In deze cursus bouwen we voort op de kennis over het werkveld van de geestelijk verzorger die we opgedaan hebben tijdens Geestelijke Verzorging 1. <br/>In deze cursus gaan we dieper in op het methodisch werken als geestelijk verzorger, waarbij we niet alleen stilstaan bij het wat en hoe van de methodiek, maar ook het waarom (de theoretische basis). Door middel van een literatuuronderzoek diepen we dit verder uit en oefenen we onze onderzoeksvaardigheden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10888">dr. A. Visser-Nieraeth</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, hoor-/werkcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">onderzoeksverslag, presentatie(s), verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>De studielast bedraagt 140 uur: 24 uur hoor-/werkcolleges, 50 uur bestuderen van de literatuur, 66 uur uitvoering opdrachten. </li><li>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs -en Examenregeling.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75528"><b>Psychopathologie en religie</b></a></td><td align="right"><b>THMPSPRE5</b></td></tr><tr><td align="justify" colspan="3">Psychopathologie; (godsdienst)psychologische theorievorming rond de verhouding van geestelijke gezondheid en religie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1297">dr. J.K. Muthert</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1297">dr. J.K. Muthert</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, hoor-/werkcollege, presentatie(s)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">mondeling tentamen, opdracht(en), participatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Godsdienstpsychologie - inleiding</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoor/werkcolleges : 30 uur; opdrachten: 20 uur; verwachte zelfstudie: 90 uur.</li><li>Deze module heeft een omvang van 5 EC</li><li>Deze module kan ook in het kader van Postacademisch onderwijs worden gevolgd.<i> Ten behoeve van een gezonde balans tussen studenten en ervaringsdeskundigen geldt er voor postacademici een maximum van vijf inschrijvingen. Hierna wordt er een reservelijst gehanteerd. </i> Aanmelden voor: 20 augustus 2017 (050 363 5568 of via de website: http://www.rug.nl/ggw/onderwijs/opencolleges)</li><li>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs -en Examenregeling.</li><li>De literatuur wordt later bekendgemaakt via Nestor.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75531"><b>Stage Geestelijke verzorging</b></a></td><td align="right"><b>THMGVSTE20</b></td></tr><tr><td align="justify" colspan="3">De stage, ook een onderzoeksstage, wordt zowel op de werkvloer alsook vanuit de faculteit begeleid. Daarnaast is er bij een praktijkstage (groeps)supervisie.<br/>Belangrijke aandachtsgebieden zijn verwoord in de doelstellingen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1297">dr. J.K. Muthert</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1297">dr. J.K. Muthert</a><a href="/ocasys/rug/vak/viewtutor?tutor=10888">dr. A. Visser-Nieraeth</a><a href="/ocasys/rug/vak/viewtutor?tutor=9529">drs. G. Wiersma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage, supervisie, begeleid onderzoek, workshops</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">stageverslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">GV 1 afgerond. Psychopathologie en religie grotendeels actief gevolgd en bijbehorende opdrachten zover mogelijk afgerond. Voor een onderzoeksstage is een voorwaarde dat de kandidaat over aantoonbare onderzoekskwaliteiten beschikt.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Voor instroommomenten en andere informatie over de stage, zie Agora GV</li><li>Om toegelaten te worden tot de praktijkstage dient een assessmentprocedure doorlopen te worden. Deze bestaat uit een gesprek met een psychologisch deskundige en een dagdeel meelopen in de beoogde stage-instelling. Voor verdere informatie, zie Agora GV (Nestor). De Master Geestelijke Verzorging heeft 3 vaste stageplekken in zorginstellingen: algemeen ziekenhuis (UMCG, Groningen), psychiatrie (GGZ-Drenthe) en ouderen- en verpleegzorg (Zorggroep Noorderbreedte, Leeuwarden). In overleg is een andere stageplek mogelijk.</li><li>Er is de keuze tussen een praktijkstage (voor diegenen die zich oriënteren op het beroep van geestelijk verzorger) en een onderzoeksstage (voor diegenen die zich oriënteren op wetenschappelijk onderzoek of een beleidsfunctie). Voor overige criteria van de onderzoeksstage, zie Agora GV.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

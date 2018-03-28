@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4980&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4980"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4980">Informatie over Tekst, Traditie en Interpretatie</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Tekst, Traditie en Interpretatie</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>THB3PS2E5</td><td><a href="/ocasys/rechten/vak/show?module=75618">Godsdienstpsychologie 2</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THB3TABF10</td><td><a href="/ocasys/rechten/vak/show?module=75526">Bijbelse figuren en thema's in het OT</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>THB3WHE5</td><td><a href="/ocasys/rechten/vak/show?module=75599">Wijsgerige hermeneutiek</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>THB3ENT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75622">Exegese NT 2</a></td><td>Engels en Nederlands</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>THB3EOT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75600">Exegese Oude Testament 2</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75526"><b>Bijbelse figuren en thema's in het OT</b></a></td><td align="right"><b>THB3TABF10</b></td></tr><tr><td align="justify" colspan="3">In de module Bijbelse figuren concentreren we ons op de receptiegeschiedenis van de Bijbel in de oudheid, te weten in het vroege Jodendom, het vroege Christendom en de vroege Islam. De studie van de wijze waarop de Bijbelse verhalen en concepten in wisselende historische en sociaal-culturele omstandigheden in de oudheid gerecipieerd worden, en de reflectie daarop, spelen hierbij een grote rol. <br/>In de inleidende colleges zal worden stilgestaan bij een aantal fundamentele vragen met betrekking tot de receptiegeschiedenis. Wat is de Bijbel? Hoe heeft het canonisatieproces zich ontwikkeld? Waar ligt de overgang van het einde van het productieproces van Bijbelse teksten naar het begin van de receptie? Welke meerduidigheden zijn aanwezig in de tekstuele vorm van de Bijbel?<br/>Daarna zal worden ingegaan op het fenomeen van de receptie en interpretatie van teksten en tradities in de Bijbel zelf, in de vroeg Joodse literatuur van de Tweede Tempelperiode, in het Nieuwe Testament, de vroeg-christelijke literatuur, waaronder de gnostiek. Ook met betrekking tot de Islam zullen we bestuderen hoe gezaghebbende teksten worden gerecipieerd in de afzonderlijke tradities. De reeks colleges wordt afgesloten met een algemene hermeneutische reflectie op receptie van gezaghebbende teksten in de oudheid.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10573">prof. dr. S.N. Mason</a><a href="/ocasys/rug/vak/viewtutor?tutor=1294">dr. dr. F.L. Roig Lanzillotta</a><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=11787"> J.M. Zurawski, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">begeleid onderzoek, hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">referaat, verslag, werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Belasting student:<ul><li>Hoor- en werkcolleges: 26 uur (13 x 2 uur). </li><li>Voorbereiding hoor- en werkcolleges: 96 uur (12x8 uur voorbereiding in cs. 2-13).</li><li>Presentatie en bespreking 1e versie scriptie: 30 uur.</li><li>Schrijven van de bachelor scriptie: 128 uur.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75622"><b>Exegese NT 2</b></a></td><td align="right"><b>THB3ENT2E5</b></td></tr><tr><td align="justify" colspan="3">In dit onderdeel worden de verschillende antropologische<br/>patronen, die gangbaar waren in de eerste eeuwen na Christus, besproken en geanalyseerd. Een overzicht van de oorsprong, transformatie en toe-eigening van de verschillende mensvisies in verschillende culturele contexten uit de Oudheid biedt de nodige coördinaten achtergrond om vroegchristelijk antropologie beter te begrijpen.<br/>werkcolleges over vroegchristelijke mensvisies met bijzondere aandacht voor Paulus’ antropologie in Romeinen 6-8.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Grieks 1,2,3 + Exegese NT (vroeger Hellenistisch Grieks).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">5 EC (= 140 uur): 7 colleges van 2 uur x 2 quadrimesters (28 uur); voorbereiding colleges en presentaties (56 uur); werkstuk, incl. presentatie en literatuurstudie (56 uur).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75600"><b>Exegese Oude Testament 2</b></a></td><td align="right"><b>THB3EOT2E5</b></td></tr><tr><td align="justify" colspan="3">In de vorm van een gecombineerd hoor-/werkcollege oefenen we ons met behulp van exegetische opdrachten en secundaire literatuur in de primaire handgrepen van het exegetisch onderzoek van het Oude Testament, toegespitst op korte, voornamelijk poëtische en profetische teksten. In het werkstuk wordt geoefend om schriftelijk verslag te doen van de uitleg van één poëtische tekst. <br/>Door middel van zelfstudie (E. Zenger, <i>Einleitung in das Alte Testament</i>) wordt inzicht verworven op het gebied van de compositie en het ontstaan van de oudtestamentische geschriften.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, werkstuk, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Hebreeuws (propedeuse/B1),<br/>exegese OT 1 (basisdoctoraal/B2)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoor-en werkcolleges: 7 x 3 = 21 uur; opdrachten en zelfstudie: 59 uur; practica (werkstuk): 60 uur.</li><li>Deze module maakt deel uit van de verdiepende minor 'Tekst, traditie en interpretatie.'</li><li>Literatuur wordt nader bekend gemaakt.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75618"><b>Godsdienstpsychologie 2</b></a></td><td align="right"><b>THB3PS2E5</b></td></tr><tr><td align="justify" colspan="3">Hoor en werkcolleges over de mensvisies in verschillende psychologishe benaderingen en over psychologische interpretatietheorieën. Beide aspecten komen samen in de object-relatietheorie, die als psychologische theorie een specifieke mensvisie formuleert en als hermeneutische theorie meer licht werpt op interpretatie en betekenisgeving. Paulus en Romeinen 7 vormen de integratieve casus waarop de psychologische theorieën toegepast en getoetst worden.<br/>Daarnaast worden ook godsdienstpsychologische benaderingen toegepast op vroegchristelijke teksten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11030">dr. S. Ypma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), werkstuk</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Godsdienstpsychologie (inleiding)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Belasting student: colleges 13 uur (7 + 6 uur); voorbereiding colleges: 13 uur, presentaties: 8 uur, werkstuk: 34 uur, verwachte zelfstudie: 72 uur.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75599"><b>Wijsgerige hermeneutiek</b></a></td><td align="right"><b>THB3WHE5</b></td></tr><tr><td align="justify" colspan="3">Een eerste kennismaking met de grondgedachten van de wijsgerige hermeneutiek door bestudering van oorspronkelijke teksten van Kant, Schleiermacher, Heidegger, Gadamer, Ricoeur en Derrida</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11330">dr. D. van den Auweele</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">final paper (80%)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">(Godsdienst)filosofie (B1 en B2)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoorcolleges: 8 uur; hoor-/werkcolleges: 8 uur; werkstuk (4000 woorden): 54 uur; zelfstudie: 70 uur.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5714&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5714"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5714">Informatie over Pre-master Rechtsgeleerdheid </a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Pre-master Rechtsgeleerdheid </b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>(v)</td><td>RGBBE00010</td><td><a href="/ocasys/rechten/vak/show?module=75878">Bestuursrecht 2</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr><td class="nocolor"> </td><td>(v) / b</td><td>RGBPR00005</td><td><a href="/ocasys/rechten/vak/show?module=75983">Burgerlijk Procesrecht 1</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>(v)</td><td>RGBSR00005</td><td><a href="/ocasys/rechten/vak/show?module=75881">Strafrecht 2 (nieuw Mat. Str.)</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>(v) / a</td><td>RGBPR00110</td><td><a href="/ocasys/rechten/vak/show?module=75903">Burgerlijk Recht 2</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr class="color"><td class="nocolor"> </td><td>(v)</td><td>RGBEE00110</td><td><a href="/ocasys/rechten/vak/show?module=75984">Europees Recht</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr><td class="nocolor"> </td><td>(v)</td><td>RGPST00105</td><td><a href="/ocasys/rechten/vak/show?module=75854">Staatsrecht 1</a></td><td>Nederlands</td><td>5</td><td>6</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>(v)</td><td>RGBHA90005</td><td><a href="/ocasys/rechten/vak/show?module=75911">Bedrijfsrecht Theorie en vaardigheden</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>(v)</td><td>RGBSR00010</td><td><a href="/ocasys/rechten/vak/show?module=75887">Strafrecht 3 (nieuw Form. Straf.)</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>(v)</td><td>RGBBE00605</td><td><a href="/ocasys/rechten/vak/show?module=75908">Bestuursrecht 3</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>(v)</td><td>RGBPR00105</td><td><a href="/ocasys/rechten/vak/show?module=75985">Burgerlijk Recht 3</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">(v) = verplicht<br/><br/>a: Burgerlijk Recht 2 maakt geen deel uit van het pre-masterprogramma maar is wel een noodzakelijke voorwaarde voor het behalen van het civiel effect. Vanaf 2015-2016 kan Burgerlijk Recht 2 alleen via contractonderwijs worden gevolgd. <br/><br/>b. Burgerlijk Procesrecht 1 wordt via online-colleges ook aangeboden in blok 4 (+ extra tentamenkans).  <br/><br/><br/>-------------------------------------<br/>n.b. Studenten die hun pre-masterprogramma willen gebruiken om toegelaten te worden tot de afstudeerrichting Staats-en bestuursrecht van de master Nederlands Recht zullen naast het pre-masterprogramma ook het vak <a href="https://www.rug.nl/ocasys/rechten/vak/show?code=RGBST00105" target="_blank"> Staatsrecht 2</a>  moeten volgen.  <br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75911"><b>Bedrijfsrecht Theorie en vaardigheden</b></a></td><td align="right"><b>RGBHA90005</b></td></tr><tr><td align="justify" colspan="3">In dit vak maken de studenten kennis met de regels, beginselen en bijzondere problemen die in het bedrijfsrecht spelen. De nadruk zal hierbij liggen op (i) de verschillende rechtsvormen van de onderneming: de eenmanszaak, personenvennootschappen, naamloze en besloten vennootschappen, verenigingen en stichtingen;(ii) het faillissementsrecht (bij insolventie van ondernemingen)en (iii) het intellectuele eigendomsrecht. Er worden hoorcolleges en werkgroepen gegeven die door studenten actief dienen te worden gevolgd. In de werkgroepen discussiëren studenten over stellingen die door hen schriftelijk zijn voorbereid. De schriftelijke voorbereiding bestaat uit een kleine paper van 2-4 pagina’s. Tijdens de eerste week dienen de studenten de ITJ toets af te leggen waarin ze aantonen dat ze het zoeken van juridische bronnen en het verantwoorden daarvan voldoende beheersen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1544">mr. dr. F. Veenstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1336">prof. mr. dr. H.E. Boschma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1374">prof. mr. dr. P.G.F.A. Geerts</a><a href="/ocasys/rug/vak/viewtutor?tutor=11351">mr. L. Jensma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1483">mr. dr. M.Y. Nethe</a><a href="/ocasys/rug/vak/viewtutor?tutor=1544">mr. dr. F. Veenstra</a></td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Verplichte aanwezigheid bij werkgroepen.</li><li>Schriftelijke voorbereiding moet als voldoende zijn beoordeeld door de docent voor toegang tot het tentamen.</li><li>Bij het niet halen van de ITJ toets dient verplicht te worden deelgenomen aan een bibliotheekinstructie.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75878"><b>Bestuursrecht 2</b></a></td><td align="right"><b>RGBBE00010</b></td></tr><tr><td align="justify" colspan="3">Het vak Bestuursrecht 2 gaat over de normering van besluiten en andere handelingen. De rode draad wordt gevormd door de vraag aan welke rechtsnormen een bestuursorgaan, dat bevoegd of gerechtigd is tot bestuurshandelen, moet voldoen bij het nemen van besluiten of het verrichten van andere handelingen. Aan de orde komen onder andere: formele en materiële normen voor besluitvorming, openbaarheid van bestuur, subsidies, privaatrechtelijk handelen door de overheid, aansprakelijkheid van de overheid voor rechtmatige en onrechtmatige daden (nadeelcompensatie en schadevergoeding) en bestuursrechtelijke handhaving (reparatoire- en punitieve sancties). Daarbij is bij de verschillende onderwerpen aandacht voor de doorwerking van het EU recht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1340">prof. mr. dr. H.E. Broring</a><a href="/ocasys/rug/vak/viewtutor?tutor=1380">prof. mr. dr. K.J. de Graaf</a><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75908"><b>Bestuursrecht 3</b></a></td><td align="right"><b>RGBBE00605</b></td></tr><tr><td align="justify" colspan="3">Besluiten en andere bestuurlijke handelingen kunnen burgers en particuliere organisaties in hun belangen treffen; bovendien is het niet uitgesloten dat het bestuur bij zijn besluiten en andere handelingen fouten maakt. Daaruit volgt de behoefte aan rechtsbescherming tegen overheidshandelen. Meer principieel wordt de mogelijkheid van rechterlijke controle vereist door de beginselen van de democratische rechtsstaat.<br/><br/>Het vak Bestuursrecht 3 gaat over de rechtsbescherming tegen overheidshandelen: het bestuursprocesrecht in ruime zin. Aan de orde komen onder andere:<br/>- de bezwaarschriftprocedure<br/>- de procedure bij de bestuursrechter<br/>- de voorlopige voorzieningsprocedure<br/>- de procedure bij de burgerlijke rechter<br/>- de klachtvoorzieningen, o.a. bij de Nationale ombudsman.<br/>Per type voorziening wordt ingegaan op de bevoegdheids- en ontvankelijkheidsaspecten, de toetsing en de uitspraak.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6930">mr. N.G. Hoogstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=1467">prof. mr. dr. A.T. Marseille</a><a href="/ocasys/rug/vak/viewtutor?tutor=1534">mr. dr. H.D. Tolsma</a><a href="/ocasys/rug/vak/viewtutor?tutor=12177">mr. M. Wever</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75983"><b>Burgerlijk Procesrecht 1</b></a></td><td align="right"><b>RGBPR00005</b></td></tr><tr><td align="justify" colspan="3">Het burgerlijk procesrecht geeft regels voor het civiele geding. In het civiele geding worden aanspraken ontleend aan het materiële privaatrecht afgedwongen en verwezenlijkt. Degene die meent aanspraak te kunnen maken op een door een ander te verrichten prestatie wordt recht en titel verschaft om eigenrichting te voorkomen. Daarnaast wordt met iedere uitspraak een bijdrage geleverd aan de verdere ontwikkeling van het recht. Het burgerlijk procesrecht is dus onmisbaar voor het inzicht in, en kennis van, het materiële privaatrecht. Daarnaast heeft het civiele geding de functie van geschilbeslechting. Aan de hand van rechtsregels hakt de rechter(of een bij overeenkomst aangewezen derde) een knoop door. Of door deze beslissing het geschil tussen partijen is opgelost, is niet zeker. Daarvoor zijn ook andere rechtsfiguren beschikbaar: de rechter bevordert dat partijen hun geschil door middel van een schikking bijleggen en de rechter faciliteert dat partijen door onderhandelingen onder leiding van een derde tot een oplossing komen (mediation).<br/>Gedoceerd wordt in de vorm van hoorcolleges. Voor het begin van het semester zal in de syllabus een opgave van de te bestuderen stof worden verstrekt. De voor elk college opgegeven stof en arresten of beschikkingen dienen van te voren bestudeerd te zijn. Aan de hand van een bestaand procesdossier en via <a href="http://nestor.rug.nl" target="_blank">Studentportal (Nestor)</a> ter beschikking staand beeld- en oefenmateriaal wordt getracht inzicht te geven in de praktijk van het procederen. Na afloop van de onderwijsperiode wordt schriftelijk een tentamen met essayvragen afgenomen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1368">mr. dr. R.J.C. Flach</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1368">mr. dr. R.J.C. Flach</a><a href="/ocasys/rug/vak/viewtutor?tutor=1444">prof. mr. dr. H.B. Krans</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen), zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges in blok 4. Eén extra tentamenkans in blok 4.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75903"><b>Burgerlijk Recht 2</b></a></td><td align="right"><b>RGBPR00110</b></td></tr><tr><td align="justify" colspan="3">Inhoud. <br/>Burgerlijk Recht 2 bouwt voort op Burgerlijk Recht 1 en geeft een verdieping van delen van het overeenkomstenrecht en het goederenrecht. Het vak behandelt de voor de praktijk belangrijkste juridische aspecten van veel voorkomende transacties waarbij goederen tegen betaling worden overgedragen.<br/>Het eerste deel gaat over contractuele vragen; na een korte recapitulatie van de totstandkoming van de overeenkomst wordt nader ingegaan op de inhoud en de uitvoering ervan. Daarbij komen bijvoorbeeld aan de orde: interpretatie van de overeenkomst, toerekenbare en niet-toerekenbare tekortkoming, schadevergoeding en ontbinding van overeenkomsten. Ook wordt aandacht besteed aan algemene voorwaarden en vertegenwoordiging.<br/>Het tweede deel behandelt de goederenrechtelijke vragen: hoe wordt de overdracht van goederen geëffectueerd, kan de eigendom op andere manieren worden verkregen en wat is de betekenis van fabricageprocessen voor de (voorbehouden) eigendom van geleverde goederen? Daarbij komen bijvoorbeeld aan de orde: overdracht en andere wijzen van eigendomsverkrijging (verjaring, vermenging, natrekking en zaaksvorming) en gemeenschap.<br/><br/>Werkwijze: <br/>Het vak zal worden gedoceerd aan de hand van hoorcolleges en werkgroepen. Op de werkgroepen wordt de stof behandeld aan de hand van opdrachten. <br/>Het is mogelijk om door het individueel voldoen aan specifieke opdrachten en actieve deelname aan de werkgroepen in aanmerking te komen voor een halve bonuspunt bij het tentamen.Raadpleeg Studentportal voor nadere informatie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5806">mr. E.E. Slob</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a><a href="/ocasys/rug/vak/viewtutor?tutor=5806">mr. E.E. Slob</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroep, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Geadviseerd: Burgerlijk Recht 1</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>NB: niet alle stof uit het boek van Pitlo/Reehuis &amp; Heisterkamp komt in de werkcolleges aan de orde! Uit Pitlo/Reehuis &amp; Heisterkamp moeten de nrs. 1-99; 155-249, 291-328 en 588-640 zelfstandig, aan de hand van de hoorcolleges worden bestudeerd!</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75985"><b>Burgerlijk Recht 3</b></a></td><td align="right"><b>RGBPR00105</b></td></tr><tr><td align="justify" colspan="3">In Burgerlijk Recht 3 staan het (buitencontractuele) aansprakelijkheidsrecht en het recht inzake schadevergoeding centraal. Het vak bouwt voort op Burgerlijk Recht 1 en bestaat uit 12 hoorcolleges.<br/><br/>Tijdens de eerste 5 bijeenkomsten komen achtereenvolgens de aansprakelijkheid voor eigen onrechtmatig gedrag (afd. 6.3.1 BW) en de aansprakelijkheid voor personen en zaken (afd. 6.3.2 BW) aan de orde. Een greep uit de onderwerpen: onrechtmatigheid, toerekenbaarheid en relativiteit, aansprakelijkheid voor kinderen, werkgeversaansprakelijkheid en aansprakelijkheid voor gebrekkige opstallen.<br/><br/>Tijdens de 4 daaropvolgende bijeenkomsten staat het schadevergoedingsrecht centraal, primair aan de hand van de regeling van de wettelijke verplichtingen tot schadevergoeding (afd. 6.1.10 BW). Onder andere aan bod komen onderwerpen als smartengeld, schrikschade, causaliteit en eigen schuld.<br/><br/>Tijdens de laatste drie bijeenkomsten wordt stilgestaan bij de invloed van Europees en internationaal recht op het aansprakelijkheidsrecht (richtlijnen, PETL, DCFR, EVRM en Europees handvest), aan de overige verbintenissen uit de wet: zaakwaarneming, onverschuldigde betaling en ongerechtvaardigde verrijking (titel 6.4 BW) en tot slot aan de overige op art. 6:162 te baseren vorderingen en de afwikkeling van massaschade.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3228">mr. A. Kolder</a><a href="/ocasys/rug/vak/viewtutor?tutor=1496">prof. mr. dr. C.M.D.S. Pavillon</a><a href="/ocasys/rug/vak/viewtutor?tutor=7730">mr. L.B.A. Tigelaar</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Geadviseerd: Burgerlijk Recht 1</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75984"><b>Europees Recht</b></a></td><td align="right"><b>RGBEE00110</b></td></tr><tr><td align="justify" colspan="3">Dit vak is gericht op studenten die straks als juristen in Nederland willen werken. De kernaspecten van dit vak hebben betrekking op het EU-recht als zodanig, maar er is ook aandacht voor de doorwerking van het EU recht in de nationale rechtsorde. De volgende onderwerpen worden behandeld:<br/>- De Europese Instellingen en institutioneel evenwicht<br/>- Het rechtsstatelijk karakter van de Unie<br/>- Bevoegdheden en besluitvorming op EU-niveau<br/>- Handhaving en rechtsbescherming binnen de EU-rechtsorde<br/>- Autonomie, voorrang, doorwerking en volle werking van unierecht<br/>- De Interne markt en invloeden van andere beleidsterreinen daarop<br/>- Burgerschap van de Unie<br/>- Mededingingsrecht<br/>- Ontwikkeling van de Europese integratie</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1488">  Nog niet bekend</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75854"><b>Staatsrecht 1</b></a></td><td align="right"><b>RGPST00105</b></td></tr><tr><td align="justify" colspan="3">De volgende onderwerpen komen in het vak aan de orde:<br/><br/>1. Staat, overheid en constitutie<br/>2. De vormgeving van de Nederlandse democratie<br/>3. De samenwerking tussen regering en Staten-Generaal<br/>4. Decentralisatie van bevoegdheden<br/>5. Rechters en rechtspraak<br/>6. De wisselwerking tussen nationaal en internationaal recht<br/>7. De garantie en bescherming van grondrechten door de staat</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12175">mr. R.L. Herregodts</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12236">mr. I. de Haan</a><a href="/ocasys/rug/vak/viewtutor?tutor=12175">mr. R.L. Herregodts</a><a href="/ocasys/rug/vak/viewtutor?tutor=1405">prof. mr. H.G. Hoogers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die staan ingeschreven voor de bachelor Rechtsgeleerdheid, Colloquium Doctum studenten of pre-master studenten op voorwaarde dat het vak onderdeel uitmaakt van het pre-master programma.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Aan propedeusestudenten wordt in het eerste jaar van inschrijving als rechtenstudent onder bepaalde voorwaarden de mogelijkheid geboden een verlengd mondeling hertentamen van dit vak af te leggen, in dezelfde tentamenperiode als waarin het (schriftelijk) hertentamen van dit vak is afgenomen. Voor de voorwaarden en de procedure zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75881"><b>Strafrecht 2 (nieuw Mat. Str.)</b></a></td><td align="right"><b>RGBSR00005</b></td></tr><tr><td align="justify" colspan="3">In het vak Strafrecht 2 worden de volgende onderwerpen behandeld:<br/>- opzet en schuld<br/>- strafuitsluitingsgronden<br/>- poging en voorbereiding<br/>- daderschap en deelneming<br/><br/>Tijdens het semester worden schriftelijke opdrachten verstrekt. Studenten kunnen daarmee een bonuspunt verdienen voor het tentamen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1350">dr. mr. A.A. van Dijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1488">  Nog niet bekend</a><a href="/ocasys/rug/vak/viewtutor?tutor=1350">dr. mr. A.A. van Dijk</a><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75887"><b>Strafrecht 3 (nieuw Form. Straf.)</b></a></td><td align="right"><b>RGBSR00010</b></td></tr><tr><td align="justify" colspan="3">In dit vak wordt - mede aan de hand van de verplichte literatuur - aandacht besteed aan de rechtsontwikkeling met betrekking tot het strafprocesrecht en in het bijzonder aan de relevante wetgeving en jurisprudentie op zowel nationaal als bovennationaal niveau (EVRM). <br/><br/>Onderwerpen:<br/><br/>HET VOORONDERZOEK, o.a.:<br/><br/>- de (nationale en bovennationale) grondbeginselen van het strafprocesrecht;<br/>- het opsporingsonderzoek;<br/>- het verdenkingsbegrip;<br/>- het verhoor van de verdachte;<br/>- vrijheidbeperkende en vrijheidsbenemende dwangmiddelen (aanhouding, voorarrest);<br/><br/>DE VERVOLGING, o.a.:<br/><br/>- de positie van de Rechter-Commissaris;<br/><br/>HET STRAFRECHTELIJKE RECHTSGEDING, o.a.:<br/><br/>- de tenlastelegging en dagvaarding (functie, interpretatie, geldigheid, grondslagleer);<br/>- de berechting van de verdachte;<br/>- het aanwezigheidsrecht van de verdachte;<br/>- de rechten en de positie van het slachtoffer in het strafproces<br/>- het bewijsrecht (het wettelijk stelsel, getuigenbewijs, ondervragingsrecht, bijzondere bewijskwesties, bewijsmotivering;)<br/>- het vonnis (beslissings- en motiveringsregels)<br/>- bijzondere motiveringskwesties;<br/>- de sanctionering van vormverzuimen en andere onregelmatigheden in het strafproces;<br/><br/>- nieuwe ontwikkelingen op wetgevingsgebied.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7868">mr. R.A. Hoving</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12182">mr. dr. W. Geelhoed</a><a href="/ocasys/rug/vak/viewtutor?tutor=7868">mr. R.A. Hoving</a><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Geadviseerd: Strafrecht 1</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

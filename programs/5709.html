@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5709&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5709"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5709">Informatie over Pre-master Fiscaal recht - voor Register Belastingadviseurs</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Pre-master Fiscaal recht - voor Register Belastingadviseurs</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>RGBFI00105</td><td><a href="/ocasys/rechten/vak/show?module=75979">Loonheffingen</a></td><td>Nederlands</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>RGBFI00410</td><td><a href="/ocasys/rechten/vak/show?module=75892">Omzet- en Overdrachtsbelasting</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>RGBPR00110</td><td><a href="/ocasys/rechten/vak/show?module=75903">Burgerlijk Recht 2</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>RGBEE00110</td><td><a href="/ocasys/rechten/vak/show?module=75984">Europees Recht</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGBFI00605</td><td><a href="/ocasys/rechten/vak/show?module=75845">Formeel Belastingrecht</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>RGBFI00505</td><td><a href="/ocasys/rechten/vak/show?module=75986">Inkomstenbelasting voor RB/HBO schakelst</a></td><td>Nederlands</td><td>5</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGBFI00110</td><td><a href="/ocasys/rechten/vak/show?module=75901">Vennootschapsbelasting</a></td><td>Nederlands</td><td>10</td><td>6</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>RGBFI00205</td><td><a href="/ocasys/rechten/vak/show?module=75891">Winst</a></td><td>Nederlands</td><td>5</td><td>6</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>Het <a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=364" target="_blank">aansluitende masterprogramma </a> kan worden gevolgd na volledige afronding van het pre-master programma.</li></ul><br/>1-9-16: Naamswijziging: Formeel Belastingrecht 1 -&gt; Formeel Belastingrecht</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75903"><b>Burgerlijk Recht 2</b></a></td><td align="right"><b>RGBPR00110</b></td></tr><tr><td align="justify" colspan="3">Inhoud. <br/>Burgerlijk Recht 2 bouwt voort op Burgerlijk Recht 1 en geeft een verdieping van delen van het overeenkomstenrecht en het goederenrecht. Het vak behandelt de voor de praktijk belangrijkste juridische aspecten van veel voorkomende transacties waarbij goederen tegen betaling worden overgedragen.<br/>Het eerste deel gaat over contractuele vragen; na een korte recapitulatie van de totstandkoming van de overeenkomst wordt nader ingegaan op de inhoud en de uitvoering ervan. Daarbij komen bijvoorbeeld aan de orde: interpretatie van de overeenkomst, toerekenbare en niet-toerekenbare tekortkoming, schadevergoeding en ontbinding van overeenkomsten. Ook wordt aandacht besteed aan algemene voorwaarden en vertegenwoordiging.<br/>Het tweede deel behandelt de goederenrechtelijke vragen: hoe wordt de overdracht van goederen geëffectueerd, kan de eigendom op andere manieren worden verkregen en wat is de betekenis van fabricageprocessen voor de (voorbehouden) eigendom van geleverde goederen? Daarbij komen bijvoorbeeld aan de orde: overdracht en andere wijzen van eigendomsverkrijging (verjaring, vermenging, natrekking en zaaksvorming) en gemeenschap.<br/><br/>Werkwijze: <br/>Het vak zal worden gedoceerd aan de hand van hoorcolleges en werkgroepen. Op de werkgroepen wordt de stof behandeld aan de hand van opdrachten. <br/>Het is mogelijk om door het individueel voldoen aan specifieke opdrachten en actieve deelname aan de werkgroepen in aanmerking te komen voor een halve bonuspunt bij het tentamen.Raadpleeg Studentportal voor nadere informatie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5806">mr. E.E. Slob</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a><a href="/ocasys/rug/vak/viewtutor?tutor=5806">mr. E.E. Slob</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a><a href="/ocasys/rug/vak/viewtutor?tutor=1554">prof. mr. dr. F.M.J. Verstijlen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroep, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Geadviseerd: Burgerlijk Recht 1</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>NB: niet alle stof uit het boek van Pitlo/Reehuis &amp; Heisterkamp komt in de werkcolleges aan de orde! Uit Pitlo/Reehuis &amp; Heisterkamp moeten de nrs. 1-99; 155-249, 291-328 en 588-640 zelfstandig, aan de hand van de hoorcolleges worden bestudeerd!</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75984"><b>Europees Recht</b></a></td><td align="right"><b>RGBEE00110</b></td></tr><tr><td align="justify" colspan="3">Dit vak is gericht op studenten die straks als juristen in Nederland willen werken. De kernaspecten van dit vak hebben betrekking op het EU-recht als zodanig, maar er is ook aandacht voor de doorwerking van het EU recht in de nationale rechtsorde. De volgende onderwerpen worden behandeld:<br/>- De Europese Instellingen en institutioneel evenwicht<br/>- Het rechtsstatelijk karakter van de Unie<br/>- Bevoegdheden en besluitvorming op EU-niveau<br/>- Handhaving en rechtsbescherming binnen de EU-rechtsorde<br/>- Autonomie, voorrang, doorwerking en volle werking van unierecht<br/>- De Interne markt en invloeden van andere beleidsterreinen daarop<br/>- Burgerschap van de Unie<br/>- Mededingingsrecht<br/>- Ontwikkeling van de Europese integratie</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1488">  Nog niet bekend</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75845"><b>Formeel Belastingrecht</b></a></td><td align="right"><b>RGBFI00605</b></td></tr><tr><td align="justify" colspan="3">Op basis van de bepalingen van de AWR wordt in de meeste gevallen de belastingschuld zoals die uit de heffingswetten voortvloeit geconcretiseerd. Pas door de bepalingen uit AWR wordt het mogelijk de belastingschuld te formaliseren en daardoor vorderbaar en inbaar te maken.<br/>Daarnaast bevatten AWR en AWB in onderlinge samenhang bepalingen omtrent de rechtsgang in belastingzaken, dat wil zeggen dat zij bezwaar, beroep en beroep in cassatie regelen (het fiscale procesrecht). Tenslotte regelt de AWR het fiscale strafrecht, zowel administratief als zuiver strafrechtelijk. Kernleerstukken zijn de begrippen materiële en formele belastingschuld, aanslagregeling, fiscale administratieve boete, fiscale rechtsbescherming, bewijslastverdeling.<br/><br/>Het vak wordt gegeven in de vorm van hoorcolleges. Daarin wordt een zo compleet mogelijk overzicht van de stof gegeven en wordt de onderlinge samenhang van bepalingen geïllustreerd. De toetsing vindt plaats door middel van een essaytentamen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1518">mr. N.J. Schutte</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1518">mr. N.J. Schutte</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Niet af te leggen door studenten die voor 1-9-2016 het vak Formeel Belastingrecht 1 hebben afgelegd.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75986"><b>Inkomstenbelasting voor RB/HBO schakelst</b></a></td><td align="right"><b>RGBFI00505</b></td></tr><tr><td align="justify" colspan="3">Bij het vak Inkomstenbelasting voor RB/HBO schakelstudenten staat de Wet inkomstenbelasting 2001 centraal. Een belangrijk deel van het vak is gewijd aan het inkomensbegrip zoals dat geldt voor niet-ondernemers. In dit verband komen aan de orde het inkomen uit buiten onderneming verrichte arbeid, uit periodieke uitkeringen, uit de eigen woning. Ten slotte wordt aandacht besteed aan de invloed van het Europese recht op de inkomstenbelasting.<br/><br/>Bij het vak Inkomstenbelasting voor RB/HBO schakelstudenten wordt voortgebouwd op de kennis verworven bij het RB en het HBO. <br/><br/>Werkwijze: Hoorcolleges, waarin de stof wordt behandeld; werkcolleges, waarin opdrachten worden behandeld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a><a href="/ocasys/rug/vak/viewtutor?tutor=1338">prof. dr. J.N. Bouwman</a><a href="/ocasys/rug/vak/viewtutor?tutor=1370">prof. mr. dr. R.M. Freudenthal</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Alleen toegankelijk voor doorstromers met een goedgekeurd programma)</li><li>Geadviseerd: Belastingrecht 1</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De colleges en tentamens zijn gecombineerd met het uitgebreidere vak Inkomstenbelasting</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75979"><b>Loonheffingen</b></a></td><td align="right"><b>RGBFI00105</b></td></tr><tr><td align="justify" colspan="3">In het vak Loonbelasting komen de loonbelasting en de premieheffing volks- en werknemersverzekeringen aan de orde. Vrijwel alle werknemers die in Nederland in dienst zijn bij een werkgever betalen loonbelasting. Hetzelfde geldt voor mensen met een uitkering. De manier waarop het loon en daarover verschuldigde belasting worden berekend en betaald aan de fiscus is het voornaamste onderwerp van dit vak. Daarnaast is er aandacht voor de premieheffing werknemersverzekeringen. Uit deze premies wordt een groot aantal in Nederland geldende uitkeringen voor werknemers betaald.<br/>De benodigde wetteksten voor de premieheffing volks- en werknemersverzekeringen komen óf op <a href="http://nestor.rug.nl" target="_blank">Studentportal (Nestor)</a> te staan óf worden in de vorm van een syllabus aangeboden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1312">mr. R.P.C. Adema</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1312">mr. R.P.C. Adema</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75892"><b>Omzet- en Overdrachtsbelasting</b></a></td><td align="right"><b>RGBFI00410</b></td></tr><tr><td align="justify" colspan="3">Behandeld worden twee belastingvakken: de omzetbelasting en de overdrachtsbelasting en de samenloop daartussen. Er wordt één tentamen afgenomen, o.a. met het oog op de toetsing van de samenloopbepalingen tussen beide belastingwetten. De omzetbelasting is een algemene verbruiksbelasting die de particuliere bestedingen wenst te treffen. Aandacht zal vooral worden besteed aan heffingstechniek, zoals deze in de wet gestalte is gegeven en aan de invloed van de EU-richtlijnen op de Nederlandse omzetbelasting. Gezien het grote aandeel van deze belasting in de nationale en Europese middelen is een grondige kennis van structuur en theorie onontbeerlijk. De overdrachtsbelasting beoogt de verkrijging van onroerende zaken te treffen. De techniek en achtergronden van de wet zullen aan de orde komen en ook de samenloopbepalingen met de omzetbelasting. Het vak is verplicht voor de fiscaal-economische en de fiscaal-juridische studierichting. Voor de notariële studierichting vormt het een goed aansluitend keuzevak.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1453">mr. ing. J.L. bij de Leij</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75901"><b>Vennootschapsbelasting</b></a></td><td align="right"><b>RGBFI00110</b></td></tr><tr><td align="justify" colspan="3">Het vak vennootschapsbelasting bestudeert de Wet op de vennootschapsbelasting 1969. Op grond van deze wet wordt een belasting geheven over de winst die onder meer naamloze en besloten vennootschappen behalen. De onderwerpen die in de colleges vennootschapsbelasting aan de orde komen zijn: de subjectieve belastingplicht voor de vennootschapsbelasting (dat wil zeggen: wie zijn belastingplichtig?) en de berekening van de winst waarbij onder meer aan bod komen: de deelnemingsvrijstelling,de fiscale aspecten van fusies en splitsingen, en de fiscale eenheid. Voorts wordt aandacht besteed aan de bepalingen in de Wet op de vennootschapsbelasting 1969 rond de verliesverrekening, de objectvrijstelling, de giftenaftrek, het tarief alsmede de belangrijkste heffings- en invorderingsaspecten die specifiek van belang zijn voor de vennootschapsbelasting.<br/><br/>Bij het vak Vennootschapsbelasting wordt voortgebouwd op de kennis verworven bij de vakken Belastingrecht 1 en Winst.<br/><br/>Werkwijze: hoorcolleges waarin de stof wordt behandeld; werkcolleges waarin casussen worden behandeld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1329">mr. M.J. Boer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1329">mr. M.J. Boer</a><a href="/ocasys/rug/vak/viewtutor?tutor=1338">prof. dr. J.N. Bouwman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li><li>Geadviseerd: Belastingrecht 1 en Bedrijfseconomie voor Fiscalisten</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75891"><b>Winst</b></a></td><td align="right"><b>RGBFI00205</b></td></tr><tr><td align="justify" colspan="3">Het vak behandelt de fiscale winstbepaling. De nadruk valt op de winst uit ondernemingen gedreven door natuurlijke personen, als bron voor de inkomstenbelasting. <br/>Centraal staan de onderneming, het totale en het jaarwinstbegrip, de IB-ondernemingsvormen, voorraadwaardering, fiscale reserves en de vorming van voorzieningen, de oudedagsvoorziening,de overdrachts- en liquidatiewinst, de overgang naar de BV-vorm en de terbeschikkingstellingsregeling.Daarnaast is de fiscale winstbepaling relevant voor de heffing van de vennootschapsbelasting, waar zo nodig naar verwezen wordt. <br/>Het hoorcollege geeft de hoofdlijnen weer. In het werkcollege zullen vraagstukken worden behandeld, waarbij geleerd wordt hoe met toepassing van met name standaardarresten complexe problemen  kunnen worden opgelost.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1390">mr. H. Halma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1390">mr. H. Halma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die minimaal 45 EC WO-propedeusevakken hebben behaald of het vak in een goedgekeurd pre-master- of beschikkingsprogramma volgen.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

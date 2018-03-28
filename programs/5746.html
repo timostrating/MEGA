@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5746&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5746"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5746">Informatie over LLM Energy and Climate Law</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>LLM Energy and Climate Law</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>compulsory</td><td>RGDOS500</td><td><a href="/ocasys/rechten/vak/show?module=75642">English written proficiency support</a></td><td>Engels</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMIR50606</td><td><a href="/ocasys/rechten/vak/show?module=75740">Seminar International Environmental Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGAEO50106</td><td><a href="/ocasys/rechten/vak/show?module=75814">Economics of Regulation</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMEE51206</td><td><a href="/ocasys/rechten/vak/show?module=75645">Energy Law and Policy</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>compulsory</td><td>RGMRE50006</td><td><a href="/ocasys/rechten/vak/show?module=75972">Climate Law</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMEE51306</td><td><a href="/ocasys/rechten/vak/show?module=75662">Energy Market Law</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr class="color"><td class="nocolor">semester II</td><td>compulsory</td><td></td><td>Master's thesis LL.M.: ELECL</td><td>Engels</td><td>18</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>compulsory</td><td>RGMEE51106</td><td><a href="/ocasys/rechten/vak/show?module=75654">Energy Investment and Trade Law</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>compulsory</td><td>RGMEE50806</td><td><a href="/ocasys/rechten/vak/show?module=75919">Energy Contracting</a></td><td>Engels</td><td>6</td><td>3</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">The programme consists of 60 ECTS: <br/>1. Six compulsory courses and a compulsory seminar (42 ECTS);<br/>2. Thesis (18 ECTS).<br/><br/>This programme is only accessible to those students that have been fully admitted by the Admissions Board. More information about the programmes and the admission procedures can be found on <a href="http://www.rug.nl/law/llm" target="_blank">www.rug.nl/law/llm</a>.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75972"><b>Climate Law</b></a></td><td align="right"><b>RGMRE50006</b></td></tr><tr><td align="justify" colspan="3">This course aims at familiarizing students with the laws and regulations that intend to combat climate change, in particular those applying to the energy sector. The energy sector is a major emitter of greenhouse gases. Various laws and regulations have been designed to reduce greenhouse gas emissions and stimulate climate-friendly energy sources. The course first pays attention to international climate law and then moves on to discuss European climate law and its implementation in the Member States. The international legal framework and negotiations are discussed first, including the Kyoto Protocol and the Paris Agreement. Thereafter the flexible instruments will be examined that allow governments and companies to achieve their emission reduction targets in a cost-effective way. This requires a study of, for instance, International Emissions Trading and the Clean Development Mechanism, but also the Regional Greenhouse Gas Initiative in the USA, the EU Emissions Trading Scheme as well as carbon trading schemes in Asian countries, such as China and South Korea. The course will then zoom in on climate law in the EU, focusing on the EU Emissions Trading Scheme as well as the regulation of renewables and energy-efficiency in the EU. The legal design of carbon capture and storage (CCS) will also be treated, discussing issues like financial incentives, safety norms and liabilities for potential damage. Finally, developments in the field of climate change litigation will be highlighted for different jurisdictions. The course is taught by lecturers of the University of Groningen as well as by lecturers from legal practice which provides students with enhanced knowledge of their professional prospects.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1583">prof. dr. E. Woerdman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1343">prof. dr. M.M.T.A. Brus</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a><a href="/ocasys/rug/vak/viewtutor?tutor=1583">prof. dr. E. Woerdman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Recommended: Energy Law and Policy.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75814"><b>Economics of Regulation</b></a></td><td align="right"><b>RGAEO50106</b></td></tr><tr><td align="justify" colspan="3">This course discusses the economic rationale and economic consequences of various types of regulation, including energy market regulation, environmental regulation, cartel and merger regulation, self-regulation and social security regulation. The course concentrates on regulation in general and the regulation of competition in particular, using international examples. There are two major arguments for regulating competition. The first one is that in a free market, firms may agree not to compete, for example with the aim to raise prices, or a firm may grow so big that it can dominate the market. Regulation is geared to preventing abuses of market power that may possibly emerge. Economics of antitrust analyses these issues and distinguishes between economically useful and economically harmful forms of co-operation and competition. The second argument for government regulation is that competition should be avoided if the market is best served by one single firm, a so-called ‘natural’ monopoly. Public monopolies, or private monopolies monitored by public authorities, have been established in the past in sectors such as electricity, gas, water, railways and telecommunications. Recently, many of the former public monopolies have been privatized and some industries (e.g. energy and telecommunications) have been fully or partially deregulated. Economics of Regulation assesses the arguments in favor of and against the regulation of natural monopolies. Various examples of regulation, deregulation and self-regulation from different jurisdictions will be used to discuss the underlying economic theory, varying from energy unbundling to airline cargo cartels and prison gang behavior. Regulatory failure is also extensively elaborated upon. In the final lecture, students present their draft papers in an international discussion environment where they get feedback from other students as well as from the lecturer.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1583">prof. dr. E. Woerdman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1583">prof. dr. E. Woerdman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, presentatie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>If taken as an optional course, this course is only accessible for students that have obtained their Law first year certificate (propedeuse) at a research university and for students that have been admitted to a master's degree program within the Faculty of Law. If this course is concluded as part of a bachelor's degree program, these credits cannot be taken into consideration within a master's degree program.</li><li>Accessible for students that have fulfilled 100 EC of their bachelor degree.</li><li>This course is also open to non-law exchange students (please contact the International Office of the Faculty of Law for more information)</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">A student receives a bonus of 0,5 points on top of his grade for the paper. (a) if he attends at least 9 out of 10 classes AND (b) if he submits a one-pager to the lecturer through Nestor at the end of each week on what he has learned from the lecture and the book for his reaearch paper.<br/><br/>The Viscusi text book is also available for free, from the University of Groningen library, as an e-book.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75919"><b>Energy Contracting</b></a></td><td align="right"><b>RGMEE50806</b></td></tr><tr><td align="justify" colspan="3">The course on energy contracting aims at familiarizing the students with some of the contracts and contract strategies used in the energy sector. The focus is particularly on the gas sector and the contracts represent different stages in the gas supply sector: (i) exploration and production, (ii) supply, and (iii) trading. During the course the students will analyze three types of energy contracts, each representing a specific part of the energy chain. The first contract is used in the upstream oil and gas sector and involves a joint venture contract or joint operating agreement (JOA), i.e. a contract between the companies holding an exploration and production license. The students will be presented and get familiar with some JOAs from different jurisdictions around the North Sea basin. Specific attention will be given to the role of government in relation to these JOAs. Thereafter a gas supply contract will be discussed. This is a contract between a producer and supplier and/or a supplier and a major consumer. The third contract to be discussed is a standard agreement drafted by the European Federation of Energy Traders (EFET). This is a standard contract which is used to facilitate energy trading in a liberalized energy market. <br/>These energy contracts will be presented and discussed in detail by legal specialists from the energy/gas sector, each of them having in-depth knowledge of these contracts. Thereafter the students will be required to actively participate by way of drafting or commenting on one or more of these contracts and present their results in class. The course is based on a combination of lectures and interactive classes and aims at developing problem-solving competence as well as a theoretical understanding of the subject. The course is set up as a workshop, which means that the students are required to actively engage in drafting, assessing and presenting different types of energy contracts.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10928">dr. R.C. Fleming, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Only students who have attended the class on Energy Market Law can attend this course.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">A prerequisite for participating in the exam is that all assignments have been submitted during the course.Attendance obligatory.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75654"><b>Energy Investment and Trade Law</b></a></td><td align="right"><b>RGMEE51106</b></td></tr><tr><td align="justify" colspan="3">This course discusses the main principles relating to energy investments and energy trade. The focus will be on the main principles of WTO/GATT and the Energy Charter Treaty (ECT). It will in particular address the issue of investment protection provided by several bilateral investment treaties, WTO/GATT and ECT as well as the rules governing energy trade and transit. Given the new powers of the EU Commission, also the issue of EU external energy trade will be discussed. The students will also be familiarized with the most relevant dispute settlement mechanisms. In addition, there are lectures that will be delivered by experts from the European Commission and the Energy Charter Treaty Secretariat, which will be held in Brussels as part of a two days visit</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10928">dr. R.C. Fleming, LLM.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10928">dr. R.C. Fleming, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Participeren in het vak Energy Law and Policy is vereist.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Attendance obligatory</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75645"><b>Energy Law and Policy</b></a></td><td align="right"><b>RGMEE51206</b></td></tr><tr><td align="justify" colspan="3">This course provides an introduction to energy law and policy: ‘from well head to burner tip’. It presents students an overview of the organizational and regulatory framework applying to the energy sector. After presenting energy law and policy developments on an international and EU level, the course will focus on the main legal principles applying to the energy chain. After discussing the legal regimes applying to the production of oil, gas and electricity, the course will focus on the regulation of electricity and gas networks. The course will conclude by discussing the main elements of the way in which states organize security and reliability of energy supply.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10928">dr. R.C. Fleming, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students, with the possible exception of the MSc Energy and Environmental Sciences.</li><li>Not accessible for students who have passed Energy Law before 1-9-2015.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Attendance obligatory</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75662"><b>Energy Market Law</b></a></td><td align="right"><b>RGMEE51306</b></td></tr><tr><td align="justify" colspan="3">This course focuses on the legal framework applying to liberalized energy markets. Energy market liberalization is a global phenomenon but this course will focus in particular on the EU legal framework. In the EU the energy sector is being liberalized and re-regulated since the early 1990s. This process has a major impact on the organization of the market and the way in which the production and supply of oil, gas and electricity is organized and regulated. This has in particular had an impact on the organization of the electricity and gas networks and the way in which consumers can achieve access to these networks. As the EU not only relies on secondary legislation governing the energy sector, the course will also focus on the effect of primary EU Law as an instrument to create an internal energy market.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10928">dr. R.C. Fleming, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1507">prof. mr. dr. M.M. Roggenkamp</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Attendance obligatory</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75642"><b>English written proficiency support</b></a></td><td align="right"><b>RGDOS500</b></td></tr><tr><td align="justify" colspan="3">The English proficiency support workshops consist of three parts:<br/>1.	A compulsory test<br/>2.	7 workshops<br/>3.	One-on-one tutorials<br/><br/>Ad 1. All students participate in a short English proficiency test upon arrival to Groningen. This test takes 60 minutes and students need to write an argumentative essay in academic style in this time which deals with one of six suggested topics.<br/><br/>Ad 2. Based on this test score, students are advised as to which workshops, if any, they should attend. These areas include:<br/>-	Punctuation<br/>-	Formality<br/>-	articles &amp; concord<br/>-	digital tools<br/>-	the verb phrases (tenses, voice) &amp; grammar pitfalls<br/>-	sentence structure <br/>-	paragraph structure <br/>Student are obliged to attend in the workshops that are indicated as compulsory for them after the test. But all workshops are open to all LLM students. <br/><br/>Ad 3. In semester 2 one-on-one tutorials are offered for students who have followed the required workshops. These tutorials deal with written work produced by the individual students (e.g. one of the already produced papers from semester 1 or a chapter of the thesis). The tutor will provide feedback on this written piece.<br/><br/>Please be aware that the tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The one-on-one tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The support starts with a compulsory test and is followed by (partly compulsory, partly optional) workshops on specific topics.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75740"><b>Seminar International Environmental Law</b></a></td><td align="right"><b>RGMIR50606</b></td></tr><tr><td align="justify" colspan="3">The protection of the environment and the promotion of sustainable development is one of the main challenges of our time. Depletion of fish stocks in the oceans, air and water pollution, climate change, and accidents with nuclear power plants are just a few examples of the complex issues that need national and international legal regulation. The course will provide a general overview of the history and basic principles of international environmental law and sustainable development following the historic line starting with the Stockholm Conference of 1972, the Rio Conference on Environment and Development of 1992, the Johannesburg Conference of 2002 to Rio+20, 2012. This will be followed by investigating through student contributions and discussion the application of the general principles, rules and procedures in relation to various areas, including transboundary pollution, marine pollution, liability questions, the protection of biodiversity, climate change, the protection of the Arctic and Antarctica, and waste disposal.<br/><br/>The course will include lectures focusing on the main features of international environmental law and the law of sustainable development and working sessions in which students will present their research findings. An individual final paper on a focused topic and an oral examination will conclude the course.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1481">prof. mr. dr. F.A. Nelissen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=1481">prof. mr. dr. F.A. Nelissen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">mondeling, paper, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Recommended: Public International Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

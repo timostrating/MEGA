@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5193&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5193"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5193">Informatie over Ba TH-dlt (incl. Grieks, met PTHU-traject)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba TH-dlt (incl. Grieks, met PTHU-traject)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>THB2FILE5</td><td><a href="/ocasys/rechten/vak/show?module=75522">Godsdienstfilosofie</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>keuzegroep <b>A</b></td><td>THQBWE5</td><td><a href="/ocasys/rechten/vak/show?module=75586">Themamodule Bijbelwetenschap</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>THB2JODE5</td><td><a href="/ocasys/rechten/vak/show?module=75571">Jodendom</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>THB2HSJE5</td><td><a href="/ocasys/rechten/vak/show?module=75570">Heterodoxe stromingen</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>keuzegroep <b>B</b></td><td>THQBWE5</td><td><a href="/ocasys/rechten/vak/show?module=75586">Themamodule Bijbelwetenschap</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 5</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>THB2NT2E5</td><td><a href="/ocasys/rechten/vak/show?module=75601">Nieuwe Testament en vroeg christendom 2</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>THB2IOESE5</td><td><a href="/ocasys/rechten/vak/show?module=75513">Islamic Origins</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td></td><td>Module uit specialisatieminor</td><td>Nederlands</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 6</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td></td><td>Module uit specialisatieminor</td><td>Nederlands</td><td>10</td><td></td></tr><tr><td class="nocolor">semester II b</td><td>keuzegroep <b>C</b></td><td>THQBWE5</td><td><a href="/ocasys/rechten/vak/show?module=75586">Themamodule Bijbelwetenschap</a></td><td>Nederlands</td><td>5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75522"><b>Godsdienstfilosofie</b></a></td><td align="right"><b>THB2FILE5</b></td></tr><tr><td align="justify" colspan="3">Systematische inleiding in de godsdienstfilosofie, mede geïllustreerd aan de hand van de geschiedenis van de filosofie. O.a. aard en methode, verhouding geloof en rede in historisch en systematisch perspectief, wijsgerige godsleer, religieuze taal en ervaring, religieuze epistemologie, probleem van het kwaad, verhouding godsdienst en wetenschap, het religieus pluralisme, atheïsme. De colleges worden individueel voorbereid door grondige bestudering van een hoofdstuk en de bijbehorende studievragen uit het handboek. Na een inleidend hoorcollege van de docent, wordt religieuze argumentaties geoefend in een aansluitend werkcollege.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11330">dr. D. van den Auweele</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroepen, hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Filosofie B1 (incl. argumentatietheorie)</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoorcolleges: 13 uur; hoor-/werkcolleges: 13 uur; verwachte zelfstudie: 118 uur.</li><li>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs- en Examenregeling.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75570"><b>Heterodoxe stromingen</b></a></td><td align="right"><b>THB2HSJE5</b></td></tr><tr><td align="justify" colspan="3">In deze module staat de variëteit aan stromingen in jodendom en christendom in de oudheid centraal. Nieuwe tekstvondsten uit de 20ste eeuw zoals die van Qumran en Nag Hammadi hebben ons beeld van jodendom en christendom in de antieke wereld ingrijpend veranderd. ‘Qumran’ en ‘Nag Hammadi’ laten juist de veelvormigheid van stromingen en tradities in de oudheid zien.<br/>De Dode Zeerollen van Qumran werpen nieuw licht op de ontwikkeling van nieuwe (religieuze) ideeën en de omgang met overgeleverde tradities in de joodse cultuur in de Griekse en vroeg-Romeinse periode (3de eeuw v. Chr.–1ste eeuw n. Chr.). Recente historische, sociologische en theologische verklaringen voor de variëteit van vroegjoodse stromingen zullen worden bestudeerd en geëvalueerd.<br/>De Nag Hammadi geschriften bieden een unieke toegang tot de gevarieerde geestelijke sfeer van het vroege christendom in de eerste eeuwen van de jaartelling. In tegenstelling tot de zwart-wit visies van de kerkvaders getuigen deze documenten van een veelheid van stromingen en opvattingen die moeilijk past binnen het beperkte ‘gnostieke’ kader van de antiketterse schrijvers van de Late Oudheid.<br/>Naast een algemenere bespreking van de pluriforme vroeg-Joodse en vroegchristelijke literatuur zullen ook vier thema’s centraal staan:<br/>1.Groepen, stromingen, sektes en ketters<br/>2.Apocalyptiek en het einde van de wereld<br/>3.Dood, hemel en hel, en het menselijk lichaam na de dood”<br/>4.Messianisme en messiaanse figuren</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10573">prof. dr. S.N. Mason</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10573">prof. dr. S.N. Mason</a><a href="/ocasys/rug/vak/viewtutor?tutor=1294">dr. dr. F.L. Roig Lanzillotta</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, tutorial</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoor-/werkcolleges: 28 uur; verwachte zelfstudie (voorbereiding colleges en tentamen): 112 uur.</li><li>Samenstelling eindcijfer:   30% gemaakte en tijdig ingeleverde opdrachten(gespecificeerd in studiehandleiding) 30% eindpresentatie, 40% tentamen. Het tentamen bestaat uit 2 deeltoetsen.</li><li>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs - en Examenregeling. Studenten moeten verplicht 80% van de colleges bijwonen en voorbereiden door de opgegeven stof te lezen en de opdrachten uit te voeren en in te leveren voor aanvang van het college.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75513"><b>Islamic Origins</b></a></td><td align="right"><b>THB2IOESE5</b></td></tr><tr><td align="justify" colspan="3">Drawing on a wide range of material (texts, art, archaeology), this course unit presents a variety of perspectives on the emergence of Islam and an Arabophone Islamic empire. Particular attention is devoted to Muslim and non-Muslim, classical and contemporary, approaches to the Qur'an (and to a lesser extent the canonized Hadith). Time is devoted to the study of the content of these texts, as well as classical tafsir (in translation). Consideration is also given to the analysis of emergent Islam as a break from, or continuation of, trends in Late Antiquity, including intertextuality between the Qur’an/Hadith and the biblical tradition.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10127"> C.E. Wilde, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper/presentation and/or written examination</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Students must have previously followed an introductory course to Islam (THMIN-A5 / THB1ISE5 Study of Islam or THB3GCIS10 History of Islam in the Middle East or LXA008P10 Introduction to Arab-Islamic Culture or any equivalent course elsewhere).</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Student workload: lectures 7x 3 hours = 21 hours; studying and reading literature in preparation for the lectures and assignments 84  hours, written assessment 10 hours,  bibliography, including preparation 25 hours</li><li>Compulsory attendance in accordance with the Teaching &amp; Examination Regulations applies to this module.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75571"><b>Jodendom</b></a></td><td align="right"><b>THB2JODE5</b></td></tr><tr><td align="justify" colspan="3">Met behulp van colleges, verplichte literatuur (zelfstudie)wordt een overzicht verkregen van de geschiedenis van het Jodendom, en een inleiding verkregen van de literatuur van de verschillende periodes (Vroeg Joodse literatuur in de Hellenistisch-Romeinse periode; rabbijnse literatuur; Joodse literatuur na de Talmud). Daarnaast wordt men ingeleid in enkele belangrijke theorieën van het Jodendom en krijgt men enig inzicht in het functioneren van het Jodendom in de praktijk.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">referaat, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Belasting student: hoorcolleges: 21 uur; referaat: 7 uur; verwachte zelfstudie: 112 uur.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75601"><b>Nieuwe Testament en vroeg christendom 2</b></a></td><td align="right"><b>THB2NT2E5</b></td></tr><tr><td align="justify" colspan="3">Hoor- en werkcolleges. Centraal staan geschriften van Paulus, en de overige Nieuw Testamentische brieven. De colleges bieden a) meest recente vragen en ontwikkelingen in het onderzoek naar Paulus b) de overgangen naar de deutero-Paulijnen en andere interpretaties van Paulus c) de latere boeken van het Nieuwe Testament (met uitzondering van de Evangeliën) in hun historische context.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4287">prof. dr. G.H. van Kooten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">deeltoets(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>5 EC = 5 x 28 uur = 140 uur</li></ul>Belasting student: colleges: 7 weken x 2 uur x 2 quadrimesters = 28 uur; voorbereiding: 28 uur; overige zelfstudie, incl. tentamenvoorbereiding: 84 uur.<br/>Voor dit college geldt een aanwezigheidsverplichting conform de Onderwijs- en Examenregeling.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75586"><b>Themamodule Bijbelwetenschap</b></a></td><td align="right"><b>THQBWE5</b></td></tr><tr><td align="justify" colspan="3">Offers behoren tot het hedendaagse leven - ook in de westerse samenleving. We “offeren” mensen op het altaar van bijvoorbeeld de economie of  het verkeer. Het begrip offer is ambigu: aan de ene kant kan het een leven-schenkende gave betekenen en aan de andere kant kan het tot een sacralisering van geweld leiden. <br/>Dit interdisciplinaire college is opgezet als een debat waarin verschillende  interpretaties van offer aan de orde komen: in de religiegeschiedenis, de filosofie, en vooral in de joods-christelijke traditie. Allereerst onderzoeken we de bijbels-theologische verbanden. Wat wil het zeggen dat het begrip van offer in de Hebreeuwse Bijbel zo sterk verschilt van ons begrip van offer dat in de buurt van opoffering komt? Waarom wordt het lijden en sterven van Jezus als een offer beschouwd, en hoe staat dat in verband met het offer-begrip uit het Oude Testament? Welke gedachte zit er achter? Was het een voorbestemd offer? Of was het toch eerder opoffering?<br/>Daarnaast verkennen we het hedendaagse denken over offer, verzoening en opoffering, aan de hand van de christelijke cultuurfilosofie van René Girard en het joodse denken van Emmanuel Levinas. Hoe zetten deze denkers het bijbels-theologische perspectief op offer en verzoening onder spanning? We beginnen dit interdisciplinaire college met de discussie over Kierkegaards "Vrees en beven". In de loop van deze module zoeken we vanuit de wisselwerking van systematische theologie en de Bijbelwetenschap naar criteria voor een bijbels-theologisch verantwoord spreken over offer en verzoening.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12138">dr. R.D.N. van Riessen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9567"> M. Heemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=12138">dr. R.D.N. van Riessen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor-/werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Welke gedeelten van de genoemde literatuur verplicht zijn en welke aanvullende literatuur daar nog aan toegevoegd wordt, zal tijdens het eerste college bekend worden gemaakt.</li><li>Belasting student: colleges: 28 uur (4 uur per week en 56 voorbereiding (lezen stof enuitvoeren opdrachten). De overige 56 uur is voor het voorbereiden van de presentatie (12) en het maken van het werkstuk (44)</li><li>Aanwezigheid en een goede voorbereiding zijn essentieel voor het welslagen van het college. Ook formeel geldt een aaanwezigheidsplicht (80%). Voor de meeste colleges wordt voorbereiding verwacht. Insturen van 80% van de college-opdrachten per onderdeel gedurende de module-weken is vereist om aan de toetsing te kunnen meedoen.Goede kwaliteit van de antwoorden levert een bonuspunt op voor het tentamen. Toetsing:Tentamen 50% en korte paper (50%)</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

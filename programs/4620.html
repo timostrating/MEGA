@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4620&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4620"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4620">Informatie over Minor Psychology in Society</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Psychology in Society</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>PSMIN02</td><td><a href="/ocasys/rechten/vak/show?module=75296">Research instruments critically considered</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>PSMIN11</td><td><a href="/ocasys/rechten/vak/show?module=75295">Introduction to Psychological Theories</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PSMIN09</td><td><a href="/ocasys/rechten/vak/show?module=75321">The social psychology of communication</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester I b</td><td>keuze</td><td>PSMIN03</td><td><a href="/ocasys/rechten/vak/show?module=75307">Psychology in the workplace</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PSMIN05</td><td><a href="/ocasys/rechten/vak/show?module=75112">Human error</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>PSMIN07</td><td><a href="/ocasys/rechten/vak/show?module=75297">Social influence</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>PSMIN08</td><td><a href="/ocasys/rechten/vak/show?module=75298">Consumer and economic psychology</a></td><td>Engels</td><td>5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75298"><b>Consumer and economic psychology</b></a></td><td align="right"><b>PSMIN08</b></td></tr><tr><td align="justify" colspan="3">Deze cursus gaat in op de psychologische processen die ten grondslag liggen aan economisch en consumentengedrag, en bespreekt welke individuele en sociale factoren hierop van invloed zijn. We gaan in op effecten van informatie en ervaringen met producten en diensten op affect (emoties), cognities (overtuigingen en oordelen) en gedrag (aankoopbeslissingen en consumentengedrag). We laten zien dat economische theorieën vaak geen afdoende verklaring geven voor alledaags economisch en consumptiegedrag, en bespreken waarom mensen vaak geen ‘rationele’ beslissingen nemen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9115">dr. A.B. Ünal</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=799">  guest lecturers</a><a href="/ocasys/rug/vak/viewtutor?tutor=959">prof. dr. E.M. Steg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75112"><b>Human error</b></a></td><td align="right"><b>PSMIN05</b></td></tr><tr><td align="justify" colspan="3">De mens wordt vaak als een risicofactor beschouwd, als een systeemcomponent die door onveilig handelen een belangrijk aandeel heeft in het veroorzaken van rampen. Maar dit is een wat eenzijdige kijk op de zaak, aangezien mensen in een systeem functioneren en de meeste mensen niet met opzet fouten maken of rampen veroorzaken. Er is ook een ander perspectief mogelijk, waarin de mens de redder is die door een groot aanpassings- en compensatievermogen voorkomt dat systemen die de veiligheid zwaar op de proef stellen uitlopen op een ramp. Uitgangspunt van deze cursus is dat zelfs wanneer een fout van een individu getraceerd kan worden op basis van onjuist handelen, dit individuele handelen bekeken moet worden vanuit de context van de omgeving, samenleving en organisatie. Deze cursus geeft een introductie van de basisconcepten uit de arbeids- en cognitieve psychologie die centraal staan bij het minimaliseren van menselijke fouten. Onderwerpen als het ontwerpen van werk in relatie tot het maximaliseren van prestatie en gezondheid, mentale werkbelasting, stress, en selectie en training worden gecombineerd met de introductie van technieken om menselijke fouten te onderzoeken en classificeren. Er wordt nadruk gelegd op het treffen van veiligheidsmaatregelen binnen de gehele context, en op het voorkomen van situaties waarin fouten kunnen optreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=978">prof. dr. D. de Waard</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=978">prof. dr. D. de Waard</a><a href="/ocasys/rug/vak/viewtutor?tutor=799">  guest lecturers</a><a href="/ocasys/rug/vak/viewtutor?tutor=11868">dr. J.L. Veldstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze), werkstuk (individueel)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75295"><b>Introduction to Psychological Theories</b></a></td><td align="right"><b>PSMIN11</b></td></tr><tr><td align="justify" colspan="3">This course provides an introduction to a wide range of psychological research including; behavioural, neurological, cognitive, clinical, cultural, developmental, evolutionary, and social psychology. The aim of introducing the multiple disciplines of psychology is to demonstrate that human behaviour can be understood and examined from many perspectives. The course is designed with non-psychology students in mind and also gives insight into how psychological research is carried out and applied. As such, understanding how psychological knowledge is generated helps students to critically assess common beliefs about human emotions, thoughts, and behaviours.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8407">dr. L. Klavina</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11159"> K. Fousiani</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze) DIGITAAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75307"><b>Psychology in the workplace</b></a></td><td align="right"><b>PSMIN03</b></td></tr><tr><td align="justify" colspan="3">De Arbeids-, Organisatie- en Personeelspsychologie (AOP) bestudeert via drie invalshoeken hoe persoonlijke, sociale en omgevingsvariabelen gerelateerd zijn aan affect, cognities en gedrag van mensen in hun werksituatie. De drie hoofdstromen (A, O en P) zullen worden toegelicht, geïllustreerd en kritisch geëvalueerd. Specifieke onderwerpen die aan de orde komen zijn: de taakverrichting, de gezondheid en het welzijn van de individuele werknemer (A), werkmotivatie, leiderschap en macht, en groepsprocessen zoals samenwerken, conflicten, en besluitvorming (O), en de voorwaarden en de effecten van het personeelsbeleid van de organisatie (P).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6754">dr. N.P. Leander</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6754">dr. N.P. Leander</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75296"><b>Research instruments critically considered</b></a></td><td align="right"><b>PSMIN02</b></td></tr><tr><td align="justify" colspan="3">Deze in de minor verplichte cursus geeft een inleiding in de statistische kwesties en de meetproblemen aan de hand van gevalsstudies. Studenten leren hoe ze beweringen uit onderzoek kritisch moeten interpreteren in termen van steekproefprobelem, validiteit van metingen en betrouwbaarheid van instrumenten. Specifieke aandacht wordt gegeven aan het gebruik van instrumenten in cross-cultureel onderzoek.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1074">dr. A. Sarampalis</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1074">dr. A. Sarampalis</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75297"><b>Social influence</b></a></td><td align="right"><b>PSMIN07</b></td></tr><tr><td align="justify" colspan="3">Why do we always spend too much during sales? Why is “playing hard to get” such a great strategy to pick up a partner? Why do you sell ice-cream with a man in a speedo and insurances with a man in a business suit? How can you reduce rule transgressions by wearing gothic clothing? In this course you get an answer to these and many other questions. In this course you’ll learn how people’s beliefs, and actions are influenced by others. You will be introduced to various theories, principles and studies that give insight to how you can use people’s need for affiliation, accuracy and a positive self concept to persuade them. This (interactive) course is focused at both theory development and practical application.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1048">dr. K.E. Keizer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1048">dr. K.E. Keizer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75321"><b>The social psychology of communication</b></a></td><td align="right"><b>PSMIN09</b></td></tr><tr><td align="justify" colspan="3">Communicatie is de kern van sociaal gedrag. Effectieve communicatie maakt het voor mensen mogelijk om fysieke en sociale behoeften te bevredigen en dingen te bereiken die ze als individu nooit zouden kunnen bereiken. Deze cursus gaat onder andere over sociale fenomenen zoals crossculturele communicatie, stemgebruik en nonverbale communicatie, liegen, taalgebruik, het uiten en herkennen van emoties, roddelen en kletsen, wat we normaal en gepast vinden in communicatie en communicatie via nieuwe media. Deze cursus gaat niet alleen over wat mensen zeggen, maar ook over waarom mensen op een bepaalde manier communiceren. Om evolutionaire of andere redenen kan het zijn dat mensen steun van anderen willen, dat ze anderen willen beïnvloeden of dat ze erbij willen horen. In pogingen om misscommunicatie en conflict te voorkómen moet rekening worden gehouden met dergelijke motieven, door aandacht voor bijvoorbeeld non-verbale signalen zoals emoties, gebaren en stemkenmerken en door er rekening mee te houden dat mensen elkaar soms bedriegen. Tegen deze achtergrond is communicatie via het Internet een interessant hedendaags fenomeen met zowel voor- als nadelen. De rol van sociale context bij communicatie komt ook aan de orde, bijvoorbeeld in groepsmarkeringen en in de rol van de status van de bron van informatie. Met behulp van beschrijvingen van dergelijke fenomenen en verschillende theorieen, geeft de sociale psychologie een inspirerende kijk op een alledaags fenomeen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=874">prof. dr. A. Dijkstra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

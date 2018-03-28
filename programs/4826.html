@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4826&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4826"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4826">Informatie over Ba sociologie Internationale (keuzevakken)</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ba sociologie Internationale (keuzevakken)</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>keuze</td><td>SOBA202B</td><td><a href="/ocasys/rechten/vak/show?module=75293">Application of Theories</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>SOBA904</td><td><a href="/ocasys/rechten/vak/show?module=75017">Social and institutional change</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>keuze</td><td>SOBA204A</td><td><a href="/ocasys/rechten/vak/show?module=75177">Organisation and Society</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II b</td><td>keuze</td><td>SOBA221</td><td><a href="/ocasys/rechten/vak/show?module=75075">Social networks</a></td><td>Engels</td><td>5</td><td>6</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75293"><b>Application of Theories</b></a></td><td align="right"><b>SOBA202B</b></td></tr><tr><td align="justify" colspan="3">Scientists develop explanations and/or predictions of specific phenomena based on general theories about the behavior of individuals and social systems. These general theories need to be applied to the specific research problem. In this course, students learn how this is done in a scientifically correct way. Based on many examples from the social-scientific literature, we discuss how theories should be formulated and how they are applied in a logically correct way to generate testable predictions and analyze policies. The application of theories will be taught in lectures and practices in tutorials, related to weekly assignments (a lecture and a practical each week).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay) DIGITAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75177"><b>Organisation and Society</b></a></td><td align="right"><b>SOBA204A</b></td></tr><tr><td align="justify" colspan="3">Since the beginning of the 20th century, the number of organizations has grown exponentially. This holds for all types of organizations, ranging from for-profit enterprises, non-profit associations, public agencies, to non-governmental entities. These corporate actors meanwhile are key agents in any modern society. For example, the top 200 corporations control more than a quarter of the world´s economic activity. Of the 100 largest ´economies´ in the world, more than 50 are multinational firms. Wal-Mart´s corporate revenues exceed the GDP of Sweden or Austria, and those of General Motors equal the GDP of Turkey. Individuals continuously have to deal with organizations: citizens interact with state authorities, consumers with enterprises, employees with employers. Organizations not only affect all areas of social, political, and economic life, but also have a huge impact on the desires, beliefs, and opportunities of individuals, including their health and their social relations. Consequently, any analysis of modern societies – the origin and solution of its social problems ranging from the obesity epidemic to failed states, as well as its successes in creating welfare through innovation – will remain incomplete unless it considers the role that corporate actors play. The main objective of the course Organization and Society is to provide a more detailed insight into the role that corporate actors play in society. Theories of control will form the analytical tool to achieve this objective. The course is structured into five parts. <br/><br/>The first part introduces the major building blocks of different theories of control. What kind of individual and societal level assumptions do these theories make? What exactly do they mean by “control”, and why is control so important for the analysis of organization and society? What are the characteristics of different types of control, and what explains the large variety of forms of control? When and why can control attempts be effective, and how can control failures be explained? The conceptual framework developed in part one will guide analysis in the subsequent parts of the course.<br/><br/>The second part of the course turns to the question how organizations attempt to control their internal environment, its members and processes. What kind of organizational governance structures need to be distinguished, how and why did they change through time? Under which conditions and why do organizations change their control practices? How do these practices affect cooperation and labor relations inside the organization, as well as the personal lives of employees and their households? When will these practices lead to vicious circles of bureaucracy, and what does it take to transform them into virtuous cycles of sustainable cooperation?<br/><br/>Part three of the course shifts the attention to how organizations attempt to control their external societal environment, and the effects these attempts have on society. Corporate actors are resourceful players who actively influence their environment in order to secure benefits or plain survival. These attempts extend far into all societal and policy domains, including politics in order to control legislation or the media in order to control information flows, beliefs and reputations. How do these attempts look like, what explains their success or failure, and what are its (unintended) consequences for organizations and society?<br/><br/>In part four of the course, the focus shifts to the question how societies attempt to control organizations. With corporate actors being legal entities, they can be held accountable for their actions. Many CEO’s of for-profit firms are subject to monitoring and control by a board and the company’s shareholders and eventually other stakeholder associations, like unions, consumer, human rights, or environmental organizations. What makes these attempts successful, and when are they likely to fail? How do corporate actors adapt to them?<br/><br/>The final part of the course is devoted to the Futures of Organization and Society. Many observers claim that the technological (e.g. robotization), economic (e.g. glocalization), and social (e.g. aging) developments of the past decades will have major repercussions on the viability of organizations as we know them, resulting in a fundamental transformation of organizational forms and their relation to society. How do these “new” organizational forms look like? What are the implications for how the organization of the future controls its members, and its environment? How will these innovations impact on society? And conversely, will current arrangements to control organizations become less effective? The course concludes with a reflection on whether current theories of control are able to capture these recent developments.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=980">prof. dr. R.P.M. Wittek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=980">prof. dr. R.P.M. Wittek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (meerkeuze) DIGITAAL, werkstuk (individueel), werkstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75017"><b>Social and institutional change</b></a></td><td align="right"><b>SOBA904</b></td></tr><tr><td align="justify" colspan="3">As a result of globalization and the success of the Internet; companies, organizations, and societies face new challenges of coordination, and cooperation. The complexity of these challenges is illustrated by the difficult negotiations for an international treaty to limit climate change. On the other hand, the success of Internet services such as wikipedia, and couchsurving proofs that coordination, and cooperation can be established even between strangers and on a global scale.<br/>This course focuses on the effects of social institutions, i.e. norms (e.g. cultural conventions) and formal rules (e.g. law), on problems of coordination and cooperation in social groups, organizations, and societies. We will pay attention to how social institutions emerge, how they change, and how they affect the behavior of individuals and collectives. We will explore the conditions under which institutions have desired or undesired effects. Special attention will be paid to the role of the state in a market economy, and the effect of cultural norms on economic development. <br/>To this end, we will discuss classical (Weber, Durkheim, Smith) and contemporary theories (e.g. political economy, game theory, and complexity science) that have been used to explain social institutions. Students will be introduced to methods of analyzing social institutions and will be introduced to alternative approaches to changing the behavior of individuals. In particular, we will debate the design of incentive programs, institutional design (reputation systems, peer-punishment systems, signaling institutions, meritocracy), and nudging.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay) DIGITAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75075"><b>Social networks</b></a></td><td align="right"><b>SOBA221</b></td></tr><tr><td align="justify" colspan="3">Social networks are formal representations of the way how social actors relate to each other, and depend on each other. As examples, think of informal talk and gossip among the employees of a firm, and the way how gossip can undermine the standing of a colleague. Or think of knowledge flow between the firms that work in the same industry, and the dependence of business success of the firm on its knowledge base. Or think of friendship among the adolescents that go to the same school, and issues of social exclusion or minority integration.<br/><br/>In terms of sociological theory and modelling, social networks offer a good framework for understanding how a system of interdependent social actors functions, i.e., how actors create networks and how networks affect actors' individual outcomes. In the course, students make acquaintance with the main network theories and theorists, from George Homans' individualist foundations ('The Human Group', 1950) via Harrison White's structuralism ('Identity and Control', 1992) to current research on Social Mechanisms. In a variety of research domains and problem areas, they learn to apply network thinking and network concepts, including social cohesion and integration, social capital, social position and hierarchies, and social diffusion processes.<br/><br/>In applications, students encounter network data from a diversity of domains (such as friendship at school, communication within an organisation, or cooperation between organisations). In group assignments, they collect network data of different types on their own. In the accompanying computer labs, they learn how to enter, process, and visualise network data.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=961">dr. C.E.G. Steglich</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=961">dr. C.E.G. Steglich</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">computerpracticum, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">computeropdrachten, deeltoets(en), opdrachten, tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

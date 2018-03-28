@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=366&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D366"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=366">Informatie over Ma Recht en ICT</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Recht en ICT</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht 1 uit 2</td><td>RGMRI00306</td><td><a href="/ocasys/rechten/vak/show?module=75770">Multidisciplinair Seminaar</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>RGMHA00506</td><td><a href="/ocasys/rechten/vak/show?module=75714">Intellectuele Eigendom</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGMRI00606</td><td><a href="/ocasys/rechten/vak/show?module=75769">IT-recht C.S.</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>RGMPR00506</td><td><a href="/ocasys/rechten/vak/show?module=75746">Internationaal Privaatrecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>a. en c.</td><td>RGDOS04</td><td><a href="/ocasys/rechten/vak/show?module=75789">Keuzeruimte Master</a></td><td>Nederlands</td><td></td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>d. verplicht</td><td>RG00061018</td><td><a href="/ocasys/rechten/vak/show?module=75726">Scriptie</a></td><td>Nederlands</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht 1 uit 2</td><td>RGMHA00906</td><td><a href="/ocasys/rechten/vak/show?module=75716">Seminaar Auteursrecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester II a</td><td>b. verplicht</td><td>RGMBE01906</td><td><a href="/ocasys/rechten/vak/show?module=75778">Informatiegrondrechten</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>RGMHA02206</td><td><a href="/ocasys/rechten/vak/show?module=75724">Bedrijfsrecht &amp; ICT</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>De bovenstaande indeling is afgestemd op studenten die in september met de masteropleiding beginnen.</li><li>Studenten die in februari instromen kunnen met behulp van onlineocolleges het vak Internationaal Privaatrecht in blok 3 afleggen en het hertentamen van dit vak aan het einde van blok 3 doen. </li><li>Het keuzevak kan ook in blok 4 worden afgelegd. </li><li>Ook kan in blok 3 en 4 het Multidisciplinair Seminaar worden afgelegd.</li><li>Studenten die in februari beginnen mogen hun scriptie in blok 1 en 2 schrijven.</li></ul><br/>Voor de gevolgen van wijzigingen zie de Overgangsregelingen via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>:<ul><li>1-11-17: Seminaar Auteursrecht is toegevoegd; studenten kunnen kiezen uit het multidisciplinair seminaar of de seminaar Auteursrecht (1 van de 2 is verplicht)</li><li>1-9-15: nieuw: blokindeling. Zie Kennisbank Rechten.</li><li>1-9-12 herziening oer (invoering harde knip, exameneisen en naamswijzigingen). </li><li>1-9-11: specialisatie Rechtsinformatica geschrapt en grondige herziening van het aanbod keuzevakken. Het programma zoals in dit schema is weergegeven komt overeen met de voormalige specialisatie Informaticarecht (deze naam is ook vervallen m.i.v. 1-9-11).</li><li>1-9-08: naamswijzigingen en 1-9-07: herziening exameneisen/oer/indeling.</li></ul>-------------------<ul><li>a. omvang keuzeruimte: zie OER van de opleiding voor juiste omvang en eisen (M4- of M5-vakken, Stage of een Recht in Praktijk onderdeel). De master moet minimaal 60 ec omvatten;</li><li>b. indien Informatiegrondrechten is afgelegd als onderdeel van het bachelorexamen dan bedraagt de keuzeruimte 6 ec extra(zie OER);</li><li>c het seminaar/de keuzeruimte zijn in dit schema geroosterd in het 1e semester maar kunnen ook worden afgelegd/ingevuld in het 2e semester.</li><li>d. de scriptie is in dit schema geroosterd in het 2e semester maar kan ook worden afgelegd/ingevuld in het 1e semester. </li></ul> </td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75724"><b>Bedrijfsrecht &amp; ICT</b></a></td><td align="right"><b>RGMHA02206</b></td></tr><tr><td align="justify" colspan="3">De Europese Commissie en onze overheid streven naar een transitie van de huidige lineaire naar een circulaire economie. Daarbij horen nieuwe verdienmodellen die duurzamer zijn: beter voor milieu, mens en maatschappij. ICT wordt daarbij genoemd als een ‘key enabling technology‘: de digitalisering van goederen en diensten en productieprocessen wordt geacht daaraan bij te dragen. <br/>Circulaire verdienmodellen en bijbehorende ‚smart devices‘ roepen vele rechtsvragen op. Privaatrechtelijke rechtsbeginselen beschermen verschillende belangen waarop huidige verdienmodellen zijn gebaseerd. De wens om duurzame bouwmaterialen voortaan te ‚huren‘ stuit op het goederenrechtelijke eenheidsbeginsel. ICT kan daar wellicht een oplossing zijn (publiciteitsbeginsel). Smart grids voor energie-uitwisseling onder gebouweigenaren raken steeds meer in zwang, maar hoe is de gemeenschappelijke eigendom georganiseerd? Welke rol kan de blockchain spelen? Hoe verhoudt zich het numerus claususbeginsel tot de veranderende machtssferen als gebouwen en roerende zaken zowel een fysieke als digitale ‚machtssfeer‘ hebben die in verschillende handen is?<br/><br/>Met dezelfde duurzaamheidsdoelstellingen dragen overheden de deeleconomie – een onderdeel van de circulaire economie - een warm hart toe. Eigendom is passé; bedrijven en consumenten moeten meer gezamenlijk gebruiken. Dankzij ICT en de opkomst van platforms is dat mogelijk, denk aan Airbnb, Couchsurfing, Floow2, Liquid Space, transport-apps. De laatste tijd wordt echter ook zichtbaar dat de organisatie van de circulaire markt door sommige platforms zoals Deliveroo en Uber tot wantoestanden leidt, werk onder minimumloon en zwarte markten. Is de E-Commerce Richtlijn nog toegesneden op deze nieuwe information society service providers? Is de Draft Directive voor deelplatforms een toereikend alternatief? Ingegaan wordt tevens op bemiddelings- en lastgevingsovereenkomsten die gebruikers met platforms hebben én de nieuwe aansprakelijkheidsregimes bij peer2peer ‘vriendendiensten‘ zoals Couchsurfing en Peerby.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4427">mr. R. Koolhoven</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4427">mr. R. Koolhoven</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Niet af te leggen door studenten die voor 1-9-06 ICT &amp; Bedrijfsrecht hebben gehaald.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75778"><b>Informatiegrondrechten</b></a></td><td align="right"><b>RGMBE01906</b></td></tr><tr><td align="justify" colspan="3">In het vak Informatiegrondrechten wordt het recht op bescherming van de persoonlijke levenssfeer uitgebreid besproken. De verschillende aspecten van dit recht komen aan de orde, waaronder de (on)mogelijkheden van grootschalige gegevensverwerking als datamining en het koppelen van bestanden. Uitingsvrijheid is een recht dat kan botsen met de bescherming van de persoonlijke levenssfeer maar hier niet los van kan worden gezien. Evenals de informatieverplichtingen van de overheid hoort dit bij de informatiegrondrechten. Al deze rechten worden besproken, zowel afzonderlijk als in hun onderlinge context.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1429">mr. dr. A.M. Klingenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1429">mr. dr. A.M. Klingenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk of mondeling, afhankelijk van het aantal deelnemers, schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li><li>Niet af te leggen door studenten die voor 1-9-08  ICT, Grondrechten &amp; Overheid hebben gehaald.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75714"><b>Intellectuele Eigendom</b></a></td><td align="right"><b>RGMHA00506</b></td></tr><tr><td align="justify" colspan="3">Het intellectuele eigendomsrecht omvat de onderdelen merkenrecht, handelsnaamrecht, auteursrecht, naburige rechten, modellenrecht, databankrecht, chipsrecht, octrooirecht, kwekersrecht en het recht betreffende de ongeoorloofde mededinging.<br/>Op het terrein van de intellectuele eigendom volgen de ontwikkelingen elkaar in sneltreinvaart op. Het spreekt dan ook voor zich dat tijdens de colleges, mede aan de hand van praktijkgevallen, volop aandacht besteed zal worden aan actuele ontwikkelingen. Die zijn er volop: piraterij, genetische manipulatie, 3D-printen, softwarebescherming, muziek op internet, domeinnamen,beschermingsomvang van merken en de bescherming van productvormgeving.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1374">prof. mr. dr. P.G.F.A. Geerts</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1374">prof. mr. dr. P.G.F.A. Geerts</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75746"><b>Internationaal Privaatrecht</b></a></td><td align="right"><b>RGMPR00506</b></td></tr><tr><td align="justify" colspan="3">In internationale gevallen is het niet altijd vanzelfsprekend dat het Nederlandse recht van toepassing is of dat de Nederlandse rechter bevoegd is over een geschil te oordelen. Over de vraag wanneer dit wel en wanneer dit niet het geval is, beslissen regels van internationaal privaatrecht (IPR). IPR kan worden omschreven als nationaal recht dat erop is gericht problemen die voortvloeien uit de samenloop van nationale rechtstelsels bij internationale privaatrechtelijke rechtsverhoudingen te reguleren.<br/>Het omvat regels inzake de internationale bevoegdheid van de Nederlandse rechter (internationaal jurisdictierecht), inzake de vraag naar het toepasselijke recht (conflicten- of verwijzingsrecht) en regels inzake de erkenning en tenuitvoerlegging van buitenlandse rechterlijke beslissingen (internationaal executierecht). Steeds vaker ook komen deze regels in geharmoniseerde vorm in verordeningen vanuit Brussel tot ons. Door de groei van het internationale rechtsverkeer wordt de Nederlandse jurist (rechter, notaris, advocaat etc.) steeds vaker geconfronteerd met vragen van internationaal privaatrecht. Een gedegen kennis van dit vakgebied is dan ook van belang.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1584">prof. mr. dr. M.H. ten Wolde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1434">mr. J.G. Knot</a><a href="/ocasys/rug/vak/viewtutor?tutor=1584">prof. mr. dr. M.H. ten Wolde</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 2 en extra aangeboden via online colleges en 1 responsiecollege in blok 3 (één tentamenkans, gelijk met hertentamen in blok 3).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75769"><b>IT-recht C.S.</b></a></td><td align="right"><b>RGMRI00606</b></td></tr><tr><td align="justify" colspan="3">In het vak IT-recht Capita Selecta worden in twaalf hoorcolleges elf actuele onderwerpen op het gebied van het IT-recht op een verdiepende wijze behandeld. De studenten verdiepen deze kennis verder en oefenen essentiële academische vaardigheden door het houden van een referaat en het schrijven van een paper.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1429">mr. dr. A.M. Klingenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, referaat</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75789"><b>Keuzeruimte Master</b></a></td><td align="right"><b>RGDOS04</b></td></tr><tr><td align="justify" colspan="3"><b>Algemeen</b><br/>De master-keuzeruimte kan gevuld worden met:<br/>a.keuzevakken (<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=1882" target="_blank"> Ma-keuzevakken juridisch</a> of<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=2537" target="_blank"> Ma-keuzevakken niet-juridisch</a>); <br/>b.(optioneel)verplichte vakken van andere opleidingen;<br/>c.<a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7067" target="_blank">recht in praktijkonderdelen (w.o. stage)</a>;<br/>d.<a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=2568" target="_blank">Rechtstheoretische verdieping</a>.<br/><br/>Algemene uitleg: zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.<br/> <br/><br/><b>Nadere eisen en regels OER</b><br/>De OER van elke opleiding stelt nadere eisen en regels m.b.t. tot:<br/>a) omvang en aard van vakken (juridisch/niet-juridisch);<br/>b) niveau van vakken (B-, M4-, M5-niveau);<br/>c) facultair/niet-facultair(of buitenland) te kiezen vakken;<br/>d) overige voorwaarden;<b>Formele eisen goedkeuring</b><br/>Alle vakken in de keuzeruimte behoeven goedkeuring van de Examencommissie voordat een student met de keuzevakken begint. Er moet steeds een totaal masterprogramma (min. 60 ec) ter goedkeuring worden voorgelegd via Progress.www. Voor procedure zie ook Vraag en Antwoord- goedkeuring keuzepakket.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>M4-vakken zijn als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding. Voor het overige gelden de entreevoorwaarden zoals aangegeven in de vakomschrijving van een vak.</li><li>M5-vak: Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Voor het overige gelden de entreevoorwaarden zoals aangegeven in de vakomschrijving van een vak.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De omvang van de keuzeruimte varieert per opleiding. Voor de correcte omvang van de keuzeruimte zie OER van de opleiding <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75770"><b>Multidisciplinair Seminaar</b></a></td><td align="right"><b>RGMRI00306</b></td></tr><tr><td align="justify" colspan="3">Studenten IT-recht werken samen met studenten uit andere richtingen in een projectgroep aan het project eJure. Ejure omvat de redactie, d.w.z. de organisatie, het schrijven van content en de technische uitvoering, van een digitaal juridisch tijdschrift. Het project is te vinden op <a href="http://www.ejure.nl" target="_blank">www.ejure.nl</a>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12458">mr. F.W.J. van Geelkerken</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12458">mr. F.W.J. van Geelkerken</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">mondeling, paper, referaat/referaten</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak kan worden gevolgd in semester I of semester II of semester I en II.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75726"><b>Scriptie</b></a></td><td align="right"><b>RG00061018</b></td></tr><tr><td align="justify" colspan="3">Nadere eisen en richtlijnen<br/><br/>Nadere eisen en richtlijnen m.b.t. scriptie zijn opgenomen in het scriptiereglement. Zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> voor meer informatie. <br/><br/>Voorbereiding <br/><br/>Ter voorbereiding op het schrijven van een scriptie organiseert de faculteit een scriptievoorbereidingstraject, bestaande uit een hoorcollege (4 x per jaar), een bibliotheekinstructie en een scriptiepracticum. De student is verplicht de onderdelen scriptiecollege en bibliotheekinstructie van het scriptievoorbereidingstraject te volgen alvorens een scriptieonderwerp ter goedkeuring voor te leggen aan de scriptiecoördinator. Het volgen van het onderdeel scriptiepracticum is facultatief, maar wordt sterk aanbevolen. Voor bijzonderheden over het Scriptievoorbereidingstraject zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7063" target="_blank">vakomschrijving in Ocasys</a>. Hierin is informatie opgenomen over de onderdelen van het traject en speciale literatuur die bij het schrijven van een scriptie wordt aanbevolen. <br/>Voor Masterstudenten Internationaal en Europees Recht geldt een apart engelstalig scriptievoorbereidingstraject (Thesisclass) zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=25170" target="_blank">vakomschrijving in Ocasys</a>.   <br/><br/><br/>Een artikel in Ars Aequi of een ander wetenschappelijk tijdschrift kan ook als een scriptie worden gehonoreerd, mits hierover tevoren overleg is gepleegd met de docent die anders als scriptiebegeleider zou zijn opgetreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75716"><b>Seminaar Auteursrecht</b></a></td><td align="right"><b>RGMHA00906</b></td></tr><tr><td align="justify" colspan="3">Het auteursrecht kan worden omschreven als een tijdelijk monopolie van de maker van een 'werk' op de exploitatie van dat werk. Het auteursrecht wordt geregeld in de Auteurswet. In onze huidige informatiemaatschappij groeit het belang van het auteursrecht gestaag. Geschat wordt dat in Nederland met de productie en exploitatie van auteursrechtelijk beschermd werk meer dan dertig miljard euro gemoeid is. Dat is ongeveer 6 % van het nationaal inkomen. Men dient zich goed te realiseren dat met betrekking tot allerlei dagelijkse gebeurtenissen auteursrechten in het spel zijn. Ter illustratie: mag men op een website een hyperlink plaatsen die naar auteursrechtelijk beschermd werk linkt op een andere website? Mag een winkelier in zijn winkel via de radio muziek ten gehore brengen? Mag van de Stopera een foto worden genomen? Mogen studenten studieboeken fotokopiëren? Mag van een computerprogramma een back-up worden gemaakt? Mag een werk van beeldende kunst worden nagetekend? Mag de Tripp Trapp-stoel van Stokke worden nagemaakt? Mag op een schoolfeest muziek ten gehore gebracht worden? Mag auteursrechtelijk beschermd werk op internet worden geplaatst? De opzet van dit seminaar is studenten, aan de hand van actuele gebeurtenissen en ontwikkelingen vertrouwd te maken met het auteursrecht. Bij aanvang van het seminaar zal een aantal (actuele) onderwerpen worden gekozen. De wekelijkse bijeenkomsten dienen door alle deelnemers te worden voorbereid. Het is de bedoeling de deelnemers in groepen te verdelen. De werkzaamheden van een groep kunnen bestaan uit het houden van een voordracht of een pleidooi, of het concipiëren van een advies of vonnis.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1374">prof. mr. dr. P.G.F.A. Geerts</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1374">prof. mr. dr. P.G.F.A. Geerts</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Kennistoets, presentatie(s), werkstukken</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Geadviseerd: Intellectuele Eigendom </li><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

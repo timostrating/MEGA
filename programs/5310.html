@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5310&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5310"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5310">Informatie over Ma Internationale Betrekkingen: International Humanitarian Action</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Internationale Betrekkingen: International Humanitarian Action</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (MA NOHA 120 ECTS)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LVX006M05</td><td><a href="/ocasys/rechten/vak/show?module=74708">Geopolitics in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LVX007M05</td><td><a href="/ocasys/rechten/vak/show?module=74707">Intern. Law for Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LVX009M05</td><td><a href="/ocasys/rechten/vak/show?module=74705">Management in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LVX012M10</td><td><a href="/ocasys/rechten/vak/show?module=74825">Soc. and Med. Sciences in Hum. Action</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>LVX010M05</td><td><a href="/ocasys/rechten/vak/show?module=74057">Intensive Progr. in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LVX011M30</td><td><a href="/ocasys/rechten/vak/show?module=74585">Disaster Analysis &amp; Intervention Design</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">De stage en scriptie kunnen ook buiten de aangegeven periode worden gevolgd. Meer info bij de studieadviseur.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (MA NOHA 90 ECTS)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LVX006M05</td><td><a href="/ocasys/rechten/vak/show?module=74708">Geopolitics in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LVX007M05</td><td><a href="/ocasys/rechten/vak/show?module=74707">Intern. Law for Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LVX009M05</td><td><a href="/ocasys/rechten/vak/show?module=74705">Management in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>LVX012M10</td><td><a href="/ocasys/rechten/vak/show?module=74825">Soc. and Med. Sciences in Hum. Action</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>LVX010M05</td><td><a href="/ocasys/rechten/vak/show?module=74057">Intensive Progr. in Humanitarian Action</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LVX011M30</td><td><a href="/ocasys/rechten/vak/show?module=74585">Disaster Analysis &amp; Intervention Design</a></td><td>Engels</td><td>30</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">De stage en scriptie kunnen ook buiten de aangegeven periode worden gevolgd. Meer info bij de studieadviseur.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (MA NOHA 120 ECTS)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LVX000M10</td><td><a href="/ocasys/rechten/vak/show?module=74866">Internship Humanitarian Action</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LVX999M20</td><td><a href="/ocasys/rechten/vak/show?module=74826">Master's Thesis Humanitarian Action</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (MA NOHA 90 ECTS)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>LVX000M10</td><td><a href="/ocasys/rechten/vak/show?module=74866">Internship Humanitarian Action</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>LVX999M20</td><td><a href="/ocasys/rechten/vak/show?module=74826">Master's Thesis Humanitarian Action</a></td><td>Engels</td><td>20</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74585"><b>Disaster Analysis &amp; Intervention Design</b></a></td><td align="right"><b>LVX011M30</b></td></tr><tr><td align="justify" colspan="3">The second semester specialization of Groningen consists of 6 sub modules that together form one 30 ECTs course titled: Disaster Analysis and Intervention Design. <br/><br/>The causes and consequences of man-made and natural disasters and the optimal strategies for humanitarian action cannot be analysed in isolation of each other. They have to be studied in relation to each other, by a staff well aware of the intricacies of the subject, since most disasters and conflicts are complex in terms of causes, coping mechanisms and long term reconciliation and reconstruction. Historical, political, legal, demographic, environmental, economic and social factors often all play their role in complex emergencies. Many actors may be involved, such as the local population, national authorities, international relief agencies, etc. These complex emergencies need straightforward tools to analyse them to acquire the deep insights necessary to fulfil the humanitarian objective under the principle of “do no harm”. <br/><br/>During the second semester specialization of the University of Groningen you will train critical thinking and problem-solving skills to address the above-mentioned challenges. The reference point is the Comprehensive Security framework, which is steered by an interdisciplinary approach to the subject. The Comprehensive Security framework provides students, researchers and practitioners with an assessment tool for complex emergencies (man-made and natural) and the means to design adequate programs and projects. You will learn to perform snap-shot analyses of the needs and security situations – regarding food, health, the environment as well as social, political and economic dimensions – on various levels: from a regional to a state to a local level assessment. In addition, you will be trained in stakeholder and problem tree analysis, as well as matters of evaluation and learning, and intervention design. In addition, experts will give you an insight into food and health security needs and you will be provided with a methods course a especially designed for humanitarian action. At the same time you will also learn how to apply these skills in real-time disaster events. More specifically, during the second semester in Groningen you will learn and practice with the necessary steps of needs assessment, stakeholder analysis, and analyzing humanitarian problems so that you can deliver a sensible project proposal for interventions that include considerations of quality assurance (i.e. monitoring and evaluation).  <br/><br/>The general structure of the course<br/><br/>The second semester option in Groningen follows four paths for active learning and practice: <br/><br/>1. Lectures by and discussions with (guest) experts and practitioners which require active preparation and input by the students; <br/>2. Self-study and team work that help you prepare the grounds for a project proposal for intervention in accordance to the ECHO proposal guidelines; <br/>3. Real-time disaster response simulation exercises; <br/>4. A field trip to Georgia to explore the practice of humanitarian and development aid and to meet practitioners and policy makers in the field. <br/>5. Practical application of the skills developed will be evaluated in an intervention game.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7870">prof. dr. A.J. Zwitter</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=366">drs. B.L. Aardema</a><a href="/ocasys/rug/vak/viewtutor?tutor=1685">dr. A. Bailey</a><a href="/ocasys/rug/vak/viewtutor?tutor=8596"> N. Dube, MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=517">dr. L. Heyse</a><a href="/ocasys/rug/vak/viewtutor?tutor=6127">dr. C.K. Lamont</a><a href="/ocasys/rug/vak/viewtutor?tutor=7501">dr. K. Scholten</a><a href="/ocasys/rug/vak/viewtutor?tutor=7870">prof. dr. A.J. Zwitter</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">excursie, hoorcollege, practicum, praktische oefening, werkcollege, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie, schriftelijke opdracht(en), werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">30</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74708"><b>Geopolitics in Humanitarian Action</b></a></td><td align="right"><b>LVX006M05</b></td></tr><tr><td align="justify" colspan="3">In dit studieonderdeel worden de relaties tussen politiek en de territoria bestudeerd. In het bijzonder wordt aandacht besteed aan de geopolitiek van humanitaire hulp. Voorbeelden van de rol van nationale, transnationale, internationale en wereldwijde instituties en internationale organisaties worden uitgelicht. Niet alleen de risicofactoren en de manier waarop op deze risico’s wordt gereageerd (of en hoe hulp wordt gegeven), worden uitgelegd. Hoofdthema’s zijn: <br/>• De aard van het conflict in de afgelopen eeuw: natuurlijke of door de mens gecreëerde conflicten;<br/>• Klassieke geopolitieke antwoorden op crises: crisis-management;<br/>• Post-1991 antwoorden op crises: crisis management;<br/>• De rol van internationale organisaties in humanitarian    action.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74057"><b>Intensive Progr. in Humanitarian Action</b></a></td><td align="right"><b>LVX010M05</b></td></tr><tr><td align="justify" colspan="3">Het studieprogramma start met een meerdaags Intensive Programme georganiseerd door één van de deelnemende netwerkuniversiteiten. Gedurende deze periode maakt de student, samen met alle studenten van de partneruniversiteiten en vele gastsprekers en docenten, kennis met de hoofdthema&amp;apos;s in de internationale humanitaire wereld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">congres, excursie, hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">verslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot de Ma programma Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=74707"><b>Intern. Law for Humanitarian Action</b></a></td><td align="right"><b>LVX007M05</b></td></tr><tr><td align="justify" colspan="3">Elke internationale hulpactie zou moeten voldoen aan de algemene eisen van het internationale recht. In deze module wordt de algemene basis van internationaal recht bestudeerd. Vanuit de kennis van de geschiedenis van dit recht, de ontwikkelingen, de karakteristieken en de bronnen, wordt dieper ingegaan op het internationaal humanitair recht en mensenrechten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3241">dr. A.G. Hallo de Wolf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74866"><b>Internship Humanitarian Action</b></a></td><td align="right"><b>LVX000M10</b></td></tr><tr><td align="justify" colspan="3">Een stage van minimaal 2 maanden bij een internationale organisatie of instituut welke werkt in het vakgebied van Humanitarian Action. De student kan kiezen uit een veldstage bij een hoofdkantoor van een organisatie of een onderzoeksstage, eventueel gerelateerd aan het thema van de Ma thesis (LVX999M20).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6128">drs. E.M. Herman-Pletiougina</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">stageverslag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74705"><b>Management in Humanitarian Action</b></a></td><td align="right"><b>LVX009M05</b></td></tr><tr><td align="justify" colspan="3">Gedurende de module wordt een overzicht gegeven van de belangrijkste onderdelen van diverse organisatie en management theorieën, namelijk algemeen en financieel projectmanagement, veranderingsmanagement in organisaties, management in non-profit organisaties, organisatiestructuren en -culturen. Bijzondere nadruk wordt gelegd op de economische en financiële aspecten voor hulpverstrekkende organisaties.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=205">dr. B.J.W. Pennink</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, praktische oefening, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">werkstuk(ken), portfolio, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=74826"><b>Master's Thesis Humanitarian Action</b></a></td><td align="right"><b>LVX999M20</b></td></tr><tr><td align="justify" colspan="3">De Ma thesis wordt gebaseerd op interdisciplinair onderzoek naar een thema dat past binnen het vakgebied van het Humanitarian Assistance programme.<br/>Het wordt aangeraden het thema wat bestudeerd is in het vak “Comprehensive Security” (LVX008M30) verder uit te diepen.<br/>De thesis dient te bevatten: introductie, de definitie van het te besturen thema, een aantal hoofdstukken waarin het onderzoeksthema wordt geanalyseerd (gebaseerd op kennis uit primaire en secundaire bronnen), resultaten en conclusies uit het onderzoek van de studie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=462">   various lecturers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">scriptie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Assistance, tweede semester</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=74825"><b>Soc. and Med. Sciences in Hum. Action</b></a></td><td align="right"><b>LVX012M10</b></td></tr><tr><td align="justify" colspan="3">Antropologie:<br/>Introductie in de Antropologie in Humanitarian Action:<br/>Wat is de invloed van cultuur en sociale structuur op het gedrag van sociale groepen en individuen in rampsituaties? Wat is het effect van interventiestrategieën in verschillende culturele settingen?<br/>Public Health:<br/>Introductie in Public Health, specifiek in rampsituaties. Wat zijn de belangrijkste strategieën om de effecten van natuurlijke en man-made rampen op de gezondheid te minimaliseren en het liefst voor te zijn?<br/>Psychologie:<br/>Psychologische factoren spelen een belangrijke rol in veel aspecten bij humanitaire rampen. Zowel de effecten op de slachtoffers als op de hulpverleners worden bestudeerd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11511">dr. B.E. Bartelink</a><a href="/ocasys/rug/vak/viewtutor?tutor=637">dr. Th. Bouman</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">portfolio, presentatie, schriftelijk tentamen, werkstuk(ken)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toelating tot Ma programme Humanitarian Action</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

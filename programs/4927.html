@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4927&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4927"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4927">Informatie over   Verdieping - Economie en Bedrijfskunde </a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>  Verdieping - Economie en Bedrijfskunde </b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (FEB specialized track)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>HCEB10405</td><td><a href="/ocasys/rechten/vak/show?module=77562">Topics and Trends</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>HCPCTSKILLS</td><td><a href="/ocasys/rechten/vak/show?module=77511">Vaardigheden</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In the FEB specialized track only part of the <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(choose 13 ECTS or more) is obligatory. The PYOT programme is obligatory. So please choose the remaining 12 ECTS from the Petrus Camper Track. Eg one skills module and two broadening modules, or one skills module, and one broadening module with, if available, a connected Petrus Camper Project(Summerschool and Atelier).</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Regulier Honours Programma Faculteit Economie en Bedrijfskunde)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>HCEB10405</td><td><a href="/ocasys/rechten/vak/show?module=77562">Topics and Trends</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In the regular programme the complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) is obligatory.<br/><br/>A student starts with his or her portfolio in the first year, at the end of the third year it has to be finished.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (FEB specialized track)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>HCPCTBM</td><td><a href="/ocasys/rechten/vak/show?module=77512">Verbredende modules</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>HCPCTSKILLS</td><td><a href="/ocasys/rechten/vak/show?module=77511">Vaardigheden</a></td><td>Engels en Nederlands</td><td>2</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>HCEB10205</td><td><a href="/ocasys/rechten/vak/show?module=77540">Seminar I</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>HCEB20305</td><td><a href="/ocasys/rechten/vak/show?module=77541">Seminar II</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCEBT20107</td><td><a href="/ocasys/rechten/vak/show?module=77604">FEB Specialized track</a></td><td>Engels</td><td>7</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCEB20203</td><td><a href="/ocasys/rechten/vak/show?module=77543">Honours Research Practical</a></td><td>Engels</td><td>3</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In the FEB specialized track only part of the <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(choose 13 ECTS or more) is obligatory. The PYOT programme is obligatory. So please choose the remaining 12 ECTS from the Petrus Camper Track. Eg one skills module and two broadening modules, or one skills module, and one broadening module with, if available, a connected Petrus Camper Project(Summerschool and Atelier).</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2 (Regulier Honours Programma Faculteit Economie en Bedrijfskunde)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>HCEB10205</td><td><a href="/ocasys/rechten/vak/show?module=77540">Seminar I</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>HCEB20305</td><td><a href="/ocasys/rechten/vak/show?module=77541">Seminar II</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>HCEB20203</td><td><a href="/ocasys/rechten/vak/show?module=77543">Honours Research Practical</a></td><td>Engels</td><td>3</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In the regular programme the complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) is obligatory.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (FEB specialized track)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>HCPLPCP</td><td><a href="/ocasys/rechten/vak/show?module=77593">Petrus Camper Project</a></td><td>Engels en Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>HCEB30105</td><td><a href="/ocasys/rechten/vak/show?module=77449">Bachelor Thesis Extension</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>HCPL403</td><td><a href="/ocasys/rechten/vak/show?module=77463">Petrus Camper Finale</a></td><td>Engels en Nederlands</td><td></td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">In the FEB specialized track only part of the <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(choose 13 ECTS or more) is obligatory. The PYOT programme is obligatory. So please choose the remaining 12 ECTS from the Petrus Camper Track. Eg one skills module and two broadening modules, or one skills module, and one broadening module with, if available, a connected Petrus Camper Project(Summerschool and Atelier).</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3 (Regulier Honours Programma Faculteit Economie en Bedrijfskunde)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCEB10302</td><td><a href="/ocasys/rechten/vak/show?module=77468">Honours Portfolio</a></td><td>Engels</td><td>2</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>HCEB30105</td><td><a href="/ocasys/rechten/vak/show?module=77449">Bachelor Thesis Extension</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">In the regular programme the complete <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">Petrus Camper Track</a>(20 ECTS) is obligatory.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77449"><b>Bachelor Thesis Extension</b></a></td><td align="right"><b>HCEB30105</b></td></tr><tr><td align="justify" colspan="3">This course is integrated with the standard bachelor thesis that the honours student has to write for his or her bachelor programme. This means that the Honours bachelor thesis is an extended, or advanced version of the standard bachelor thesis. The bachelor thesis is based on a clearly defined theme specific to the particular bachelor programme to which the student belongs, but the specific topic can reflect the student’s own personal research interest.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4946">dr. P. Milionis</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Workshop(s)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Individuele opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090<br/>Students should register for this extension AND for the standard bachelor thesis.<br/><br/>Students should register for this extension AND for the standard bachelor thesis.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77604"><b>FEB Specialized track</b></a></td><td align="right"><b>HCEBT20107</b></td></tr><tr><td align="justify" colspan="3">This course is integrated with the Honours Research Practical that the Honours student has to execute for his or her bachelor program. The FEB specialized track offers the student an opportunity to gain more in-depth research experience than the standard research project. The specific research topic can reflect the student’s personal research interests. The student will acquire research skills that will help him/her when writing the bachelor thesis, and when doing a master program.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individuele bijeenkomsten</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77468"><b>Honours Portfolio</b></a></td><td align="right"><b>HCEB10302</b></td></tr><tr><td align="justify" colspan="3">Students accumulate a portfolio of diverse academic activities that foster the development of cognitive, organizational and social skills. Students participate in activities that entail learning outside traditional coursework, such as participation in conferences, workshops, and field trips to businesses and government institutions. <br/><br/>The content of the portfolio largely depends on the interests of the individual student and can be oriented towards the academic community or to practice.<br/><br/>This course is officially scheduled in semester 2 of year 1, however, the student can fill his/her portfolio during the remainder of the bachelor program (1st, 2nd and 3rd year).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7501">dr. K. Scholten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individueel programma</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Portfolio+ </td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course is officially scheduled in semester II of year 1, however, the student can fill his/her portfolio during the remainder of the bachelor programme (1st, 2nd and 3rd year).<br/>The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77543"><b>Honours Research Practical</b></a></td><td align="right"><b>HCEB20203</b></td></tr><tr><td align="justify" colspan="3">Conducting and evaluating research is one of the most important skills of an academically trained business studies expert. <br/>In this course, students are exposed to research as it is conducted at our faculty. Students form small groups and are linked to a researcher and participate in a current research project. Students learn to practice research and are involved in various steps of research such as literature search, data collection, data analyses and reporting.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7501">dr. K. Scholten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Individuele bijeenkomsten</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77463"><b>Petrus Camper Finale</b></a></td><td align="right"><b>HCPL403</b></td></tr><tr><td align="justify" colspan="3">Het laatste onderdeel van de Petrus Camper Leergang is een onderdeel waarin alle componenten worden samengebracht en waarin studenten zich actief, in een interdisciplinaire setting, bezighouden met een maatschappelijk thema/vraagstuk. De thema’s/vraagstukken waaruit gekozen kan worden vloeien voort uit de verbredende honoursmodules die door de faculteiten worden aangeboden. <br/>Iedere faculteit biedt één honoursmodule aan, waarmee het aantal thema’s op negen komt. De student kiest voor het thema van één van de twee honoursmodules die hij/zij in het tweede jaar heeft gevolgd. Het thema is daarmee voor de student per definitie verbredend, aangezien honoursmodules gekozen dienen te worden uit het aanbod van andere faculteiten dan de eigen faculteit.<br/>Dit onderdeel van de PCL begint aan het einde van het tweede jaar met een Summer School. Deze dient als startbijeenkomst en introductie op het thema. Vervolgens wordt het thema/vraagstuk door de studenten zelf in een Atelier verder geëxploreerd en uitgewerkt, waarna dit onderdeel wordt afgesloten met een presentatie (in de ruimste zin des woords) tijdens de Petrus Camper Festival aan het eind van jaar 3.<br/>De begeleiding van Summer School en Atelier is door de koppeling aan de verbredende honoursmodules verdeeld over de negen faculteiten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3149">  nog niet bekend</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77593"><b>Petrus Camper Project</b></a></td><td align="right"><b>HCPLPCP</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3149">  nog niet bekend</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Studenten kiezen aan het eind van jaar 2 een summer school met het aansluitende atelier in het 1e semester van jaar 3 OF in het derde jaar een winterschool met het aansluitende atelier in het 2e semester van jaar 3.<br/><br/>De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77436"><b>Pick Your Own-talent Programma</b></a></td><td align="right"><b>HCPCLPYOT</b></td></tr><tr><td align="justify" colspan="3">In het Bachelor Honours programma besteden we gedurende het gehele traject aandacht aan talentontwikkeling. Het Honours College vindt het belangrijk dat honoursstudenten stilstaan bij vragen als: ‘wie ben ik, wat kan ik en wat wil ik?’. Deze vragen lopen als een rode draad door het Pick Your Own-talent programma.<br/><br/>--Opbouw Pick Your Own-talent programma--<br/><br/>Jaar 1 Welcoming Ceremony: gezamenlijke start van het Bachelor Honours programma<br/><br/>Tijdens de openingsceremonie komen alle nieuwe honoursstudenten bij elkaar. Elk jaar wordt er een aansprekende en inspirerende gastspreker uitgenodigd. Hij of zij vertelt over zijn of haar talent, carrière en over de keuzes die hij of zij heeft gemaakt om zijn of haar talenten ten volle te benutten. <br/><br/>Jaar 2 Kick-off: gezamenlijke start van het tweede jaar<br/><br/>Het tweede academische jaar start met de Kick-off. Tijdens deze avond inspireert een talentvolle spreker de tweedejaars honoursstudenten door hen na te laten denken over vragen als ‘wie ben ik, wat kan ik en wat wil ik’ en ‘hoe kan ik dat bereiken?’. Ieder jaar wordt er een andere inspirerende spreker uitgenodigd. Deze avond vindt dit jaar plaats op woensdag 6 september 2017 en is verplicht voor iedere tweedejaars honoursstudent. <br/><br/>Jaar 2 Plenaire avond naar keuze: Academia of Entrepreneurship (keuzegroep E)<br/><br/>Vervolgens wordt de blik gericht op het werkveld. In dit onderdeel oriënteer je je op werken in de wetenschap of op Entrepreneurship (ondernemen met al je talenten in de breedste zin van het woord). Waar zou je na je studie willen werken? Ambieer je een carrière in de wetenschap of weet je al dat je in het bedrijfsleven of de publieke sector aan de slag wilt? Misschien weet je het nog niet. Om je al halverwege je bachelor studie in aanraking te brengen met de Academia en met Entrepreneurship, worden er twee plenaire avonden georganiseerd met een interactief karakter. Tijdens deze twee avonden staat telkens één van de twee thema’s centraal. Deze avonden worden georganiseerd op respectievelijk dinsdag 14 november 2016 en op donderdag 8 februari 2018. Het deelnemen aan één van deze twee avonden is verplicht voor iedere tweedejaars honoursstudent.<br/><br/>Jaar 2 Workshops (keuzegroep F)<br/><br/>In het tweede semester van het tweede jaar ga je zelf aan de slag met jouw potentiële talent. Er zijn verschillende workshops met thema’s zoals ‘passie’, ‘wilskracht’, ‘pick your own time’, ‘omgaan met keuzestress’, ‘sturen of coachen’ en ‘succes en ambitie’. De workshops worden zowel in het Nederlands als in het Engels aangeboden. Het doel van de workshop is dat je kennis maakt met het betreffende onderwerp en hiermee aan de slag gaat. Tijdens de startbijeenkomst van de workshop worden verschillende aspecten geïntroduceerd. Gedurende een periode van één of twee weken neem je jouw talent onder de loep en probeer je de opgedane kennis in de praktijk te brengen. De workshop wordt afgesloten met een slotbijeenkomst, waarin je reflecteert op wat je hebt geleerd. Bovendien kijk je vooruit naar hoe je het thema kunt gebruiken in jouw studiecarrière of zelfs daarna. Iedere workshop bestaat uit twee sessies. De workshops worden in semester II gegeven. Het volgen van één workshop is verplicht voor ieder tweedejaars honoursstudent. <br/><br/>Jaar 3 Workshops (keuzegroep I)<br/><br/>In het derde jaar wordt de laatste stap in het PYO-t programma genomen en sta je gericht stil bij ‘wat wil ik’. Welke carrière ambieer je? Je kunt kiezen uit verschillende thema’s en ontwikkelt een loopbaanprofiel of verkent de arbeidsmarkt in relatie tot jouw ambitie. Ook kun je bijvoorbeeld onderzoeken of je een onderneming op wilt starten. Andere thema’s zijn o.a. 'bouw aan je persoonlijke merk' en 'het leven als experiment'. In het derde jaar van je studie maak je al belangrijke keuzes voor jouw toekomstige carrière. De eerste stappen richting de ontwikkeling van jouw talenten zijn gezet, wat zijn jouw volgende stappen? Welke talenten kun jij in de toekomst aanwenden om al jouw kennis en kunde optimaal in te kunnen zetten ten behoeve van wetenschap, maatschappij of elders. Iedere workshop bestaat uit twee sessies. De workshops worden het gehele derde jaar aangeboden, dus je kunt òf in semester I òf in semester II een workshop volgen. Kijk dus goed naar de planning van bijvoorbeeld een buitenlandverblijf, het schrijven van je scriptie, etc. Het volgen van één workshop is verplicht voor iedere derdejaars honoursstudent. <br/><br/>Pick Your Own-talent programma op een rij:<br/><br/>Jaar 1 <br/>• Welcoming Ceremony<br/><br/>Jaar 2 <br/>• Kick off<br/>• Academia of Entrepreneurship <br/>• Workshop jaar 2 <br/><br/>Jaar 3 <br/>• Workshop jaar 3<br/><br/>Eén ECTS wordt toegekend als alle PYO-t onderdelen van jaar 1, 2 en 3 voldoende zijn afgerond.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Hoorcolleges, Praktische werkvormen, Various styles of action learning</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">1</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77540"><b>Seminar I</b></a></td><td align="right"><b>HCEB10205</b></td></tr><tr><td align="justify" colspan="3">The course consists of lectures on important topics in contemporary financial economics and illustrates how financial problems can be solved with mathematical methods in general or with methods from econometrics and operations research in particular. An illustrative problem is the correct determination of CEO remuneration and the formalization of such a governance issue in a mathematical model. The course can be followed separately from Finance 1, as it partly deals with different topics, and, though the two courses can be followed separately. In fact, the course aims at dealing with topics that are not dealt with in Finance 1, or takes a more thorough approach in the analysis of certain topics that are discussed in Finance 1. The focus on the course may vary slightly per year, depending on current financial issues of interest.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7492">dr. I. Estrada Vaquero</a><a href="/ocasys/rug/vak/viewtutor?tutor=8008">dr. D. Ronchetti</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Groepsbijeenkomst(en) en -onderzoeksopdracht(en), Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Paper, Presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=77541"><b>Seminar II</b></a></td><td align="right"><b>HCEB20305</b></td></tr><tr><td align="justify" colspan="3">The course will discuss the various ways in which the socio-cultural and institutional environment shapes the decisions made by consumers and firms, and influences economic prosperity. Different approaches proposed in the literature to study these interactions will be presented and critically evaluated. Moreover, students will be asked to propose and develop original research questions. So the students will not only get familiar with the most currently literature in this area, they will also learn how to apply research methods. The course will culminate with students presenting their own research proposals in an in-class competition.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4946">dr. P. Milionis</a><a href="/ocasys/rug/vak/viewtutor?tutor=7051">dr. D. Soudis</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Discussiebijeenkomsten, Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Paper, Presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=77562"><b>Topics and Trends</b></a></td><td align="right"><b>HCEB10405</b></td></tr><tr><td align="justify" colspan="3">This course starts with a series of sessions in which staff members from different fields of study give an overview of the current societal and practical issues in their field and present some of the latest research developments related to these issues. These fields of study are linked to the different research programs of our Faculty. The students will have to take an exam that tests their knowledge on these research programs.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2034">dr. K.J. McCarthy</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9261">  Guest Lecturer(s)</a><a href="/ocasys/rug/vak/viewtutor?tutor=2034">dr. K.J. McCarthy</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Open only to FEB students.<br/>Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dr. McCarthy is the coordinator for this course; each lecture is taught by a lecturer from a different research programme.<br/><br/>The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units.”<br/><br/>Secretary: Honours Bachelor Secretariat (SOM), Hanneke Tamling; h.g.tamling@rug.nl or phone number: 050-363 9090.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77511"><b>Vaardigheden</b></a></td><td align="right"><b>HCPCTSKILLS</b></td></tr><tr><td align="justify" colspan="3">Voor meer informatie zie <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">de Petrus Camper Track</a>.<br/><br/>De student doet één vak in jaar 1 en één in jaar 2. Let op dat semester 2a in het tweede jaar de laatste mogelijkheid is om een vak te volgen. De vakken worden dus niet aangeboden tijdens jaar 2 semester 2b en niet in jaar 3.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=77512"><b>Verbredende modules</b></a></td><td align="right"><b>HCPCTBM</b></td></tr><tr><td align="justify" colspan="3">Voor meer informatie zie <a href="http://www.rug.nl/ocasys/rug/vak/showpos?opleiding=4914" target="_blank">de Petrus Camper Track</a>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

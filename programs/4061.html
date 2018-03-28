@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4061&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4061"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4061">Informatie over Ma Nederlands Recht - specialisatie Strafrecht  </a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Nederlands Recht - specialisatie Strafrecht  </b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 4 (  Verplichte onderdelen)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>b. (verplicht)</td><td>RGDOS017</td><td><a href="/ocasys/rechten/vak/show?module=75788">Seminaar Nederlands Recht</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>a. (verplicht) en d.</td><td>RGMCR01106</td><td><a href="/ocasys/rechten/vak/show?module=75798">Inleiding Criminologie</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGMSR00306</td><td><a href="/ocasys/rechten/vak/show?module=75772">Materieel Strafrecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>RGMSR01506</td><td><a href="/ocasys/rechten/vak/show?module=75771">Internationaal en Europees Strafrecht</a></td><td>Nederlands</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGMSR00806</td><td><a href="/ocasys/rechten/vak/show?module=75776">Strafprocesrecht Rechtsmiddelen</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester II</td><td>c. (verplicht)</td><td>RG00061018</td><td><a href="/ocasys/rechten/vak/show?module=75726">Scriptie</a></td><td>Nederlands</td><td>18</td><td></td></tr><tr class="color"><td class="nocolor">semester II a</td><td>a. (verplicht)</td><td>RGMSR00406</td><td><a href="/ocasys/rechten/vak/show?module=75773">Sanctierecht</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>RGMSR00706</td><td><a href="/ocasys/rechten/vak/show?module=75775">Strafprocesrecht Dwangmiddelen</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;"></p><ul><li>De bovenstaande indeling is afgestemd op studenten die in september met de masteropleiding beginnen.</li><li>Studenten die in februari instromen kunnen met behulp van videocolleges het vak strafprocesrecht rechtsmiddelen in blok 3 afleggen en het hertentamen van dit vak aan het einde van blok 3 doen en het vak Inleiding criminologie in blok 4 doen en het hertentamen afleggen in blok 4. </li><li>In blok 3 en 4 zijn ook seminaars Nederlands recht gepland. </li><li>Studenten die in februari beginnen mogen hun scriptie in blok 1 en 2 schrijven.</li></ul><br/>a. Indien Inleiding Criminologie is afgelegd als onderdeel van het bachelorexamen dan is er een keuzeruimte van 6 ec. Indien Sanctierecht voor 1-9-12 is afgelegd als (M4)onderdeel van het bachelorexamen dan is er een keuzeruimte van 6 ec. Indien beide vakken als onderdeel van het Bachelorexamen zijn afgelegd dan is er een keuzeruimte van 12 ec extra (zie oer);<br/>b. het seminaar is in dit schema geroosterd in het 1e semester maar kan ook worden afgelegd/ingevuld in het 2e semester.<br/>c. de scriptie is in dit schema geroosterd in het 2e semester maar kan ook worden afgelegd/ingevuld in het 1e semester. <br/>d. In blok 4 wordt het vak Inleiding Criminologie aangeboden in de vorm van video-onderwijs en responsiecollege (+ één tentamen). Regulier onderwijs is in blok 1).</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 4 ( Seminaars Nederlands Recht - geadviseerd voor Strafrecht)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>RGMSR01606</td><td><a href="/ocasys/rechten/vak/show?module=75774">Seminaar Concluderen en Casseren</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>RGMRG00206</td><td><a href="/ocasys/rechten/vak/show?module=75722">Seminaar Ius Commune</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>RGMSR01706</td><td><a href="/ocasys/rechten/vak/show?module=75817">Seminaar Strafrechtelijk Procederen</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester II</td><td>keuze</td><td>RGMSR02106</td><td><a href="/ocasys/rechten/vak/show?module=75758">Seminaar Zedendelicten en Mensenhandel</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>keuze</td><td>RGMRF00306</td><td><a href="/ocasys/rechten/vak/show?module=75965">Seminaar Boontje komt om z'n loontje?</a></td><td>Nederlands</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>1-9-17 Naamswijziging: Seminaar Dilemma's in het Strafrecht -&gt; Seminaar Zedendelicten en Mensenhandel.</li><li>1-9-11 herziening oer/indeling onderdelen-&gt; voor gevolgen zie Overgangsregelingen via <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li></ul> <ul><li>n.b. de genoemde seminaars zijn slechts aanbevolen, een keuze uit de overige  <a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=5966" target="_blank">seminaars Nederlands Recht.</a> is ook mogelijk.</li></ul><br/>1-9-17: Naamswijziging: Seminaar Dilemma's in het Strafrecht -&gt; Seminaar Zedendelicten en Mensenhandel<br/>1-9-16: Seminaar Boontje komt om z'n loontje? gaat naar blok 3 (was blok 3 en 4)<br/>1-9-16: Seminaar Concluderen en Casseren gaat naar blok 1 en 2 (was blok 3 en 4)</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75798"><b>Inleiding Criminologie</b></a></td><td align="right"><b>RGMCR01106</b></td></tr><tr><td align="justify" colspan="3">Het bieden van een eerste kennismaking met de verschillende velden en thema's waar de criminologie zich mee bezig houdt. Na het volgen van het vak is de student in staat de volgende velden en onderwerpen binnen de criminologie te benoemen en te beschrijven, mede aan de hand van actuele ontwikkelingen op het terrein van criminaliteit en criminaliteitsbestrijding:<br/><ul><li>Strafrechtelijke en criminologische vragen: normatief en empirisch denken</li><li>Criminologie, politiek en beleid</li><li>Het domein van de criminologie</li><li>Aard en omvang van criminaliteit</li><li>Beeldvorming rond criminaliteit</li><li>Verklaringen voor criminaliteit</li><li>Slachtofferproblematiek</li><li>Reacties op criminaliteit</li></ul></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1313">dr. M. Althoff</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1313">dr. M. Althoff</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is als keuzevak alleen toegankelijk voor studenten met een afgeronde juridische WO-propedeuse en voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid. Indien dit vak als keuzevak wordt afgerond tijdens de bacheloropleiding dan kunnen de studiepunten niet meetellen voor een masteropleiding.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 1 en extra aangeboden via online colleges met 1 responsiecollege in blok 4. Eén (extra) tentamenkans in blok 4.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75771"><b>Internationaal en Europees Strafrecht</b></a></td><td align="right"><b>RGMSR01506</b></td></tr><tr><td align="justify" colspan="3">In de colleges en de literatuur wordt aandacht besteed aan de volgende onderwerpen:<br/>• bronnen en beginselen van internationaal strafrecht<br/>• de plaats van internationaal strafrecht in de nationale rechtsorde<br/>• de Raad van Europa, het EVRM en positieve verplichtingen<br/>• bronnen en beginselen van het recht van de Europese Unie<br/>• jurisdictierecht<br/>• rechtshulprecht, waaronder het recht met betrekking tot uitlevering, de overdracht van vervolging en van executie, en kleine rechtshulp. <br/>• rechtshulprecht binnen de EU: rechtshulp op grond van wederzijdse erkenning</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9327">prof. mr. dr. W.N. Ferdinandusse</a><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a><a href="/ocasys/rug/vak/viewtutor?tutor=1393">mr. dr. W.F. van Hattum</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Niet af te leggen door studenten die voor 1-9-07 het vak Internationaal Strafrecht hebben gehaald.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75772"><b>Materieel Strafrecht</b></a></td><td align="right"><b>RGMSR00306</b></td></tr><tr><td align="justify" colspan="3">In dit vak wordt aandacht besteed aan een aantal onderdelen van het materiële strafrecht, die in het kader van de strafrechtelijke bachelorvakken nog niet uitvoerig aan de orde zijn gekomen. Het betreft enerzijds een aantal algemene leerstukken, zoals het legaliteitsbeginsel, de ne bis in idem-regel van art. 68 Sr en de problematiek van het strafrechtelijk overgangsrecht. Anderzijds wordt aandacht besteed aan een aantal groepen van delicten, zoals vermogensdelicten, valsheidsdelicten, zedendelicten en verkeersdelicten. In onderlinge samenhang met deze delicten zullen bijv. ook de samenloopregeling en het leerstuk specialis-generalis worden behandeld.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6189">prof. mr. dr. D.H. de Jong</a><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a><a href="/ocasys/rug/vak/viewtutor?tutor=1587">prof. mr. dr. H.D. Wolswijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75773"><b>Sanctierecht</b></a></td><td align="right"><b>RGMSR00406</b></td></tr><tr><td align="justify" colspan="3">Het vak sanctierecht houdt zich bezig met de regelingen voor de oplegging en tenuitvoerlegging van sancties. Het sanctiestelsel staat centraal. Aandacht zal worden besteed aan zowel vermogenssancties als vrijheidsbenemende sancties en zowel aan straffen als maatregelen. Tijdens de hoorcolleges zullen onder meer de externe en interne rechtspositie van gedetineerden en terbeschikkinggestelden aan de orde komen. Belangrijke regelingen zijn artikel 3, 5 en 8 EVRM, de Penitentiaire Beginselenwet en de Beginselenwet terbeschikkinggestelden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12603">dr. mr. M.J.F. van der Wolf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75726"><b>Scriptie</b></a></td><td align="right"><b>RG00061018</b></td></tr><tr><td align="justify" colspan="3">Nadere eisen en richtlijnen<br/><br/>Nadere eisen en richtlijnen m.b.t. scriptie zijn opgenomen in het scriptiereglement. Zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a> voor meer informatie. <br/><br/>Voorbereiding <br/><br/>Ter voorbereiding op het schrijven van een scriptie organiseert de faculteit een scriptievoorbereidingstraject, bestaande uit een hoorcollege (4 x per jaar), een bibliotheekinstructie en een scriptiepracticum. De student is verplicht de onderdelen scriptiecollege en bibliotheekinstructie van het scriptievoorbereidingstraject te volgen alvorens een scriptieonderwerp ter goedkeuring voor te leggen aan de scriptiecoördinator. Het volgen van het onderdeel scriptiepracticum is facultatief, maar wordt sterk aanbevolen. Voor bijzonderheden over het Scriptievoorbereidingstraject zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=7063" target="_blank">vakomschrijving in Ocasys</a>. Hierin is informatie opgenomen over de onderdelen van het traject en speciale literatuur die bij het schrijven van een scriptie wordt aanbevolen. <br/>Voor Masterstudenten Internationaal en Europees Recht geldt een apart engelstalig scriptievoorbereidingstraject (Thesisclass) zie de <a href="http://www.rug.nl/ocasys/rechten/vak/show?module=25170" target="_blank">vakomschrijving in Ocasys</a>.   <br/><br/><br/>Een artikel in Ars Aequi of een ander wetenschappelijk tijdschrift kan ook als een scriptie worden gehonoreerd, mits hierover tevoren overleg is gepleegd met de docent die anders als scriptiebegeleider zou zijn opgetreden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">18</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Uitsluitend toegankelijk voor masterstudenten.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75965"><b>Seminaar Boontje komt om z'n loontje?</b></a></td><td align="right"><b>RGMRF00306</b></td></tr><tr><td align="justify" colspan="3">Het gezegde 'boontje komt om zijn loontje' wordt gebruikt wanneer iemand zijn verdiende straf krijgt. In de volksmond lijkt men geen moeite te hebben met deze uitspraak. Maar wat is eigenlijk `verdiend’? En straft men wel omdat iemand dat verdiend heeft? Of omdat men erger wil voorkomen? Of zijn er nog andere redenen om te straffen en welke reden vinden wij dan eigenlijk het belangrijkste? En is belonen eigenlijk geen betere manier om gedrag te beïnvloeden?<br/>In deze collegereeks worden enkele ogenschijnlijke vanzelfsprekendheden uit het strafrecht ter discussie gesteld en steeds vanuit zowel een strafrechtelijk als filosofische perspectief belicht.  Daarbij komen concrete thema’ s aan de orde, zoals de vraag of tbs eigenlijk wel zo humaan is als vaak wordt voorgesteld en of iemand ooit levenslang verdient. <br/><br/>Alle colleges worden verzorgd door zowel een strafrechtdocent (Ten Voorde) als een rechtsfilosoof (afwisselend Mackor, Westerman en Geeraets (gastdocent VU)). Elke week worden een of meer actuele juridische, rechtsfilosofische en literaire teksten gelezen. Van de student wordt een actieve inbreng verwacht op basis van aanvullend eigen literatuuronderzoek.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9288">prof. mr. dr. J.M. ten Voorde</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1255">prof. mr. dr. A.R. Mackor</a><a href="/ocasys/rug/vak/viewtutor?tutor=9288">prof. mr. dr. J.M. ten Voorde</a><a href="/ocasys/rug/vak/viewtutor?tutor=1574">prof. dr. P.C. Westerman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: Sanctierecht en Inl. Rechtsfilosofie;</li><li>Kennis van en belangstelling voor strafrecht is noodzakelijk</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Belangstellenden die nog niet (geheel) aan de entree-eisen voldoen worden verzocht voor intekening contact op te nemen met dhr. Ten Voorde en/of mw. Mackor en/of mw. Westerman. Nadere gegevens van de betrokken docenten:<ul><li>J.M.ten.Voorde@rug.nl - Vakgroep Rechtstheorie 3635695</li><li>P.C.Westerman@rug.nl - Vakgroep Rechtstheorie 3635695</li><li>A.R.Mackor@rug.nl - Vakgroep Rechtstheorie 3635695</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75774"><b>Seminaar Concluderen en Casseren</b></a></td><td align="right"><b>RGMSR01606</b></td></tr><tr><td align="justify" colspan="3">Tijdens je studie heb je al heel veel arresten gelezen, en soms ook gemerkt dat de HR meer zegt dan erlijkt te staan. Bij dit seminar staat steeds de vraag centraal: hoe moet ik dit arrest van de HR begrijpen? Hoe moet de uitspraak worden geplaatst in de rechtsontwikkeling? En hoe moet het arrest worden begrepen in het licht van achterliggende rechtsbelangen, beginselen en dogmatiek? Kennis die je eerder in je studie hebt opgedaan wordt bij dit seminar weer opgefrist. Verder wordt er ruimschoots aandacht besteed aan de taak van de HR en cassatietechniek. Tijdens de bijeenkomsten wordt door de studenten gedebatteerd over actuele arresten. Twee studenten houden elk een referaat waarin ze een verschillend standpunt verdedigen. Onder leiding van een derde student wordt gediscusieerd. Verder moet iedere student twee schriftelijke stukken schrijven: een conclusie en een annotatie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a><a href="/ocasys/rug/vak/viewtutor?tutor=1432">prof. mr. dr. G. Knigge</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">standaard seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Geadviseerd: Strafprocesrecht Rechtsmiddelen en Dwangmiddelen.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Niet toegankelijk voor studenten die voor 1-9-09 het seminaar Strafrechtelijke Jurisprudentie behaald.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75722"><b>Seminaar Ius Commune</b></a></td><td align="right"><b>RGMRG00206</b></td></tr><tr><td align="justify" colspan="3">De Tweede Wereldoorlog en het recht. ‘Waar het recht ophoudt, begint de oorlog’. Deze woorden staan op een kunstwerk van R.N. Roland Holst dat vroeger in het gebouw van de Hoge Raad stond. Tegenwoordig siert het de hal van de Tweede kamer. In de colleges over de Tweede Wereldoorlog en het recht komt de vraag aan de orde wat de verhouding is tussen oorlog en recht. De colleges zullen onder andere gaan over de Tribunalen na de Tweede Wereldoorlog, de behandeling van vijandelijk vermogen hier te lande, de Na-oorlogse rechtspraak en de positie van de Nederlandse rechterlijke macht tijdens de bezetting.Het is overigens uitdrukkelijk geen vak waarin de technisch juridische instrumenten aan de orde komen om oorlog te beslechten of te voorkomen.<br/><br/>.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1511">mr. H.H. Runia</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1339">prof. mr. F. Brandsma</a><a href="/ocasys/rug/vak/viewtutor?tutor=1511">mr. H.H. Runia</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">standaard seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75788"><b>Seminaar Nederlands Recht</b></a></td><td align="right"><b>RGDOS017</b></td></tr><tr><td align="justify" colspan="3">In het verplichte seminaar wordt het vaardighedencurriculum vervolgd, zoals dat in de bachelorfase is ingezet, en komen diverse academische vaardigheden aan bod, zoals kritisch lezen, analyseren, abstraheren, argumenteren, synthetiseren, probleemidentificatie, probleem oplossen, en overige vaardigheden als schrijven, presenteren en samenwerken. Het gaat daarbij om een wetenschappelijke denktraining, waarbij, nadat een goede analyse heeft plaats gevonden, een (creatieve) oplossing voor een juridische vraagstelling helder wordt gepresenteerd, voorzien van argumenten.<br/><br/>Een student Nederlands Recht kan kiezen uit <a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=5966" target="_blank">alle seminaars Nederlands Recht.</a> In de opleidingsschema's van de master Nederlands Recht worden per specialisatie de aanbevolen seminaars apart weergegeven (zie de opleidingsschema's elders in Ocasys). <br/><br/>Indien een student twee specialisaties wil doen binnen de master Nederlands Recht kan hij volstaan met het volgen van één seminaar Nederlands Recht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Zie voorts de vakomschrijving van de seminaars in Ocasys.</li><li>Voor nadere informatie over de entreevoorwaarden van de Research Master Functionaliteit van het Recht zie <a href="http://www.rug.nl/rechten/kennisbank" target="_blank">Kennisbank Rechten</a>.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">de seminaars genoemd in de opleidingen hieronder zijn slechts aanbevolen. Voor de definitieve lijst zie:  <a href="http://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=5966" target="_blank">seminaars Nederlands Recht.</a></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75817"><b>Seminaar Strafrechtelijk Procederen</b></a></td><td align="right"><b>RGMSR01706</b></td></tr><tr><td align="justify" colspan="3">Het seminaar Strafrechtelijk Procederen laat studenten,na een overwegend theoretisch georiënteerde vorming gedurende de eerste studiejaren, intensief kennis maken met de strafpraktijk. Het Seminaar Strafprocesrecht bouwt door verdieping en verfijning voort op de Studentenrechtbank,met een sterk accent op de vakinhoudelijke aspecten.<br/>De eerste weken van het seminaar staan vooral in het teken van het bewijs in strafzaken. Daarbij wordt ook aandacht geschonken aan de nieuwe Promis bewijsmotivering en strafmotivering. In deze weken wordt een begin gemaakt met het verdiepen en het actualiseren van de kennis van het straf(proces)recht die de student in de bachelor heeft verkregen.  Daarna staat het spelen van zittingen centraal. Aan de hand van ‘echte’ strafzaken worden studenten met de verschillende rollen in het proces geconfronteerd: officier van justitie, advocaat, rechter, griffier.  Behalve aan materieel- en procesrechtelijke (inhoudelijke) aspecten, zal gedurende de gehele cursus ook aandacht worden besteed aan de mondelinge presentatie. <br/><br/>Het karakter van een seminaar impliceert dat de zelfwerkzaamheid van de student voorop staat. De deelnemers aan dit vak maken individueel een aantal oefenopdrachten In het kader van de zittingsspelen worden in groepsverband processtukken opgesteld(tenlastelegging, pleitnota, requisitoir). Tijdens de zitting moeten studenten actief mondeling in verschillende procesrollen deelnemen aan de zitting. Na afloop van de zitting worden het vonnis en het proces-verbaal van de zitting geschreven.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1547">prof. mr. dr. W.H. Vellinga</a><a href="/ocasys/rug/vak/viewtutor?tutor=1548">prof. mr. dr. F. Vellinga-Schootstra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">standaard seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Niet toegankelijk voor studenten die voor 1-9-09 het seminaar Strafprocesrecht hebben behaald. </li><li>Vak wordt niet in het Engels aangeboden, is alleen bedoeld voor Nederlandstalige studenten.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=75758"><b>Seminaar Zedendelicten en Mensenhandel</b></a></td><td align="right"><b>RGMSR02106</b></td></tr><tr><td align="justify" colspan="3">Zedendelicten en mensenhandel worden gezien als ernstige inbreuken op de lichamelijke integriteit  en persoonlijke vrijheid, en hebben daarom de bijzondere aandacht van de politiek, de media en de maatschappij in het algemeen. Tegelijkertijd moet worden vastgesteld dat zeden- en mensenhandelzaken zich veelvuldig aandienen in de rechtszaal en dat de corresponderende strafbaarstellingen uiterst complex zijn. Strafzaken op deze terreinen kenmerken zich door moeilijke rechtsvragen en uiteenlopende opvattingen over wetssystematiek, bestanddelen en straftoemeting. Daarbij valt te denken aan kwesties als ontucht tussen adolescenten, kinderpornografie, grooming en de bestrijding van loverboys. In het seminaar Zedendelicten en Mensenhandel maken studenten intensief kennis met dit spanningsveld aan de hand van debatten, presentaties en papers, waarbij de casuïstiek mede wordt ontleend aan de actualiteit. Door middel van eigen onderzoek en gastcolleges van specialisten uit het werkveld leren studenten de relevante misdrijven en daaraan gerelateerde kwesties kritisch te analyseren en hun bevindingen toe te passen op de gerezen rechtsvragen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1457">prof. mr. dr. K.K. Lindenberg</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">standaard seminaar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li><li>Niet af te leggen door studenten die voor 1-9-2017 het vak Seminaar Dilemma's in het Strafrecht (RGMSR01306) hebben afgelegd.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=75775"><b>Strafprocesrecht Dwangmiddelen</b></a></td><td align="right"><b>RGMSR00706</b></td></tr><tr><td align="justify" colspan="3">In dit vak staat het vooronderzoek in strafzaken centraal. Ingegaan wordt op enkele bijzondere dwangmiddelen, zoals de inbeslagneming van voorwerpen en daaraan gekoppelde betredings- en doorzoekingsbevoegdheden, en het voorarrest. Voorts wordt aandacht besteed aan de bijzondere opsporingsbevoegdheden, zoals de stelselmatige observatie en de infiltratie. Daarnaast wordt de positie van de functioneel verschoningsgerechtigde in het vooronderzoek besproken, alsmede die van de rechter-commissaris. Diverse deelonderwerpen worden daarbij in het licht geplaatst van het Europees Verdrag voor de Rechten van de Mens (de artt. 5, 6 en 8). In het vak wordt verder aandacht besteed aan belangrijke overeenkomsten en verschillen tussen enkele besproken dwangmiddelen uit de commune strafvordering en equivalenten uit de bijzondere wetgeving (Opiumwet, WED, WWM). Het streven is om de verworven kennis door middel van enkele gastsprekers (zoals een rechter-commissaris) af te laten zetten tegen de strafvorderlijke praktijk.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1385">mr. E. Gritter</a><a href="/ocasys/rug/vak/viewtutor?tutor=1391">dr. mr. A.E. Harteveld</a><a href="/ocasys/rug/vak/viewtutor?tutor=6937">mr. dr. R. Robroek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=75776"><b>Strafprocesrecht Rechtsmiddelen</b></a></td><td align="right"><b>RGMSR00806</b></td></tr><tr><td align="justify" colspan="3">Het mastervak Rechtsmiddelen is een verdiepend vak waarbij met name word voortgebouwd op de bij Strafrecht 3 behandelde stof. De verschillende rechtsmiddelen vormen de hoofdmoot van dit vak. Behandeld zullen worden het hoger beroep en het beroep in cassatie tegen rechterlijke uitspraken, alsmede de rechtsmiddelen tegen rechterlijke beschikkingen en de buitengewone rechtsmiddelen: de cassatie in het belang der wet en de herziening. Daarnaast komt aan bod het doen van verzet bij OM-afdoening, de tenuitvoerlegging van rechterlijke beslissingen en gratie. Aan de orde komen vragen als welk rechtsmiddel staat in welk geval open, op welke wijze moet dit worden aangewend, hoe wordt de zaak na het instellen van een rechtsmiddel behandeld en welke beslissingen kunnen volgen. <br/>De stof wordt gedoceerd door middel van (hoor)colleges.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6937">mr. dr. R. Robroek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1391">dr. mr. A.E. Harteveld</a><a href="/ocasys/rug/vak/viewtutor?tutor=6937">mr. dr. R. Robroek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>Dit vak is alleen toegankelijk voor studenten die zijn toegelaten tot een masteropleiding van de Faculteit Rechtsgeleerdheid.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt live gegeven in blok 2 en extra aangeboden via online colleges en 1 responsiecollege in blok 3 (één tentamenkans, gelijk met hertentamen in blok 3).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

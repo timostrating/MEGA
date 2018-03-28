@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5747&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5747"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5747">Informatie over LLM European Economic Law</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>LLM European Economic Law</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>compulsory</td><td>RGDOS500</td><td><a href="/ocasys/rechten/vak/show?module=75642">English written proficiency support</a></td><td>Engels</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMEE51806</td><td><a href="/ocasys/rechten/vak/show?module=75832">Seminar European Market Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGMEE50606</td><td><a href="/ocasys/rechten/vak/show?module=75703">European Internal Market Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMEE51706</td><td><a href="/ocasys/rechten/vak/show?module=75646">Market Regulation</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>compulsory</td><td>RGMEE50306</td><td><a href="/ocasys/rechten/vak/show?module=75704">Competition Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMEE51006</td><td><a href="/ocasys/rechten/vak/show?module=75650">Constitutional Principles of EU Market</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II</td><td>compulsory</td><td></td><td>Master's thesis LL.M.: EL</td><td>Engels</td><td>18</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>compulsory</td><td>RGMEE51406</td><td><a href="/ocasys/rechten/vak/show?module=75663">EU Trade Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>optional compulsory</td><td>RGMEE50706</td><td><a href="/ocasys/rechten/vak/show?module=75973">European Human Rights Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr><td class="nocolor"> </td><td>optional compulsory</td><td>RGMEE51506</td><td><a href="/ocasys/rechten/vak/show?module=75664">European Judicial Protection</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>optional compulsory</td><td>RGMEE51606</td><td><a href="/ocasys/rechten/vak/show?module=75834">European Sustainability Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">The programme consists of 60 ECTS: <br/>1. Five compulsory courses and a compulsory seminar (36 ECTS);<br/>2. One optional compulsory course (choose 1 from a list of 3; minimum of 6 ECTS);<br/>3. Thesis (18 ECTS).<br/><br/>This programme is only accessible to those students that have been fully admitted by the Admissions Board. More information about the programmes and the admission procedures can be found on <a href="http://www.rug.nl/law/llm" target="_blank">www.rug.nl/law/llm</a>.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75704"><b>Competition Law</b></a></td><td align="right"><b>RGMEE50306</b></td></tr><tr><td align="justify" colspan="3">The course is taught using lectures. Active student participation is expected during the lectures. <br/><br/>The following topics are dealt with:<br/><br/>-	Economic principles of competition law<br/>-	Principles of competition law<br/>-	The prohibition of restrictive agreements (Art. 101 TFEU)<br/>-	The prohibition of abuse of dominance (Art. 102 TFEU)<br/>-	Merger control (Reg 139/2004)<br/><br/>Students cannot follow this course and the Dutch language course in Mededingingsrecht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12739"> R.J. Busscher, LLM. MA.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.<br/>This course is not open to non-law exchange students.<br/>Students cannot follow this course and the Dutch language course in Mededingingsrecht.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75650"><b>Constitutional Principles of EU Market</b></a></td><td align="right"><b>RGMEE51006</b></td></tr><tr><td align="justify" colspan="3">The aim of the course is to discuss the working of the EU's internal market from the fundamental constitutional perspective, focusing on some of its key constitutional principles and options for future development of the European Union at an advanced level. Students are encouraged to think critically and offer their own ideas. The course will serve as a basis for practice or research in this broad area of law and will offer a broader perspective than strictly legal, also inspired by the literature from social sciences and humanities.<br/>The course:<br/>-	Examines key constitutional principles of the Internal Market that have shaped the European Union as developed in the Treaties, the Charter of Fundamental Rights and the jurisprudence of the Court of Justice of the European Union;<br/>-	Surveys each of the European Union institutions examining their functioning and effect on the constitutional development of the Union in the context of the day-to-day co-shaping of the Internal Market together with the Member States of the Union;<br/>-	Critically reviews a wide compendium of scholarly literature on the topics discussed.<br/><br/>The grade is based 100% on a critical research paper of up to 7.000 words (with references) engaging with one of the topics relevant for the course. Students submit a written assignment for every class, which is based on the required readings. Those who fail to get a pass on three assignments are not entitled to submit the paper.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8889">prof. mr. dr. J. Langer</a><a href="/ocasys/rug/vak/viewtutor?tutor=1475">mr. dr. J. Morijn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed the seminar EU Constitutional and EU Institutional Law before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75642"><b>English written proficiency support</b></a></td><td align="right"><b>RGDOS500</b></td></tr><tr><td align="justify" colspan="3">The English proficiency support workshops consist of three parts:<br/>1.	A compulsory test<br/>2.	7 workshops<br/>3.	One-on-one tutorials<br/><br/>Ad 1. All students participate in a short English proficiency test upon arrival to Groningen. This test takes 60 minutes and students need to write an argumentative essay in academic style in this time which deals with one of six suggested topics.<br/><br/>Ad 2. Based on this test score, students are advised as to which workshops, if any, they should attend. These areas include:<br/>-	Punctuation<br/>-	Formality<br/>-	articles &amp; concord<br/>-	digital tools<br/>-	the verb phrases (tenses, voice) &amp; grammar pitfalls<br/>-	sentence structure <br/>-	paragraph structure <br/>Student are obliged to attend in the workshops that are indicated as compulsory for them after the test. But all workshops are open to all LLM students. <br/><br/>Ad 3. In semester 2 one-on-one tutorials are offered for students who have followed the required workshops. These tutorials deal with written work produced by the individual students (e.g. one of the already produced papers from semester 1 or a chapter of the thesis). The tutor will provide feedback on this written piece.<br/><br/>Please be aware that the tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The one-on-one tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The support starts with a compulsory test and is followed by (partly compulsory, partly optional) workshops on specific topics.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75663"><b>EU Trade Law</b></a></td><td align="right"><b>RGMEE51406</b></td></tr><tr><td align="justify" colspan="3">This course looks at EU Trade law in the light of the EU’s external relations law and policy. After discussing the development of the EU’s competence in external relations and trade, the course looks at the interaction between political aspects of external relations and trade aspects, and then considers the various trade defence measures open to the EU (such as anti-dumping, anti-subsidies, safeguard measures) and the Trade Barriers Regulation. It will also consider proposed Multilateral Investment Treaties, such as TTIP and look at the EU's neighbourhood policy from the point of view of trade agreements.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed European Union External Relation before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75973"><b>European Human Rights Law</b></a></td><td align="right"><b>RGMEE50706</b></td></tr><tr><td align="justify" colspan="3">This course examines the background and scope of the European Convention of Human Rights and the European Union system of human rights protection. It examines the institutional development and functioning of the Council of Europe system of fundamental rights protection, in particular the European Court of Human Rights (ECtHR), and the European Union system of human rights protection, in particular the European Court of Justice. The course looks at the scope of fundamental rights protection within the European Union. A selection of rights and fundamental freedoms covered in the European Convention of Human Rights and the EU Fundamental Rights Charter are discussed. This section includes an examination of the individual rights in the Charter and how these differ from Convention rights. Students are encouraged to reflect on the impact of the development of seemingly different common standards within Europe. <br/><br/>Teaching method: This course is taught by way of lectures, in-class discussions and guest lectures.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=1475">mr. dr. J. Morijn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.<br/>This course is not open to non-law exchange students.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75703"><b>European Internal Market Law</b></a></td><td align="right"><b>RGMEE50606</b></td></tr><tr><td align="justify" colspan="3">This course deals with various aspects of European Union Internal Market Law which is at the very heart of the substantive law of the European Union. The following topics are dealt with at an advanced level, involving study of the case-law and the considerable literature in the field:<br/>- Free movement of goods, including principles of  intellectual property law<br/>- Free movement of persons<br/>- Freedom of establishment<br/>- Freedom to provide services<br/>- Free movement of capital<br/>- Harmonisation of laws.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Compulsory: Bachelor course on European Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who passed the course Substantive European Union Law before 1-9-11.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75664"><b>European Judicial Protection</b></a></td><td align="right"><b>RGMEE51506</b></td></tr><tr><td align="justify" colspan="3">This course deals with the Union judicial system. It is taught as a class (rather than merely as a series of lectures), so active participation is required. It examines in detail the different legal procedures before the European Court of Justice (ECJ) and the General Court provided for in the three Treaties  (TEU,TFEU and Euratom) and the judicial cooperation with the courts and tribunals of the Member States. Module structure:<br/>I Institutional structure and status of the ECJ and the General Court and the relationship between them<br/>II Authority of Judgments and application of national procedures and general principles of law<br/>III Remedies before the European courts <br/>1. Action against Member States for failure to comply with EU law<br/>2. Action for annulment of Community acts<br/>3. Action against failure to act<br/>4. Exception for illegality<br/>5. Contractual and non-contractual liability of the EU <br/>6. Reforms in procedure before the ECJ and the General Court<br/>7. The impact of the Charter and issues relating to individuals under CFSP<br/>IV Actions before the courts and tribunals of the Member States<br/>1. Reference for a preliminary ruling<br/>2. State liability.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed European Law 2 (Master) before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75834"><b>European Sustainability Law</b></a></td><td align="right"><b>RGMEE51606</b></td></tr><tr><td align="justify" colspan="3">Do you know what the little round green logo on your cola bottle actually means? It guarantees you, as a consumer and a human being, that you will not harm the environment when disposing of this bottle. But who is responsible for this and who should pay for it? These are all questions related to sustainability and how it is regulated. <br/>Article 3 TEU requires the European Union to work for the sustainable development of the European Union. This course will examine what this entails and how it is implemented in law by looking at the embryonic normative framework set by the objectives in Article 3 TEU in connection with the values of the EU listed in Article 2 TEU. Real-life challenges affecting the daily lives of the EU, its Member States (and you!) in three areas where sustainability issues arise: the protection of the environment, consumer protection and social inclusion and solidarity will be discussed in this course. This will provide you with a thorough understanding of the mechanisms that underlie the law-making in this area of EU regulation, as well the practical implications for the day to day legal practice in the European Union. Thus it will give you a competitive edge in the fast growing market of sustainability law.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7774">mr. dr. L. Squintani</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7774">mr. dr. L. Squintani</a><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed European Environmental Law before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75646"><b>Market Regulation</b></a></td><td align="right"><b>RGMEE51706</b></td></tr><tr><td align="justify" colspan="3">The course is taught using lectures. Active student participation is expected during the lectures. <br/><br/>The following topics are dealt with:<br/><br/>-	State aid control (Art. 107 TFEU)<br/>-	Competition law relating to state intervention in the market (Art. 106 TFEU)<br/>-	EU Market regulation and liberalisation<br/>-	Enforcement and judicial review in competition law</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1543">prof. mr. dr. H.H.B. Vedder</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen), paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75832"><b>Seminar European Market Law</b></a></td><td align="right"><b>RGMEE51806</b></td></tr><tr><td align="justify" colspan="3">This seminar examines aspects of the EU’s internal market law and EU citizenship law in depth, dealing with the central controversies in internal market law and in the development of European Citizenship. It is intended to develop students’ understanding of the discussions in academic literature in these fields, to encourage them to study on their own and to produce research-based written work Students will be required to present and defend their essays and to discuss essays written by other students participating in the course.<br/>The course is assessed on the basis of each student's  essay(s), defence of the essay(s), and participation in the discussion of the presentation of other participants' essays.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">papers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

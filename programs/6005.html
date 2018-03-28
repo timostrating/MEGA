@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6005&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6005"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6005">Informatie over Ma Programme Religion and Cultural Heritage</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Ma Programme Religion and Cultural Heritage</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>THMIRHE5</td><td><a href="/ocasys/rechten/vak/show?module=73820">Introduction to Religious Heritage</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>THMTPHE5</td><td><a href="/ocasys/rechten/vak/show?module=73821">The Politics of Heritage</a></td><td>Engels</td><td>5</td><td>6</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>THMMRE5</td><td><a href="/ocasys/rechten/vak/show?module=73823">Material Religion</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>A</b></td><td>THMTHPMCE5</td><td><a href="/ocasys/rechten/vak/show?module=73824">Theological Heritages</a></td><td>Engels</td><td>5</td><td>6</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>THMRMSE5</td><td><a href="/ocasys/rechten/vak/show?module=73822">Research Methods</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>THM-GR</td><td><a href="/ocasys/rechten/vak/show?module=77955">Going Retro</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>THM-HOD</td><td><a href="/ocasys/rechten/vak/show?module=77954">Heritage of Death</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuzegroep <b>B</b></td><td>THMRRATE5</td><td><a href="/ocasys/rechten/vak/show?module=73817">Reception and Re-Use of  Aut. Texts</a></td><td>Engels</td><td>5</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>THMSTAGE10</td><td><a href="/ocasys/rechten/vak/show?module=75554">Stage Master THRS</a></td><td>Engels en Nederlands</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>THMTS</td><td><a href="/ocasys/rechten/vak/show?module=75606">Thesis / Thesis Seminar THRS</a></td><td>Engels</td><td></td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77955"><b>Going Retro</b></a></td><td align="right"><b>THM-GR</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4282">dr. M. van Dijk</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8247">dr. S. Travagnin</a><a href="/ocasys/rug/vak/viewtutor?tutor=4282">dr. M. van Dijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">final paper, presentation(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Student workload: 21 hrs in classes; 8 hours conference; 80 hours practicum;  32 hours self study</li><li>Research master students, have a different course code: THRM-GR. For these students there will be formulated an extra assignment.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77954"><b>Heritage of Death</b></a></td><td align="right"><b>THM-HOD</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3123">prof. dr. C. Jedan</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">varied</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Assignments including presentations in class (30%)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Research master students, have a different course code:THRM-HOD. For these students there will be formulated an extra assignment.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73820"><b>Introduction to Religious Heritage</b></a></td><td align="right"><b>THMIRHE5</b></td></tr><tr><td align="justify" colspan="3">This course introduces students to the practice and theory of religious and cultural heritage. It begins with the question: what is religious heritage? In a first step towards answering this question, students will engage in a virtual archaeological “dig” of a sector of the city of Groningen. Working in groups, they will traverse a neighborhood and uncover the various types of religious heritage present in specific locations. To help them with their field work, students will engage with key documents from the field of heritage studies. They examine how world heritage organizations, such as the UNESCO have come to define religious heritage as comprising both “tangible”, i.e. physical, and “intangible”, i.e., ritual and cultural forms of heritage. In the second section of this course, students will engage with the literature on “critical heritage studies”. They will then work in teams to come up with criteria for what the critical heritage of religion might entail. Students will have meetings with practitioners of cultural heritage in local government, museums or religious heritage organizations. In a final project, student groups will apply the knowledge gained to trial one of the heritage organizations in the Netherlands and come up with a policy recommendation or a proposal for an exhibit or public outreach campaign.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11327">prof. dr. T.H. Weir</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures, seminar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">essay, presentation(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73823"><b>Material Religion</b></a></td><td align="right"><b>THMMRE5</b></td></tr><tr><td align="justify" colspan="3">“Materiality mediates belief … material objects and practices both enable it and enact it.” (Morgan 2010)<br/><br/>What can things and their uses teach us about religion? This course focuses resolutely on religious things - and not merely as “props for a <i>religious</i> way of life” as objects of interest in themselves (Hodder 2012). It challenges the largely Western assumption that belief (understood as an interior assent to certain fundamental propositions) is prior to the objects, spaces, and practices that are created, employed, and adapted by believers. It asks how believers and their things are “entangled” in dialectic relationships of dependency and explores the implications of such entanglement for understanding religion,  and religious heritage status in the present.  <br/><br/>We will learn together through 1) critical reading of a variety of theoretical accounts of the relationships between humans and things, 2) close study of a series of exemplary religious objects, spaces, and practices in class and in individual research projects; 4) close and reflective reading of exemplary medieval theological texts that interpreted religious objects, gestures and spaces and sought to understand the role of matter in human salvation; 5) field-trip; 6) the preparation of a joint virtual exhibit</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11331">dr. A.J.M. Irving</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">field trips, lectures, workshops</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">projectopdracht</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor's Degree in Theology and Religious Studies, or Humanities (Arts), or Social Sciences.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Research master students, have a different course code:THRMMRE5. For these students there will be formulated an extra assignment</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73817"><b>Reception and Re-Use of  Aut. Texts</b></a></td><td align="right"><b>THMRRATE5</b></td></tr><tr><td align="justify" colspan="3">This module explores the reception history of the Bible and other authoritative texts. Major themes include the processes through which ancient stories and concepts were incorporated into scripture, as well as their interpretations in varying historical, political, and sociocultural conditions.<br/>In the introductory sessions we reflect on basic questions regarding reception history. Then we look at the reception and interpretation of texts and traditions in a range of sources, especially in the Bible itself, and in early Jewish literature of the Second Temple period. Using specific examples drawn from themes (e.g. creation, the flood, eschatology) and figures (e.g. Abraham, Joseph) found in these sources, we compare interpretations of authoritative texts in these individual traditions. How have religious or political authorities used these authoritative texts? What challenges arise when a narrative found in one source is re-used in another source, or by another tradition? The sessions conclude with a general hermeneutical reflection on the reception of authoritative texts in ancient times, preparing students for critical engagement with the contemporary use of authoritative texts in religious or political circles. Assessment: Self-study, assignments, presentations, paper.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4291">prof. dr. J.T.A.G.M. van Ruiten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">assignments</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Research master students, have a different course code:THRMRRATE5. For these students there will be formulated an extra assignment.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73822"><b>Research Methods</b></a></td><td align="right"><b>THMRMSE5</b></td></tr><tr><td align="justify" colspan="3">The module aims at preparing the students for their individual projects in the second semester i.e. the thesis and the internship, bringing together more practical skills (economic, organisational and managerial aspects of constructing heritage and making it accessible) and the necessary research skills the students need for their projects (such as interview techniques, discourse analysis, digital humanities, hermeneutics, theory of aesthetics, more advanced aspects of cultural studies, historical methods). The idea is that students must be well prepared both theoretically and practically. Typically, the classes have the format of a one- or a half day clinic, which will be focused on a specific topic.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11330">dr. D. van den Auweele</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11330">dr. D. van den Auweele</a><a href="/ocasys/rug/vak/viewtutor?tutor=11327">prof. dr. T.H. Weir</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminar</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75554"><b>Stage Master THRS</b></a></td><td align="right"><b>THMSTAGE10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">stage</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=73821"><b>The Politics of Heritage</b></a></td><td align="right"><b>THMTPHE5</b></td></tr><tr><td align="justify" colspan="3">This course explores the complex relationship that exists between categories of ‘heritage’, ‘identity’ and ‘memory’ across various levels of politics and society. Rather than seeing heritage that something that is factual, the course explores the ways in which notions of what constitutes heritage shift over time, and the political agendas and assumptions that influence the ways in which certain objects and events are deemed ‘significant’ components of heritage, while other objects and events are not. The course will further explore how heritage features in the construction of particular conceptions of national, religious and cultural identity, noting also that the lines between what is national, religious or cultural identity are not always clear, and that certain objects, spaces and events can be sites of contestation across different groups and communities. Through the use of case studies, including the Standing Rock protests against the North Dakota Pipeline Access in the United States and the Lautsi v Italy case at the European Court of Human Rights, the course will also explore how the contestations over what is heritage, what is sacred, what is religious and what is cultural – and for whom – have very real impacts on law, policy and peoples’ daily lives.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11327">prof. dr. T.H. Weir</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4282">dr. M. van Dijk</a><a href="/ocasys/rug/vak/viewtutor?tutor=11327">prof. dr. T.H. Weir</a><a href="/ocasys/rug/vak/viewtutor?tutor=7116">dr. E.K. Wilson</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73824"><b>Theological Heritages</b></a></td><td align="right"><b>THMTHPMCE5</b></td></tr><tr><td align="justify" colspan="3">What is truth? Throughout the history of Christianity, theological traditions have understood ‘truth’ in different ways. The traditional understandings of ‘truth’ – both conceptually and with regard to content – are highly contested since early modernity. This contest has been the object of much academic reflection, for instance in the work of Jonathan Israel on the Radical Enlightenment. Some authors, such as Brad Gregory, trace the roots of the crisis in the understanding of ‘truth’ to the Reformation itself. In the 19th century Christian theology developed two responses to this threat. On the one hand, Liberal Theology based its theology on the universal epistemological idea of Schleiermachers Schlechthinniges Abhängigkeitsgefühl, thereby accepting the results of the modern sciences. On the other hand, confessional theology strengthened its own theological truths and challenged atheistic truth claims.<br/>In postmodernism both these approaches are considered troublesome. Universal truth claims have largely been rejected in the collapse of Grand Narratives. The predicted disappearance of religion however has not taken place. This course unit explores how critical thought on the nature of Truth became a part of theological heritage, how the discussions and the different results were embraced as markers of the identities of specified groups of others and denounced by others.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10665">prof. dr. H. van den Belt</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1304">prof. dr. W.H. Slob</a><a href="/ocasys/rug/vak/viewtutor?tutor=10665">prof. dr. H. van den Belt</a><a href="/ocasys/rug/vak/viewtutor?tutor=4282">dr. M. van Dijk</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">exam, paper, participation, presentation(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Literature and a calculation of the study load will be announced in the course manual</li><li>Research master students, have a different course code:THRMTHPME5. For these students an extra assignment will be formulated.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75606"><b>Thesis / Thesis Seminar THRS</b></a></td><td align="right"><b>THMTS</b></td></tr><tr><td align="justify" colspan="3">During the seminar meetings, students will discuss and practice specific aspects of the writing, planning and researching process involved in producing a thesis on a master level. Through peer-review, each student will benefit from regular feedback.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10669">dr. J. Tarusarira</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11848">dr. J. Martínez - Ariño</a><a href="/ocasys/rug/vak/viewtutor?tutor=10669">dr. J. Tarusarira</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">groepsdiscussie, peer review</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Students must register for the thesis seminar via Progress.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5627&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5627"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5627">Informatie over Honours Programme in Philosophy</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Honours Programme in Philosophy</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>HCHPH10105</td><td><a href="/ocasys/rechten/vak/show?module=77580">Philosophy. The Very Beginnings</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Honours Programme in Philosophy students are required to choose either 2 skills (2 x 2 EC) or one broadening module (5 EC). Skills modules are offered in year 1: semester IIB, year 2: semester IA, IB and IIA. A Broadening Module should be followed in year 2 (see Course Catalogue -&gt; Honours College -&gt; Broadening Modules / Petrus Camper Track)<br/></p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">hele jaar</td><td>verplicht</td><td>HCPCLPYOT</td><td><a href="/ocasys/rechten/vak/show?module=77436">Pick Your Own-talent Programma</a></td><td>Engels en Nederlands</td><td>1</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>HCHPH20105</td><td><a href="/ocasys/rechten/vak/show?module=77430">History of Philosophy 1</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>HCHPH20205</td><td><a href="/ocasys/rechten/vak/show?module=77431">History of Philosophy 2</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>HCHPH20305</td><td><a href="/ocasys/rechten/vak/show?module=78801">Philosophy of Science</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>HCHPH20405</td><td><a href="/ocasys/rechten/vak/show?module=77579">Good and Evil Introduction to Ethics</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Honours Programme in Philosophy students are required to choose either 2 skills (2 x 2 EC) or one broadening module (5 EC). Skills modules are offered in year 1: semester IIB, year 2: semester IA, IB and IIA. A Broadening Module should be followed in year 2 (see Course Catalogue -&gt; Honours College -&gt; Broadening Modules / Petrus Camper Track)<br/></p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>HCHPH30105</td><td><a href="/ocasys/rechten/vak/show?module=77585">Social and Political Philosophy</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>keuze</td><td>HCHPH30210</td><td><a href="/ocasys/rechten/vak/show?module=77415">Philosophy of the Humanities</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>HCHPH30510</td><td><a href="/ocasys/rechten/vak/show?module=78795">Philosophy of Cognitive Sciences</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>HCHPH30810</td><td><a href="/ocasys/rechten/vak/show?module=78793">Philosophy of the Natural Sciences</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>HCHPH31110</td><td><a href="/ocasys/rechten/vak/show?module=78796">Philosophy of the Social Sciences</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>HCHPH31410</td><td><a href="/ocasys/rechten/vak/show?module=78797">Philosophy of the Life Sciences</a></td><td>Engels</td><td>10</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>HCPL403</td><td><a href="/ocasys/rechten/vak/show?module=77463">Petrus Camper Finale</a></td><td>Engels en Nederlands</td><td></td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77579"><b>Good and Evil Introduction to Ethics</b></a></td><td align="right"><b>HCHPH20405</b></td></tr><tr><td align="justify" colspan="3">Iedereen heeft morele opvattigen: ideeën over wat goed en kwaad is, en over hoe mensen zich horen te gedragen. Dit college geeft een overzicht van filosofische theorieën die deze opvattingen proberen te systematiseren: consequentialisme, Katiaanse ethiek, sociale-contracttheorie en deugdethiek. Ook gaan we in op de status van morele opvattingen: zijn zulke opvattingen subjectieve gevoelens, of zijn sommige morele opvattingen objectief juist en andere objectief onjuist?</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9648">dr. H.W.A. Evers</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9648">dr. H.W.A. Evers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77430"><b>History of Philosophy 1</b></a></td><td align="right"><b>HCHPH20105</b></td></tr><tr><td align="justify" colspan="3">In this course we will look at some of the most important philosophers in history. We will study their texts in order to identify and understand their views about reality, knowledge and living a good life. We will evaluate their arguments and put them into historical perspective. In this course we will treat philosophers from classical antiquity, the medieval period, and the early modern period.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11377">dr. L.A. Joosse</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Paper</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours Programme in Philosophy.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77431"><b>History of Philosophy 2</b></a></td><td align="right"><b>HCHPH20205</b></td></tr><tr><td align="justify" colspan="3">Building on History of Philosophy I, the course focuses on the progressive collapse of traditional metaphysical thought between the late eighteenth and mid-twentieth century. This dramatic transformation in the philosophical landscape gives rise to different attempts to find new starting points and new ways of doing philosophy. The course will discuss the aftermath of Kant’s Copernican Revolution and German Idealism, the tensions arising between philosophy and science, and the new currents arising at the turn of the 20th century. In this way, the course will introduce to the philosophical approach usually labelled “continental philosophy”, including authors such as Hegel, Marx, Nietzsche, Husserl, and Heidegger.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11651">dr. C. Ierna</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77463"><b>Petrus Camper Finale</b></a></td><td align="right"><b>HCPL403</b></td></tr><tr><td align="justify" colspan="3">Het laatste onderdeel van de Petrus Camper Leergang is een onderdeel waarin alle componenten worden samengebracht en waarin studenten zich actief, in een interdisciplinaire setting, bezighouden met een maatschappelijk thema/vraagstuk. De thema’s/vraagstukken waaruit gekozen kan worden vloeien voort uit de verbredende honoursmodules die door de faculteiten worden aangeboden. <br/>Iedere faculteit biedt één honoursmodule aan, waarmee het aantal thema’s op negen komt. De student kiest voor het thema van één van de twee honoursmodules die hij/zij in het tweede jaar heeft gevolgd. Het thema is daarmee voor de student per definitie verbredend, aangezien honoursmodules gekozen dienen te worden uit het aanbod van andere faculteiten dan de eigen faculteit.<br/>Dit onderdeel van de PCL begint aan het einde van het tweede jaar met een Summer School. Deze dient als startbijeenkomst en introductie op het thema. Vervolgens wordt het thema/vraagstuk door de studenten zelf in een Atelier verder geëxploreerd en uitgewerkt, waarna dit onderdeel wordt afgesloten met een presentatie (in de ruimste zin des woords) tijdens de Petrus Camper Festival aan het eind van jaar 3.<br/>De begeleiding van Summer School en Atelier is door de koppeling aan de verbredende honoursmodules verdeeld over de negen faculteiten.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3149">  nog niet bekend</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=78795"><b>Philosophy of Cognitive Sciences</b></a></td><td align="right"><b>HCHPH30510</b></td></tr><tr><td align="justify" colspan="3">This course consists of two subparts, part A and part B, both worth 5.0 ECTS.<br/><br/>For part A you will join the regular third year BA Philosophy course 'Philosophy of Cognitive Sciences' - make sure, however, that the teacher knows that you are an HPinPh-student! The course unit looks into the basis, the methods and the specific philosophical issues involved in the field concerned. You will examine the conceptual assumptions and theoretical viability of various subjects and strategies within that particular field. Check for the full course description the following link:<br/>https://www.rug.nl/ocasys/rug/vak/show?code=FI053CW <br/><br/>Part B is an extension of the first course in which you will delve deeper into a certain problem or debate that concerns your own field of study under supervision of, normally, the teacher of the regular course (part A). The tools acquired during the first subpart will be used to untangle the debate or discuss the problem. Additionally, you will attend two workshops that will help you develop the skills needed to write and assess a philosophical paper. The workshops will take place around the end of the first course unit; dates and more information will be provided by e-mail.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1005">dr. F.A. Keijzer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=78801"><b>Philosophy of Science</b></a></td><td align="right"><b>HCHPH20305</b></td></tr><tr><td align="justify" colspan="3">Some parts of science attract criticism and skepticism, especially when vested interests are at stake. In this course we will examine three areas where controversies have arisen: the first concerns the status of climate change models, the second, the existence of causal relations in health sciences, and third, the status of the principle of natural selection in Darwin’s theory of evolution. We will use these cases to explore basic concepts in philosophy of science such as empirical confirmation, modeling in science, causation and laws. The course will be of interest to students from all faculties.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10809">dr. L. Henderson</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77415"><b>Philosophy of the Humanities</b></a></td><td align="right"><b>HCHPH30210</b></td></tr><tr><td align="justify" colspan="3">This course consists of two subparts, part A and part B, both worth 5.0 ECTS.<br/><br/>For part A you will join the regular third year BA Philosophy course 'Philosophy of the Humanities' - make sure, however, that the teacher knows that you are an HPinPh-student! The course unit looks into the basis, the methods and the specific philosophical issues involved in the field concerned. You will examine the conceptual assumptions and theoretical viability of various subjects and strategies within that particular field. Check for the full course description the following link:<br/>https://www.rug.nl/ocasys/filosofie/vak/show?code=FI113EE <br/><br/>Part B is an extension of the first course in which you will delve deeper into a certain problem or debate that concerns your own field of study under supervision of, normally, the teacher of the regular course (part A). The tools acquired during the first subpart will be used to untangle the debate or discuss the problem. Additionally, you will attend two workshops that will help you develop the skills needed to write and assess a philosophical paper. The workshops will take place around the end of the first course unit; dates and more information will be provided by e-mail.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=452">dr. C.E. Evink</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=78797"><b>Philosophy of the Life Sciences</b></a></td><td align="right"><b>HCHPH31410</b></td></tr><tr><td align="justify" colspan="3">This course consists of two subparts, part A and part B, both worth 5.0 ECTS.<br/><br/>For part A you will join the regular third year BA Philosophy course 'Philosophy of the Life Sciences' - make sure, however, that the teacher knows that you are an HPinPh-student! The course unit looks into the basis, the methods and the specific philosophical issues involved in the field concerned. You will examine the conceptual assumptions and theoretical viability of various subjects and strategies within that particular field. Check for the full course description the following link:<br/>https://www.rug.nl/ocasys/rug/vak/show?code=FI113FK<br/><br/>Part B is an extension of the first course in which you will delve deeper into a certain problem or debate that concerns your own field of study under supervision of, normally, the teacher of the regular course (part A). The tools acquired during the first subpart will be used to untangle the debate or discuss the problem. Additionally, you will attend two workshops that will help you develop the skills needed to write and assess a philosophical paper. The workshops will take place around the end of the first course unit; dates and more information will be provided by e-mail.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1005">dr. F.A. Keijzer</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=78793"><b>Philosophy of the Natural Sciences</b></a></td><td align="right"><b>HCHPH30810</b></td></tr><tr><td align="justify" colspan="3">This course consists of two subparts, part A and part B, both worth 5.0 ECTS.<br/><br/>For part A you will join the regular third year BA Philosophy course 'Philosophy of the Natural Sciences' - make sure, however, that the teacher knows that you are an HPinPh-student! The course unit looks into the basis, the methods and the specific philosophical issues involved in the field concerned. You will examine the conceptual assumptions and theoretical viability of various subjects and strategies within that particular field. Check for the full course description the following link:<br/>https://www.rug.nl/ocasys/rug/vak/show?code=FI153LH<br/><br/>Part B is an extension of the first course in which you will delve deeper into a certain problem or debate that concerns your own field of study under supervision of, normally, the teacher of the regular course (part A). The tools acquired during the first subpart will be used to untangle the debate or discuss the problem. Additionally, you will attend two workshops that will help you develop the skills needed to write and assess a philosophical paper. The workshops will take place around the end of the first course unit; dates and more information will be provided by e-mail.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10809">dr. L. Henderson</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=78796"><b>Philosophy of the Social Sciences</b></a></td><td align="right"><b>HCHPH31110</b></td></tr><tr><td align="justify" colspan="3">This course consists of two subparts, part A and part B, both worth 5.0 ECTS.<br/><br/>For part A you will join the regular third year BA Philosophy course 'Philosophy of the Social Sciences' - make sure, however, that the teacher knows that you are an HPinPh-student! The course unit looks into the basis, the methods and the specific philosophical issues involved in the field concerned. You will examine the conceptual assumptions and theoretical viability of various subjects and strategies within that particular field. Check for the full course description the following link:<br/>https://www.rug.nl/ocasys/rug/vak/show?code=FI173SS<br/><br/>Part B is an extension of the first course in which you will delve deeper into a certain problem or debate that concerns your own field of study under supervision of, normally, the teacher of the regular course (part A). The tools acquired during the first subpart will be used to untangle the debate or discuss the problem. Additionally, you will attend two workshops that will help you develop the skills needed to write and assess a philosophical paper. The workshops will take place around the end of the first course unit; dates and more information will be provided by e-mail.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4446">dr. M. Pauly</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77580"><b>Philosophy. The Very Beginnings</b></a></td><td align="right"><b>HCHPH10105</b></td></tr><tr><td align="justify" colspan="3">Every session will be divided into one half formal logic and one half discussing famous arguments in philosophy. We will examine arguments such as:<br/>- ​Anselm's ontological argument<br/>- Pascal’s wager<br/>- The ship of Theseus<br/>- Descartes’ dreaming argument<br/>- Searle’s Chinese Room<br/>- Wittgenstein on private language<br/>- Thomson’s violinist<br/><br/>As stated, the course also covers an introduction to formal logic. We will discuss issues such as:<br/>- What is a valid argument?<br/>- How are we to evaluate whether an argument in natural language is valid?<br/>- What is a proof?<br/>- What is a counterexample?<br/><br/>To examine these topics, students will write and discuss two essays on an argument of their choice. In the last session there will be a classical exam where basic skills in formal logic are tested.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=77436"><b>Pick Your Own-talent Programma</b></a></td><td align="right"><b>HCPCLPYOT</b></td></tr><tr><td align="justify" colspan="3">In het Bachelor Honours programma besteden we gedurende het gehele traject aandacht aan talentontwikkeling. Het Honours College vindt het belangrijk dat honoursstudenten stilstaan bij vragen als: ‘wie ben ik, wat kan ik en wat wil ik?’. Deze vragen lopen als een rode draad door het Pick Your Own-talent programma.<br/><br/>--Opbouw Pick Your Own-talent programma--<br/><br/>Jaar 1 Welcoming Ceremony: gezamenlijke start van het Bachelor Honours programma<br/><br/>Tijdens de openingsceremonie komen alle nieuwe honoursstudenten bij elkaar. Elk jaar wordt er een aansprekende en inspirerende gastspreker uitgenodigd. Hij of zij vertelt over zijn of haar talent, carrière en over de keuzes die hij of zij heeft gemaakt om zijn of haar talenten ten volle te benutten. <br/><br/>Jaar 2 Kick-off: gezamenlijke start van het tweede jaar<br/><br/>Het tweede academische jaar start met de Kick-off. Tijdens deze avond inspireert een talentvolle spreker de tweedejaars honoursstudenten door hen na te laten denken over vragen als ‘wie ben ik, wat kan ik en wat wil ik’ en ‘hoe kan ik dat bereiken?’. Ieder jaar wordt er een andere inspirerende spreker uitgenodigd. Deze avond vindt dit jaar plaats op woensdag 6 september 2017 en is verplicht voor iedere tweedejaars honoursstudent. <br/><br/>Jaar 2 Plenaire avond naar keuze: Academia of Entrepreneurship (keuzegroep E)<br/><br/>Vervolgens wordt de blik gericht op het werkveld. In dit onderdeel oriënteer je je op werken in de wetenschap of op Entrepreneurship (ondernemen met al je talenten in de breedste zin van het woord). Waar zou je na je studie willen werken? Ambieer je een carrière in de wetenschap of weet je al dat je in het bedrijfsleven of de publieke sector aan de slag wilt? Misschien weet je het nog niet. Om je al halverwege je bachelor studie in aanraking te brengen met de Academia en met Entrepreneurship, worden er twee plenaire avonden georganiseerd met een interactief karakter. Tijdens deze twee avonden staat telkens één van de twee thema’s centraal. Deze avonden worden georganiseerd op respectievelijk dinsdag 14 november 2016 en op donderdag 8 februari 2018. Het deelnemen aan één van deze twee avonden is verplicht voor iedere tweedejaars honoursstudent.<br/><br/>Jaar 2 Workshops (keuzegroep F)<br/><br/>In het tweede semester van het tweede jaar ga je zelf aan de slag met jouw potentiële talent. Er zijn verschillende workshops met thema’s zoals ‘passie’, ‘wilskracht’, ‘pick your own time’, ‘omgaan met keuzestress’, ‘sturen of coachen’ en ‘succes en ambitie’. De workshops worden zowel in het Nederlands als in het Engels aangeboden. Het doel van de workshop is dat je kennis maakt met het betreffende onderwerp en hiermee aan de slag gaat. Tijdens de startbijeenkomst van de workshop worden verschillende aspecten geïntroduceerd. Gedurende een periode van één of twee weken neem je jouw talent onder de loep en probeer je de opgedane kennis in de praktijk te brengen. De workshop wordt afgesloten met een slotbijeenkomst, waarin je reflecteert op wat je hebt geleerd. Bovendien kijk je vooruit naar hoe je het thema kunt gebruiken in jouw studiecarrière of zelfs daarna. Iedere workshop bestaat uit twee sessies. De workshops worden in semester II gegeven. Het volgen van één workshop is verplicht voor ieder tweedejaars honoursstudent. <br/><br/>Jaar 3 Workshops (keuzegroep I)<br/><br/>In het derde jaar wordt de laatste stap in het PYO-t programma genomen en sta je gericht stil bij ‘wat wil ik’. Welke carrière ambieer je? Je kunt kiezen uit verschillende thema’s en ontwikkelt een loopbaanprofiel of verkent de arbeidsmarkt in relatie tot jouw ambitie. Ook kun je bijvoorbeeld onderzoeken of je een onderneming op wilt starten. Andere thema’s zijn o.a. 'bouw aan je persoonlijke merk' en 'het leven als experiment'. In het derde jaar van je studie maak je al belangrijke keuzes voor jouw toekomstige carrière. De eerste stappen richting de ontwikkeling van jouw talenten zijn gezet, wat zijn jouw volgende stappen? Welke talenten kun jij in de toekomst aanwenden om al jouw kennis en kunde optimaal in te kunnen zetten ten behoeve van wetenschap, maatschappij of elders. Iedere workshop bestaat uit twee sessies. De workshops worden het gehele derde jaar aangeboden, dus je kunt òf in semester I òf in semester II een workshop volgen. Kijk dus goed naar de planning van bijvoorbeeld een buitenlandverblijf, het schrijven van je scriptie, etc. Het volgen van één workshop is verplicht voor iedere derdejaars honoursstudent. <br/><br/>Pick Your Own-talent programma op een rij:<br/><br/>Jaar 1 <br/>• Welcoming Ceremony<br/><br/>Jaar 2 <br/>• Kick off<br/>• Academia of Entrepreneurship <br/>• Workshop jaar 2 <br/><br/>Jaar 3 <br/>• Workshop jaar 3<br/><br/>Eén ECTS wordt toegekend als alle PYO-t onderdelen van jaar 1, 2 en 3 voldoende zijn afgerond.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Bijeenkomst(en), Hoorcolleges, Praktische werkvormen, Various styles of action learning</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Actieve deelname, Nog niet bekend</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">1</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Alleen toegankelijk voor studenten die voor het BA Honours College Programma zijn geselecteerd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">De volgende voorwaarde (Artikel 3.6 van de EAR, te vinden in je Student Portal onder Organizations) geldt: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=77585"><b>Social and Political Philosophy</b></a></td><td align="right"><b>HCHPH30105</b></td></tr><tr><td align="justify" colspan="3">Institutions such as property, the market, the state, and democracy are crucial to how societies function. Philosophy addresses the normative question as to what roles institutions should play in a society and in particular how the state should treat its citizens. The course zooms in on core topics within political philosophy, which provides a normative outlook on human interaction within a society and a state. The key political values that feature in the course are equality, freedom, and justice. Central questions that are addressed within the course concern the implications that these values should have for institutions such as democracy and the state. Core issues include the proper distribution of rights and welfare, and how societies should respond to diversity, be it gender, ethnic, or religious.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Honours College</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1261">prof. dr. F.A. Hindriks</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Essay</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Only available for students who have been accepted into the BA Honours College Programme.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The following condition (Article 3.6 of the EAR, to be found in your Student Portal under Organizations) applies: “Except in the event of extraordinary circumstances, all Honours Programme course units have a 100% attendance requirement, which includes preparation for and active participation in the course units."</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

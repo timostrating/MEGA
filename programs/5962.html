@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5962&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5962"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5962">Informatie over Koninklijk Nederlands Instituut Rome</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Koninklijk Nederlands Instituut Rome</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>KNIR2016-5</td><td><a href="/ocasys/rechten/vak/show?module=73961">Winter School Roma Caput Mundi</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>keuze</td><td>KNIR2016-3</td><td><a href="/ocasys/rechten/vak/show?module=73967">Confronting the Classics</a></td><td>Engels</td><td>6</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>KNIR2016-4</td><td><a href="/ocasys/rechten/vak/show?module=74186">Mining Library Treasures</a></td><td>Engels en Nederlands</td><td>3</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 4</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I</td><td>keuze</td><td>KNIR2016-1</td><td><a href="/ocasys/rechten/vak/show?module=74601">Coinage and the construction of identity</a></td><td>Engels</td><td>3</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>KNIR2016-2</td><td><a href="/ocasys/rechten/vak/show?module=74184">Kunst en (post)fascisme</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>KNIR16-10</td><td><a href="/ocasys/rechten/vak/show?module=73940">Challenging Eternity </a></td><td>Engels</td><td>9</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>KNIR16-11</td><td><a href="/ocasys/rechten/vak/show?module=73857"> Early Roman Expansion and Imperialism</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>KNIR16-12</td><td><a href="/ocasys/rechten/vak/show?module=73936">Kunstenaars- en schrijvershuizen</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>KNIR16-15</td><td><a href="/ocasys/rechten/vak/show?module=73858">Communism What's Left?</a></td><td>Engels</td><td>6</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>KNIR2016-8</td><td><a href="/ocasys/rechten/vak/show?module=74612">Latijnse epigrafie op locatie </a></td><td>Engels en Nederlands</td><td>5</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 5</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>KNIR16-13</td><td><a href="/ocasys/rechten/vak/show?module=74455">Rome lezen: de toeristische stad</a></td><td>Nederlands</td><td>6</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>KNIR16-14</td><td><a href="/ocasys/rechten/vak/show?module=73939">Masterclass met Leerssen en Rigney</a></td><td>Engels</td><td>6</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>KNIR2016-7</td><td><a href="/ocasys/rechten/vak/show?module=74733">Retorica in Roma</a></td><td>Nederlands</td><td>3</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>KNIR2016-9</td><td><a href="/ocasys/rechten/vak/show?module=74847">The State of Europe met Paul Schnabel </a></td><td>Engels en Nederlands</td><td>5</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73940"><b>Challenging Eternity </b></a></td><td align="right"><b>KNIR16-10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">9</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=74601"><b>Coinage and the construction of identity</b></a></td><td align="right"><b>KNIR2016-1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73858"><b>Communism What's Left?</b></a></td><td align="right"><b>KNIR16-15</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73967"><b>Confronting the Classics</b></a></td><td align="right"><b>KNIR2016-3</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73857"><b> Early Roman Expansion and Imperialism</b></a></td><td align="right"><b>KNIR16-11</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=74184"><b>Kunst en (post)fascisme</b></a></td><td align="right"><b>KNIR2016-2</b></td></tr><tr><td align="justify" colspan="3">In tegenstelling tot Nederland en Duitsland betekende de Tweede Wereldoorlog in Italië veel minder een absolute breuk in de artistieke ontwikkelingen. Waar in Nederland uitsluitend de realistische kunst sterk werd gestimuleerd vanaf 1940 door de Kunstkamer, en als gevolg daarvan deze stroming werd verketterd na 1945 en er een duidelijke voorkeur voor abstractie opkwam, was de artistieke context in Italië zowel voor als na 1945 bepaald gevarieerder. Ten eerste leidde de nauwe band tussen Futurisme en het Fascistische regime tot een opener houding naar modernisme en experiment, dat expliciet zichtbaar is in het Profilo Continuo (1933) van Renato Bertelli. Er was in de Italiaanse beeldende kunst en architectuur minder sprake van een eenheidsstijl dan onder andere totalitaire regimes in Europa. Desalniettemin leidde de voorkeur van Mussolini wel tot een herkenbare Italiaanse fascistische stijl, met name in de architectuur. Belangrijkste vertegenwoordiger daarvan was Marcello Piacentini, die verantwoordelijk was voor de planning van het fascistische tentoonstellingsproject EUR.<br/><br/>Deze situatie leidde in de na-oorlogse periode tot een pluriforme (tegen)reactie. Direct na 1945 kwamen er allerlei verschillende kunstenaarsbewegingen op die nieuwe wegen insloegen op basis van verschillende ontwikkelingen uit de jaren 20 en 30. Voorbeelden daarvan zijn de stromingen van het Cuborealismo, dat teruggreep op Picasso; de Fronte Nuovo delle Arti waarin zowel beeldend kunstenaars als schrijvers bijeenkwamen en waarin men poogde realisme en abstractie te verzoenen, hetgeen in de Biennale van 1948 zichtbaar werd; de romeinse groep Forma 1 die formalisme en marxisme combineerde, het Spazialismo dat vooral onder leiding van Lucio Fontana ruimtelijke aspecten vooropstelde, en Mac Movimento Arte Concreta, waarin juist de materiele kant van de kunst de figuratieve kwaliteiten ervan diende te vervangen. Deze verschillende tendensen in de richting van abstracte kunst werden in Italië pas na het Fascisme in de ban gedaan en wel door de leider van de Italiaanse communistische partij, Palmiro Togliatti, in 1952. <br/><br/>Dit ontbreken van een expliciete breuk leidde er ook toe dat vele kunstenaars die hun carrière begonnen in de periode van het fascistische regime ook na 1945 zonder problemen hun werk, en ook hun stijl, konden voortzetten. Kenmerkend is bijvoorbeeld de schilder Renato Guttuso, die al in de jaren 30 in een socialistisch-realistische stijl werkte en direct na de oorlog een van de oprichters was van de beweging Fronte Nuovo delle Arti (1948), die zich expliciet benoemden als post-kubisten. Ook Guttuso volgde toen deze stroming. Na 1952 schaarde hij zich achter de Partito Comunista Italiana in een duidelijke verwerping van alle abstracte invloeden op de hedendaagse kunst en verwierp de uitgangspunten van de Fronte Nuovo.<br/><br/>Deze cursus neemt die variëteit aan artistieke ontwikkelingen voor, tijdens en na de Tweede Wereldoorlog onder de loep, en onderzoekt de (dis)continuïteit van artistieke ontwikkelingen en carrières. In colleges zal de politieke context en de daarmee gerelateerde artistieke bewegingen aan de orde komen; in excursies en presentaties zullen de verschillende manieren waarop kunstenaars met deze schuivende realiteiten omgingen nader worden uitgewerkt.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Masterstudenten, ReMa-studenten en PhD studenten kunstgeschiedenis, architectuurgeschiedenis en geschiedenis.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Aanmelden via http://knir.it/nl/category-onderwijs-nl/710-kunst-en-post-fascisme.html</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73936"><b>Kunstenaars- en schrijvershuizen</b></a></td><td align="right"><b>KNIR16-12</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=74612"><b>Latijnse epigrafie op locatie </b></a></td><td align="right"><b>KNIR2016-8</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73939"><b>Masterclass met Leerssen en Rigney</b></a></td><td align="right"><b>KNIR16-14</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=74186"><b>Mining Library Treasures</b></a></td><td align="right"><b>KNIR2016-4</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=74733"><b>Retorica in Roma</b></a></td><td align="right"><b>KNIR2016-7</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=74455"><b>Rome lezen: de toeristische stad</b></a></td><td align="right"><b>KNIR16-13</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=74847"><b>The State of Europe met Paul Schnabel </b></a></td><td align="right"><b>KNIR2016-9</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels en Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=73961"><b>Winter School Roma Caput Mundi</b></a></td><td align="right"><b>KNIR2016-5</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijke opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

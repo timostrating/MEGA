@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5229&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5229"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5229">Informatie over Executive Master of Accountancy</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Executive Master of Accountancy</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>EBE025A10</td><td><a href="/ocasys/rechten/vak/show?module=73549">IC AIS Comprehensive Design</a></td><td>Nederlands</td><td>10</td><td>8</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>EBE026A05</td><td><a href="/ocasys/rechten/vak/show?module=73550">Corporate Governance for Accountants</a></td><td>Nederlands</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBE027A03</td><td><a href="/ocasys/rechten/vak/show?module=73579">IC-CG Integratie portfolio deel I</a></td><td>Nederlands</td><td>3</td><td></td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>EBE028A05</td><td><a href="/ocasys/rechten/vak/show?module=73544">Audit &amp; Assurance I</a></td><td>Nederlands</td><td>5</td><td>7</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBE029A02</td><td><a href="/ocasys/rechten/vak/show?module=73551">CG-AA Integratie portfolio deel II</a></td><td>Nederlands</td><td>2</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBE024A05</td><td><a href="/ocasys/rechten/vak/show?module=73552">Externe Verslaggeving Research</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">Het vak IC AIS Comprehensive Design omvat een schriftelijk examen. Dit schriftelijk examen bestaat uit twee examenonderdelen (vraagstuk 1 en vraagstuk 2). Voor de twee onderdelen tezamen dienen ten minste 11 punten te zijn behaald, waarbij voor een afzonderlijk onderdeel minimaal een 5 moet worden behaald. De afzonderlijke onderdelen worden met gehele cijfers gehonoreerd; <br/>De cursus Corporate Governance for Accountants is met goed gevolg afgelegd, indien alle aan de cursus verbonden opdrachten met een voldoende zijn afgerond en het afsluitende tentamen met een voldoende is gehonoreerd;<br/>De cursus IC-CG Integratie portfolio deel I is met goed gevolg afgerond indien de bijbehorende casus met een voldoende is gehonoreerd;<br/>Het tentamen van het vak Audit &amp; Assurance I is met goed gevolg afgelegd, indien voor het schriftelijk tentamen een voldoende is behaald en het eindcijfer een voldoende is. Het eindcijfer is een gewogen gemiddelde van de resultaten op de tussentijdse opdracht en het schriftelijk tentamen;<br/>De cursus CG-AA Integratie portfolio deel II is met goed gevolg afgerond indien de bijbehorende casus met een voldoende is gehonoreerd;<br/>De cursus Externe Verslaggeving Research is met goed gevolg afgelegd indien de researchopdracht van deze cursus met een voldoende is gehonoreerd.<br/><br/></p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>EBE030A15</td><td><a href="/ocasys/rechten/vak/show?module=77858">Externe verslaggeving voor Accountants</a></td><td>Nederlands</td><td>15</td><td>8</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>EBE031A05</td><td><a href="/ocasys/rechten/vak/show?module=77857">Audit &amp; Assurance II</a></td><td>Nederlands</td><td>5</td><td>7</td></tr><tr class="color"><td class="nocolor">semester I b en semester II a</td><td>verplicht</td><td>EBE032A06</td><td><a href="/ocasys/rechten/vak/show?module=77856">Afronding Accountancy Portfolio deel III</a></td><td>Nederlands</td><td>6</td><td>variabel</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>EBE033A04</td><td><a href="/ocasys/rechten/vak/show?module=77855">Afronding Accountancy Mondeling</a></td><td>Nederlands</td><td>4</td><td>variabel</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">Tot de colleges van het vak Audit &amp; Assurance II wordt de cursist toegelaten, indien het examen van het vak IC AIS Comprehensive Design ten minste eenmaal rechtsgeldig is afgelegd.<br/>Tot het landelijk schriftelijk examen van het vak Audit &amp; Assurance II wordt de cursist toegelaten, indien het tentamen Audit &amp; Assurance I is behaald ofwel aan het reguliere tentamen en/of het herhalingstentamen is deelgenomen. <br/>Het vak Audit &amp; Assurance II omvat een landelijk schriftelijk examen. Het landelijk schriftelijk examen bestaat uit twee examenonderdelen (vraagstuk 1 en vraagstuk 2). Voor de twee onderdelen tezamen dienen ten minste 11 punten te zijn behaald. De afzonderlijke onderdelen worden uitsluitend met gehele cijfers gehonoreerd. De vaststelling van het landelijk schriftelijk examen en de wijze van beoordeling worden door een externe commissie van de NBA bepaald. Definitieve vaststelling van deze regeling heeft nog niet plaatsgevonden, dus afwijkingen zijn nog mogelijk.<br/>Tot de cursus Afronding Accountancy Portfolio deel III wordt de cursist toegelaten, indien hij heeft deelgenomen aan alle voorgaande  cursussen uit het EMA-programma en de examens regulier heeft afgelegd. Portfolio deel I en Portfolio deel II dienen daarnaast met een voldoende te zijn afgerond.<br/>Tot het afsluitende mondelinge accountantsexamen (Afronding Accountancy Mondeling) wordt de cursist toegelaten nadat het afstudeerwerkstuk van Afronding Accountancy Portfolio deel III met een voldoende is afgerond. <br/>Het mondeling accountantsexamen dient met een score van ten minste een 6 te worden afgerond.<br/>Voor de overige vakken van de opleiding geldt de algemene regeling rond vrijstelling, zoals geformuleerd in artikel 6.11 van de OER.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77855"><b>Afronding Accountancy Mondeling</b></a></td><td align="right"><b>EBE033A04</b></td></tr><tr><td align="justify" colspan="3">De cursisten bestuderen wetenschappelijke publicaties over twee van de vier kernthema’s op het gebied van Auditing en twee van de vier kernthema’s op het gebied van Internal Control (naar eigen keuze). De inhoud van deze publicaties zijn leidend tijdens het mondeling examen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11257">drs. F.H. van der Hoek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">mondeling tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Cursisten die aan alle voorgaande vakken en reguliere examens van de Executive Master of Accountancy hebben deelgenomen en IC-CG  Portfolio deel I, CG-AA Portfolio deel II en Afronding Accountancy Portfolio deel III met een voldoende hebben afgerond, kunnen deelnemen aan Afronding Accountancy Mondeling.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat, e-mail: accountancy@rug.nl, tel. 050 - 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77856"><b>Afronding Accountancy Portfolio deel III</b></a></td><td align="right"><b>EBE032A06</b></td></tr><tr><td align="justify" colspan="3">Afronding Accountancy Portfolio deel III is een uitdagend vak, waarin door middel van een casus op een geïntegreerde wijze de verworven kennis op het terrein van Internal Control, Auditing, Ethiek en Corporate Governance wordt toegepast en geactualiseerd. Bij de aanpak spelen de aspecten van het accountantsberoep een rol, zoals de controlerende en adviserende functies en de Corporate Governance en conflict situaties. Dit wordt gerealiseerd door de uitwerking van een complex dilemma. Deze uitwerking is de derde bijdrage aan het afstudeerwerkstuk dat is onderverdeeld over de vakken IC-CG Portfolio deel I, CG-AA Portfolio deel II en Afronding Accountancy Portfolio deel III.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11257">drs. F.H. van der Hoek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Cursisten die alle aan dit vak voorafgaande cursussen van de Executive Master of Accountancy hebben deelgenomen en de examens daarvan regulier hebben afgelegd, worden toegelaten tot de cursus Afronding Accountancy Portfolio deel III. Daarenboven moeten IC-CG Portfolio deel I en CG-AA Portfolio deel II met goed gevolg zijn afgerond.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat, e-mail: accountancy@rug.nl, tel. 050 - 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73544"><b>Audit &amp; Assurance I</b></a></td><td align="right"><b>EBE028A05</b></td></tr><tr><td align="justify" colspan="3">Het werk van de accountant omvat een scala aan vaardigheden en technieken. Die komen samen in zijn/haar kerntaak: Auditing. Het vak Auditing is daarmee één van de kernvakken in de accountantsopleiding. In dit vak Audit &amp; Assurance I wordt bereikt dat alle kennis is verworven om als beginnend beroepsbeoefenaar op te treden. Dit houdt in, dat wordt teruggekeken naar de voorgaande Auditing cursussen, nieuwe onderwerpen worden uitgediept en dat dit alles in het brede perspectief van het functioneren als accountant wordt geplaatst.<br/>De basis voor dit vak zijn de eerdere vakken, zijnde Introduction to Auditing, Auditing Practices en Auditing Theory. De specifieke onderwerpen die worden behandeld gedurende het vak Audit &amp; Assurance I zijn:<br/>- Nederlandse wet- en regelgeving die van toepassing is op individuele accountants en accountantsorganisaties;<br/>- de impact van de IT-structuur van ondernemingen op de controle, de EDP-auditor, IT General controls en applications controls;<br/>- het verklaringenstelsel inclusief de uitgebreide controleverklaring en assurance opdrachten anders dan de controle van de jaarrekening;<br/>- ethiek en professional judgement, vanuit het perspectief “tuchtrecht”;<br/>- communicatie met those charged with governance;<br/>- integrated reporting en het bestuursverslag;<br/>- toezichthouders op het accountantsberoep (Autoriteit Financiële Markten)</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11199"> P.G.J. Brouwer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11199"> P.G.J. Brouwer</a><a href="/ocasys/rug/vak/viewtutor?tutor=9261">  Guest Lecturer(s)</a><a href="/ocasys/rug/vak/viewtutor?tutor=11748">drs. A.J.E. Jansman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Master of science A&amp;C Accountancy</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat e-mail: accountancy@rug.nl, tel.: 050-3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77857"><b>Audit &amp; Assurance II</b></a></td><td align="right"><b>EBE031A05</b></td></tr><tr><td align="justify" colspan="3">In deze module komen de meest relevante onderdelen van het vakgebied Auditing nogmaals aan de orde, zoals belangrijke/specifieke controlestandaarden en controletechnieken (waaronder data-analyse en IT audit), en worden de studenten voorbereid op het landelijk schriftelijk tentamen. Training vindt plaats aan de hand van cases.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11199"> P.G.J. Brouwer</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11199"> P.G.J. Brouwer</a><a href="/ocasys/rug/vak/viewtutor?tutor=11507">drs. T. Sikkema</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Tot de colleges van het vak Audit &amp; Assurance II wordt de cursist toegelaten indien het tentamen van het vak IC AIS Comprehensive Design ten minste éénmaal rechtsgeldig is afgelegd. Tot het landelijk schriftelijk tentamen van het vak Audit &amp; Assurance II wordt de cursist toegelaten indien de tentamens van eerdere Auditing vakken zijn behaald ofwel aan de reguliere tentamens en/of de herhalingstentamens is deelgenomen.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat e-mail: accountancy@rug.nl, tel.: 050 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73551"><b>CG-AA Integratie portfolio deel II</b></a></td><td align="right"><b>EBE029A02</b></td></tr><tr><td align="justify" colspan="3">De afkorting CG-AA staat voor Corporate Governance en Auditing &amp; Assurance. Een accountant opereert in de boardroom van allerhande ondernemingen. Hij/zij zal dan in staat moeten zijn om de relevantie van de uitkomsten van de audit voor het bestuur en de commissarissen van een onderneming goed te onderkennen. In deze cursus wordt gewerkt aan het tweede deel van het portfolio, dat uiteindelijk tezamen met IC-CG Integratie Portfolio deel I en Afronding Aaccountancy Portfolio deel III (het afstudeerwerkstuk van de Executive Master of Accountancy vormt.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11748">drs. A.J.E. Jansman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Cursisten die aan de cursussen Internal Control en IC-CG Portfolio deel I hebben deelgenomen en voor Internal Control het examen regulier hebben afgelegd, worden toegelaten tot de cursus CG-AA Portfolio deel II.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat: e-mail accountancy@rug.nl, tel. 050 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=73550"><b>Corporate Governance for Accountants</b></a></td><td align="right"><b>EBE026A05</b></td></tr><tr><td align="justify" colspan="3">Corporate governance gaat over deugdelijk ondernemingsbestuur en richt zich op de “checks and balances” binnen ondernemingen. In het algemeen kan worden gesteld dat corporate governance bestaat uit besturen, beheersen, toezicht houden en verantwoorden. Binnen elk corporate governance systeem speelt de (externe) accountant een belangrijke rol. In deze cursus wordt aandacht besteed aan corporate governance aspecten die de positie en het functioneren van de accountant beïnvloeden. Daarbij kan worden gedacht aan de relatie tussen de accountant en de raad van commissarissen, de audit commissie en de raad van bestuur. Tevens wordt ingegaan op de steeds belangrijkere rol die IT-governance heeft binnen een stelsel van een goed ingerichte “checks and balances”.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11748">drs. A.J.E. Jansman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11748">drs. A.J.E. Jansman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat: e-mail accountancy@rug.nl, tel. 050 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73552"><b>Externe Verslaggeving Research</b></a></td><td align="right"><b>EBE024A05</b></td></tr><tr><td align="justify" colspan="3">Het vak Externe Verslaggeving Research richt zich op het schrijven van een wetenschappelijk paper op een onderwerp binnen de externe verslaggeving dat de student zelf mag bepalen (vrije keuze). Het kenmerkende van deze researchopdracht is dat er concreet en origineel jaarrekeningonderzoek wordt gedaan met zowel een normatieve als positieve probleemstelling. Het normatieve gedeelte richt zich op de kwaliteit van de jaarrekening en kan bijvoorbeeld de kwaliteit van naleving van toelichtingsvereisten behelzen. Dit gedeelte mondt uit in aanbevelingen hoe de kwaliteit verbeterd kan worden. In het positieve (verklarende) gedeelte van de opdracht dient de student op zoek te gaan naar verbanden (hypotheses) tussen de gebleken kwaliteit van de jaarrekening en enkele onafhankelijke variabelen. De hypotheses onderbouwt de student bij voorkeur vanuit de bestaande theorie. De afhankelijke variabele (kwaliteit) kan worden gemeten door (bijvoorbeeld) gebruik te maken van een disclosure-index. Uiteraard is men vrij om ook andere maatstaven van kwaliteit te hanteren. Het verklarend deel dient een kwantitatieve analyse te bevatten in de vorm van het statistisch toetsen (in SPSS) van (een) vooraf gedefinieerde hypothese(n).<br/>Er wordt een maximum gesteld van 5.000 woorden exclusief bijlagen. Dit betekent dat de stijl beknopt, wetenschappelijk en zakelijk moet zijn. De paper mag zowel in Engels als Nederlands worden geschreven.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1911">prof. dr. R.L. ter Hoeven</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10762">drs. J.L. Bout</a><a href="/ocasys/rug/vak/viewtutor?tutor=11198"> J.G. Huttenhuis</a><a href="/ocasys/rug/vak/viewtutor?tutor=6947">drs. W. Kevelam</a><a href="/ocasys/rug/vak/viewtutor?tutor=1911">prof. dr. R.L. ter Hoeven</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, individuele beoordeling</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Zie examenreglement EMA</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77858"><b>Externe verslaggeving voor Accountants</b></a></td><td align="right"><b>EBE030A15</b></td></tr><tr><td align="justify" colspan="3">Externe verslaggeving gaat over informatieverschaffing van primair financieel-economische aard vanuit organisaties ten behoeve van derden. Voor deze informatieverschaffing zijn normen opgesteld (zoals IFRS) waaraan ondernemingen moeten voldoen en die accountants moeten toetsen. Dit vereist een gedegen oordeelkundig vermogen wat het belang van het vak voor de accountantsopleiding verklaart.<br/>De cursus bevat een twintigtal onderwerpen die op belang voor de jaarrekening zijn geselecteerd. Het vak start al in de laatste maand van het voorgaande collegejaar.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1911">prof. dr. R.L. ter Hoeven</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10762">drs. J.L. Bout</a><a href="/ocasys/rug/vak/viewtutor?tutor=11198"> J.G. Huttenhuis</a><a href="/ocasys/rug/vak/viewtutor?tutor=6947">drs. W. Kevelam</a><a href="/ocasys/rug/vak/viewtutor?tutor=1911">prof. dr. R.L. ter Hoeven</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">open boek tentamen, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Zie examenregelement EMA</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73549"><b>IC AIS Comprehensive Design</b></a></td><td align="right"><b>EBE025A10</b></td></tr><tr><td align="justify" colspan="3">de stof die behandeld is tijdens eerdere IC vakken wordt in het college verdiept en toegepast op complexe cases.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1838">prof. dr. J.A. Emanuels</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10760">drs. G. Gelling</a><a href="/ocasys/rug/vak/viewtutor?tutor=12067"> M.L. Lu</a><a href="/ocasys/rug/vak/viewtutor?tutor=11255">drs. D. van der Bij</a><a href="/ocasys/rug/vak/viewtutor?tutor=2282"> W.K. Zwaagman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Geen, studenten hebben bij voorkeur het vak IC AAIS gevolgd.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat: e-mail accountancy@rug.nl, tel. 050 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=73579"><b>IC-CG Integratie portfolio deel I</b></a></td><td align="right"><b>EBE027A03</b></td></tr><tr><td align="justify" colspan="3">De afkorting IC-CG staat voor Internal Control en Corporate Governance. Een accountant ervaart dagelijks dat een goed functionerende interne beheersing in een onderneming van essentieel belang is voor het bestuur en de commissarissen van de onderneming. In deze cursus wordt gewerkt aan het eerste deel van het portfolio, dat uiteindelijk tezamen met portfolio deel II en het vak Afronding Accountancy het afstudeerwerkstuk van Executive Master of Accountancy vormt.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10760">drs. G. Gelling</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), portfolio</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">3</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Cursisten die aan de cursus Internal Control hebben deelgenomen en het examen regulier hebben afgelegd en die participeren in de cursus Corporate Governance voor Accountants, worden toegelaten tot de cursus IC-CG Portfolio deel I.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat: e-mail accountancy@rug.nl, tel. 050-3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

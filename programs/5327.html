@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5327&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5327"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5327">Informatie over Educatieve Master Maatschappijleer</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Educatieve Master Maatschappijleer</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>ULOM1005AL</td><td><a href="/ocasys/rechten/vak/show?module=77327">Basiscursus Master Lerarenopleiding</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>ULOM1105MA</td><td><a href="/ocasys/rechten/vak/show?module=77310">Masterstage 1 Leraar maatschappijleer</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>ULOM1215MA</td><td><a href="/ocasys/rechten/vak/show?module=77368">Masterstage 2 Leraar maatschappijleer</a></td><td>Nederlands</td><td>15</td><td>variabel</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>ULOM1305MA</td><td><a href="/ocasys/rechten/vak/show?module=77373">Vakdidactiek 1 maatschappijleer</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>ULOM1505</td><td><a href="/ocasys/rechten/vak/show?module=77329">Onderwijskunde VO</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b en semester II a</td><td>verplicht</td><td>ULOM1405MA</td><td><a href="/ocasys/rechten/vak/show?module=77292">Vakdidactiek 2 maatschappijleer</a></td><td>Nederlands</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>ULOM1610MA</td><td><a href="/ocasys/rechten/vak/show?module=77376">Masterstage 3 Leraar maatschappijleer</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>ULOM1710AL</td><td><a href="/ocasys/rechten/vak/show?module=77330">Onderzoek Master Lerarenopleiding</a></td><td>Nederlands</td><td>10</td><td>variabel</td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77327"><b>Basiscursus Master Lerarenopleiding</b></a></td><td align="right"><b>ULOM1005AL</b></td></tr><tr><td align="justify" colspan="3">De colleges en opdrachten staan in het teken van de kennismaking met (vak)didactisch handelen en dienen ter voorbereiding op en ondersteuning van het onderdeel Masterstage 1 leraar <i>schoolvak</i>.<br/>Bij dit onderdeel krijg je basiskennis over algemene didactiek en vakdidactiek. Belangrijke onderwerpen zijn: orde houden (classroom management), realiseren van een veilig leerklimaat, ontwerpen en uitvoeren van standaardlessen en uitvoeren van een reeks aaneengesloten lessen. Verder maak je kennis met de meest  gangbare werkvormen,  methodes, bronnen en leermiddelen/media.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2968">dr. M.G. Witterholt</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=798">  various instructors</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toegelaten tot de  Educatieve Master, de Masteropleiding Educatie en Communicatie in de Wiskunde en Natuurwetenschappen van de RUG of Master LVHO</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">1.Start gelijktijdig met Masterstage 1 Leraar <i>naam schoolvak</i><br/>2.Voor de colleges geldt een aanwezigheidsplicht van minimaal 80%. Indien hieraan niet  wordt voldaan volgt een aanvullende opdracht.<br/>3. De colleges zijn in principe gepland op dinsdagochtend tussen 9-13 uur voor alle talen, geschiedenis, filosofie, aardrijkskunde en maatschappijleer en op de woensdagmiddag tussen 13.00-17.00 uur voor alle bètavakken en economie<br/>4. Uiterste intekendatum: 1 januari 2017</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77310"><b>Masterstage 1 Leraar maatschappijleer</b></a></td><td align="right"><b>ULOM1105MA</b></td></tr><tr><td align="justify" colspan="3">Masterstage 1 loop je op een school voor voortgezet onderwijs in Noord-Nederland. De stage heeft een örienterende en een voorbereidende functie. Je wordt in staat gesteld je te oriënteren op het beroep, de leerlingen, het onderwijs en het schoolvak. Daardoor heb je na afloop een realistisch antwoord op de vragen “Vind ik dat het onderwijs iets voor mij is?” en “Vinden anderen dat ik geschikt ben?” Aan het eind van de stage wordt vastgesteld in welke mate je in staat bent om zelfstandig les te geven.<br/>De stageplaats regel je niet zelf, dit doet de lerarenopleiding voor je. Je vakcoach is aanwezig bij het merendeel van de lessen die je geeft. Tenminste een les wordt bezocht door iemand van de opleiding.<br/><br/>Tijdens Masterstage 1 verricht je tenminste de volgende activiteiten: <br/>• 20 lessen geven, waaronder een reeks van vijf aaneengesloten lessen; <br/>• 10 lessen observeren;<br/>• voor- en nabespreken van je lessen met je vakcoach;<br/>• bijhouden van je bekwaamheidsdossier.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1665">drs. H.C. Diederiks</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Toegelaten tot de  Educatieve Master van de RUG of Master LVHO</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Start gelijktijdig met Basiscursus Master Lerarenopleiding. <br/>Masterstage 1 en Basiscursus Lerarenopleiding zijn niet toegankelijk voor studenten die de Educatieve Minor met goed gevolg hebben afgerond. Beide cursussen tezamen worden vervangen door het onderdeel 'Verdieping voor Minoren"(ULOM1810). Voor meer informatie: Annemarie Arends - a.m.f.a.arends@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77368"><b>Masterstage 2 Leraar maatschappijleer</b></a></td><td align="right"><b>ULOM1215MA</b></td></tr><tr><td align="justify" colspan="3">Je loopt die stage op een school voor voortgezet onderwijs in Noord Nederland, waarbij je in principe de verantwoordelijkheid hebt voor “eigen” klassen. Het is de bedoeling dat je na afloop van Masterstage 2 de belangrijkste beginselen van het lesgeven beheerst. De stageplaats regel je niet zelf, dit doet de lerarenopleiding voor je. Je vakcoach is slechts sporadisch aanwezig in de lessen die je geeft. Je vakdidacticus bezoekt tenminste een les.<br/>Tijdens de stage verricht je tenminste de volgende activiteiten:<br/>-	In Masterstage 2 en 3 samen tenminste 120 lessen geven waarvan tenminste 60 in de bovenbouw van havo/vwo;<br/>-	10 lessen gericht observeren;<br/>-	Deelnemen aan intervisiebijeenkomsten onder leiding van schoolopleider op school of mentor op de RUG;<br/>-	Deelnemen aan sectie-, team- en rapportvergaderingen;<br/>-	Overleggen met vakcoach;<br/>-	Contact onderhouden met ouders;<br/>-	Bijhouden van je bekwaamheidsdossier.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1665">drs. H.C. Diederiks</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Aan het tentamen van Masterstage 2 leraar maatschappijleer  kan worden deelgenomen na afronding van:<br/>•Masterstage 1 leraar maatschappijleer<br/>•Basiscursus Lerarenopleiding <br/>.Eventueel door  de  Faculteit  als  voorwaardelijk  aangemerkte  onderdelen.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77376"><b>Masterstage 3 Leraar maatschappijleer</b></a></td><td align="right"><b>ULOM1610MA</b></td></tr><tr><td align="justify" colspan="3">Masterstage 3 loop je in de regel op dezelfde school als Masterstage 2. Je bouwt voort op je ervaringen tijdens Masterstage 2 en wordt in de gelegenheid gesteld om meer te gaan experimenteren met werkvormen en door jezelf ontwikkelde leermiddelen. Je zult ontdekken dat je bepaalde voorkeuren hebt voor de wijze waarop je les geeft en je ontwikkelt een eigen stijl van lesgeven. <br/>Vakdidactiek 2 ondersteunt je bij de ontwikkeling van je visie op de pedagogische en maatschappelijke functie van je vak. Daarnaast word je geïnformeerd over de macrostructuur van het schoolvak, over belangrijke discussies in het schoolvak en over de actuele maatschappelijke en wetenschappelijke ontwikkelingen op het vakgebied. <br/> <br/>Tijdens dit deel van de stage verricht je tenminste de volgende activiteiten:<br/>• (gezamenlijk met Masterstage 2) zelfstandig geven van tenminste 120 lessen van 50 minuten waarvan tenminste 60 lessen in de bovenbouw van havo/vwo;<br/>• 10 lessen gericht observeren; <br/>• deelnemen aan sectie-, team- en rapportvergaderingen;<br/>• overleggen met vakcoach;<br/>• contact onderhouden met ouders;<br/>• deelnemen aan intervisiebijeenkomsten onder leiding van schoolopleider op school of mentor op de RUG;<br/>• deelnemen aan landelijke lio-dag;<br/>• bijhouden van je bekwaamheidsdossier.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1665">drs. H.C. Diederiks</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Aan het tentamen van Masterstage 3 leraar maatschappijleer kan worden deelgenomen na afronding van Masterstage 2 leraar maatschappijleer.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77329"><b>Onderwijskunde VO</b></a></td><td align="right"><b>ULOM1505</b></td></tr><tr><td align="justify" colspan="3">Dit onderdeel bestaat uit interactieve hoorcolleges en een handelingsdeel (trainingscolleges). <br/>De colleges staan in het teken van het onderbouwd en doordacht professioneel handelen dat eigen is aan goede docenten. Er is het afgelopen decennium veel onderzoek gedaan naar onderwijs, leren, lesgeven, pedagogisch handelen en de effectiviteit van het pedagogisch-didactisch handelen van leraren. Aan de hand van een aantal basale kernvragen wordt hierop ingegaan, zoals ‘Waarom hebben we onderwijs’, ‘Wat is een goede docent?’, ‘Wat is lesgeven en leren?’ en ‘Welke rol speelt een docent in het leerproces van leerlingen?’ Ook wordt ingegaan op gedrags- en leerproblemen, het Nederlandse onderwijssysteem en de werkcondities van docenten. Onderliggend aan al deze vragen ligt de vraag ‘Wat werkt in het onderwijs en waarom het werkt’. Deze colleges en bijbehorende opdrachten hebben als doel om een gezamenlijke professionele taal te ontwikkelen om over onderwijs in gesprek te zijn. <br/>Daarnaast is er een handelingsdeel, bestaande uit werk- of trainingscolleges, samengevat onder het thema ‘Communicatie in de klas’, waarbij studenten worden getraind in non-verbaal gedrag en houding in de klas.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3085">drs. D.W. Maandag</a><a href="/ocasys/rug/vak/viewtutor?tutor=9870">prof. dr. K. van Veen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">• Masterstage 1 leraar <i>schoolvak</i>• Basiscursus Lerarenopleiding <i>schoolvak</i><br/>• Door  de  Faculteit  als  voorwaardelijk  aangemerkte  onderdelen <br/><br/>Deze voorwaarden gelden niet voor de Master LVHO</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator is drs. Anna Verkade<br/>Docent handelingsdeel (Communicatie in de klas) is Henrike Cuperus<br/>Voor zowel de colleges Onderwijskunde als Communicatie in de klas geldt een aanwezigheidsplicht van minimaal 80%.<br/>Indien hieraan niet wordt voldaan volgt een aanvullende opdracht.<br/>Mocht de student verhinderd zijn, moet dit van te voren gemeld worden bij desbetreffende docent.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77330"><b>Onderzoek Master Lerarenopleiding</b></a></td><td align="right"><b>ULOM1710AL</b></td></tr><tr><td align="justify" colspan="3">In de hele opleiding wordt een onderzoeksgerichte houding in het kader van goed lesgeven bevorderd. In dit onderdeel participeren studenten in vakdidactisch of onderwijskundig en voor de lespraktijk relevant onderzoek van de lerarenopleiding. Er zijn verschillende soorten van wetenschappelijk onderzoek mogelijk, namelijk een uitgebreide literatuurstudie/meta-analyse of empirisch onderzoek, bijvoorbeeld in experimenteel/ontwerpgericht onderzoek. <br/>Het onderzoek wordt afgesloten met een verslag en posterprestentatie. Bij sommige docenten is er de mogelijkheid mee te schrijven aan een wetenschappelijke (vak)publicatie.<br/>Het onderzoek wordt bij voorkeur uitgevoerd in groepsverband.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=9870">prof. dr. K. van Veen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">divers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Aan het tentamen van Onderzoek Master Lerarenopleiding kan worden deelgenomen na afronding van:<br/>•	Vakdidactiek 1 <i>schoolvak</i>•	Vakdidactiek 2 <i> schoolvak</i></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77373"><b>Vakdidactiek 1 maatschappijleer</b></a></td><td align="right"><b>ULOM1305MA</b></td></tr><tr><td align="justify" colspan="3">De colleges en opdrachten staan in het teken van vakdidactisch handelen en analyse, en appelleren vooral aan de eigen ervaringen op school. Vakdidactiek I is een vervolg van de basiscursus. Je leert hoe je de belangrijkste vakdidactische principes kunt toepassen in je lespraktijk en hoe je je lessen, toetsen en leermiddelen kunt analyseren en evalueren. Daartoe neem je deel aan (werk)colleges met studenten van hetzelfde schoolvak of met vergelijkbare schoolvakken, bestudeer je literatuur en voer je opdrachten uit.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=987">dr. M. van der Wal</a></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">• Masterstage 1 leraar maatschappijleer<br/>• Basiscursus Lerarenopleiding <br/>• Eventueel door  de  Faculteit  als  voorwaardelijk  aangemerkte  onderdelen <br/><br/>Deze entreevoorwaarde geldt niet voor Master LVHO.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor de colleges geldt een aanwezigheidsplicht van minimaal 80%. Indien hieraan niet wordt voldaan volgt een aanvullende opdracht.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77292"><b>Vakdidactiek 2 maatschappijleer</b></a></td><td align="right"><b>ULOM1405MA</b></td></tr><tr><td align="justify" colspan="3">De colleges en opdrachten staan in het teken van het ontwerpen en theoretisch verantwoorden van onderwijs binnen verschillende domeinen van het schoolvak. Dit onderdeel bouwt voort op Vakdidactiek 1 en de Basiscursus Master Lerarenopleiding. Je leert hoe je je vakdidactische kennis kunt toepassen bij het ontwerpen van lessen(series) en toetsen. Je leert hoe leerlingen je vak leren, wat (sommige) leerlingen moeilijk vinden aan je vak en hoe je daarmee rekening kunt houden. Daarnaast stelt dit onderdeel je in staat om je vakdidactische keuzes theoretisch te onderbouwen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Lerarenopleiding</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=987">dr. M. van der Wal</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">•	Masterstage 1 leraar maatschappijleer<br/>•	Basiscursus Lerarenopleiding<br/>• Vakdidactiek 1 <br/>•	Eventueel door  de  Faculteit  als  voorwaardelijk  aangemerkte  onderdelen</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Voor de colleges geldt een aanwezigheidsplicht van minimaal 80%. Indien hieraan niet wordt voldaan volgt een aanvullende opdracht.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

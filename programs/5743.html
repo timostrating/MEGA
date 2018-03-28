@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5743&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5743"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5743">Informatie over LLM International Human Rights Law</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>LLM International Human Rights Law</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>compulsory</td><td>RGDOS500</td><td><a href="/ocasys/rechten/vak/show?module=75642">English written proficiency support</a></td><td>Engels</td><td></td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMIR51606</td><td><a href="/ocasys/rechten/vak/show?module=75795">Seminar Human Rights</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor">semester I a</td><td>compulsory</td><td>RGMIR51106</td><td><a href="/ocasys/rechten/vak/show?module=75738">International Human Rights Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMIR50906</td><td><a href="/ocasys/rechten/vak/show?module=75796">International Institutional Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>compulsory</td><td>RGMSR50706</td><td><a href="/ocasys/rechten/vak/show?module=75828">International Criminal Trib. and Courts</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="nocolor"> </td><td>compulsory</td><td>RGMIR51306</td><td><a href="/ocasys/rechten/vak/show?module=75835">International Health Law</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr class="color"><td class="nocolor">semester II</td><td>compulsory</td><td></td><td>Master's thesis LL.M.: ILHR</td><td>Engels</td><td>18</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>a. optional compulso ...</td><td>RGMIR50306</td><td><a href="/ocasys/rechten/vak/show?module=75739">International Humanitarian Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>a. optional compulso ...</td><td>RGMBE01606</td><td><a href="/ocasys/rechten/vak/show?module=75966">Refugee and Asylum Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr><td class="nocolor">semester II b</td><td>b. optional compulso ...</td><td>RGMEE50706</td><td><a href="/ocasys/rechten/vak/show?module=75973">European Human Rights Law</a></td><td>Engels</td><td>6</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>b. optional compulso ...</td><td>RGMSR50606</td><td><a href="/ocasys/rechten/vak/show?module=75644">International Crimes</a></td><td>Engels</td><td>6</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">The programme consists of 60 ECTS: <br/>1. Four compulsory courses and a compulsory seminar (30 ECTS);<br/>2. One optional compulsory course from set a. (minimum of 6 ECTS);<br/>3. One optional compulsory course from set b. (minimum of 6 ECTS);<br/>4. Thesis (18 ECTS).<br/><br/>This programme is only accessible to those students that have been fully admitted by the Admissions Board. More information about the programmes and the admission procedures can be found on <a href="http://www.rug.nl/law/llm" target="_blank">www.rug.nl/law/llm</a>.<br/></p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=75642"><b>English written proficiency support</b></a></td><td align="right"><b>RGDOS500</b></td></tr><tr><td align="justify" colspan="3">The English proficiency support workshops consist of three parts:<br/>1.	A compulsory test<br/>2.	7 workshops<br/>3.	One-on-one tutorials<br/><br/>Ad 1. All students participate in a short English proficiency test upon arrival to Groningen. This test takes 60 minutes and students need to write an argumentative essay in academic style in this time which deals with one of six suggested topics.<br/><br/>Ad 2. Based on this test score, students are advised as to which workshops, if any, they should attend. These areas include:<br/>-	Punctuation<br/>-	Formality<br/>-	articles &amp; concord<br/>-	digital tools<br/>-	the verb phrases (tenses, voice) &amp; grammar pitfalls<br/>-	sentence structure <br/>-	paragraph structure <br/>Student are obliged to attend in the workshops that are indicated as compulsory for them after the test. But all workshops are open to all LLM students. <br/><br/>Ad 3. In semester 2 one-on-one tutorials are offered for students who have followed the required workshops. These tutorials deal with written work produced by the individual students (e.g. one of the already produced papers from semester 1 or a chapter of the thesis). The tutor will provide feedback on this written piece.<br/><br/>Please be aware that the tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1536">drs. W.C.J. Tommassen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">zie opmerkingen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">The one-on-one tutorials are only available to students who have participated in the required workshops as assigned to them based on the written test.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">The support starts with a compulsory test and is followed by (partly compulsory, partly optional) workshops on specific topics.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75973"><b>European Human Rights Law</b></a></td><td align="right"><b>RGMEE50706</b></td></tr><tr><td align="justify" colspan="3">This course examines the background and scope of the European Convention of Human Rights and the European Union system of human rights protection. It examines the institutional development and functioning of the Council of Europe system of fundamental rights protection, in particular the European Court of Human Rights (ECtHR), and the European Union system of human rights protection, in particular the European Court of Justice. The course looks at the scope of fundamental rights protection within the European Union. A selection of rights and fundamental freedoms covered in the European Convention of Human Rights and the EU Fundamental Rights Charter are discussed. This section includes an examination of the individual rights in the Charter and how these differ from Convention rights. Students are encouraged to reflect on the impact of the development of seemingly different common standards within Europe. <br/><br/>Teaching method: This course is taught by way of lectures, in-class discussions and guest lectures.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=445">prof. dr. D. Kochenov</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=1475">mr. dr. J. Morijn</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.<br/>This course is not open to non-law exchange students.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75644"><b>International Crimes</b></a></td><td align="right"><b>RGMSR50606</b></td></tr><tr><td align="justify" colspan="3">Detailed legal and criminological study of specific international crimes, including terrorism, and of the perpetrators of such atrocities. This course explores a diversity of mass violence crimes: war crimes, genocide, extermination, persecutions, crimes of sexual violence, torture and terrorism. It overall adopts a two-fold (law and criminology) critical approach to fully grasp the concept of international criminality in terms of prohibited acts, protected victims and identity of perpetrators. Students will study the relevant legal instruments and case-law at the domestic, regional and international levels. They will also be taught how to critically reflect on criminological research and literature. This will provide them with a full understanding of the causes and true nature of these mass crimes. It will ultimately allow for the identification of the challenges faced by (international) criminal law in preventing, investigating and punishing international crimes and the assessment of the effectiveness of legal and enforcement measures at the international, regional and national levels.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a><a href="/ocasys/rug/vak/viewtutor?tutor=9487">prof. dr. A.L. Smeulers</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>course on international criminal law and/or international humanitarian law.</li><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75828"><b>International Criminal Trib. and Courts</b></a></td><td align="right"><b>RGMSR50706</b></td></tr><tr><td align="justify" colspan="3">Detailed study of international criminal law and justice, with a specific focus on the ad hoc International Criminal Tribunals and the International Criminal Court. This course adopts both a substantive and procedural approach so as to offer a complete insight into this very fast-growing and highly contemporary legal subject. Based on an in-depth analysis of the different legal instruments and of the relevant case-law, this course addresses both the domestic and the international responses to mass atrocities and the prosecution of international crimes.  It thus explores the very functioning of international (and internationalised) courts and tribunals at the pre-trial, trial and post-trial stages, focusing on the investigation of international crimes, on the gathering and admissibility of evidence (including forensic evidence), on issues of State cooperation as well as on modes of participation (individual criminal responsibility, joint criminal enterprise), on available defences, on sentencing and on the place given to victims of, and witnesses to, international crimes in the proceedings. The course  adopts a critical approach to assess the role and effectiveness of international criminal law institutions in an international legal environment torn between globalization and fragmentation.<br/><br/>Formative assessment: Oral (individual or group) case law analysis, contextualising judicial decisions and critically assessing their import and impact.<br/>Summative assessment: Critical legal essay or case analysis based on relevant case law and academic literature (maximum 3,500 words).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6936">prof. dr. C.I. Fournet</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law. </li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed  International Criminal Tribunals before 1-9-2015.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75835"><b>International Health Law</b></a></td><td align="right"><b>RGMIR51306</b></td></tr><tr><td align="justify" colspan="3">This module focuses on international standards relevant for the protection of health. These include the standards adopted by the Wold Health Organization (WHO), human rights law, domestic health law, as well as international humanitarian law, intellectual property law and medical-ethical standards. Attention will be paid to ‘international health law’ as an emerging field of international law. Human rights law, in particular the right to health, plays an important role in this field. <br/><br/>Topics that will be covered (subject to change) are: <br/>1) health security threats, including the spread of infectious diseases and man-made and natural disasters - with a particular focus on the recent ebola crisis;<br/>2) global and domestic health inequalities and access to healthcare services and essential medicines, including the drafting of domestic legislation on essential medicines, and the position of vulnerable persons in healthcare settings, with a particular emphasis on migrants and women (reproductive health);<br/>3) the tension between international trade and the protection of health, including the role and position of the pharmaceutical industry and of the food industry.<br/><br/>Students will have to study and critically reflect upon these health-related themes, in light of the relevant international standards. Specific individual or group assignments will be part of the preparations for class, which may touch on, for example, an envisaged text of a Framework Convention for Global Health and/or domestic model legislation in the field of health. Each student will have to give a presentation on a specific topic of his or her choice, in preparation of his or her individual paper.<br/><br/>Several guest lecturers will share their specific expertise in this course (including Professor Hans Hogerzeil from UMCG and Professor Aart Hendriks from Leiden University).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6934">prof. mr. dr. B.C.A. Toebes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12215">dr. M.E.C. Gispen, LLM.</a><a href="/ocasys/rug/vak/viewtutor?tutor=6934">prof. mr. dr. B.C.A. Toebes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, presentatie(s), schriftelijk (essayvragen) (digitaal indien mogelijk), schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75738"><b>International Human Rights Law</b></a></td><td align="right"><b>RGMIR51106</b></td></tr><tr><td align="justify" colspan="3">This course examines the basic concepts and theories concerning human rights; the protection of human rights in positive international law, in particular through the work and case law of international human rights bodies such as the Human Rights Committee and the various regional human rights adjudicatory bodies. Lectures will focus on topics such as:<br/>• The conceptual and philosophical background to human rights;<br/>• The development of the universal human rights system including discussions of the different types of human rights monitoring bodies under the United Nations and their procedures to ensure compliance with the human rights obligations of states;<br/>• An overview of the various regional human rights monitoring bodies and recent developments therein;<br/>• The various procedures available to states, individuals, and groups to secure the protection of human rights law at the international and regional level;<br/>• A discussion on the content and scope of a select group of rights under international and regional human rights law and recent developments (f.e. the right to life; the right to freedom of expression and the right to freedom of association and assembly; and some select social and cultural rights);<br/>• A discussion of various current topics in the field of human rights law including the potential human rights obligations of non-state actors such as international financial institutions and multinational corporations, the human rights of vulnerable groups such as indigenous populations, the problem of dealing with terrorism and human rights, and the discussion about the existence of a right to development and a clean and healthy environment.<br/>• Pespectives on a career in the field of human rights and the need to actively engage in the field.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3241">dr. A.G. Hallo de Wolf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3241">dr. A.G. Hallo de Wolf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Compulsory: Bachelor course on public international law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Not accessible for:<ul><li>students who passed the course International Law 5 (Human Rights) before 1-9-07.</li><li>students who passed the course Human Rights Law before 1-9-11.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=75739"><b>International Humanitarian Law</b></a></td><td align="right"><b>RGMIR50306</b></td></tr><tr><td align="justify" colspan="3">This module focuses on the law applicable to international and non-international armed conflicts. It discusses the Hague law (means and methods of warfare), Geneva law (on the protection of specific groups), and customary international humanitarian law (IHL). <br/>The course will start with a historical overview of the development of  IHL its legal basis and scope of application as well as the distinction between international and non-international armed conflicts (IACs and NIACs). <br/>The course will then shift from a theoretical/historical perspective towards a more practical one. This re-focus will start with the examination of the various actors and groups involved in armed conflict, the distinction between combatants and non-combatants, and controversial actors like militia and terrorists.  It will then move to the various means and methods of warfare, the cardinal principles of international humanitarian law (principle of distinction, prohibition of unnecessary suffering and superfluous injury), prohibited acts (attacks on civilians, assassination and ‘no quarter’, perfidy), military necessity, military objectives, precautions to be taken when attacking. <br/>Since no area of law exists in clinical isolation from the others, the course will conclude with an examination of the highly topical interface between international humanitarian law and international human rights law.<br/><br/>Lectures are the main teaching method, but students will have to study and critically reflect upon IHL textbooks as well as recent articles on a variety of topical and highly debated IHL issues. Group assignments, presentations and crisis simulations will be an integral part of certain of the seminars. Military and academic experts in the field of IHL will also be invited to deliver lectures on specific topics (such as targeting).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8629">prof. dr. P. Merkouris</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8629">prof. dr. P. Merkouris</a><a href="/ocasys/rug/vak/viewtutor?tutor=6934">prof. mr. dr. B.C.A. Toebes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk), schriftelijk of mondeling, afhankelijk van het aantal deelnemers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Compulsory: Bachelor course on public international law </li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Not accessible for students who passed the course 'International Law 6' before 1-9-07.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75796"><b>International Institutional Law</b></a></td><td align="right"><b>RGMIR50906</b></td></tr><tr><td align="justify" colspan="3">Modern international governmental institutions and organizations started to emerge in the second half of the 19th century and in the beginning of the 20th century. World War II sealed the fate of the League of Nations but spawned the birth of the United Nations and many other international institutions and organizations. The end of the 20th century has seen a new wave, with the creation of ad hoc and permanent international (criminal) tribunals and courts and the World Trade Organization. No one doubts that international institutions and organizations are essential for international cooperation, and one may expect to see expansion of their functions and activities in the years to come.<br/>However, on the one hand, organizations are engaged in a continuous struggle to effectively pursue and fulfil their purposes within the specialised and limited nature of their competences and powers. On the other hand, the expanding scope of activities of for instance the UN Security Council and the implementation of its decisions by UN members raises questions as to the conformity of activities and decisions with international law in general, and in particular with human rights law, and has led to the discussion of for instance the organization’s international responsibility for (alleged) violations.<br/><br/>This course focuses on the institutional law aspects of the activities displayed by international organizations, in particular –though not exclusively– of the United Nations. Topics to be discussed include: international legal personality and applicable law; privileges and immunities; the admission and representation of States; normative acts, resolutions, (binding) decisions, recommendations and authorizations; voting procedures; express, implied, and inherent powers; enforcement powers; the internal division of powers, especially within the United Nations; the international responsibility of international organizations; the question of ultra vires acts; and review of acts of international organizations.<br/><br/>This course will be taught by way of lectures, in which various concepts common to different organizations will be introduced and critically assessed. Specific institutional problems and international controversies will be examined by reference to the law applicable within the particular organization or institution.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1406">dr. mr. A.J.J. de Hoogh</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1406">dr. mr. A.J.J. de Hoogh</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>Compulsory: Bachelor course on public international law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>Not accessible for students who passed the course International Law 2 (Master level) before 1-9-07, or students who passed the course The Law of International Organizations before 1-9-11.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=75966"><b>Refugee and Asylum Law</b></a></td><td align="right"><b>RGMBE01606</b></td></tr><tr><td align="justify" colspan="3">This course examines issues concerning refugees and asylum seekers in an international context. The world is facing a huge number of refugees all over the world. The number of displaced persons is increasing everywhere. Because of the continuing development of means of transportation and communication, the western world also faces a huge challenge. This course will focus on the on both international standards, such as the 1951 Convention Relating to the Status of Refugees and the New York protocol and the still developing Common European Asylum System. <br/>The first three lectures will focus on international standards and more specifically on the 1951 Convention Relating to the Status of Refugees and the New York Protocol. Questions relating persecution, grounds for persecution, internal flight alternative, internally displaced persons, the concept of safe countries, exclusion and cessation and non-refoulement will be explored. The last three lectures will examine case law of the European Court of Human Rights on the concept of non-refoulement, the development and challenges of the Common European Asylum System and the Dutch asylum system. During the lectures discussion between students is encouraged and feedback is provided by the lecturer.In the last week, a visit to the family centre in Emmen (a location for denied families with children) will be made. This visit is mandatory. Students have the option to make one assignment. The grade on this assignment can be used to replace one, on forehand by the lecturer determined, ten point question of the written exam. Students also have the option to give a presentation which will be graded with a pass or fail. A bonus of 0.5 will be added to the grade of the exam if a student gets a pass for the presentation.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1502">mr. dr. V.M. Bex-Reimert</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1502">mr. dr. V.M. Bex-Reimert</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk), opdracht / extra vraag</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to a master's degree programme within the Faculty of Law.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=75795"><b>Seminar Human Rights</b></a></td><td align="right"><b>RGMIR51606</b></td></tr><tr><td align="justify" colspan="3">The Human Rights Seminar provides deeper insights into particular human rights that have an impact on human dignity. The seminar takes a close look at the content and scope of the obligation to prohibit, punish, and prevent torture, as well as the obligations of states to respect, protect, and fulfil economic, social and cultural rights together with the justiciability of these rights. Relevant standards as developed and interpreted by human rights bodies are identified and discussed. <br/><br/>Lectures will be used to introduce specific topics that will be discussed in class. All students are expected to independently investigate selected issues, to report thereon in individual and group papers and presentations and to critically discuss these in class.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3241">dr. A.G. Hallo de Wolf</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=3241">dr. A.G. Hallo de Wolf</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">seminaar</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">presentatie(s), papers</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">6</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have been fully admitted to the LLM programme International Human Rights Law.</li><li>This course is not open to exchange students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

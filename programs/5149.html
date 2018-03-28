@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=5149&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D5149"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=5149">Informatie over Minor Development Studies</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Minor Development Studies</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 3</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I</td><td>keuze</td><td>LBU041B05</td><td><a href="/ocasys/rechten/vak/show?module=74534">International Humanitarian Action</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>EMED-11</td><td><a href="/ocasys/rechten/vak/show?module=76458">Environment and development</a></td><td>Engels</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LBA025B05</td><td><a href="/ocasys/rechten/vak/show?module=74688">Ethnicity, Culture and Politics</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>SOBA904</td><td><a href="/ocasys/rechten/vak/show?module=75017">Social and institutional change</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>THMIN-ANTH</td><td><a href="/ocasys/rechten/vak/show?module=78322">Anthropology: an Introduction</a></td><td>Engels</td><td>7.5</td><td>variabel</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>EBB921B05</td><td><a href="/ocasys/rechten/vak/show?module=73140">Global Development Studies</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>LBA016B05</td><td><a href="/ocasys/rechten/vak/show?module=74273">Reading Seminar: Key Debates</a></td><td>Engels</td><td>5</td><td>variabel</td></tr><tr><td class="nocolor"> </td><td>keuze</td><td>EBB922A05</td><td><a href="/ocasys/rechten/vak/show?module=73141">Topical Themes in Development Studies</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor"> </td><td>keuze</td><td>GEPOPDEV</td><td><a href="/ocasys/rechten/vak/show?module=76044">Population and Development</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">For more information about this minor you can contact the coordinator dr. P. Boele van Hensbroek (p.boele@rug.nl).</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=78322"><b>Anthropology: an Introduction</b></a></td><td align="right"><b>THMIN-ANTH</b></td></tr><tr><td align="justify" colspan="3">Anthropology, as understood here, deals with humans as social and cultural beings. Humans everywhere organize themselves, thereby giving rise to various forms of social structures which anthropologists study under headings like kinship, age, gender, caste or class. Such structures are expressed, reproduced and modified in ritual processes. Further, humans not only arrange themselves into groups of various kinds but also devise rules that are supposed to regulate social life. In addition, they create an ideal vision of their society in the shape of religious beliefs and cosmologies. Anthropologists study and compare how all this is achieved – and contested – around the globe, in the present as well as through history.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Godgeleerdheid en Godsdienstwetenschap</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1298">dr. P. Berger</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">lectures and seminars</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">7.5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Note: <br/>- Only buy the Monaghan &amp; Just edition of the year 2000! Many copies are available second hand and the book is electronically available via the library. <br/>-Lectures will be in English; student presentations and discussions will also be in Dutch; exam and critical book review can be written in Dutch or English.<br/>-Active participation in a work group is required. Assigned readings have to be completed before every session.<br/>-Workload: reading 95h, presentation 6h, discussion 3h, lectures, seminars lectures 28h, critical book review 70h, preparation exam 8h.<br/>-Assessment: written exam 30%, critical book review 30%, presentation 20%, discussion 20%<br/>- Other literature will be announced later.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=76458"><b>Environment and development</b></a></td><td align="right"><b>EMED-11</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Science and Engineering</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1618">drs. M.R. Berger</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2679">prof. dr. H.C. Moll</a><a href="/ocasys/rug/vak/viewtutor?tutor=1660">dr. ir. S. Nonhebel</a><a href="/ocasys/rug/vak/viewtutor?tutor=2853">dr. J.A.A. Swart</a><a href="/ocasys/rug/vak/viewtutor?tutor=2965">dr. H.J. van der Windt</a><a href="/ocasys/rug/vak/viewtutor?tutor=277">dr. P.D.M. Weesie</a><a href="/ocasys/rug/vak/viewtutor?tutor=1579">dr. D. Wiersma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Hoorcollege (LC), Werkcollege (T)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Opdracht (AST), Schriftelijk tentamen (WE)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=74688"><b>Ethnicity, Culture and Politics</b></a></td><td align="right"><b>LBA025B05</b></td></tr><tr><td align="justify" colspan="3">The course discusses political, social and cultural aspects of globalisation and of development problems, focusing especially on societies outside the North-Atlantic world. It discusses questions such as: Which processes have led to the development of the modern state, democracy and civil society? What is the historical, social and cultural basis of nationalism and ethnicity? How can identity be understood, what is identity politics and how does it operate in contemporary conflicts in developing countries as well as in our own? What approaches are available in the analysis of contemporary globalisation?<br/>Political, historical and cultural dimensions of development and globalisation are central in this course. It applies innovative antrhopological, political and philosophical theories of identity, nationalism and globalisation from the last few decades and discusses several case studies from Africa. <br/>The course is part of the Minor Development Studies but can also be followed separately. It provides students with a good background to further specialise in development related aspects of their own main field of study.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1212">dr. P. Boele Van Hensbroek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1212">dr. P. Boele Van Hensbroek</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73140"><b>Global Development Studies</b></a></td><td align="right"><b>EBB921B05</b></td></tr><tr><td align="justify" colspan="3">This course is about the main determinants of socio-economic development in developing countries. Students learn about the similarities and differences in the socio-economic development of various regions in the world such as China, India, South-East Asia, Latin-America, Eastern Europe and Africa. In the course, the role of technology, health, education, structural change, and foreign aid on socio-economic development is explained. The usefulness of various empirical methods to measure socio-economic development and its determinant is discussed, and theories of socio-economic development are evaluated. Throughout the course, national and international policies to generate socio-economic development are discussed and evaluated.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2231">dr. G.J. de Vries</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2231">dr. G.J. de Vries</a><a href="/ocasys/rug/vak/viewtutor?tutor=10930"> A. Jiang</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: gem.feb@rug.nl, tel. +31(0)50 36 33458, room 5411.0538 <br/>Coordinator: G.J. de Vries, gem.feb@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=74534"><b>International Humanitarian Action</b></a></td><td align="right"><b>LBU041B05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=104">prof. dr. J. Herman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=76044"><b>Population and Development</b></a></td><td align="right"><b>GEPOPDEV</b></td></tr><tr><td align="justify" colspan="3"><b>For lectures see timetable Population and Development, code: GEMPOPDEV.</b><br/><br/>The Population and Development module aims to deepen the understanding of world-wide differences in fertility, mortality, migration, health, and nutrition. The reciprocal influence of economic, socio-cultural development and these demographic outcomes at both macro and micro level will be addressed. The demographic transition theory provides the basis for the understanding of differences in fertility, mortality, migration, health, and nutrition across regions and countries. Central to the apprehension of how population and development are intertwined is the ground-breaking work of Amartya Sen and his school of thought regarding individuals’ capabilities and development.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Ruimtelijke Wetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=5248">prof. dr. ir. H.H. Haisma</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11333"> B. de Haas, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1654">  Guest lecturers</a><a href="/ocasys/rug/vak/viewtutor?tutor=5248">prof. dr. ir. H.H. Haisma</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Practicals, Seminars, Guest lectures, Lectures</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">Active participation, Group assignments, Interim test with multiple choice questions digital</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">All students from RUG can follow this course as part of the minor Population Studies. The course is also open as an optional course within the minor Development Studies, see www.rug.nl/GSG/Education. In addition, this Bachelor course is open - as an optional course - for Bachelor students from disciplines related to Population Studies within RUG (e.g. Sociology, Epidemiology, Psychology, Spatial Sciences, Public Health, Medical Sciences, Cultural Anthropology, International Relationships, Gerontology, and Development Studies).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=74273"><b>Reading Seminar: Key Debates</b></a></td><td align="right"><b>LBA016B05</b></td></tr><tr><td align="justify" colspan="3">The course is entirely based on discussion seminars (seminar groups of 20 students led by the lecturer) around three to five scholarly readings per week, thus providing the students with a lively and interactive context to sharpen their views on development issues. Following previous courses of the minor, where students are given an overview of Development Studies from the perspective of a specific academic discipline, the second half of the semester will privilege courses that deepen their understanding and require students to actively use and reflect on the knowledge they have acquired in the first half. This course complements the Topical Theme in Development course, which is an exploration of one specific topic through bibliographic research and paper-writing. The themes of the seminar are: <br/>1) The Classics foundations for understanding the state and the market, <br/>2) Contrasting paradigms in Development Studies, <br/>3) Agriculture and Rural Development, <br/>4) The state and the market in industrialization,<br/>5) The informal market and development from below<br/>6) The role of international institutions and community<br/>7) Contemporary theories of development</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11992"> N.A. Busscher, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">referaat/spreekbeurt, presentatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Reserved only for students of the Minor in Development Studies. Students must have followed and passed 2 of the 3 courses from semester 1a.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">See for more information: http://www.rug.nl/frw/onderwijs/Minoren/minorDevStud1011?<br/>http://www.rug.nl/cds/education/aVVMinor</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=75017"><b>Social and institutional change</b></a></td><td align="right"><b>SOBA904</b></td></tr><tr><td align="justify" colspan="3">As a result of globalization and the success of the Internet; companies, organizations, and societies face new challenges of coordination, and cooperation. The complexity of these challenges is illustrated by the difficult negotiations for an international treaty to limit climate change. On the other hand, the success of Internet services such as wikipedia, and couchsurving proofs that coordination, and cooperation can be established even between strangers and on a global scale.<br/>This course focuses on the effects of social institutions, i.e. norms (e.g. cultural conventions) and formal rules (e.g. law), on problems of coordination and cooperation in social groups, organizations, and societies. We will pay attention to how social institutions emerge, how they change, and how they affect the behavior of individuals and collectives. We will explore the conditions under which institutions have desired or undesired effects. Special attention will be paid to the role of the state in a market economy, and the effect of cultural norms on economic development. <br/>To this end, we will discuss classical (Weber, Durkheim, Smith) and contemporary theories (e.g. political economy, game theory, and complexity science) that have been used to explain social institutions. Students will be introduced to methods of analyzing social institutions and will be introduced to alternative approaches to changing the behavior of individuals. In particular, we will debate the design of incentive programs, institutional design (reputation systems, peer-punishment systems, signaling institutions, meritocracy), and nudging.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Gedrags- en MaatschappijWetenschappen</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1035">dr. M. Maes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen (essay) DIGITAL</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73141"><b>Topical Themes in Development Studies</b></a></td><td align="right"><b>EBB922A05</b></td></tr><tr><td align="justify" colspan="3">This course aims at providing an in-depth understanding of a particular set of problems in development, working in a small-group setting with a mentor-lecturer. The course has two variants: 1) Writing a research essay, presenting and discussing essays in small-group setting, or 2) Participating in the ACE Intensive Programme at Mzumbe University in Tanzania including preparatory reading, field work and writing a research report. It features a number of theme groups (such as on economic development, democratization, education, or environmental issues) from which the student chooses one. Selected students can opt for the Intensive Programme in Tanzania, which involves covering their own costs by the student for travel and upkeep in Tanzania.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1212">dr. P. Boele Van Hensbroek</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1212">dr. P. Boele Van Hensbroek</a><a href="/ocasys/rug/vak/viewtutor?tutor=205">dr. B.J.W. Pennink</a><a href="/ocasys/rug/vak/viewtutor?tutor=4806">dr. H. Schoenmakers</a><a href="/ocasys/rug/vak/viewtutor?tutor=984">prof. dr. J.J.M. Zeelen</a><a href="/ocasys/rug/vak/viewtutor?tutor=7447">dr. Y. Zhao</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">opdracht(en), werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">actieve deelname, essay, presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Following the rest of the minor Development Studies II.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator: Dr B.J.W. Pennink and Dr P. Boele Van Hensbroek. Contact: p.boele@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

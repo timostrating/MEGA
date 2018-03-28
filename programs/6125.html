@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=6125&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D6125"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=6125">Informatie over Pre-master Recht en Bestuur, afst.ri. Governance and Law in Digital Society</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>Pre-master Recht en Bestuur, afst.ri. Governance and Law in Digital Society</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» </td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>RGBEE50010</td><td><a href="/ocasys/rechten/vak/show?module=75876">European Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>LYX001B10</td><td><a href="/ocasys/rechten/vak/show?module=74566">Beleid en Bestuur</a></td><td>Engels</td><td>10</td><td>8</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>RGBIR50010</td><td><a href="/ocasys/rechten/vak/show?module=75893">Public International Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>RGBBE50110</td><td><a href="/ocasys/rechten/vak/show?module=75865">Europeanisation of Public Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>RGPIR50310</td><td><a href="/ocasys/rechten/vak/show?module=75940">Introduction to Public Law</a></td><td>Engels</td><td>10</td><td>6</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>RGPPR50105</td><td><a href="/ocasys/rechten/vak/show?module=75936">Private Law 1</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;"></p><ul><li>Het <a href="https://www.rug.nl/ocasys/rechten/vak/showpos?opleiding=6124" target="_blank">aansluitende masterprogramma </a> kan worden gevolgd na volledige afronding van het pre-masterprogramma.</li></ul></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=74566"><b>Beleid en Bestuur</b></a></td><td align="right"><b>LYX001B10</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Letteren</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=8468"> F. Giumelli</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11474"> A. Bayramov, MA.</a><a href="/ocasys/rug/vak/viewtutor?tutor=4846"> F. Gaenssmantel, PhD.</a><a href="/ocasys/rug/vak/viewtutor?tutor=8468"> F. Giumelli</a><a href="/ocasys/rug/vak/viewtutor?tutor=97">dr. A.G. Harryvan</a><a href="/ocasys/rug/vak/viewtutor?tutor=6592">dr. M. Neuman</a><a href="/ocasys/rug/vak/viewtutor?tutor=7470">drs. H. Sportel</a><a href="/ocasys/rug/vak/viewtutor?tutor=542">dr. G.C. van Roozendaal</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, praktische oefening, werkcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">digitale toetsing</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=75876"><b>European Law</b></a></td><td align="right"><b>RGBEE50010</b></td></tr><tr><td align="justify" colspan="3">It is envisaged that this course will include the following topics although precise content and order may vary.<br/><br/>Following a brief introduction into the history of European integration, the emphasis of the course will be on <br/>(a)	the characteristics of the European Union legal order;<br/>(b)	institutional structure;<br/>(c)	substantive law including human rights and fundamental freedoms and internal market freedoms (covering an introduction to the Internal Market; free movement of goods; free movement of services and freedom of establishment; free movement of workers; European citizenship); and<br/>(d)	procedural law/remedies in the European Union legal order (including direct effect, state liability and national procedural autonomy; enforcement of European Union Law against Member States; actions for judicial review; references for preliminary rulings).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1379">prof. dr. L.W. Gormley, MA. MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=1472">prof. dr. G.P. Mifsud Bonnici</a><a href="/ocasys/rug/vak/viewtutor?tutor=11339">mr. dr. B.J. van Leeuwen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Please note that students must order: ONE textbook i.e. Chalmers, Davies and Monti OR Graig and De Burca AND the course Syllabus (new edition) AND the European Union Treaties &amp; Legislation. All students following this course should read Schutze (2012) An introduction to European Law before the start of this course.<ul><li>Voor bachelor Rechtsgeleerdheid (IER-studenten) zijn de online colleges van Introduction to International and European Law beschikbaar in het Engels.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=75865"><b>Europeanisation of Public Law</b></a></td><td align="right"><b>RGBBE50110</b></td></tr><tr><td align="justify" colspan="3">Well known EU legal doctrines on ‘procedural autonomy’, ‘direct effect’, ‘consistent interpretation’, ‘ex officio application of European law’ and ‘state liability’ are used as a starting point for looking into the consequences of those doctrines in the various Member States. Attention is also given to important questions on the enforcement of European law in the national legal order, the organisation of the national judiciary and the influence of European law on fundamental principles of (public) law like a.o. legal certainty, non-discrimination and the proportionality principle. For those purposes case law is being analysed on how European law is actually being applied by the various national public law courts.<br/><br/>These and other doctrines show how Europeanisation affects the constitutional position of these national courts. However, not only the national courts are affected by Europeanisation. Similar effects are influencing the position of the national executives and the national parliaments. To understand these effects, the European Union will be examined as a (combination of) legal order(s), using concepts such as ‘autonomy’, ‘sovereignty’, ‘representation’ and ‘efficacy’. The aim of this analysis is to enable students to give an outline of the impact the European Union has on the position of the main actors of the Member States.<br/><br/>There will be fourteen lectures and seven tutorials.   Attendance of the tutorials is compulsory. Students can miss one tutorial. Students who miss two tutorials have the opportunity to make a one repair assignment. Repair assignments are graded with a pass of fail. Students who fail their repair assignment are not allowed to attend the written exam (both chances). Students who miss more than two tutorials are not allowed to attend the written exam (both chances) since only one repair assignment is allowed for the whole course.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7728">prof. dr. O.O. Cherednychenko</a><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a><a href="/ocasys/rug/vak/viewtutor?tutor=1684">  vacature</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</li><li>This course is not open to non-law exchange students.</li><li>Not accessible for students who have passed Administrative Law (RGBBE50010) before 1-9-2017.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=75940"><b>Introduction to Public Law</b></a></td><td align="right"><b>RGPIR50310</b></td></tr><tr><td align="justify" colspan="3">This introductory course in the field of Comparative Constitutional Law deals with a number of topics related to the concept of the role and function of public authority (based on a constitution) in the modern, Western state. Furthermore, it discusses themes that are central to the different types of constitutional framework that characterize democratic states. Some of the topics:<ul><li>The history of constitutionalism: the American and French revolutions and the different forms of constitutions they gave birth to;</li><li>The national constitution and international law;</li><li>International and European constitutional developments.</li><li>The functions of the constitution;</li><li>The changing nature of the Constitution;</li><li>Horizontal and vertical separation of powers;</li><li>The organization and powers of the legislative;</li><li>Constitutional efficacy;</li><li>Administrative norms and codification; </li><li>The organization of legal protection in administrative law. </li></ul>At the exam, 80 out of 100 points can be earned. The remaining points can be earned by participating in an assignment in the field of comparative public law.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1357">mr. M. Duchateau</a><a href="/ocasys/rug/vak/viewtutor?tutor=12175">mr. R.L. Herregodts</a><a href="/ocasys/rug/vak/viewtutor?tutor=1405">prof. mr. H.G. Hoogers</a><a href="/ocasys/rug/vak/viewtutor?tutor=1479">mr. M. Nap</a><a href="/ocasys/rug/vak/viewtutor?tutor=1533">mr. dr. A. Tollenaar</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk), opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students who are registered for the Bachelor's degree 'International and European Law', Colloquium Doctum students 'International and European Law' or pre-master programme students provided that the course is part of the pre-master programme.</li><li>This course is not open to exchange students.</li><li>Not accessible for students who have passed Comparative Constitutional Law  (RGPIR50110) before 1-9-2017.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>During the first year of registration, regular first year students will have the opportunity, under certain conditions, to sit an additional prolonged oral resit exam in the same examination period as in which the (written)resit of that course takes place. For conditions and procedure, please check the Study and Information Guide for international students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=75936"><b>Private Law 1</b></a></td><td align="right"><b>RGPPR50105</b></td></tr><tr><td align="justify" colspan="3">Private Law I addresses the major concepts, objectives and problems of contract law and of tort law. The contract law part includes topics such as party autonomy, formation processes, and remedies. Topics of tort law include fault and risk based liability and issues of damages. Where possible, the course will take the Principles, Definitions and Model Rules of European Private Law, DCFR (2009) as a point of departure. The course aims at providing the students with a general understanding of the main characteristics and functions of contract law and of tort law.<br/>Teaching method: This course consists of lectures and tutorials. In the tutorials the students practice by means of assignments which have to be prepared in advance.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=12253">mr. J.T. Hiemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=11813">mr. M.H. Rozeboom</a><a href="/ocasys/rug/vak/viewtutor?tutor=4426">prof. mr. dr. A.J. Verheij</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2"><ul><li>This course is only accessible for students who are registered for the Bachelor's degree 'International and European Law' or pre-master programme students provided that the course is part of the pre-master programme.</li><li>This course is not open to non-law exchange students.</li></ul></td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2"><ul><li>During the first year of registration, regular first year students will have the opportunity, under certain conditions, to sit an additional prolonged oral resit exam in the same examination period as in which the (written)resit of that course takes place. For conditions and procedure, please check the Study and Information Guide for international students.</li></ul></td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=75893"><b>Public International Law</b></a></td><td align="right"><b>RGBIR50010</b></td></tr><tr><td align="justify" colspan="3">In this module the main doctrines of public international law are discussed in lectures in which positive law and its historical background forms the basis for a discussion of the contribution of international law to the resolution of international conflicts and to managing (new) international challenges of an economic, ecological or humanitarian nature. In the working groups concrete situations will be addressed and students will be expected to discuss and argue the legally relevant aspects. Topics that will be discussed include sources, subjects, jurisdiction, immunities, state responsibility, international institutional law, peaceful dispute settlement, the use of force in international relations, the law of the sea, international human rights law and international environmental law.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Rechtsgeleerdheid</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1406">dr. mr. A.J.J. de Hoogh</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1343">prof. dr. M.M.T.A. Brus</a><a href="/ocasys/rug/vak/viewtutor?tutor=1406">dr. mr. A.J.J. de Hoogh</a><a href="/ocasys/rug/vak/viewtutor?tutor=1360">  e.a.</a><a href="/ocasys/rug/vak/viewtutor?tutor=8629">prof. dr. P. Merkouris</a><a href="/ocasys/rug/vak/viewtutor?tutor=12496"> A. Tsampi, PhD.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcollege, werkgroep</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk (essayvragen) (digitaal indien mogelijk)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">10</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">This course is only accessible for students that have obtained at least 45 EC from their first year courses at research university level or that participate in a pre-approved pre-master or decree programme.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

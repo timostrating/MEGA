@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=4514&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D4514"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=4514">Informatie over MSc Tandheelkunde, 2 jarig</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>MSc Tandheelkunde, 2 jarig</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>TKM1.KW</td><td><a href="/ocasys/rechten/vak/show?module=77104">Klinische Werkcolleges</a></td><td>Nederlands</td><td>2</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM1.PROF</td><td><a href="/ocasys/rechten/vak/show?module=77205">Professionalisering I</a></td><td>Nederlands</td><td>2</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM1.TVKV</td><td><a href="/ocasys/rechten/vak/show?module=77106">Tandheelkundige vaardigheden &amp; kennis I</a></td><td>Nederlands</td><td>31</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM1.WET1</td><td><a href="/ocasys/rechten/vak/show?module=77222">Wetenschappelijke Stage 1</a></td><td>Nederlands</td><td>5</td><td></td></tr><tr class="color"><td class="nocolor">semester I</td><td>verplicht</td><td>TKM1.IM</td><td><a href="/ocasys/rechten/vak/show?module=77103">Integrale Mondzorg</a></td><td>Nederlands</td><td>12</td><td></td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>TKM1.IP1</td><td><a href="/ocasys/rechten/vak/show?module=77105">Individuele Profilering I</a></td><td>Nederlands</td><td>8</td><td></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 2</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">hele jaar</td><td>verplicht</td><td>TKM2.PROF</td><td><a href="/ocasys/rechten/vak/show?module=77110">Professionalisering II</a></td><td>Nederlands</td><td>4</td><td></td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>TKM2.TVKV</td><td><a href="/ocasys/rechten/vak/show?module=77109">Tandheelkundige vaardigheden + kennis II</a></td><td>Nederlands</td><td>20</td><td></td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>TKM2.WET2</td><td><a href="/ocasys/rechten/vak/show?module=77111">Wetenschappelijke stage II</a></td><td>Nederlands</td><td>12</td><td></td></tr><tr><td class="nocolor">semester I</td><td>verplicht</td><td>TKM2.CO</td><td><a href="/ocasys/rechten/vak/show?module=77107">Co-schappen</a></td><td>Nederlands</td><td>15</td><td></td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>TKM2.IP2</td><td><a href="/ocasys/rechten/vak/show?module=77108">Individuele Profilering II</a></td><td>Nederlands</td><td>9</td><td></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=77107"><b>Co-schappen</b></a></td><td align="right"><b>TKM2.CO</b></td></tr><tr><td align="justify" colspan="3">De onderwijseenheid Co-schappen omvat de volgende onderdelen: het co-schap Kaakchirurgie, Mondziekten en Bijzondere Tandheelkunde, het co-schap Orthodontie en het co-schap Acute klachten in de tandheelkunde. Tijdens deze co-schappen is er een voltijds weekindeling. <br/><br/>De co-schappen beslaan niet het gehele semester.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">15</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=77105"><b>Individuele Profilering I</b></a></td><td align="right"><b>TKM1.IP1</b></td></tr><tr><td align="justify" colspan="3">De onderwijseenheid Individuele profilering I omvat o.a. klinische practica.<br/>In deze onderwijseenheid wordt de student de mogelijkheid geboden een deel van zijn/haar studie naar keuze in te vullen. De klinische practica begeven zich met name op het gebied van differentiaties in de tandheelkunde. Individuele projecten zijn mogelijk, bijvoorbeeld in het buitenland.<br/>Tevens is het onder bepaalde voorwaarden mogelijk om de studiepunten van Individuele Profilering I te koppelen aan de onderwijseenheid Wetenschappelijke stage (verlengde wetenschappelijk stage (25 EC)).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting, schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">8</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=77108"><b>Individuele Profilering II</b></a></td><td align="right"><b>TKM2.IP2</b></td></tr><tr><td align="justify" colspan="3">De onderwijseenheid Individuele profilering II omvat o.a. klinische practica.<br/>In deze onderwijseenheid wordt de student de mogelijkheid geboden een deel van zijn/haar studie naar keuze in te vullen. De klinische practica begeven zich met name op het gebied van differentiaties in de tandheelkunde. Individuele projecten zijn mogelijk, bijvoorbeeld in het buitenland.<br/>Tevens is het onder bepaalde voorwaarden mogelijk om de studiepunten van Individuele Profilering I en Individuele Profilering II te koppelen aan de onderwijseenheden Wetenschappelijke stage I + II (verlengde<br/>wetenschappelijk stage (34 EC)).</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting en schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">9</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=77103"><b>Integrale Mondzorg</b></a></td><td align="right"><b>TKM1.IM</b></td></tr><tr><td align="justify" colspan="3">In deze onderwijseenheid komt de theorie aan de orde naar aanleiding van complexe problemen met de mondgezondheid. Hierbij komen aspecten van de mondgezondheid en behandelingsplanning aangaande de gemutileerde dentitie aan de orde, alsmede kindertandheelkunde, gerodontologie en oncologie.<br/><br/>Het tentamen Integrale mondzorg bestaat uit de volgende onderdelen:<br/>- schriftelijke toets bestaande uit 4 delen<br/>- voldoen aan practicumverplichtingen</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">Colleges (patiënt-, thema-, magistraal, en responsie-colleges), practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting en schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">12</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=77104"><b>Klinische Werkcolleges</b></a></td><td align="right"><b>TKM1.KW</b></td></tr><tr><td align="justify" colspan="3">Onder leiding van inhoudsdeskundige docenten worden behandelplannen uitgewerkt en besproken. De problematiek van de simulatiepatiënten sluit aan bij de theorie zoals die op dat moment binnen de cyclus wordt aangeboden.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">werkcollege(s)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting, participatie</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77205"><b>Professionalisering I</b></a></td><td align="right"><b>TKM1.PROF</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">portfolio</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">2</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=77110"><b>Professionalisering II</b></a></td><td align="right"><b>TKM2.PROF</b></td></tr><tr><td align="justify" colspan="3">Professionalisering zal in de Masterfase doorlopen en daarbij gericht zijn op:<br/>- het functioneren in de patiëntenzorg, zowel als individu als in teamverband.<br/>- het bespreken van inhoudelijke vraagstukken; casuïstiek, verschillende methoden, wetenschappelijke<br/>onderbouwing.<br/>- bespreking adoptiestages<br/><br/>Studenten verzamelen verslagen, rapportages en uitwerkingen en de reacties daarop van docenten, medestudenten en zichzelf in een zogenaamd portfolio. Door dit te doen schetst de student een beeld van zichzelf en van de vorderingen die gemaakt worden in de studie.<br/><br/>In deze onderwijseenheid komt ook de praktijkvoorbereiding aan bod. Studenten worden voorbereid op de start in de algemene praktijk met de nadruk op de rol van manager.<br/><br/>Het tentamen Professionalisering II bestaat uit de volgende onderdelen:<br/>- assessment<br/>- voldoen aan practicumverplichtingen (incl. adoptiestage)<br/>- beoordeling portfolio</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">4</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=77106"><b>Tandheelkundige vaardigheden &amp; kennis I</b></a></td><td align="right"><b>TKM1.TVKV</b></td></tr><tr><td align="justify" colspan="3">Deze onderwijseenheid vormt een doorgaande lijn door de hele masterfase. Studenten houden zich primair bezig met integrale patiëntenbehandeling in teamverband. Daarnaast wordt een skillslab practicum aangeboden op het terrein van de orale functieleer zoals onder andere de partiële (frame-) prothesen en de immediaatprothesen. Bovendien wordt, in een kindvriendelijke setting, speciaal aandacht besteed aan de kindertandheelkunde. Naast de tandheelkundige vaardigheden wordt in deze onderwijseenheid ook aandacht besteed aan theoretische verdieping van tandheelkundige thema’s.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">aanwezigheidsverplichting en schriftelijk tentamen, praktijktoets(en), stationstoetsen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">31</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=77109"><b>Tandheelkundige vaardigheden + kennis II</b></a></td><td align="right"><b>TKM2.TVKV</b></td></tr><tr><td align="justify" colspan="3">Deze onderwijseenheid vormt een doorgaande lijn door de hele masterfase. Studenten houden zich primair<br/>bezig met integrale patiëntenbehandeling in teamverband. Bovendien wordt, in een kindvriendelijke setting, speciaal aandacht besteed aan de kindertandheelkunde.<br/>Tevens wordt het onderdeel stralingsbescherming niveau 5A afgerond, wat verplicht is bij praktijkvoering.<br/><br/>Naast de tandheelkundige vaardigheden wordt in deze onderwijseenheid ook aandacht besteed aan theoretische verdieping van tandheelkundige thema’s.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=77111"><b>Wetenschappelijke stage II</b></a></td><td align="right"><b>TKM2.WET2</b></td></tr><tr><td align="justify" colspan="3">Nadat in het eerste studiejaar een begin is gemaakt met de Wetenschappelijke stage wordt in het derde en vierde semester van de Masterfase het onderzoek uitgevoerd en wordt de stage afgesloten met een scriptie.<br/>Bij een verlengde wetenschappelijke stage (25 EC of 34 EC ) kan een student 8 EC van Individuele Profilering I of 17 EC van Individuele Profilering I + II koppelen aan de Wetenschappelijke stage I en Wetenschappelijke stage II.<br/><br/>Het tentamen Wetenschappelijke stage II bestaat uit de volgende onderdelen:<br/>- voldoen aan practicumverplichtingen<br/>- stagebeoordeling en beoordeling onderzoeksprotocol<br/>- wetenschappelijk verslag / scriptie</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">12</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=77222"><b>Wetenschappelijke Stage 1</b></a></td><td align="right"><b>TKM1.WET1</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Medische Wetenschappen / UMCG</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Nederlands</td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">practicum, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">zie studiegids</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>

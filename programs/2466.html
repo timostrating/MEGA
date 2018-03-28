@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ocasys: Ocasys: Online Onderwijscatalogus</title>
+<link href="/ocasys//static/ocasys.css" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/ocasys_print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="/ocasys//static/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="/ocasys//static/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.tablesorter.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery.json-2.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/ocasys.js" type="text/javascript"></script>
+<script language="javascript" src="/ocasys//static/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="printLogo">ocasys</div>
+<div class="top">
+<div class="logo">
+<a href="http://www.rug.nl">
+<img alt="RuG" border="0" src="/ocasys//static/rug_nl.png" style="margin-top: 5px"/>
+</a>
+</div>
+<div class="name">
+<a class="hidden" href="/ocasys/rechten//">
+<span>ocasys</span>
+</a>
+</div>
+</div>
+<div class="subtop">
+<div class="title">
+         Ocasys: Online Onderwijscatalogus
+   </div>
+<ul class="language">
+<li><a href="/ocasys/rechten/"><img alt="" src="/ocasys//icons/home.png" style="border: 0px"/></a></li>
+<li class="separatorAfter"><a href="/ocasys/rechten/vak/showpos?opleiding=2466&amp;print"><img alt="print" src="/ocasys//icons/print.png" style="border: 0px"/></a>
+</li>
+<li class="separatorAfter"><a href="/ocasys/rechten/main/login?return_url=%2Focasys%2Frechten%2Fvak%2Fshowpos%3Fopleiding%3D2466"><img alt="login" src="/ocasys//icons/login.png" style="border: 0px"/>Login</a></li>
+<li class="">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','en');">
+<img alt="Zet voorkeurtaal op Engels" src="/ocasys//static/en.png" title="Zet voorkeurtaal op Engels"/>English
+            </a>
+</li>
+<li class="active">
+<a href="javascript:selectALanguage('http://www.rug.nl/ocasys/','nl');">
+<img alt="Zet voorkeurtaal op Nederlands" src="/ocasys//static/nl.png" title="Zet voorkeurtaal op Nederlands"/>Nederlands
+            </a>
+</li>
+<li class="label-font separatorBefore">
+            Jaar:
+         <select id="selectYear" onchange="selectAYear('/ocasys/')">
+<option style="color: #000" value="5">
+                  
+                     
+                     
+                        2002/03
+                     
+                  
+               </option>
+<option style="color: #000" value="1">
+                  
+                     
+                     
+                        2003/04
+                     
+                  
+               </option>
+<option style="color: #000" value="2">
+                  
+                     
+                     
+                        2004/05
+                     
+                  
+               </option>
+<option style="color: #000" value="3">
+                  
+                     
+                     
+                        2005/06
+                     
+                  
+               </option>
+<option style="color: #000" value="4">
+                  
+                     
+                     
+                        2006/07
+                     
+                  
+               </option>
+<option style="color: #000" value="6">
+                  
+                     
+                     
+                        2007/08
+                     
+                  
+               </option>
+<option style="color: #000" value="7">
+                  
+                     
+                     
+                        2008/09
+                     
+                  
+               </option>
+<option style="color: #000" value="8">
+                  
+                     
+                     
+                        2009/10
+                     
+                  
+               </option>
+<option style="color: #000" value="9">
+                  
+                     
+                     
+                        2010/11
+                     
+                  
+               </option>
+<option style="color: #000" value="10">
+                  
+                     
+                     
+                        2011/12
+                     
+                  
+               </option>
+<option style="color: #000" value="11">
+                  
+                     
+                     
+                        2012/13
+                     
+                  
+               </option>
+<option style="color: #000" value="12">
+                  
+                     
+                     
+                        2013/14
+                     
+                  
+               </option>
+<option style="color: #000" value="13">
+                  
+                     
+                     
+                        2014/15
+                     
+                  
+               </option>
+<option style="color: #000" value="14">
+                  
+                     
+                     
+                        2015/16
+                     
+                  
+               </option>
+<option style="color: #000" value="15">
+                  
+                     
+                     
+                        2016/17
+                     
+                  
+               </option>
+<option selected="selected" style="color: #000" value="16">
+                  
+                     
+                        2017/18
+                     
+                     
+                  
+               </option>
+<option style="color: #000" value="17">
+                  
+                     
+                     
+                        2018/19
+                     
+                  
+               </option>
+</select>
+</li>
+</ul>
+</div>
+<div class="shadow">
+</div>
+<div id="main">
+<div id="left">
+<div class="body">
+<!--Extra menu knoppen -->
+<!--Hoofdmenu-->
+<div class="m1">
+               Rijksuniversiteit Groningen
+            </div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchCourses">
+                     Zoek vakken
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/searchProgrammes">
+                     Zoek opleidingen
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rug/main/browseByFaculty">
+                     Toon opleidingen per faculteit
+               </a>
+</div>
+<div class="m2">
+<a href="/ocasys/rechten/main/aboutocasys">
+                     Over Ocasys
+               </a>
+</div>
+<br/>
+</div>
+</div> <!-- left -->
+<div id="right">
+<div class="body">
+<script type="text/javascript">
+               setRoot('/ocasys/');
+            </script>
+<p><a href="/ocasys/rechten/vak/showprogramme?programmeId=2466">Informatie over MSc Accountancy &amp; Controlling/A&amp;C</a></p><p>Hieronder staan het programma en de vakomschrijvingen van <b>MSc Accountancy &amp; Controlling/A&amp;C</b> Klik op de naam van een vak in een schema om naar de omschrijving te gaan.</p> <a name="top"></a><table class="userTable"><tr><td class="yearHeader" colspan="8">» Jaar 1 (Accountancy)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr class="color"><td class="nocolor">semester I a</td><td>verplicht</td><td>EBM156A05</td><td><a href="/ocasys/rechten/vak/show?module=73208">Auditing Theory</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM863A05</td><td><a href="/ocasys/rechten/vak/show?module=73407">Financial Accounting Theory</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM636A05</td><td><a href="/ocasys/rechten/vak/show?module=73318">Strategic &amp; Organizational Design</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester I b</td><td>verplicht</td><td>EBM154A05</td><td><a href="/ocasys/rechten/vak/show?module=73108">Advanced Accounting Information Systems</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM191A05</td><td><a href="/ocasys/rechten/vak/show?module=77806">IT in Control</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM159A05</td><td><a href="/ocasys/rechten/vak/show?module=73196">Research in Accounting and Control</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II</td><td>verplicht</td><td>EBM869B20</td><td><a href="/ocasys/rechten/vak/show?module=73205">Master's Thesis Accountancy</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr><td class="nocolor">semester II a</td><td>verplicht</td><td>EBM155A05</td><td><a href="/ocasys/rechten/vak/show?module=73109">Auditing Research</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor">semester II b</td><td>verplicht</td><td>EBM158A05</td><td><a href="/ocasys/rechten/vak/show?module=73197">International Financial Accounting</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td class="opm" colspan="7"><p style="margin-left:10px;">De Master's Thesis Accountancy wordt gegeven in semester 1 en semester 2;<br/>Studenten die in februari starten met de MSc A&amp;C (Accountancy) moeten rekening houden met de volgende verschuivingen:<br/>Financial Accounting Theory in semester 2.1, <br/>Strategic &amp; Organizational Design in semester 2.1, <br/>Research in Accounting and Control in semester 2.2,<br/>IT in Control in semester 2.2,<br/>Master's Thesis Accountancy in semester 1.</p></td></tr><tr><td class="yearHeader" colspan="8">» Jaar 1 (Controlling)</td></tr><tr class="head"><th>Periode</th><th>Type</th><th>Code</th><th>Naam</th><th>Taal</th><th>ECTS</th><th>Uren</th></tr><tr><td class="nocolor">semester I a</td><td>verplicht</td><td>EBM711B05</td><td><a href="/ocasys/rechten/vak/show?module=73304">Management Accounting Change</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM057A05</td><td><a href="/ocasys/rechten/vak/show?module=73641">Management Accounting Techniques</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM636A05</td><td><a href="/ocasys/rechten/vak/show?module=73318">Strategic &amp; Organizational Design</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr class="color"><td class="nocolor">semester I b</td><td>verplicht</td><td>EBM154A05</td><td><a href="/ocasys/rechten/vak/show?module=73108">Advanced Accounting Information Systems</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor"> </td><td>verplicht</td><td>EBM159A05</td><td><a href="/ocasys/rechten/vak/show?module=73196">Research in Accounting and Control</a></td><td>Engels</td><td>5</td><td>2</td></tr><tr class="color"><td class="nocolor"> </td><td>verplicht</td><td>EBM160A05</td><td><a href="/ocasys/rechten/vak/show?module=73110">Value-based Management</a></td><td>Engels</td><td>5</td><td>4</td></tr><tr><td class="nocolor">semester II</td><td>verplicht</td><td>EBM870B20</td><td><a href="/ocasys/rechten/vak/show?module=73198">Master's Thesis Controlling</a></td><td>Engels</td><td>20</td><td>variabel</td></tr><tr class="color"><td class="nocolor">semester II a</td><td>verplicht</td><td>EBM082A05</td><td><a href="/ocasys/rechten/vak/show?module=73169">Research in Management Control</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="nocolor">semester II b</td><td>verplicht</td><td>EBM191A05</td><td><a href="/ocasys/rechten/vak/show?module=77806">IT in Control</a></td><td>Engels</td><td>5</td><td>3</td></tr><tr><td class="opmSpace" colspan="8"></td></tr><tr class="opm"><td>Opmerkingen</td><td colspan="7" style="border:1px solid black;"><p style="margin-left:10px;">De Master's Thesis Controlling wordt gegeven in semester 1 en semester 2<br/>Studenten die in februari starten met de MSc A&amp;C (Controlling) moeten rekening houden met de volgende verschuivingen:<br/>Management Accounting Techniques in semester 2.1, <br/>Strategic &amp; Organizational Design in semester 2.1, <br/>Research in Accounting and Control in semester 2.2,<br/>Master's Thesis Controlling in semester 1.</p></td></tr></table><p></p><p><a href="#" id="shortLink" onclick="showShort(); return false;">Toon korte vakomschrijvingen</a></p><div id="preShort"><div id="short" style="display:none"><table><tr><td style="width: 40px"><b><a name="1"></a>1</b></td><td><a href="/ocasys/rechten/vak/show?module=73108"><b>Advanced Accounting Information Systems</b></a></td><td align="right"><b>EBM154A05</b></td></tr><tr><td align="justify" colspan="3">Een uniek vak, waarin theorie en praktijk op het gebied van interne beheersing van informatiekwaliteit, bij elkaar gebracht worden en waarin je uitgedaagd wordt om je kennis te toetsen aan/te verrijken met de input van experts.<br/>AAIS behandelt verschillende IC gerelateerde onderwerpen aan de hand van hoorcolleges, werkcolleges en inleveropdrachten. Wetenschappelijke artikelen worden gebruikt als basis voor het onderwijs, waarbij ook aandacht wordt geschonken aan toepassing(en) in de praktijk. De studenten zullen door middelen van inleveropdrachten wetenschappelijke artikelen (nader) analyseren en toepassen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11255">drs. D. van der Bij</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1838">prof. dr. J.A. Emanuels</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=10760">drs. G. Gelling</a><a href="/ocasys/rug/vak/viewtutor?tutor=11609">ing. R.G.J. Kuper</a><a href="/ocasys/rug/vak/viewtutor?tutor=11255">drs. D. van der Bij</a><a href="/ocasys/rug/vak/viewtutor?tutor=2282"> W.K. Zwaagman</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Afgeronde Bachelor.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat vakgroep Accountancy, kamer: Dui 959, tel.: 050 363 3768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="2"></a>2</b></td><td><a href="/ocasys/rechten/vak/show?module=73109"><b>Auditing Research</b></a></td><td align="right"><b>EBM155A05</b></td></tr><tr><td align="justify" colspan="3">Het vak Auditing Research bouwt voort op het vak Auditing Theory en geeft hieraan een verdere theoretische/wetenschappelijke verdieping op basis van (internationale) wetenschappelijke publicaties. Dit wordt gedaan aan de hand van een aantal thematische invalshoeken. Deze betreffen onder meer: audit quality, oordeelvorming, niet-financiële informatie en vrijwillige informatievoorziening, cultuur en (ontwikkelingen in de) maatschappij. Dit vak geeft je een brede maatschappelijke kijk op de wereld waarin de accountant zich begeeft. Nadrukkelijk wordt de discussie gezocht.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2238">prof. dr. D.A. de Waard</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2238">prof. dr. D.A. de Waard</a><a href="/ocasys/rug/vak/viewtutor?tutor=10079"> M. Looijenga, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat e-mail: accountancy@rug.nl, tel.: 050 3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="3"></a>3</b></td><td><a href="/ocasys/rechten/vak/show?module=73208"><b>Auditing Theory</b></a></td><td align="right"><b>EBM156A05</b></td></tr><tr><td align="justify" colspan="3">Dit vak borduurt voort en geeft verdieping aan de kennis zoals opgedaan in de vakken Introduction to Auditing en Auditing Practices. Er wordt ingegaan op specifieke thema’s als de rol van de accountant in de maatschappij, het adresseren van geïdentificeerde risico’s, fraude, het gebruikmaken van werkzaamheden van anderen, het toepassen van data analyse, continuous auditing en service organisaties. In de colleges worden filmpjes, praktische voorbeelden en actualiteiten gebruikt om de student verdiepende inzichten in verschillende onderdelen van de jaarrekeningcontrole te geven. De docenten die de colleges geven hebben praktijkervaring. Daarnaast zullen er interessante gastcolleges worden gegeven door experts uit de praktijk.<br/>Ook zal de student een holistisch beeld krijgen van het controleproces door het schrijven van een audit plan. Hierbij zullen verschillende aspecten van de jaarrekeningcontrole aan bod komen.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10079"> M. Looijenga, MSc.</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=11609">ing. R.G.J. Kuper</a><a href="/ocasys/rug/vak/viewtutor?tutor=10079"> M. Looijenga, MSc.</a><a href="/ocasys/rug/vak/viewtutor?tutor=12420"> R.S. Tuinsma, MSc.</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, opdracht(en)</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Reguliere voorwaarden van het masterprogramma</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat e-mail: accountancy@rug.nl, tel.: 050 3633768<br/>Docenten: M. Looijenga MSc EMA RA en R.S. Tuinsma MSc EMA RA</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="4"></a>4</b></td><td><a href="/ocasys/rechten/vak/show?module=73407"><b>Financial Accounting Theory</b></a></td><td align="right"><b>EBM863A05</b></td></tr><tr><td align="justify" colspan="3">Bij het behandelen van het wetenschappelijk onderzoek komen de verschillende stadia van de empirische cyclus aan de orde. Waar mogelijk wordt een verband gelegd tussen de verworvenheden van de theorie en de verslaggevingspraktijk. Vanwege het toenemend belang van het standard setting process voor de onderneming en zijn accountant wordt in het bijzonder aandacht besteed aan theorieën die aan dit proces ten grondslag liggen.<br/>Onderwerpen die aan de orde komen, zijn:<br/>• een inleiding op de verschillende verslaggevingstheorieën;<br/>• externe verslaggeving onder ideale omstandigheden;<br/>• de gebruikersbenadering van externe verslaggeving;<br/>• implicaties van efficiënte markten;<br/>• het nut van informatie voor de werking van vermogens-markten;<br/>• agency theory en de gevolgen voor de inrichting van de externe verslaggeving;<br/>• earnings management.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2030">dr. T.A. Marra</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1918">dr. R.B.H. Hooghiemstra</a><a href="/ocasys/rug/vak/viewtutor?tutor=2030">dr. T.A. Marra</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Dit vak wordt aangeboden in zowel semester Ia als in semester IIa. Het schriftelijk tentamen van dit vak wordt aangeboden in semester Ia, IIa en IIb.<br/>Coordinator: Dr. T.A. Marra, e-mail t.a.marra@rug.nl<br/>Secretariaat: Drs. I.J. Bakker, e-mail i.j.bakker@rug.nl, <br/>tel. 050-3633535</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="5"></a>5</b></td><td><a href="/ocasys/rechten/vak/show?module=73197"><b>International Financial Accounting</b></a></td><td align="right"><b>EBM158A05</b></td></tr><tr><td align="justify" colspan="3">Het doel van deze cursus is om de meest relevante actuele thema’s in het theoretische en empirische onderzoek in het domein van de financial accounting op academisch niveau te kunnen belichten. De cursus heeft een internationaal perspectief. De belangrijkste onderwerpen die tijdens deze cursus aan de orde zullen komen zijn: inkomsten, waarderingen, financiële verslaglegging, bekendmakingen, winstkwaliteit, Integrated Reporting, Sustainability Reporting, agency- theorie, de beloning van bestuurders, bescherming van beleggers, corporate governance, regelgeving, en fiscale boekhouding.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10468"> S. Mukherjee</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2030">dr. T.A. Marra</a><a href="/ocasys/rug/vak/viewtutor?tutor=10468"> S. Mukherjee</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">schriftelijk tentamen met open vragen, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretary: I.J. Bakker, phone +31 50 363 3535, e-mail i.j.bakker@rug.nl <br/>Coordinator: Dr S. Mukherjee, e-mail shibashish.mukherjee@rug.nl, phone +31 (0)50 363 7206</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="6"></a>6</b></td><td><a href="/ocasys/rechten/vak/show?module=77806"><b>IT in Control</b></a></td><td align="right"><b>EBM191A05</b></td></tr><tr><td align="justify" colspan="3">Nog niet zo lang geleden werden IT-toepassingen gezien als handige hulpmiddelen om je werk beter en sneller te kunnen doen. Je kon er nog prima zonder. Tegenwoordig zijn IT-toepassingen zó geïntegreerd in de bedrijfsprocessen van organisaties, dat de continuïteit en betrouwbaarheid van de bedrijfsvoering en de daarbij ondersteunende informatievoorziening volledig afhankelijk zijn van IT-toepassingen. Adequate IT-beheersing in- en rondom deze IT-toepassingen is daarom van cruciaal belang voor de interne beheersing van organisaties.<br/>Dit is makkelijker gezegd dan gedaan. Kennis van IT schiet vaak tekort op strategisch (directie) en tactisch (management) niveau. De leiding van organisaties is onvoldoende op de hoogte van technologische innovaties en daarmee gepaard gaande kansen en bedreigingen. Daardoor zijn organisaties niet (goed) in staat hun risicobeeld en daarvan afgeleid raamwerk van interne beheersing aan te laten sluiten op deze veranderingen, met alle gevolgen van dien.<br/>Dit vak schetst op toegepaste wijze de bouwstenen van een IT-infrastructuur en de wijze waarop deze ondersteunend is aan het applicatielandschap van organisaties, waarbij aan de hand van het Strategic Alignment Model van Henderson en Venkatraman invulling wordt gegeven aan het IT-strategie- en IT-management-domein.<br/>Vervolgens komen verschillende actuele technologische innovaties (zoals blockchain en cloud-computing) en bedreigingen (zoals ransomware en identity fraud) aan bod, waarbij telkens de slag wordt geslagen naar de impact die deze innovaties en bedreigingen hebben op het risicobeeld en de wijze waarop de interne beheersing van organisaties hierop voorbereid dient te zijn om de continuïteit en betrouwbaarheid van de geautomatiseerde informatievoorziening te kunnen waarborgen, ten behoeve van de effectiviteit en efficiëntie van de bedrijfsvoering en voor de naleving van relevante wet- en regelgeving.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1838">prof. dr. J.A. Emanuels</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1838">prof. dr. J.A. Emanuels</a><a href="/ocasys/rug/vak/viewtutor?tutor=518">  Gastdocent(en)</a><a href="/ocasys/rug/vak/viewtutor?tutor=11609">ing. R.G.J. Kuper</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, hoorcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Secretariaat e-mail: accountancy@rug.nl, tel. 050-3633768</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="7"></a>7</b></td><td><a href="/ocasys/rechten/vak/show?module=73304"><b>Management Accounting Change</b></a></td><td align="right"><b>EBM711B05</b></td></tr><tr><td align="justify" colspan="3">This course aims to provide knowledge and an understanding of change processes implicated in new accounting techniques and systems. The course will deal with both the technical requirements of accounting change and with its social consequences. The change in question will be discussed from two complementary perspectives: structure and behaviour. Structure refers to the structural changes required in the design of organizations as well as the requirements for the factual knowledge level of staff members to work with new accounting instruments. Behaviour concerns the ways in which staff members, within their social group, deal with changing responsibilities and activities. The course concentrates on formal and informal means to embed a management accounting system in daily practice. As such, it highlights the functional and social dimensions of change.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=2166">dr. M.P. van der Steen</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10749">dr. S. Girdhar</a><a href="/ocasys/rug/vak/viewtutor?tutor=2166">dr. M.P. van der Steen</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">paper, schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Bachelor degree and bachelor level proficiency in the area of management accounting and control.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Aangezien het groepsproces gebaat is bij de aanwezigheid en de participatie van allen, zijn de colleges en research clinics in principe verplicht. De vraagstelling in het tentamen is in het Engels.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="8"></a>8</b></td><td><a href="/ocasys/rechten/vak/show?module=73641"><b>Management Accounting Techniques</b></a></td><td align="right"><b>EBM057A05</b></td></tr><tr><td align="justify" colspan="3">The course elaborates on the knowledge gained during previous courses on management accounting (although for some students this course may be a first encounter with the field). The objective of the course is to gain an understanding of the operation and purpose of advanced management accounting and control instruments. The tools provided by management accounting are studied in a context of the managerial control of organizations. The course uses Excel as primary tool for applying accounting techniques and developing decision making instruments. After following the course, students should be able to: identify the purpose of accounting systems in different situations and understand how they influence the organization's planning, control and decision making, identify and analyze control problems in organizations, use and critically analyze the various quantitative techniques (also in relation to more qualitative management control instruments), design, select, and appraise accounting instruments of organizations.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1896">dr. C.P.A. Heijes</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1901">dr. J.S. Gusc</a><a href="/ocasys/rug/vak/viewtutor?tutor=1896">dr. C.P.A. Heijes</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">bijeenkomst(en), computer practica, gecombineerde hoor-/werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Basic skills in Excel are recommended as well (for example course Excel 2010 Basic organized by CIT RUG).</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">This course is offered in both semester Ia and semester IIa. Students have a free choice to follow the course in sem. I or in sem. II. In sem. I the course is generally relatively full (&gt;80 students) whereas in sem. II there are usually only a few participants (&lt;20). If students prefer small-group-teaching, they should choose to follow the course in sem. IIa and follow an additional elective in Ia instead.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="9"></a>9</b></td><td><a href="/ocasys/rechten/vak/show?module=73205"><b>Master's Thesis Accountancy</b></a></td><td align="right"><b>EBM869B20</b></td></tr><tr><td align="justify" colspan="3">The purpose of the master's thesis in Accountancy  is that the graduate learns to demonstrate his or her ability to conduct research independently. Each semester students can choose a research theme from available research topics. In principle teachers supervise a group of students working on the same theme or topic. Each supervisor defines a broad theme for the master's thesis project of his/her choice.<br/>It is allowed to write a combined thesis for two master programmes. The thesis topic has to be chosen from one of the available research themes.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6943">dr. K. Linke</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">afstudeeropdracht</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students need 20 ETCS of A&amp;C master courses at the start of the master thesis (September 1st and February 1st). It is highly recommended to participate first in the master course Research in Accounting &amp; Control before starting with the Master’s thesis. <br/>Students are required to register in Progress for the Master’s thesis course and thereafter enroll in Nestor for research themes.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Students can start their thesis two times a year, at the beginning of semester I or II. Thesis supervision only takes place during that semester. Final submission is at the end of the semester during which the thesis research was started. For the start in semester I (September), students have to register for a thesis theme in the previous semester (April). For the start in semester II (February), students have to register for a thesis theme in the previous semester (November).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="10"></a>10</b></td><td><a href="/ocasys/rechten/vak/show?module=73198"><b>Master's Thesis Controlling</b></a></td><td align="right"><b>EBM870B20</b></td></tr><tr><td align="justify" colspan="3">The purpose of the master's thesis in Controlling  is that the graduate learns to demonstrate his or her ability to conduct research independently. Each semester students can choose a research theme from available research topics. In principle teachers supervise a group of students working on the same theme or topic. Each supervisor defines a broad theme for the master's thesis project of his/her choice.<br/>It is allowed to write a combined thesis for two master programmes. The thesis topic has to be chosen from one of the available research themes.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=6943">dr. K. Linke</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=374">  diverse docenten</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">afstudeeropdracht</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">20</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Students need 20 ETCS of A&amp;C master courses at the start of the master thesis (September 1st and February 1st). It is highly recommended to participate first in the master course Research in Accounting &amp; Control before starting with the Master’s thesis. <br/>Students are required to register in Progress for the Master’s thesis course and thereafter enroll in Nestor for research themes.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Students can start their thesis two times a year, at the beginning of semester I or II. Thesis supervision only takes place during that semester. Final submission is at the end of the semester during which the thesis research was started.<br/>For the start in semester I (September), students have to register for a thesis theme in the previous semester (April). For the start in semester II (February), students have to register for a thesis theme in the previous semester (November).</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="11"></a>11</b></td><td><a href="/ocasys/rechten/vak/show?module=73196"><b>Research in Accounting and Control</b></a></td><td align="right"><b>EBM159A05</b></td></tr><tr><td align="justify" colspan="3">Deze cursus maakt MSc Accountancy &amp; Controlling studenten vertrouwd met academisch onderzoek in accounting &amp; control, met inbegrip van: auditing, corporate governance, bestuurlijke informatievoorziening, financial accounting, en management accounting. Deze cursus bereidt MSc Accountancy &amp; Controlling studenten voor op hun afstudeerscriptie.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10852"> V.A. Porumb</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=10852"> V.A. Porumb</a><a href="/ocasys/rug/vak/viewtutor?tutor=11812">dr. R.C. Trapp</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">computertoets, opdracht(en), schriftelijk tentamen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="12"></a>12</b></td><td><a href="/ocasys/rechten/vak/show?module=73169"><b>Research in Management Control</b></a></td><td align="right"><b>EBM082A05</b></td></tr><tr><td align="justify" colspan="3"></td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=7128">prof. dr. ir. P.M.G. van Veen-Dirks</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=127">prof. dr. E.P. Jansen</a><a href="/ocasys/rug/vak/viewtutor?tutor=7128">prof. dr. ir. P.M.G. van Veen-Dirks</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">gecombineerde hoor-/werkcolleges, zelfstudie</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), presentatie(s), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="13"></a>13</b></td><td><a href="/ocasys/rechten/vak/show?module=73318"><b>Strategic &amp; Organizational Design</b></a></td><td align="right"><b>EBM636A05</b></td></tr><tr><td align="justify" colspan="3">Deze cursus behandelt de praktijk van strategische besluitvorming en de relatie tussen strategie, organisatie en financiële analyse. Aan de hand van recent onderzoek worden individuele en groepsopdrachten uitgevoerd.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1171">prof. dr. E.W. Berghout</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1171">prof. dr. E.W. Berghout</a><a href="/ocasys/rug/vak/viewtutor?tutor=2034">dr. K.J. McCarthy</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoorcolleges, practica</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">actieve deelname, opdracht(en)</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Entreevoorwaarden</td><td colspan="2">Het vak veronderstelt het kennisniveau van de 2e jaars cursus Bedrijfskundige Organisatiediagnostiek en vaardigheden.</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">In teamverband vindt onderzoek plaats; beargumenteerd geselecteerde literatuur vormt het referentiekader; parallel aan het onderzoekstraject zijn er verspreid over het gehele semester workshopbijeenkomsten, waarvoor evenals voor de startbijeenkomst verplichte aanwezigheid geldt, met presentaties, peer review en feedbackrondes; er zijn voorts diverse mogelijkheden voor consultatie.</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr><tr><td style="width: 40px"><b><a name="14"></a>14</b></td><td><a href="/ocasys/rechten/vak/show?module=73110"><b>Value-based Management</b></a></td><td align="right"><b>EBM160A05</b></td></tr><tr><td align="justify" colspan="3">In uw toekomstige carrière kunt u voor de volgende problemen komen te staan:<br/>- Zou u een nieuw product in de markt moeten zetten?<br/>- Zou u een deel van de productie uitbesteden?<br/>- Zou u een andere onderneming moeten overnemen?<br/>Uw keuzes bepalen in hoge mate de toekomstige prestaties en de levensvatbaarheid van de onderneming.<br/>Managers creëren waarde door te investeren in projecten met een rentabiliteit die hoger is dan de alternatieve vermogens-kostenvoet. Dit geldt zowel voor de grote strategische als de dagelijkse operationele beslissingen. In dit vak leert u de lange termijn waarde effecten van zakelijke voorstellen te bepalen en hoe de val van het kortetermijndenken te voorkomen.<br/>Deze cursus verdiept uw kennis van uw inleiding tot financiering en accounting uit uw bachelor programma. U past de kernprincipes van financiering en accounting toe op problemen die zijn ontleend aan de praktijk.</td></tr><tr><td colspan="3"><table class="userTable zebra"><tr><td class="fieldLabel">Faculteit</td><td colspan="2">Economie en Bedrijfskunde</td></tr><tr><td class="fieldLabel">Voertaal</td><td colspan="2">Engels</td></tr><tr><td class="fieldLabel">Coordinator</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1787">dr. ing. N. Brunia</a></td></tr><tr><td class="fieldLabel">Docent(en)</td><td colspan="2"><a href="/ocasys/rug/vak/viewtutor?tutor=1787">dr. ing. N. Brunia</a></td></tr><tr><td class="fieldLabel">Onderwijsvorm</td><td colspan="2">hoor- en werkcolleges</td></tr><tr><td class="fieldLabel">Toetsvorm</td><td colspan="2">opdracht(en), schriftelijk tentamen met open vragen</td></tr><tr><td class="fieldLabel">ECTS</td><td colspan="2">5</td></tr><tr><td class="fieldLabel">Opmerkingen</td><td colspan="2">Coordinator: Dr N. Brunia, phone +31 (0)50 363 6388, e-mail n.brunia@rug.nl<br/>Secretary: Grietje Pol, phone +31(0)50 363 3685, e-mail g.pol@rug.nl</td></tr></table></td></tr><tr><td colspan="2"></td><td align="right"><a href="#top">terug naar boven</a></td></tr><tr><td> </td></tr></table></div></div>
+</div>
+</div><!-- right -->
+</div>
+<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+   try {
+      var pageTracker = _gat._getTracker("UA-1430761-4");
+      pageTracker._trackPageview();
+   } catch(err) {}</script>
+</body>
+</html>
