@@ -27,8 +27,8 @@ from lxml import html
 from bs4 import BeautifulSoup
 
 payload = {
-    'username' : '_______',
-    'password' : '_______',
+    'username' : '_____',
+    'password' : '_____',
     'security_level' : 'public',
     'vhost' : 'standard'
 }
@@ -41,20 +41,22 @@ result = session_requests.get(login_url)
 tree = html.fromstring(result.text)
 # authenticity_token = list(set(tree.xpath("//input[@name='csrfmiddlewaretoken']/@value")))[0]
 
-result = session_requests.post(
-	login_url, 
-	data = payload, 
-	headers = dict(referer=login_url)
-)
 
-url = 'https://www.hanze.nl/assets/instituut-voor-communicatie-media-it/Documents/Hanze-PL-ST/Tentamenrooster/2017-2018%20P3%20wk%207-16%20Tentamens-Exams.xlsx'
-result = session_requests.get(
-	url, 
-	headers = dict(referer = url)
-)
 
-tree = html.fromstring(result.content)
-# bucket_names = tree.xpath("//ul[@class='icons-menu']/li/a/span//text()")
+# result = session_requests.post(
+# 	login_url, 
+# 	data = payload, 
+# 	headers = dict(referer=login_url)
+# )
+
+# url = 'https://www.hanze.nl/assets/instituut-voor-communicatie-media-it/Documents/Hanze-PL-ST/Tentamenrooster/2017-2018%20P3%20wk%207-16%20Tentamens-Exams.xlsx'
+# result = session_requests.get(
+# 	url, 
+# 	headers = dict(referer = url)
+# )
+
+# tree = html.fromstring(result.content)
+# # bucket_names = tree.xpath("//ul[@class='icons-menu']/li/a/span//text()")
 
 print(result)
 print(str(tree))
