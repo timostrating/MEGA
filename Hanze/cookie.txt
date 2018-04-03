@@ -1,0 +1,19 @@
+# HTTP Cookie File for hanze.nl by Genuinous @genuinous.
+# To download cookies for this tab click here, or download all cookies.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://www.hanze.nl/nld/dashboard/studenten"
+#   2) curl --cookie cookies.txt "https://www.hanze.nl/nld/dashboard/studenten"
+#   3) aria2c --load-cookies cookies.txt "https://www.hanze.nl/nld/dashboard/studenten"
+#
+www.hanze.nl	FALSE	/nld	FALSE	0	SearchSession	2ccc3dcc%2D0ed7%2D404e%2D8f66%2D83549327fcb4
+www.hanze.nl	FALSE	/	TRUE	0	cookie	!1vWmKrIfJC9MvO5YCQY2UAOdocKUiaqF3N2na3l16jTs1MIWaftnqxbBZ6qwqMjo3nTogEXJav827lo=
+.hanze.nl	TRUE	/	FALSE	1585857445	_ga	GA1.2.1453134132.1522778730
+.hanze.nl	TRUE	/	FALSE	1522871845	_gid	GA1.2.1819921501.1522778730
+authoring.hanze.nl	FALSE	/	TRUE	0	WSS_KeepSessionAuthenticated	{a7108d7e-2299-4b1b-98e5-ad279ed16807}
+mysite.hanze.nl	FALSE	/	TRUE	0	cookie	!vJMO9KbtZS0oUw9YCQY2UAOdocKUiQkR8wIZg4Z053eEJbNGFkhqZm8Y9B+Yw2uM/s5Z5xOzvW5dpWM=
+.hanze.nl	TRUE	/	FALSE	1522785500	_dc_gtm_UA-308609-1	1
+.hanze.nl	TRUE	/	TRUE	0	LastMRH_Session	d06635aa
+www.hanze.nl	FALSE	/	TRUE	0	F5_ST	1z1z1z1522785442z604800
+.hanze.nl	TRUE	/	TRUE	0	MRHSession	1ee51ab05c0e420efb21bcb7d06635aa
+www.hanze.nl	FALSE	/	TRUE	0	WSS_KeepSessionAuthenticated	{a7108d7e-2299-4b1b-98e5-ad279ed16807}
+www.hanze.nl	FALSE	/	TRUE	1522785746	MRHSession_SP	1ee51ab05c0e420efb21bcb7d06635aa
