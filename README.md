@@ -1,5 +1,7 @@
 # MEGA
-MEGA is my attempt to collect and analyze as much of my personal information as possible for a year. All scripts I write to automate actions will be stored in this repo.
+MEGA is my attempt to collect and analyze as much of my personal information as possible for a year. All scripts I write to automate actions will be stored in this repo. I like to expend this repo in the future with a way to visualize what i am learning. A learning tracking system of some sort of kind.
+
+Currently I am also searching for a better way to store lecture notes. I am currently using Evernote but it does not have all the features rhat I would like to have.
 
 
 [All programs a local university offers (Rug) - Dutch ](https://github.com/timostrating/MEGA/blob/master/Rug/rug_opleidingen.json)
