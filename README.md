@@ -20,7 +20,7 @@ I keep track of what I want to do every week. This is also the place where I can
 ## Habit registration using loop (app)
 I keep a list of habits on my phone that is check off every day.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/loop.png" alt="spreadsheet" width="300" height="500">
+  <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/loop.png" alt="spreadsheet" width="300" height="900">
 </p>
 
 ## Unofficial joined classes at university
