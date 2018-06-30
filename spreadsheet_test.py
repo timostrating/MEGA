@@ -27,14 +27,12 @@ def countHours(search_var):
                 else:
                     sum_weekend += 1
 
-    print "{0} uur totaal {1}%".format(sum / float(2), round(sum / float(DAYS_TO_CONSIDER * 48), 3) * 100)
-    print "{0} uur gemiddeld per dag waarvan".format(round((sum / float(2)) / float(DAYS_TO_CONSIDER), 2))
-    print "{0} uur gemiddeld door de week.".format(round((sum_weekday / float(2)) / float(DAYS_TO_CONSIDER/float(7)*5), 2))
-    print "{0} uur gemiddeld in het weekend.".format( round((sum_weekend / float(2)) / float(DAYS_TO_CONSIDER/float(7)*2), 2))
+    return "{0}, {1}%, {2}, {3}, {4}".format(sum / float(2), 
+        round(sum / float(DAYS_TO_CONSIDER * 48), 3) * 100,
+        '{0:2.0f}:{1:02.0f}'.format(*divmod((sum / float(2)) / float(DAYS_TO_CONSIDER) * 60, 60)),
+        '{0:2.0f}:{1:02.0f}'.format(*divmod((sum_weekday / float(2)) / float(DAYS_TO_CONSIDER/float(7)*5) * 60, 60)),
+        '{0:2.0f}:{1:02.0f}'.format(*divmod((sum_weekend / float(2)) / float(DAYS_TO_CONSIDER/float(7)*2) * 60, 60))) 
 
 
 for i in range(len(TYPES)):
-    print "\n"
-    print TYPES[i]
-    countHours(i)
-
+    print TYPES[i]+", "+countHours(i)
