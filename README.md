@@ -42,6 +42,12 @@ I keep a list of habits on my phone that is check off every day.
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/loop.png" alt="spreadsheet" width="300" height="900">
 </p>
 
+## I kept track of my weight for a few weeks.
+I lost 20kg during this periode.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/kg.png" alt="spreadsheet" width="400" height="200">
+</p>
+
 ## Unofficial joined classes at a local university
 There is a really nice university a few cities down the road, so I am joining some classes unofficially there.
 <p align="center">
