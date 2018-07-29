@@ -32,7 +32,9 @@ I registered what I do every 30 minutes from the start to the end of the year.
 | SCHOOL - university           | 25.0        | 0.6 %  | 0:12 hour         | 0:00 hour        |
 
 ## Weekly planning
-I keep track of what I want to do every week. This is also the place where I can see in a glance what is coming up in the next weeks. <p align="center">
+I keep track of what I want to do every week. This is also the place where I can see in a glance what is coming up in the next weeks. 
+
+I stopped doing this after a few months. This way of making visible what I was doing did not really help and only made it so this ended more like a place where there was visible what I did in stead of what I had for the upcoming weeks.<p align="center">
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/planning.png" alt="rug" width="400" height="250">
 </p>
 
