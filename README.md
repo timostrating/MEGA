@@ -1,5 +1,5 @@
 # MEGA
-MEGA is my attempt to collect and analyze as much of my personal information as possible for a year. All scripts I write to automate actions will be stored in this repo. I like to expend this repo in the future with a way to visualize what I am learning. A learning tracking system of some sort of kind.
+MEGA is my attempt to collect and analyze as much of my personal information as possible for a year. All scripts I write to automate actions will be stored in this repo. I like to expend this repo in the future with a way to visualize what I am learning. A learning tracking system of some sort of kind.ASMR rock Excavation
 
 Currently, I am also searching for a better way to store lecture notes. I stopped using Evernote. Just a piece of paper still works the best for me.
 
@@ -45,7 +45,7 @@ I keep a list of habits on my phone that is check off every day.
 </p>
 
 ## I kept track of my weight for a few weeks.
-I lost 20kg during this periode.
+I lost 20kg during this periode. After the periode i stopt taking track of my wheight.
 <p align="center">
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/kg.png" alt="spreadsheet" width="400" height="200">
 </p>
