@@ -5,7 +5,7 @@ Currently, I am also searching for a better way to store lecture notes. I stoppe
 
 [All programs a local university offers (Rug) - Dutch ](https://github.com/timostrating/MEGA/blob/master/Rug/rug_opleidingen.json)
 
-## :ballot_box_with_check: Time registration
+## :heavy_check_mark: Time registration
 I registered what I do every 30 minutes from the start to the end of the year.
 <p align="center">
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/time.png" alt="spreadsheet" width="400" height="500">
@@ -44,13 +44,13 @@ I keep a list of habits on my phone that is check off every day.
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/loop.png" alt="spreadsheet" width="300" height="900">
 </p>
 
-## :ballot_box_with_check: I kept track of my weight for a few weeks.
+## :heavy_check_mark: I kept track of my weight for a few weeks.
 I lost 20kg during this periode. After the periode i stopt taking track of my wheight.
 <p align="center">
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/kg.png" alt="spreadsheet" width="400" height="200">
 </p>
 
-## :ballot_box_with_check: Unofficial joined classes at a local university
+## :heavy_check_mark: Unofficial joined classes at a local university
 There is a really nice university a few cities down the road, so I am joining some classes unofficially there.
 <p align="center">
   <img src="https://raw.githubusercontent.com/timostrating/MEGA/master/img/rug.png" alt="rug" width="400" height="500">
